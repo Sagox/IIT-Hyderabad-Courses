@@ -1,0 +1,107 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{listings}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\lstset{ 
+  backgroundcolor=\color{anti-flashwhite}
+  }
+\begin{document}
+\title{
+Operating Systems - 1: CS3510\\~\\
+\begin{large}
+Programming Assignment 1: Multi-Process\\Computation of Execution Time\\~\\
+\end{large}
+\begin{large}
+Assignment Report
+\end{large}
+}
+\author{Sagar Jain - CS17BTECH11034\\}
+\maketitle
+\section*{Program Design}
+The following points describe the code design in detail.
+\begin{enumerate}
+\item The file Assign1Src-CS17BTECH11034.cpp begins by including the necessay libraries for input-output, few system calls and working with strings.
+\item \textbf{\textit{main}} has the arguments,
+\begin{enumerate}
+\item \textbf{\textit{argc}} i.e. the number of command line arguments.
+\item \textbf{\textit{argv}} i.e. an array of string pointers.
+\end{enumerate}
+\item In $main$, we start off by initilizing the following,
+\begin{enumerate}
+\item \textbf{\textit{SIZE}} i.e. the size of the shared memory we would like to create.
+\item \textbf{\textit{name}} i.e. the name of the shared memory object to be created or opened.
+\item \textbf{\textit{fd}} i.e. a nonnegative value, the file descriptor of the shared memory object created.
+\item \textbf{\textit{ptr}} i.e. a pointer to the mapped shared area.
+\item \textbf{\textit{tv}} i.e. a timeval struct to store the time value returned from \textbf{\textit{gettimeofday}}.
+\item\textbf{ \textit{pid}} to store the pid when a process is forked.
+\item \textit{\textbf{arguments}} is filled with appropriate values to be entered into \textbf{\textit{execvp}} (NULL ending array of strings).
+\end{enumerate}
+\item We then call \textbf{\textit{shm\_open}} to create a new shared memory region. We use the arguments \textbf{\textit{O\_CREAT / O\_RDWR}} to create a new shared memory object if one doesn't already exist and open the object for read-write access.On success, \textbf{\textit{shm\_open}} returns a nonnegative file descriptor and we store it in \textbf{\textit{fd}}.
+\item We then check for errors in creating of the shared memory.
+\item We then truncate the file to the required size in bytes, using \textbf{\textit{ftruncate}}.
+\item Then using \textbf{\textit{mmap}} we store the value of the pointer to the mapped shared area in \textbf{\textit{ptr}}. We use the argument \textbf{\textit{PROT\_READ / PROT\_WRITE}} to allow both read and write access. We use \textbf{\textit{MAP\_SHARED}} since we want to share the mapping.
+\item We now use \textbf{\textit{fork}} to fork a new process. Using the value of pid we make sure there are no errors in forking.
+\item Then using the value of \textbf{\textit{pid}}, we control the child and parent process seperately.
+\item The child notes the values of the current time using \textbf{\textit{gettimeofday}} and stores it into the pointer using \textbf{\textit{sprintf}}.
+\item The child executes the command given using command line arguments by putting them as arguments into \textbf{\textit{execvp}} which replaces the current process image with that of the command given. The following are the points to note in the usage of \textbf{\textit{execvp}},
+\begin{enumerate}
+\item I have used the command \textbf{\textit{execvp}} instead of \textbf{\textit{execlp}} so a user can run any command as long as it is present in the \textbf{\textit{PATH}} of the system not restricted to any directory.
+\end{enumerate}
+\item I have used wait at the beggining of the parent code (pid $>$ 0), so that it starts running only and as soon as the child process is done.
+\item The parent calls \textbf{\textit{gettimeofday}} immidiately to record the time when the child process is done.
+\item Then, using \textbf{\textit{stringstream}} the parent converts the time value of the beginning of the child process (stored as a string in ptr) to a long intger.
+\item The parent then subtracts the beginning and ending times to get the time the process took to complete and prints it into \textbf{\textit{STDOUT}}.
+\end{enumerate}
+\newpage
+\section*{Output Analysis}
+The following is the analysis of the outputs using various commands,
+\begin{enumerate}
+\item The \textbf{\textit{ls}} command,
+\begin{enumerate}
+\item Using this command in a folder with 10 files has given values between \textbf{0.002} and \textbf{0.004} seconds depending on the number of processes running in the background and other parameters. The following are the statistics for the same.\\
+\item Usint \textit{ls ~/ -lR} , the total files printed out were \textbf{26140} taking a total of \textbf{6.68192s}.\\
+\end{enumerate}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Number of files in Folder & Number of Test Cases       & Mean Time Taken                    & \multicolumn{1}{l|}{Variance} \\ \hline
+10                        & \cellcolor[HTML]{FFFFFF}10 & \cellcolor[HTML]{FFFFFF}0.00245901 & 2.70561E-6                    \\ \hline
+15                        & \cellcolor[HTML]{FFFFFF}10 & \cellcolor[HTML]{FFFFFF}0.00249992 & 2.94336E-6                    \\ \hline
+\end{tabular}
+\item The \textbf{\textit{echo}} command,
+\begin{enumerate}
+\item Using the word \textbf{\textit{test}} as an argument for \textbf{\textit{echo}} the following stats are observed.
+Mean: \textbf{\textit{0.001934}}, Variance: \textbf{\textit{3.86830E-6}}
+\item using a \textbf{\textit{10000}} letter string the time taken on average is \textbf{\textit{0.004282}}.
+\end{enumerate}
+\item On running the command \textbf{\textit{nano test}} and letting it run for 20 seconds according to a stopwatch, the recieved output is $20 \pm 0.1s$
+\item On running the command \textbf{\textit{top}} and letting it run for 20 seconds according to a stopwatch, the recieved output is $20 \pm 0.1s$
+\item The \textbf{\textit{mkdir}} and \textbf{\textit{rm}} commands have the following statistics.
+\end{enumerate}
+\begin{tabular}{|c|c|c|c|}
+\hline
+Command               & Number of Test Cases       & Mean Time Taken                    & \multicolumn{1}{l|}{Variance} \\ \hline
+mkdir                 & \cellcolor[HTML]{FFFFFF}10 & \cellcolor[HTML]{FFFFFF}0.00481166 & 6.3473E-7                     \\ \hline
+rm -r (3 levels deap) & \cellcolor[HTML]{FFFFFF}10 & \cellcolor[HTML]{FFFFFF}0.00381166 & 5.5273E-7                     \\ \hline
+\end{tabular}
+\subsection*{Points To Note}
+\begin{enumerate}
+\item The time taken for various commands shows variation based on the number of background processes running. At certain instances the time taken was even found to be 2X when their were browser, text-editors, etc. open in the background.
+\item Commands requiring writing data seem to take more time than those which just read data (\textbf{\textit{touch}} vs \textbf{\textit{cat}}).
+\item Running the same command in succession shows improvement in the time taken on some occassions, this could be in part due to the instruction getting stored in the cache when used repeatedly.
+\item Since the values for commands like \textbf{ls} and \textbf{cat} are in order of $10^{-3}$ their is chance of errors getting introduced, so a statistical analysis of their execution time is necessary.
+\item The output being recieved may be higher than the actual time taken due to the following reasons,
+\begin{enumerate}
+\item The parent process records the time only when the child has terminated and the wait command detects this termination, so their is some time getting added between the end of the command and the parent process recording the time.
+Using the following code for parent
+\begin{lstlisting}
+	gettimeofday(&tv, NULL);							
+	sprintf(ptr,"%ld",tv.tv_sec*1000000 + tv.tv_usec);	
+\end{lstlisting}
+the time comes out to be an average of 0.000214s. This could be the magnitude of the error in the times recorded.
+\item The command \textit{\textbf{gettimeofday}} itself has some running time, this gets added when we use it to record the time.
+\end{enumerate}
+\end{enumerate}
+\end{document}
