@@ -19,8 +19,6 @@ vector<bool> waiting;
 time_t tt;
 
 atomic_int locker(0);
-int key = 0;
-int expected = 0;
 
 default_random_engine generator;
 
@@ -34,7 +32,7 @@ void* testCS(void *param) {
 	for (auto i=1;i<=k;i++) {
 
 		waiting[id] = true;
-		key = 1;
+		bool key = false;
 
 		// logging into file begin
 		auto reqEnterTime = chrono::system_clock::now();
@@ -43,22 +41,34 @@ void* testCS(void *param) {
 		fprintf(pFile, "%dth CS request at %s by thread %d\n",
 			i,cur_time.c_str(),id);
 		// logging into file end
+
+		// measure waiting time begin
 		auto start_time = chrono::high_resolution_clock::now();
-		while (waiting[id] && key == 1)
-			key = locker.compare_exchange_weak(expected,1);
+
+		// begin waiting
+		while (waiting[id] && !key) {
+			int expected = 0, desired = 1;
+			key = locker.compare_exchange_weak(expected,desired);
+		}
 		waiting[id] = false;
+		
+		// note waiting time end
 		auto end_time = chrono::high_resolution_clock::now();
+		// waiting time duration
 		auto duration = chrono::duration_cast<chrono::microseconds>( end_time - start_time ).count();
 		waiting_time_matrix[id].push_back(float(duration));
+		
 		// logging into file begin
-		usleep(1000);
+		// usleep(1000);
 		auto actEnterTime = chrono::system_clock::now();
 		tt = chrono::system_clock::to_time_t (actEnterTime);
 		cur_time = ((string)ctime(&tt)).substr(11,9);
 		fprintf(pFile, "%dth CS entry at %s by thread %d\n",
 			i,cur_time.c_str(),id);
-		usleep(distribution1(generator)*1000000);
 		// loggin into file end
+
+		// critical section simulation
+		usleep(distribution1(generator)*1000000);
 
 		j = (id+1)%n;
 		while(j != id && !waiting[j])
@@ -67,6 +77,7 @@ void* testCS(void *param) {
 			locker.operator=(0);
 		else
 			waiting[j] = false;
+		// critical section exit
 
 		// logging into file begin
 		auto exitTime = chrono::system_clock::now();
@@ -75,6 +86,7 @@ void* testCS(void *param) {
 			i,cur_time.c_str(),id);
 		// logging into file end
 
+		// reminder section
 		usleep(distribution2(generator)*1000000);
 
 	}
@@ -101,10 +113,15 @@ int main()
 		pthread_join(threads[i], NULL);
 	}
 	fclose(pFile);
+	float sum = 0, max = 0, ssum = 0;
 	for(auto i=0;i<n;i++) {
 		for(auto j=0;j<k;j++) {
-			cout << waiting_time_matrix[i][j] << " ";
+			if(max < waiting_time_matrix[i][j])
+				max = waiting_time_matrix[i][j];
+			sum += waiting_time_matrix[i][j];
+			ssum += waiting_time_matrix[i][j]*waiting_time_matrix[i][j];
 		}
-		cout << endl;
 	}
+	cout << max << " " << sum/(n*k + 0.0) << " " << sqrt(ssum/(n*k + 0.0) - sum*sum/(n*n*k*k));
+
 }

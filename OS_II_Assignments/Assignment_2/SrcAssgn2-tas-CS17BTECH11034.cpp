@@ -9,7 +9,6 @@
 #include <unistd.h>
 #include <random>
 #include <ctime>
-#include <fstream>
 
 using namespace std;
 
@@ -34,17 +33,15 @@ void* testCS(void *param) {
 	for (auto i=1;i<=k;i++) {
 		auto reqEnterTime = chrono::system_clock::now();
 		tt = chrono::system_clock::to_time_t (reqEnterTime);
-		// string cur_time = ctime(&tt);
 		string cur_time = ((string)ctime(&tt)).substr(11,9);
-		// cout << cur_time << '\n';
 		fprintf(pFile, "%dth CS request at %s by thread %d\n",
 			i,cur_time.c_str(),id);
 		auto start_time = chrono::high_resolution_clock::now();
+		
 		while (locker.test_and_set(memory_order_acquire));
 		auto end_time = chrono::high_resolution_clock::now();
 		auto duration = chrono::duration_cast<chrono::microseconds>( end_time - start_time ).count();
 		waiting_time_matrix[id].push_back(float(duration));
-		// cout << duration << endl;
 		usleep(1000);
 		auto actEnterTime = chrono::system_clock::now();
 		tt = chrono::system_clock::to_time_t (actEnterTime);
@@ -84,10 +81,14 @@ int main()
 		pthread_join(threads[i], NULL);
 	}
 	fclose(pFile);
+	float sum = 0, max = 0, ssum = 0;
 	for(auto i=0;i<n;i++) {
 		for(auto j=0;j<k;j++) {
-			cout << waiting_time_matrix[i][j] << " ";
+			if(max < waiting_time_matrix[i][j])
+				max = waiting_time_matrix[i][j];
+			sum += waiting_time_matrix[i][j];
+			ssum += waiting_time_matrix[i][j]*waiting_time_matrix[i][j];
 		}
-		cout << endl;
 	}
+	cout << max << " " << sum/(n*k + 0.0) << " " << sqrt(ssum/(n*k + 0.0) - sum*sum/(n*n*k*k));
 }
