@@ -1,50 +1,93 @@
 #include <iostream>
 #include <pthread.h>
+#include <stdio.h>
 #include <mutex>
 #include <chrono>
 #include <fstream>
 #include <vector>
+#include <atomic>
+#include <unistd.h>
+#include <random>
+#include <ctime>
+#include <fstream>
 
 using namespace std;
 
-mutex m;
+mutex pm;
 
-bool locker = false;
+FILE *pFile;
 
-bool test_and_set(bool *target) {
+int k, l1, l2;
 
-	lock_guard<mutex> guard(m);
-	bool to_return = *target;
-	*target = true;
-	return to_return;
+time_t tt;
+
+atomic_flag locker = ATOMIC_FLAG_INIT;
+
+default_random_engine generator;
+
+vector<vector<float>> waiting_time_matrix;
+
+void* testCS(void *param) {
+	int id = *((int*)param);
+	exponential_distribution<double> distribution1(l1);
+	exponential_distribution<double> distribution2(l2);
+	for (auto i=1;i<=k;i++) {
+		auto reqEnterTime = chrono::system_clock::now();
+		tt = chrono::system_clock::to_time_t (reqEnterTime);
+		// string cur_time = ctime(&tt);
+		string cur_time = ((string)ctime(&tt)).substr(11,9);
+		// cout << cur_time << '\n';
+		fprintf(pFile, "%dth CS request at %s by thread %d\n",
+			i,cur_time.c_str(),id);
+		auto start_time = chrono::high_resolution_clock::now();
+		while (locker.test_and_set(memory_order_acquire));
+		auto end_time = chrono::high_resolution_clock::now();
+		auto duration = chrono::duration_cast<chrono::microseconds>( end_time - start_time ).count();
+		waiting_time_matrix[id].push_back(float(duration));
+		// cout << duration << endl;
+		usleep(1000);
+		auto actEnterTime = chrono::system_clock::now();
+		tt = chrono::system_clock::to_time_t (actEnterTime);
+		cur_time = ((string)ctime(&tt)).substr(11,9);
+		fprintf(pFile, "%dth CS entry at %s by thread %d\n",
+			i,cur_time.c_str(),id);
+		usleep(distribution1(generator)*1000000);
+		locker.clear(memory_order_release); 
+		auto exitTime = chrono::system_clock::now();
+		tt = chrono::system_clock::to_time_t (exitTime);
+		cur_time = ((string)ctime(&tt)).substr(11,9);
+		fprintf(pFile, "%dth CS exit at %s by thread %d\n",
+			i,cur_time.c_str(),id);
+		usleep(distribution2(generator)*1000000);
+
+	}
 }
 
-void *testCS(void *param) {
-
-	auto reqEnterTime = chrono::system_clock::now();
-	while(test_and_set(&locker));
-	auto actEnterTime = chrono::system_clock::now();
-	auto this_id = pthread_self();
-	cout << this_id << endl;
-	cout << this_id << endl;
-	cout << this_id << endl;
-
-	lock_guard<mutex> guard(m);
-	locker = false;
-	auto exitTime = chrono::system_clock::now();
-}
 int main()
 {
 	int message = 1, n;
-	cin >> n;
+	fstream input_file;
+	input_file.open("inp-params.txt");
+	input_file >> n >> k >> l1 >> l2;
+	waiting_time_matrix.resize(n);
+	pFile = fopen ("myfile.txt","w");
+	int threadIDs[n];
 	pthread_attr_t attr;
 	pthread_attr_init(&attr);
 	pthread_attr_setscope(&attr, PTHREAD_SCOPE_PROCESS);
 	vector <pthread_t> threads(n);
 	for(auto i=0;i<n;i++) {
-		pthread_create(&threads[i], &attr, testCS, &message);
+		threadIDs[i] = i;
+		pthread_create(&threads[i], &attr, testCS, &threadIDs[i]);
 	}
 	for(auto i=0;i<n;i++) {
 		pthread_join(threads[i], NULL);
+	}
+	fclose(pFile);
+	for(auto i=0;i<n;i++) {
+		for(auto j=0;j<k;j++) {
+			cout << waiting_time_matrix[i][j] << " ";
+		}
+		cout << endl;
 	}
 }
