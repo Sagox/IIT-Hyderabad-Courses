@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  18 FEB 2019 19:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  18 FEB 2019 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,6 +392,18 @@ l.38 \newpage
               [1
 
 ] [2] [3]
+Overfull \hbox (13.76181pt too wide) in paragraph at lines 61--62
+\OT1/cmr/m/n/12 gen-er-ated us-ing [][]$\OT1/cmtt/m/n/12 https : / / github . c
+om / Sagox / IIT-[]Hyderabad-[]Courses / blob /
+ []
+
+
+Overfull \hbox (4.78432pt too wide) in paragraph at lines 61--62
+\OT1/cmtt/m/n/12 master / OS _ II _ Assignments / Assignment _ 2 / collect _ ou
+tput . py$[][]\OT1/cmr/m/n/12 , in this file
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
@@ -415,7 +427,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./avg-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<avg-eps-converted-to.pdf, id=54, 462.72874pt x 346.29375pt>
+<avg-eps-converted-to.pdf, id=55, 462.72874pt x 346.29375pt>
 File: avg-eps-converted-to.pdf Graphic file (type pdf)
 <use avg-eps-converted-to.pdf>
 Package pdftex.def Info: avg-eps-converted-to.pdf  used on input line 66.
@@ -439,7 +451,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./max-eps-converted-to.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<max-eps-converted-to.pdf, id=55, 462.72874pt x 346.29375pt>
+<max-eps-converted-to.pdf, id=56, 462.72874pt x 346.29375pt>
 File: max-eps-converted-to.pdf Graphic file (type pdf)
 <use max-eps-converted-to.pdf>
 Package pdftex.def Info: max-eps-converted-to.pdf  used on input line 72.
@@ -464,7 +476,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./sd-eps-converted-to.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<sd-eps-converted-to.pdf, id=140, 462.72874pt x 346.29375pt>
+<sd-eps-converted-to.pdf, id=143, 462.72874pt x 346.29375pt>
 File: sd-eps-converted-to.pdf Graphic file (type pdf)
 <use sd-eps-converted-to.pdf>
 Package pdftex.def Info: sd-eps-converted-to.pdf  used on input line 79.
@@ -486,21 +498,22 @@ Package rerunfilecheck Info: File `Assgn2-TAS_CAS.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 7667 strings out of 494880
- 109431 string characters out of 6179600
+ 7693 strings out of 494880
+ 109708 string characters out of 6179600
  196818 words of memory out of 5000000
- 10886 multiletter control sequences out of 15000+600000
- 9675 words of font info for 36 fonts, out of 8000000 for 9000
+ 10904 multiletter control sequences out of 15000+600000
+ 14191 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  41i,7n,35p,545b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Assgn2-TAS_CAS.pdf (8 pages, 101809 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Assgn2-TAS_CAS.pdf (8 pages, 109298 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
+ 226 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  29 named destinations out of 1000 (max. 500000)
  48 words of extra memory for PDF output out of 10000 (max. 10000000)
 
