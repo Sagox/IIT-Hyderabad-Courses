@@ -53,8 +53,12 @@ The following are the key points involved in designing each of the three program
 \item For writing to files I have used \textbf{\textit{fprintf}} as it does not have concurrency issues.
 \end{enumerate}
 \newpage
+\section{Program Output}
+The output from the any of the three programs gives a log of the events that take place, namely, the request to enter critical section by a thread, the entry of a thread into its critical section, the exit of thread from its critical section. To prove mutual exclusion is ensured one can check the logs and it is observed that after the entry of one of the threads into the critcal section, no other thread enters its respective critcal section before the exit of the thread that is already in its critical section.
+\textbf{fprintf }has been used since not all logging statements are in the critical section, so there can be an interleaving of the print statements, leading to meaning less logging. fprinf does not have the concurrency issue.
+\newpage
 \section{Results \& Graphs}
-We have three graphs which have been made by running the three solutions for mutual exclusion with varying number of proceses. Each of the following graphs gives insight into an aspect of the solutions.\\\\
+We have three graphs which have been made by running the three solutions for mutual exclusion with varying number of proceses.The graphs have been generated using . Each of the following graphs gives insight into an aspect of the solutions.\\\\
 \begin{center}
 \begin{large}
 \textbf{Average Waiting Time vs Number of Threads}

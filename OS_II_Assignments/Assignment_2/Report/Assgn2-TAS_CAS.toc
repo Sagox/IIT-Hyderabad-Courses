@@ -1,3 +1,4 @@
 \contentsline {section}{Salient Features of Program Design}{2}{section*.2}
-\contentsline {section}{Results \& Graphs}{3}{section*.3}
-\contentsline {section}{Explaination of Results}{6}{section*.4}
+\contentsline {section}{Program Output}{3}{section*.3}
+\contentsline {section}{Results \& Graphs}{4}{section*.4}
+\contentsline {section}{Explaination of Results}{7}{section*.5}

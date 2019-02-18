@@ -11,14 +11,14 @@ for j in range(0,5):
 		str(10) + " " +
 		"5" + " " + "20")
 	g.close()
-	for i in range(0,3):
+	for i in range(0,5):
 		print(i)
 		a += list(map(float, str.split(check_output("./SrcAssgn2-tas-CS17BTECH11034"))))
 		b += list(map(float, str.split(check_output("./SrcAssgn2-cas-CS17BTECH11034"))))
 		c += list(map(float, str.split(check_output("./SrcAssgn2-cas-bounded-CS17BTECH11034"))))
-	a = a/3.0
-	b = b/3.0
-	c = c/3.0
+	a = a/5.0
+	b = b/5.0
+	c = c/5.0
 
 	f.write(
 		"tas: " + str(a[0]) + " " + str(a[1]) + " " + str(a[2]) + '\n'
