@@ -4,13 +4,13 @@
 #include <unistd.h>
 #include <string>
 #include <time.h>
-#include <semaphore.h>
 #include <random>
-
+#include <mutex>
 using namespace std;
 
-// declaring the semaphores
-sem_t locker, full, empty;
+// declaring the mutex
+mutex check_lock;
+int counter = 0;
 
 // declaring input variables
 int capacity, np, nc, cntp, cntc, up, uc;
@@ -38,14 +38,21 @@ void *producer(void *param) {
 	exponential_distribution<double> distribution1(up);
 	int id = *((int*)param);
 	for(auto i = 0;i < cntp;i++) {
-		sem_wait(&empty);
-		sem_wait(&locker);
+		while(true) {
+			check_lock.lock();
+			if(counter < capacity) {
+				counter ++;
+				break;
+			} 
+			else
+				check_lock.unlock();
+		}
 		buffer.push_back(1);
-		output_file << i << "th item produced by thread " << id << " at "
-		<< get_formatted_time() << " into buffer location " << buffer.size() << endl;
+		output_file << i << "th item produced by thread " << id << " at " <<
+		get_formatted_time() << " into buffer location " << buffer.size() << endl;
 		usleep(1000000*distribution1(generator));
-		sem_post(&locker);
-		sem_post(&full);
+		check_lock.unlock();
+
 	}
 }
 
@@ -54,14 +61,20 @@ void *consumer(void *param) {
 	exponential_distribution<double> distribution2(uc);
 	int id = *((int*)param);
 	for(auto i = 0;i < cntc; i++) {
-		sem_wait(&full);
-		sem_wait(&locker);
+		while(true) {
+			check_lock.lock();
+			if(counter > 0) {
+				counter --;
+				break;
+			}
+			else
+				check_lock.unlock();
+		}
 		buffer.pop_back();
 		output_file << i << "th item read from the buffer by thread " << id << " at "
 		<< get_formatted_time() << " from buffer location " << buffer.size() << endl;
 		usleep(1000000*distribution2(generator));
-		sem_post(&locker);
-		sem_post(&empty);
+		check_lock.unlock();
 	}
 }
 
@@ -72,12 +85,6 @@ int main()
 	input_file >> capacity >> np >> nc >> cntp >> cntc >> up >> uc;
 	// output file
 	output_file.open("output_file.txt", fstream::out);
-
-	// initialising semaphores
-	// second argument 0 => semaphore can be shared between threads
-	sem_init(&locker, 0, 1);
-	sem_init(&full, 0, 0);
-	sem_init(&empty, 0, capacity);
 
 	// initialising pthreads
 	pthread_attr_t attr;
