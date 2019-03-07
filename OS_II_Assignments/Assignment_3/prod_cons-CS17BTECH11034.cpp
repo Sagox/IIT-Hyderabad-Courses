@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <string>
 #include <time.h>
+#include <chrono>     
 #include <semaphore.h>
 #include <random>
 
@@ -13,7 +14,8 @@ using namespace std;
 sem_t locker, full, empty;
 
 // declaring input variables
-int capacity, np, nc, cntp, cntc, up, uc;
+int capacity, np, nc, cntp, cntc;
+float up, uc;
 
 // input file object
 fstream input_file;
@@ -22,6 +24,9 @@ fstream output_file;
 
 // generator for random numbers
 default_random_engine generator;
+
+vector<double> total_producer_time;
+vector<double>  total_consumer_time;
 
 vector <int> buffer;
 
@@ -35,8 +40,10 @@ string get_formatted_time() {
 
 // producer function
 void *producer(void *param) {
+	chrono::time_point<chrono::system_clock> start, end;
 	exponential_distribution<double> distribution1(up);
 	int id = *((int*)param);
+	start = chrono::system_clock::now();
 	for(auto i = 0;i < cntp;i++) {
 		sem_wait(&empty);
 		sem_wait(&locker);
@@ -47,12 +54,17 @@ void *producer(void *param) {
 		sem_post(&locker);
 		sem_post(&full);
 	}
+	end = chrono::system_clock::now(); 
+	chrono::duration<double> elapsed_seconds = end - start; 
+	total_producer_time[id] = elapsed_seconds.count();
 }
 
 // consumer funciton
 void *consumer(void *param) {
+	chrono::time_point<chrono::system_clock> start, end;
 	exponential_distribution<double> distribution2(uc);
 	int id = *((int*)param);
+	start = chrono::system_clock::now();
 	for(auto i = 0;i < cntc; i++) {
 		sem_wait(&full);
 		sem_wait(&locker);
@@ -63,6 +75,9 @@ void *consumer(void *param) {
 		sem_post(&locker);
 		sem_post(&empty);
 	}
+	end = chrono::system_clock::now(); 
+	chrono::duration<double> elapsed_seconds = end - start; 
+	total_consumer_time[id] = elapsed_seconds.count();
 }
 
 int main()
@@ -71,7 +86,7 @@ int main()
 	input_file.open("inp-params.txt");
 	input_file >> capacity >> np >> nc >> cntp >> cntc >> up >> uc;
 	// output file
-	output_file.open("output_file.txt", fstream::out);
+	output_file.open("ouput-semaphore.txt", fstream::out);
 
 	// initialising semaphores
 	// second argument 0 => semaphore can be shared between threads
@@ -88,6 +103,11 @@ int main()
 	// id vectors
 	vector <int> consumer_thread_ids(nc);
 	vector <int> producer_thread_ids(np);
+
+	// time vectors
+	total_producer_time.resize(np);
+	total_consumer_time.resize(nc);
+
 	// creating pthreads
 	for(auto i = 0; i < np; i++) {
 		producer_thread_ids[i] = i;
@@ -103,4 +123,6 @@ int main()
 	for(auto i = 0;i < np;i++) {
 		pthread_join(producer_threads[i], NULL);
 	}
+	cout << "producer" << accumulate(total_producer_time.begin(), total_producer_time.end(), 0)/(cntp + 0.0) << endl;
+	cout << "consumer" << accumulate(total_consumer_time.begin(), total_consumer_time.end(), 0)/(cntc + 0.0) << endl;
 }
