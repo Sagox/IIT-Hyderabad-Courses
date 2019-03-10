@@ -123,5 +123,5 @@ int main()
 	for(auto i = 0;i < np;i++) {
 		pthread_join(producer_threads[i], NULL);
 	}
-	
+
 }

@@ -16,9 +16,15 @@
 \usepackage{amssymb}
 \usepackage{listings}
 \definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
-\lstset{ 
-  backgroundcolor=\color{anti-flashwhite}
-  }
+\lstset{
+	language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    backgroundcolor=\color{anti-flashwhite}
+}
 \begin{document}
 \title{
 \textbf{Operating Systems - II: CS3523}\\~\\
@@ -46,14 +52,57 @@ Semaphores have been implemented using the header \textbf{\textit{semaphore.h}}
 \item \textbf{\textit{full}} is used in the consumer thread to ensure that no consumer can consume if there are no full buffers and we increment it in the producer thread everytime something is produced.
 \item \textbf{\textit{empty}} is used in the producer thread to ensure that no producer can produce if there are no empty buffers and we decrement it in the consumer thread everytime something is consumed.
 \item \textbf{\textit{locker}} is used to ensure mutual exclusion between multiple producers and consumers.
+\item \textbf{Algorithm}\\\\
+\textbf{For Producer}:
+\begin{lstlisting}
+sem_wait(&empty);
+sem_wait(&locker);
+// produce item
+sem_post(&locker);
+sem_post(&full);
+\end{lstlisting}
+\textbf{For Consumer}:
+\begin{lstlisting}
+sem_wait(&full);
+sem_wait(&locker);
+// consume item
+sem_post(&locker);
+sem_post(&empty);
+\end{lstlisting}
 \end{enumerate}
 \subsection{Locks}
 Mutex has been implemented using the header \textit{\textbf{mutex}}.
 \begin{enumerate}
-\item I have used two locks \textbf{\textit{check\_lock}} and \textbf{\textit{update\_lock}}. \textbf{\textit{counter}} is used to keep the count of the number of filled buffer cells.
+\item I have used one lock \textbf{\textit{check\_lock}}. \textbf{\textit{counter}} is used to keep the count of the number of filled buffer cells.
 \item \textbf{\textit{check\_lock}} is used to ensure that no two processes read the same value of counter and update them leading to a race condition.
-\item \textbf{\textit{update\_lock}} is used to ensure that no two processes are reading and weiting at the same time.
-\item \textbf{\textit{check\_lock}} is unlocked after \textbf{\textit{update\_lock}} to make sure that another thread can only check the condition once current thread has updated the value of \textit{\textbf{counter}}.
+\item \textbf{\textit{check\_lock}} also makes sure that production and consumption does not overlap.
+\item \textbf{Algorithm}\\\\
+\textbf{For consumer}:
+\begin{lstlisting}
+while(true) {
+	check_lock.lock();
+	if(counter > 0) {
+		counter --;
+		break;
+	}
+	check_lock.unlock();
+}
+// consume item
+check_lock.unlock();
+\end{lstlisting}
+Similarly, for \textbf{producer}. (counter $<$ capacity)
+\begin{lstlisting}
+while(true) {
+	check_lock.lock();
+	if(counter < capacity) {
+		counter ++;
+		break;
+	} 
+	check_lock.unlock();
+}
+// produce item
+check_lock.unlock();
+\end{lstlisting}
 \end{enumerate}
 \newpage
 \section{Program Output}
@@ -64,19 +113,29 @@ For Example:\\\\
 1th item read from the buffer by thread 0 at 19:58:11 from buffer location 59}
 \newpage
 \section{Results \& Graphs}
-
 \begin{center}
 \begin{large}
-\textbf{Average Waiting Time vs Number of Threads}
+\textbf{Producer Waiting Times vs Ratio of Mean Waiting Times}\\
 \end{large}
-%\includegraphics{avg.eps}
+\includegraphics[scale=0.7]{producerd.eps}
+\includegraphics[scale=0.7]{producer.eps}
 \end{center}
+\newpage
 \begin{center}
 \begin{large}
-\textbf{Maximum Waiting Time vs Number of Threads}
+\textbf{Consumer Waiting Times vs Ratio of Mean Waiting Times}\\
 \end{large}
-%\includegraphics{max.eps}
+\includegraphics[scale=0.7]{consumerd.eps}
+\includegraphics[scale=0.7]{consumer.eps}
 \end{center}
 \newpage
 \section{Explaination of Results}
+\begin{enumerate}
+\item From the graphs it is quite obvioius that locks perform better than semaphores.
+\item This could be due to the fact that sleeping and waking a thread up is a very expensive task.
+\item  It is better to busy wait in this case.
+\item It is visible that for large values the difference is clear between semphores and locks.
+\item Busy wait is not suggested when there is only one core available.
+\item One can use locks when there are multiple cores available, otherwise eventhough the semaphores perform worse sleeping of threads seems better than busy waiting. 
+\end{enumerate}
 \end{document}

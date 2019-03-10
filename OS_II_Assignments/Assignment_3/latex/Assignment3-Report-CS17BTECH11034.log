@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  6 MAR 2019 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.16)  9 MAR 2019 20:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -318,23 +318,32 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
 (./Assignment3-Report-CS17BTECH11034.aux)
 \openout1 = `Assignment3-Report-CS17BTECH11034.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -351,7 +360,7 @@ LaTeX Font Info:    ... okay on input line 22.
 \everyMPtoPDFconversion=\toks24
 )
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -360,9 +369,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 (./Assignment3-Report-CS17BTECH11034.out)
 (./Assignment3-Report-CS17BTECH11034.out)
@@ -370,12 +379,12 @@ LaTeX Info: Redefining \nameref on input line 22.
 \openout3 = `Assignment3-Report-CS17BTECH11034.out'.
 
 \c@lstlisting=\count126
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -390,43 +399,138 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \newpage
+l.44 \newpage
               [1
 
-] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
+]
+Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
  []
 
-[3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 79--81
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 109--114
+
+ []
+
+[4]
+Package epstopdf Info: Source file: <producerd.eps>
+(epstopdf)                    date: 2019-03-09 20:32:04
+(epstopdf)                    size: 24362 bytes
+(epstopdf)             Output file: <producerd-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-09 20:34:04
+(epstopdf)                    size: 13945 bytes
+(epstopdf)             Command: <repstopdf --outfile=producerd-eps-converted-to
+.pdf producerd.eps>
+(epstopdf)             \includegraphics on input line 120.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./producerd-eps-converted-to.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<producerd-eps-converted-to.pdf, id=105, 462.72874pt x 346.29375pt>
+File: producerd-eps-converted-to.pdf Graphic file (type pdf)
+<use producerd-eps-converted-to.pdf>
+Package pdftex.def Info: producerd-eps-converted-to.pdf  used on input line 120
+.
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+Package epstopdf Info: Source file: <producer.eps>
+(epstopdf)                    date: 2019-03-09 20:31:23
+(epstopdf)                    size: 20556 bytes
+(epstopdf)             Output file: <producer-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-09 20:34:04
+(epstopdf)                    size: 12524 bytes
+(epstopdf)             Command: <repstopdf --outfile=producer-eps-converted-to.
+pdf producer.eps>
+(epstopdf)             \includegraphics on input line 121.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./producer-eps-converted-to.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<producer-eps-converted-to.pdf, id=106, 462.72874pt x 346.29375pt>
+File: producer-eps-converted-to.pdf Graphic file (type pdf)
+<use producer-eps-converted-to.pdf>
+Package pdftex.def Info: producer-eps-converted-to.pdf  used on input line 121.
+
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+[5 <./producerd-eps-converted-to.pdf> <./producer-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <consumerd.eps>
+(epstopdf)                    date: 2019-03-09 20:32:04
+(epstopdf)                    size: 23858 bytes
+(epstopdf)             Output file: <consumerd-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-09 20:34:05
+(epstopdf)                    size: 13925 bytes
+(epstopdf)             Command: <repstopdf --outfile=consumerd-eps-converted-to
+.pdf consumerd.eps>
+(epstopdf)             \includegraphics on input line 128.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./consumerd-eps-converted-to.pdf): PDF inclusion
+: found PDF version <1.7>, but at most version <1.5> allowed
+<consumerd-eps-converted-to.pdf, id=179, 462.72874pt x 346.29375pt>
+File: consumerd-eps-converted-to.pdf Graphic file (type pdf)
+<use consumerd-eps-converted-to.pdf>
+Package pdftex.def Info: consumerd-eps-converted-to.pdf  used on input line 128
+.
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+Package epstopdf Info: Source file: <consumer.eps>
+(epstopdf)                    date: 2019-03-09 20:43:23
+(epstopdf)                    size: 24832 bytes
+(epstopdf)             Output file: <consumer-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-03-09 20:43:34
+(epstopdf)                    size: 13763 bytes
+(epstopdf)             Command: <repstopdf --outfile=consumer-eps-converted-to.
+pdf consumer.eps>
+(epstopdf)             \includegraphics on input line 129.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./consumer-eps-converted-to.pdf): PDF inclusion:
+ found PDF version <1.7>, but at most version <1.5> allowed
+<consumer-eps-converted-to.pdf, id=180, 462.72874pt x 346.29375pt>
+File: consumer-eps-converted-to.pdf Graphic file (type pdf)
+<use consumer-eps-converted-to.pdf>
+Package pdftex.def Info: consumer-eps-converted-to.pdf  used on input line 129.
+
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+[6 <./consumerd-eps-converted-to.pdf> <./consumer-eps-converted-to.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 141.
+
+[7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 141.
  (./Assignment3-Report-CS17BTECH11034.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 141.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 141.
 Package rerunfilecheck Info: File `Assignment3-Report-CS17BTECH11034.out' has n
 ot changed.
 (rerunfilecheck)             Checksum: C3551037ED1FA01235A7E3E4859D2C45;341.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 82.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 141.
  ) 
 Here is how much of TeX's memory you used:
- 7647 strings out of 494880
- 109265 string characters out of 6179600
- 195818 words of memory out of 5000000
- 10876 multiletter control sequences out of 15000+600000
- 9675 words of font info for 36 fonts, out of 8000000 for 9000
+ 7930 strings out of 494880
+ 113397 string characters out of 6179600
+ 232247 words of memory out of 5000000
+ 11095 multiletter control sequences out of 15000+600000
+ 14191 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,7n,35p,282b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,58p,282b,1121s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Assignment3-Report-CS17BTECH11034.pdf (6 pages, 64052 bytes).
-
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Assignment3-Report-CS17BTECH11034.pdf (8 pages, 124198 bytes)
+.
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 305 PDF objects out of 1000 (max. 8388607)
+ 160 compressed objects within 2 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 69 words of extra memory for PDF output out of 10000 (max. 10000000)
 
