@@ -1,0 +1,7 @@
+\contentsline {section}{Program Design}{2}{section*.2}
+\contentsline {subsection}{Reader-Writers}{2}{section*.3}
+\contentsline {subsection}{Fair Readers-Writers}{3}{section*.4}
+\contentsline {subsection}{Mutually Common Elements}{4}{section*.5}
+\contentsline {section}{Program Output}{5}{section*.6}
+\contentsline {section}{Results \& Graphs}{6}{section*.7}
+\contentsline {section}{Explaination of Results}{8}{section*.8}

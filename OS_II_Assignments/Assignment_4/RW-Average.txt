@@ -1,0 +1,4 @@
+Average Time Taken for Writer Threads 14.2237 ms
+Average Time taken for Reader Threads 2.98315 ms
+Worst Waiting Time for Writer Threads 32.924 ms
+Worst Waiting times for Reader Threads 24.018 ms

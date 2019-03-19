@@ -1,0 +1,241 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'info', '--json', 'vtop' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/sagar/.npmrc. (matches userconfig)
+5 silly mapToRegistry name vtop
+6 silly mapToRegistry using default registry
+7 silly mapToRegistry registry https://registry.npmjs.org/
+8 silly mapToRegistry uri https://registry.npmjs.org/vtop
+9 verbose request uri https://registry.npmjs.org/vtop
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 1:37:40 AM
+12 verbose request id 4a3655641b16ecd3
+13 verbose etag W/"cd3c9497e12743a903ed9126bec81ec9"
+14 verbose lastModified Sat, 05 Jan 2019 18:13:21 GMT
+15 http request GET https://registry.npmjs.org/vtop
+16 http 304 https://registry.npmjs.org/vtop
+17 verbose headers { date: 'Sun, 17 Mar 2019 20:07:40 GMT',
+17 verbose headers   connection: 'keep-alive',
+17 verbose headers   'set-cookie':
+17 verbose headers    [ '__cfduid=dac14bed6bf8771b6d4ce69e7f05b39bf1552853260; expires=Mon, 16-Mar-20 20:07:40 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+17 verbose headers   'cf-cache-status': 'HIT',
+17 verbose headers   'cache-control': 'max-age=300',
+17 verbose headers   'cf-ray': '4b91982eef41c93a-HYD',
+17 verbose headers   etag: '"cd3c9497e12743a903ed9126bec81ec9"',
+17 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 verbose headers   'last-modified': 'Sat, 05 Jan 2019 18:13:21 GMT',
+17 verbose headers   vary: 'accept-encoding, accept',
+17 verbose headers   'x-amz-meta-rev': '133-91f9d7752d5870a3660fb2e40a05f503',
+17 verbose headers   server: 'cloudflare' }
+18 silly get cb [ 304,
+18 silly get   { date: 'Sun, 17 Mar 2019 20:07:40 GMT',
+18 silly get     connection: 'keep-alive',
+18 silly get     'set-cookie':
+18 silly get      [ '__cfduid=dac14bed6bf8771b6d4ce69e7f05b39bf1552853260; expires=Mon, 16-Mar-20 20:07:40 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+18 silly get     'cf-cache-status': 'HIT',
+18 silly get     'cache-control': 'max-age=300',
+18 silly get     'cf-ray': '4b91982eef41c93a-HYD',
+18 silly get     etag: '"cd3c9497e12743a903ed9126bec81ec9"',
+18 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+18 silly get     'last-modified': 'Sat, 05 Jan 2019 18:13:21 GMT',
+18 silly get     vary: 'accept-encoding, accept',
+18 silly get     'x-amz-meta-rev': '133-91f9d7752d5870a3660fb2e40a05f503',
+18 silly get     server: 'cloudflare' } ]
+19 verbose etag https://registry.npmjs.org/vtop from cache
+20 verbose get saving vtop to /home/sagar/.npm/registry.npmjs.org/vtop/.cache.json
+21 silly cleanup { '0.6.1':
+21 silly cleanup    { _id: 'vtop@0.6.1',
+21 silly cleanup      _rev: '132-75513d614ce26cfdf1d06783cd4148a7',
+21 silly cleanup      name: 'vtop',
+21 silly cleanup      description: 'Wow such top. So stats',
+21 silly cleanup      'dist-tags': { latest: '0.6.1' },
+21 silly cleanup      versions:
+21 silly cleanup       [ '0.0.3',
+21 silly cleanup         '0.1.0',
+21 silly cleanup         '0.1.1',
+21 silly cleanup         '0.1.2',
+21 silly cleanup         '0.1.3',
+21 silly cleanup         '0.1.4',
+21 silly cleanup         '0.1.6',
+21 silly cleanup         '0.1.7',
+21 silly cleanup         '0.1.8',
+21 silly cleanup         '0.2.0',
+21 silly cleanup         '0.2.1',
+21 silly cleanup         '0.2.2',
+21 silly cleanup         '0.2.3',
+21 silly cleanup         '0.2.4',
+21 silly cleanup         '0.2.5',
+21 silly cleanup         '0.2.6',
+21 silly cleanup         '0.2.7',
+21 silly cleanup         '0.2.8',
+21 silly cleanup         '0.3.1',
+21 silly cleanup         '0.3.2',
+21 silly cleanup         '0.3.3',
+21 silly cleanup         '0.4.0',
+21 silly cleanup         '0.4.1',
+21 silly cleanup         '0.4.2',
+21 silly cleanup         '0.4.3',
+21 silly cleanup         '0.4.4',
+21 silly cleanup         '0.4.5',
+21 silly cleanup         '0.4.6',
+21 silly cleanup         '0.4.7',
+21 silly cleanup         '0.4.8',
+21 silly cleanup         '0.4.9',
+21 silly cleanup         '0.4.10',
+21 silly cleanup         '0.4.11',
+21 silly cleanup         '0.4.12',
+21 silly cleanup         '0.4.13',
+21 silly cleanup         '0.4.14',
+21 silly cleanup         '0.4.15',
+21 silly cleanup         '0.4.16',
+21 silly cleanup         '0.4.17',
+21 silly cleanup         '0.5.0',
+21 silly cleanup         '0.5.1',
+21 silly cleanup         '0.5.2',
+21 silly cleanup         '0.5.3',
+21 silly cleanup         '0.5.4',
+21 silly cleanup         '0.5.5',
+21 silly cleanup         '0.5.6',
+21 silly cleanup         '0.5.7',
+21 silly cleanup         '0.6.0',
+21 silly cleanup         '0.6.1' ],
+21 silly cleanup      maintainers: [ [Object] ],
+21 silly cleanup      time:
+21 silly cleanup       { modified: '2019-01-05T18:13:20.646Z',
+21 silly cleanup         created: '2014-06-08T16:51:32.722Z',
+21 silly cleanup         '0.0.3': '2014-06-08T16:51:32.722Z',
+21 silly cleanup         '0.1.0': '2014-06-08T16:53:36.200Z',
+21 silly cleanup         '0.1.1': '2014-06-08T17:00:22.382Z',
+21 silly cleanup         '0.1.2': '2014-06-08T21:38:45.269Z',
+21 silly cleanup         '0.1.3': '2014-06-08T23:04:42.458Z',
+21 silly cleanup         '0.1.4': '2014-06-08T23:08:41.868Z',
+21 silly cleanup         '0.1.6': '2014-06-09T11:17:23.879Z',
+21 silly cleanup         '0.1.7': '2014-06-10T11:32:00.382Z',
+21 silly cleanup         '0.1.8': '2014-06-10T15:15:50.480Z',
+21 silly cleanup         '0.2.0': '2014-06-11T13:06:42.229Z',
+21 silly cleanup         '0.2.1': '2014-06-11T13:07:50.812Z',
+21 silly cleanup         '0.2.2': '2014-06-11T14:03:21.174Z',
+21 silly cleanup         '0.2.3': '2014-06-11T14:53:49.046Z',
+21 silly cleanup         '0.2.4': '2014-06-11T15:44:14.520Z',
+21 silly cleanup         '0.2.5': '2014-06-11T21:31:45.951Z',
+21 silly cleanup         '0.2.6': '2014-06-11T22:23:18.527Z',
+21 silly cleanup         '0.2.7': '2014-06-12T11:13:37.992Z',
+21 silly cleanup         '0.2.8': '2014-06-12T14:50:25.704Z',
+21 silly cleanup         '0.3.1': '2014-06-13T09:20:31.429Z',
+21 silly cleanup         '0.3.2': '2014-06-13T09:32:11.737Z',
+21 silly cleanup         '0.3.3': '2014-06-13T09:42:12.251Z',
+21 silly cleanup         '0.4.0': '2014-06-13T10:18:54.429Z',
+21 silly cleanup         '0.4.1': '2014-06-13T11:55:35.447Z',
+21 silly cleanup         '0.4.2': '2014-06-13T12:09:54.055Z',
+21 silly cleanup         '0.4.3': '2014-06-13T12:12:17.890Z',
+21 silly cleanup         '0.4.4': '2014-06-13T14:18:36.151Z',
+21 silly cleanup         '0.4.5': '2014-06-13T21:00:42.960Z',
+21 silly cleanup         '0.4.6': '2014-06-13T23:01:45.576Z',
+21 silly cleanup         '0.4.7': '2014-06-13T23:11:13.013Z',
+21 silly cleanup         '0.4.8': '2014-06-13T23:26:46.828Z',
+21 silly cleanup         '0.4.9': '2014-06-14T00:08:54.420Z',
+21 silly cleanup         '0.4.10': '2014-06-14T11:12:16.839Z',
+21 silly cleanup         '0.4.11': '2014-06-15T21:43:51.690Z',
+21 silly cleanup         '0.4.12': '2014-06-16T11:41:52.565Z',
+21 silly cleanup         '0.4.13': '2014-06-17T21:04:29.159Z',
+21 silly cleanup         '0.4.14': '2014-06-24T15:15:38.000Z',
+21 silly cleanup         '0.4.15': '2014-06-26T14:14:59.869Z',
+21 silly cleanup         '0.4.16': '2014-06-26T22:04:14.953Z',
+21 silly cleanup         '0.4.17': '2014-06-27T00:44:05.550Z',
+21 silly cleanup         '0.5.0': '2014-06-27T21:31:53.430Z',
+21 silly cleanup         '0.5.1': '2014-06-27T22:19:33.308Z',
+21 silly cleanup         '0.5.2': '2014-06-27T22:24:45.174Z',
+21 silly cleanup         '0.5.3': '2014-07-18T09:56:24.689Z',
+21 silly cleanup         '0.5.4': '2014-07-18T11:03:20.143Z',
+21 silly cleanup         '0.5.5': '2014-07-22T14:44:16.980Z',
+21 silly cleanup         '0.5.6': '2016-10-16T19:29:19.222Z',
+21 silly cleanup         '0.5.7': '2016-10-16T19:50:10.869Z',
+21 silly cleanup         '0.6.0': '2018-06-23T16:51:40.920Z',
+21 silly cleanup         '0.6.1': '2018-09-06T09:53:27.992Z' },
+21 silly cleanup      homepage: 'http://parall.ax/vtop',
+21 silly cleanup      repository: { type: 'git', url: 'git+ssh://git@github.com/MrRio/vtop.git' },
+21 silly cleanup      author: { name: 'James Hall', email: 'james@parall.ax' },
+21 silly cleanup      bugs: { url: 'https://github.com/MrRio/vtop/issues' },
+21 silly cleanup      license: 'MIT',
+21 silly cleanup      readmeFilename: 'README.md',
+21 silly cleanup      users:
+21 silly cleanup       { kikobeats: true,
+21 silly cleanup         davidchase: true,
+21 silly cleanup         'dr-benton': true,
+21 silly cleanup         jklassen: true,
+21 silly cleanup         ericwbailey: true,
+21 silly cleanup         davidchubbs: true,
+21 silly cleanup         efreak: true,
+21 silly cleanup         nelix: true,
+21 silly cleanup         'dr.dimitru': true,
+21 silly cleanup         bplabombarda: true,
+21 silly cleanup         mrjameshall: true,
+21 silly cleanup         diegorbaquero: true,
+21 silly cleanup         mkstix6: true,
+21 silly cleanup         rocket0191: true,
+21 silly cleanup         itonyyo: true,
+21 silly cleanup         xyyjk: true,
+21 silly cleanup         cbetancourt: true,
+21 silly cleanup         panlw: true,
+21 silly cleanup         prasanthv: true,
+21 silly cleanup         frederik_bosch: true,
+21 silly cleanup         'jim-lim': true,
+21 silly cleanup         faraoman: true,
+21 silly cleanup         cschmitz81: true,
+21 silly cleanup         faeliaso: true,
+21 silly cleanup         fabrianibrahim: true,
+21 silly cleanup         edm00se: true,
+21 silly cleanup         iuykza: true,
+21 silly cleanup         majkel: true,
+21 silly cleanup         'thomas.miele': true,
+21 silly cleanup         jpsirois: true },
+21 silly cleanup      version: '0.6.1',
+21 silly cleanup      main: 'app.js',
+21 silly cleanup      preferGlobal: true,
+21 silly cleanup      engines: { node: '>= 4' },
+21 silly cleanup      scripts: { test: 'make test', precommit: 'standard' },
+21 silly cleanup      standard: { ignore: [Array] },
+21 silly cleanup      bin: { vtop: './bin/vtop.js' },
+21 silly cleanup      dependencies:
+21 silly cleanup       { blessed: '0.1.81',
+21 silly cleanup         commander: '2.11.0',
+21 silly cleanup         drawille: '1.1.0',
+21 silly cleanup         glob: '7.1.2',
+21 silly cleanup         husky: '^0.14.3',
+21 silly cleanup         'os-utils': '0.0.14',
+21 silly cleanup         read: '1.0.7',
+21 silly cleanup         sudo: '1.0.3',
+21 silly cleanup         'use-strict': '^1.0.1' },
+21 silly cleanup      gitHead: 'e39e183e232e2b9eadae2198948d1f87aa277921',
+21 silly cleanup      _npmVersion: '5.3.0',
+21 silly cleanup      _nodeVersion: '8.2.1',
+21 silly cleanup      _npmUser: { name: 'mrjameshall', email: 'james@parall.ax' },
+21 silly cleanup      dist:
+21 silly cleanup       { integrity: 'sha512-Iww0fvGKwkQWalUzfA7NzoYEyTBw5w/G/L3lJYoOwdhp1X0ra8p8Y0HzZiNtOMWSGLV/6nWvMHtdo8FPS5dRhw==',
+21 silly cleanup         shasum: 'ee1098505f3300e762a7e663455c6fa68be07fbf',
+21 silly cleanup         tarball: 'https://registry.npmjs.org/vtop/-/vtop-0.6.1.tgz',
+21 silly cleanup         fileCount: 36,
+21 silly cleanup         unpackedSize: 3019517,
+21 silly cleanup         'npm-signature': '-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbkPkYCRA9TVsSAnZWagAAlrUP/jCEdJWuSJubK9qEg615\nB1al+RB4RkeLLTLDd5lIG07672HaNAAH2/U0jAslUA5PUy9r4tEvWsP5v5YT\nRVkr9q2ksFhXUdZYDI5ntqusWMdS231fOXrmc7vqsYs+ZIXMKMJ2hlJak7Qi\nG7M/wk92+m4nQj5cDnM3CSqcMMrjESPn9jLfkG1u8PZoj5wNuvMY1QynUpgV\ngu4rYSTyOt2UBb1/8+Lmamr5Mm8JYFbr2O+WEvH9cyY7uwTpiGt122i5wyMC\nast6TMHeBqnjD1q+KjERmAw3kaaHSqlkFPn+mOlfRg0/QzmhfgUOaZpNuNlz\nqFhZHLThJHKhWEp9guDDnfV5S/pbHzxhDmLr/fW4cO660+r8tP/Fhko1zTmd\naAn7BlaSE85A8CPZEAzl46ly3zJ+ZkWE+TyHjUSgzYKo3/EUU28J2C0CllWC\nMZzam9qCbZARh0zlOD3gOzbSFwtW3LaUhK02EQLCNQyRL3VE258S8NNzrDre\nw+/ewkiHd8Ulflq9fdVAlAAgU5li8XJdwzTQBIzuiy8AH4gIx8gxcCJC6nsk\nvbc55Qap6IbwKPuWw6bXYySe2roo5ab8DwJvnZHxUhFcNORnWqUskUwML2Kf\nYdkJzPA3Z0QzAokOiuNZR0EQYwIApFmDg0/vJXxJ799FXh0hcu0Rb3CEhA5+\nWe9P\r\n=oBWL\r\n-----END PGP SIGNATURE-----\r\n' },
+21 silly cleanup      directories: {},
+21 silly cleanup      _npmOperationalInternal:
+21 silly cleanup       { host: 's3://npm-registry-packages',
+21 silly cleanup         tmp: 'tmp/vtop_0.6.1_1536227607705_0.2752561057279861' },
+21 silly cleanup      _hasShrinkwrap: false } }
+22 verbose exit [ 0, true ]
+23 verbose stack Error: write EPIPE
+23 verbose stack     at _errnoException (util.js:1022:11)
+23 verbose stack     at WriteWrap.afterWrite [as oncomplete] (net.js:880:14)
+24 verbose cwd /home/sagar/Documents/IIT-Hyderabad-Courses/OS_II_Assignments/Assignment_4
+25 error Linux 4.15.0-46-generic
+26 error argv "/usr/bin/node" "/usr/bin/npm" "info" "--json" "vtop"
+27 error node v8.10.0
+28 error npm  v3.5.2
+29 error code EPIPE
+30 error errno EPIPE
+31 error syscall write
+32 error write EPIPE
+33 error If you need help, you may report this error at:
+33 error     <https://github.com/npm/npm/issues>
+34 verbose exit [ 1, true ]
