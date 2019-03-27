@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.17)  19 MAR 2019 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.17)  19 MAR 2019 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,17 +417,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
  []
 
 [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--136
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--140
 
  []
 
@@ -441,7 +456,7 @@ ed-to.pdf>
 (epstopdf)                    size: 15253 bytes
 (epstopdf)             Command: <repstopdf --outfile=./ConstantWriters-WaitingT
 imes-eps-converted-to.pdf ./ConstantWriters-WaitingTimes.eps>
-(epstopdf)             \includegraphics on input line 142.
+(epstopdf)             \includegraphics on input line 147.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -454,7 +469,7 @@ File: ./ConstantWriters-WaitingTimes-eps-converted-to.pdf Graphic file (type pd
 f)
 <use ./ConstantWriters-WaitingTimes-eps-converted-to.pdf>
 Package pdftex.def Info: ./ConstantWriters-WaitingTimes-eps-converted-to.pdf  u
-sed on input line 142.
+sed on input line 147.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
 Package epstopdf Info: Source file: <./ConstantReaders-WaitingTimes.eps>
 (epstopdf)                    date: 2019-03-19 17:12:35
@@ -465,7 +480,7 @@ ed-to.pdf>
 (epstopdf)                    size: 15366 bytes
 (epstopdf)             Command: <repstopdf --outfile=./ConstantReaders-WaitingT
 imes-eps-converted-to.pdf ./ConstantReaders-WaitingTimes.eps>
-(epstopdf)             \includegraphics on input line 148.
+(epstopdf)             \includegraphics on input line 153.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -478,7 +493,7 @@ File: ./ConstantReaders-WaitingTimes-eps-converted-to.pdf Graphic file (type pd
 f)
 <use ./ConstantReaders-WaitingTimes-eps-converted-to.pdf>
 Package pdftex.def Info: ./ConstantReaders-WaitingTimes-eps-converted-to.pdf  u
-sed on input line 148.
+sed on input line 153.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
 [6 <./ConstantWriters-WaitingTimes-eps-converted-to.pdf> <./ConstantReaders-Wai
 tingTimes-eps-converted-to.pdf>]
@@ -491,7 +506,7 @@ Package epstopdf Info: Source file: <./ConstantWriters-WorstTimes.eps>
 (epstopdf)                    size: 13617 bytes
 (epstopdf)             Command: <repstopdf --outfile=./ConstantWriters-WorstTim
 es-eps-converted-to.pdf ./ConstantWriters-WorstTimes.eps>
-(epstopdf)             \includegraphics on input line 155.
+(epstopdf)             \includegraphics on input line 160.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -503,7 +518,7 @@ File: ./ConstantWriters-WorstTimes-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./ConstantWriters-WorstTimes-eps-converted-to.pdf>
 Package pdftex.def Info: ./ConstantWriters-WorstTimes-eps-converted-to.pdf  use
-d on input line 155.
+d on input line 160.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
 Package epstopdf Info: Source file: <./ConstantReaders-WorstTimes.eps>
 (epstopdf)                    date: 2019-03-19 17:12:35
@@ -514,7 +529,7 @@ Package epstopdf Info: Source file: <./ConstantReaders-WorstTimes.eps>
 (epstopdf)                    size: 13786 bytes
 (epstopdf)             Command: <repstopdf --outfile=./ConstantReaders-WorstTim
 es-eps-converted-to.pdf ./ConstantReaders-WorstTimes.eps>
-(epstopdf)             \includegraphics on input line 161.
+(epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -526,35 +541,35 @@ File: ./ConstantReaders-WorstTimes-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./ConstantReaders-WorstTimes-eps-converted-to.pdf>
 Package pdftex.def Info: ./ConstantReaders-WorstTimes-eps-converted-to.pdf  use
-d on input line 161.
+d on input line 166.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
 [7 <./ConstantWriters-WorstTimes-eps-converted-to.pdf> <./ConstantReaders-Worst
 Times-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 172--173
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
 [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 190.
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 190.
  (./Assgn4-report-CS17BTECH11034.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 190.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 190.
 Package rerunfilecheck Info: File `Assgn4-report-CS17BTECH11034.out' has not ch
 anged.
 (rerunfilecheck)             Checksum: D7507EAE97C9C2ACC834106E06141527;410.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 190.
  ) 
 Here is how much of TeX's memory you used:
  7950 strings out of 494880
@@ -570,7 +585,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Assgn4-report-CS17BTECH11034.pdf (10 pages, 132654 bytes).
+Output written on Assgn4-report-CS17BTECH11034.pdf (10 pages, 135328 bytes).
 PDF statistics:
  350 PDF objects out of 1000 (max. 8388607)
  197 compressed objects within 2 object streams

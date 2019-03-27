@@ -1,0 +1,27 @@
+from subprocess import check_output
+import matplotlib.pyplot as plt
+import numpy as np
+AverageWaitingTimesWithConstantWriters = np.array([[],[]])
+WorstWaitingTimesWithConstantWriters = np.array([[],[]])
+AverageWaitingTimesWithConstantReaders = np.array([[],[]])
+WorstWaitingTimesWithConstantReaders = np.array([[],[]])
+fAverageWaitingTimesWithConstantWriters = np.array([[],[]])
+fWorstWaitingTimesWithConstantWriters = np.array([[],[]])
+fAverageWaitingTimesWithConstantReaders = np.array([[],[]])
+fWorstWaitingTimesWithConstantReaders = np.array([[],[]])
+
+plt.plot(prod_cons_ratio, lock_producer, label="Lock")
+plt.plot(prod_cons_ratio, semaphore_producer, label="Semaphore")
+plt.grid()
+plt.legend()
+plt.xlabel('Up/Uc')
+plt.ylabel('Average Waiting Time')
+plt.savefig('./producer.eps', format = 'eps', dpi = 1000)
+plt.clf()
+plt.plot(prod_cons_ratio, lock_consumer, label="Lock")
+plt.plot(prod_cons_ratio, semaphore_consumer, label="Semaphore")
+plt.grid()
+plt.legend()
+plt.xlabel('Up/Uc')
+plt.ylabel('Average Waiting Time')
+plt.savefig('./consumer.eps', format = 'eps', dpi = 1000)

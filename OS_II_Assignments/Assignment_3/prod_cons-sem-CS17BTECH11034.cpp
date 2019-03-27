@@ -41,7 +41,7 @@ string get_formatted_time() {
 // producer function
 void *producer(void *param) {
 	chrono::time_point<chrono::system_clock> start, end;
-	exponential_distribution<double> distribution1(1.0/up);
+	exponential_distribution<double> distribution1(1000.0/up);
 	int id = *((int*)param);
 	for(auto i = 0;i < cntp;i++) {
 		auto start = chrono::high_resolution_clock::now(); 
@@ -63,7 +63,7 @@ void *producer(void *param) {
 // consumer funciton
 void *consumer(void *param) {
 	chrono::time_point<chrono::system_clock> start, end;
-	exponential_distribution<double> distribution2(1.0/uc);
+	exponential_distribution<double> distribution2(1000.0/uc);
 	int id = *((int*)param);
 	for(auto i = 0;i < cntc; i++) {
 		auto start = chrono::high_resolution_clock::now(); 

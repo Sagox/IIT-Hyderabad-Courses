@@ -30,7 +30,7 @@
 \title{
 \textbf{Operating Systems - II: CS3523}\\~\\
 \begin{large}
-\textbf{Programming Assignment - III\\~\\Implement solutions to Readers-Writers and Fair
+\textbf{Programming Assignment - III\\~\\Implement solutions to Readers-Writers \& Fair
 Readers-Writers problems using Semaphores\\~\\}
 \end{large}
 \begin{large}
@@ -122,8 +122,8 @@ The following code elements are used in both the algorithms:
 \end{enumerate}
 \newpage
 \section{Program Output}
-Each of the programs output two files. One file is the log file containing discrete events of the threads entering and exiting the critical section and another file is the file which contains the statistics related to the waiting times of the threads on the semaphores like average waiting times of the reader and writer threads.
-For example:\\\\
+Each of the programs output two files. One file is the log file containing discrete events of the threads entering and exiting the critical section and another file is the file which contains the statistics related to the waiting times of the threads on the semaphores like average waiting times of the reader and writer threads.\\\\
+\textbf{Example Output}:\\\\
 \textbf{Log File}:\\\\
 \textit{4 th CS entry by Reader thread 3 at 01:46:42.\\
 5 th CS entry by Reader thread 5 at 01:46:42.\\
@@ -132,7 +132,12 @@ For example:\\\\
 4 th CS entry by Reader thread 0 at 01:46:42.\\
 5 th CS entry by Reader thread 2 at 01:46:42.\\
 5 th CS exit by Reader thread 6 at 01:46:42.\\\\}
-\textit{\textbf{Average File}}:
+\textit{\textbf{Average File}}:\\\\
+\textit{Average Time Taken for Writer Threads 7.42405 ms\\
+Average Time taken for Reader Threads 0.80541 ms\\
+Worst Waiting Time for Writer Threads 32.8 ms\\
+Worst Waiting times for Reader Threads 12.405 ms\\}
+
 \newpage
 \section{Results \& Graphs}
 \begin{center}
@@ -166,19 +171,19 @@ For example:\\\\
 \item \textbf{Average Waiting Times With Constant Writers}\\
 \begin{enumerate}
 \item With increasing number of Reader threads, all the curves show an increase in the average waiting times except reader threads in normal Readers-Writers.
-\item In general, the waiting times for the Fair Readers-Writers Algorithm are more than that for Readers-Writers since it has more instructions.
+\item In general, the \textbf{waiting times for the Fair Readers-Writers Algorithm are more than that for Readers-Writers since it has more instructions}.
 \item \textbf{The difference in the waiting times of the reader and writer threads for Fair Readers-Writers is almost negligible when compared to Normal Readers-Writers}, this shows the effectiveness of the FRW algorithm, and the starvation of writers in RW algorithm.
 \end{enumerate}
 \item \textbf{Average Waiting Times With Constant Readers}\\
 \begin{enumerate}
-\item This graph also tells pretty much the same story, except the fact that all the curves start off from a common low starting point, this is not unusual since we started off with a small number of writer threads and these are the threads that contribibute most to the waiting times thorugh a convoy effect.
+\item This graph also tells pretty much the same story, except the fact that all the curves start off from a common low starting point, this is not unusual since we started off with a small number of writer threads and these are the threads that \textbf{contribute most to the waiting times through a convoy effect}.
 \item Once again, the divergence in the waiting times of reader and writer threads of the normal RW algorithm is clearly visible. The writers starve more often than not.
-\item The fair readers writers show a smooth increase in the waiting times but at the same time have very low difference in the waiting times of the reader and writer threads.
+\item The fair readers writers show a smooth increase in the waiting times but at the same time have \textbf{very low difference in the waiting times of the reader and writer threads}.
 \end{enumerate}
 \item \textbf{Worst Case Waiting Times With Constant Writers \& Readers}\\
 \begin{enumerate}
 \item Ideally, with increasing number of threads, the worst waiting time must also increase and this is exactly what we see in the curves of the worst waiting times.
-\item We can clearly see that the worst waiting times of the writer threads from the normal RW algorithm are in the same range as the fair RW agorithm inspite of the fact that the normal RW algorithm has fewer instructions, this is an indication of starvation.
+\item We can clearly see that the worst waiting times of the writer threads from the normal RW algorithm are in the same range as the fair RW agorithm inspite of the fact that the normal RW algorithm has fewer instructions, this is an \textbf{indication of starvation}.
 \item This is also a clear representation of the fact that neither of the threads starve when using the fair RW algorithm.
 \end{enumerate}
 \end{enumerate}
