@@ -1,40 +1,106 @@
-0th item produced by thread 1 at 20:49:19 into buffer location 1
-0th item produced by thread 0 at 20:49:19 into buffer location 2
-0th item produced by thread 2 at 20:49:19 into buffer location 3
-0th item read from the buffer by thread 2 at 20:49:19 from buffer location 2
-0th item produced by thread 4 at 20:49:19 into buffer location 3
-0th item produced by thread 5 at 20:49:19 into buffer location 4
-0th item read from the buffer by thread 4 at 20:49:19 from buffer location 3
-0th item produced by thread 7 at 20:49:19 into buffer location 4
-0th item produced by thread 8 at 20:49:19 into buffer location 5
-0th item read from the buffer by thread 5 at 20:49:19 from buffer location 4
-0th item produced by thread 9 at 20:49:19 into buffer location 5
-0th item read from the buffer by thread 1 at 20:49:19 from buffer location 4
-0th item produced by thread 3 at 20:49:19 into buffer location 5
-0th item read from the buffer by thread 3 at 20:49:19 from buffer location 4
-0th item read from the buffer by thread 0 at 20:49:19 from buffer location 3
-0th item read from the buffer by thread 6 at 20:49:19 from buffer location 2
-0th item read from the buffer by thread 7 at 20:49:19 from buffer location 1
-0th item read from the buffer by thread 8 at 20:49:19 from buffer location 0
-0th item produced by thread 6 at 20:49:19 into buffer location 1
-0th item read from the buffer by thread 9 at 20:49:19 from buffer location 0
-1th item produced by thread 8 at 20:49:19 into buffer location 1
-0th item read from the buffer by thread 10 at 20:49:19 from buffer location 0
-1th item produced by thread 1 at 20:49:19 into buffer location 1
-0th item read from the buffer by thread 11 at 20:49:19 from buffer location 0
-2th item produced by thread 1 at 20:49:19 into buffer location 1
-0th item read from the buffer by thread 12 at 20:49:19 from buffer location 0
-1th item produced by thread 2 at 20:49:19 into buffer location 1
-0th item read from the buffer by thread 13 at 20:49:19 from buffer location 0
-2th item produced by thread 2 at 20:49:20 into buffer location 1
-0th item read from the buffer by thread 14 at 20:49:20 from buffer location 0
-1th item produced by thread 0 at 20:49:20 into buffer location 1
-1th item read from the buffer by thread 4 at 20:49:20 from buffer location 0
-1th item produced by thread 5 at 20:49:20 into buffer location 1
-1th item read from the buffer by thread 7 at 20:49:20 from buffer location 0
-1th item produced by thread 3 at 20:49:20 into buffer location 1
-1th item read from the buffer by thread 5 at 20:49:20 from buffer location 0
-1th item produced by thread 7 at 20:49:20 into buffer location 1
-1th item read from the buffer by thread 8 at 20:49:20 from buffer location 0
-3th item produced by thread 1 at 20:49:20 into buffer location 1
-1th item read from the buffer by thread 9 at 20:49:20 from buffer location 0
+0th item produced by thread 1 at 12:37:45 into buffer location 1
+0th item produced by thread 2 at 12:37:45 into buffer location 2
+0th item produced by thread 0 at 12:37:45 into buffer location 3
+0th item produced by thread 3 at 12:37:45 into buffer location 4
+0th item produced by thread 4 at 12:37:45 into buffer location 5
+0th item produced by thread 5 at 12:37:45 into buffer location 6
+0th item read from the buffer by thread 6 at 12:37:45 from buffer location 5
+0th item produced by thread 7 at 12:37:45 into buffer location 6
+0th item produced by thread 8 at 12:37:45 into buffer location 7
+0th item produced by thread 9 at 12:37:45 into buffer location 8
+0th item read from the buffer by thread 1 at 12:37:45 from buffer location 7
+0th item read from the buffer by thread 2 at 12:37:45 from buffer location 6
+0th item read from the buffer by thread 4 at 12:37:45 from buffer location 5
+0th item read from the buffer by thread 5 at 12:37:45 from buffer location 4
+0th item read from the buffer by thread 3 at 12:37:45 from buffer location 3
+0th item produced by thread 6 at 12:37:45 into buffer location 4
+0th item read from the buffer by thread 9 at 12:37:45 from buffer location 3
+0th item read from the buffer by thread 0 at 12:37:45 from buffer location 2
+0th item read from the buffer by thread 8 at 12:37:45 from buffer location 1
+0th item read from the buffer by thread 14 at 12:37:45 from buffer location 0
+1th item produced by thread 8 at 12:37:45 into buffer location 1
+0th item read from the buffer by thread 10 at 12:37:45 from buffer location 0
+1th item produced by thread 9 at 12:37:45 into buffer location 1
+0th item read from the buffer by thread 12 at 12:37:45 from buffer location 0
+1th item produced by thread 1 at 12:37:46 into buffer location 1
+0th item read from the buffer by thread 11 at 12:37:46 from buffer location 0
+2th item produced by thread 9 at 12:37:46 into buffer location 1
+0th item read from the buffer by thread 13 at 12:37:46 from buffer location 0
+1th item produced by thread 0 at 12:37:46 into buffer location 1
+0th item read from the buffer by thread 7 at 12:37:46 from buffer location 0
+3th item produced by thread 9 at 12:37:46 into buffer location 1
+1th item read from the buffer by thread 6 at 12:37:46 from buffer location 0
+1th item produced by thread 2 at 12:37:46 into buffer location 1
+1th item read from the buffer by thread 9 at 12:37:46 from buffer location 0
+2th item produced by thread 1 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 0 at 12:37:47 from buffer location 0
+1th item produced by thread 5 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 14 at 12:37:47 from buffer location 0
+1th item produced by thread 7 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 4 at 12:37:47 from buffer location 0
+3th item produced by thread 1 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 5 at 12:37:47 from buffer location 0
+2th item produced by thread 7 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 1 at 12:37:47 from buffer location 0
+4th item produced by thread 1 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 3 at 12:37:47 from buffer location 0
+1th item produced by thread 3 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 8 at 12:37:47 from buffer location 0
+4th item produced by thread 9 at 12:37:47 into buffer location 1
+1th item read from the buffer by thread 10 at 12:37:47 from buffer location 0
+2th item produced by thread 2 at 12:37:48 into buffer location 1
+1th item read from the buffer by thread 13 at 12:37:48 from buffer location 0
+1th item produced by thread 6 at 12:37:48 into buffer location 1
+1th item read from the buffer by thread 11 at 12:37:48 from buffer location 0
+3th item produced by thread 7 at 12:37:49 into buffer location 1
+1th item read from the buffer by thread 7 at 12:37:49 from buffer location 0
+2th item produced by thread 3 at 12:37:49 into buffer location 1
+1th item read from the buffer by thread 2 at 12:37:49 from buffer location 0
+3th item produced by thread 2 at 12:37:49 into buffer location 1
+1th item read from the buffer by thread 12 at 12:37:49 from buffer location 0
+4th item produced by thread 2 at 12:37:49 into buffer location 1
+2th item read from the buffer by thread 6 at 12:37:49 from buffer location 0
+2th item produced by thread 6 at 12:37:49 into buffer location 1
+2th item read from the buffer by thread 9 at 12:37:49 from buffer location 0
+5th item produced by thread 2 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 0 at 12:37:50 from buffer location 0
+4th item produced by thread 7 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 14 at 12:37:50 from buffer location 0
+2th item produced by thread 0 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 4 at 12:37:50 from buffer location 0
+3th item produced by thread 0 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 5 at 12:37:50 from buffer location 0
+1th item produced by thread 4 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 1 at 12:37:50 from buffer location 0
+6th item produced by thread 2 at 12:37:50 into buffer location 1
+2th item read from the buffer by thread 3 at 12:37:50 from buffer location 0
+5th item produced by thread 9 at 12:37:51 into buffer location 1
+2th item read from the buffer by thread 10 at 12:37:51 from buffer location 0
+5th item produced by thread 1 at 12:37:51 into buffer location 1
+2th item read from the buffer by thread 13 at 12:37:51 from buffer location 0
+2th item produced by thread 5 at 12:37:51 into buffer location 1
+2th item read from the buffer by thread 8 at 12:37:51 from buffer location 0
+6th item produced by thread 9 at 12:37:51 into buffer location 1
+2th item read from the buffer by thread 11 at 12:37:51 from buffer location 0
+2th item produced by thread 4 at 12:37:51 into buffer location 1
+2th item read from the buffer by thread 7 at 12:37:51 from buffer location 0
+3th item produced by thread 6 at 12:37:52 into buffer location 1
+2th item read from the buffer by thread 12 at 12:37:52 from buffer location 0
+7th item produced by thread 2 at 12:37:52 into buffer location 1
+2th item read from the buffer by thread 2 at 12:37:52 from buffer location 0
+5th item produced by thread 7 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 6 at 12:37:52 from buffer location 0
+8th item produced by thread 2 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 9 at 12:37:52 from buffer location 0
+4th item produced by thread 6 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 14 at 12:37:52 from buffer location 0
+3th item produced by thread 4 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 0 at 12:37:52 from buffer location 0
+3th item produced by thread 5 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 5 at 12:37:52 from buffer location 0
+9th item produced by thread 2 at 12:37:52 into buffer location 1
+3th item read from the buffer by thread 4 at 12:37:52 from buffer location 0
+2th item produced by thread 8 at 12:37:53 into buffer location 1
+3th item read from the buffer by thread 1 at 12:37:53 from buffer location 0
+3th item produced by thread 3 at 12:37:53 into buffer location 1
+3th item read from the buffer by thread 10 at 12:37:53 from buffer location 0

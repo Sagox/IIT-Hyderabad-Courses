@@ -1,0 +1,111 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{secnumdepth}{0}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}	
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{listings}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\lstset{
+	language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    backgroundcolor=\color{anti-flashwhite}
+}
+\begin{document}
+\title{
+\textbf{Operating Systems - II: CS3523}\\~\\
+\begin{large}
+\textbf{Programming Assignment - V\\~\\Implement Dining Philosopher’s using\\Conditional Variables}\\
+\end{large}
+\begin{large}
+\textbf{Assignment Report}
+\end{large}
+}
+\author{\textbf{Sagar Jain - CS17BTECH11034}\\}
+\maketitle
+\begin{large}
+\tableofcontents
+\end{large}
+\newpage
+\section{Program Design}
+In this assignment we solve the dining philopher's problem using a monitor with \textbf{\textit{conditional variables}}implementation. The program design is explained in the following points, we follow the function main in the explaination:
+\begin{itemize}
+\item We begin by opening the required I/O files.
+\item We then read input from the input file. After reading the input we call the initialization function in the monitor which requires the number of philosophers.
+\item In the next few lines we have the setup for the pthreads i.e. declaring attributes, setting scope.
+\item We have two vectors \textbf{\textit{philosopher\_threads}} and \textbf{\textit{philosopher\_thread\_ids}} for the pthreads themselves and the ids of the threads respectively.
+\item Using a loop we then launch all the pthreads, following which is another loop which joins all the pthreads when they are done.
+\item The philosopher thread is described in the below points.
+\begin{itemize}
+\item First we type cast the \textbf{void* param} to an \textbf{int*} to give us the id of the pthreads we are in.
+\item Then we declare the variables in which we store the time values following which we define the random number generators and the exponential distributions for the eating time and the thinking time.
+\item In the loop we use the monitor functions(\textit{\textbf{pickup}} and \textit{\textbf{putdown}}) to enter and exit the critical sections. We use \textit{\textbf{fprintf}} to log into files since it does not have concurrency issues. We use \textit{\textbf{usleep}} to sleep the threads for eating and thinking.
+\item We use choronos for all time related variables. We also use the funtion \textbf{\textit{get\_formatted\_time}} to get the string which we log as time into the log file.
+\end{itemize}
+\item The monitor \textit{\textbf{DiningPhilosophers}} and \textbf{\textit{conditional variables}} are described in the following points.
+\begin{itemize}
+\item The monitor has a state for variable for each of the philosophers, which denotes if they are thinking, hungry or eating.
+\item We use \textbf{\textit{pthread\_mutex\_t}} and \textbf{\textit{pthread\_cond\_t}} to ensure mutual exlclusion within the monitor, the conditional variable \textbf{\textit{self}} is assosciated to the mutex \textbf{\textit{mutex}}.
+\item We have a \textit{\textbf{vector$<pthread\_cond\_t>$}} called \textbf{\textit{self}} which has one conditional variable for every philosopher.
+\item The function \textbf{\textit{pickup}} is used to enter the critical section by the philosopher threads, in which they use the function \textit{\textbf{test}} to verify if both the chopsticks are available else it waits.
+\item The function \textit{\textbf{putdown}} is used to exit the critical section it also signals the waiting philosophers on either side of the current philosopher using the \textit{\textbf{test}} function with different arguments.
+\item The \textit{\textbf{DiningPhilosophersinit}} function is used to initialize the states of the philosophers and to resize the vectors with the correct number of philosophers.	
+\end{itemize}
+\end{itemize}
+\newpage
+\section{Program Output}
+Each of the programs output two files. One file is the log file containing discrete events of the threads entering and exiting the critical section and another file is the file which contains the statistics related to the waiting times of the threads.\\\\
+\textbf{Example Output}:\\\\
+\textbf{Log File}:\\\\
+\textit{3 th CS entry by Philosopher thread 2 at 23:08:21.\\
+1 th eat request by Philosopher thread 5 at 23:08:21.\\
+3 th CS exit by Philosopher thread 2 at 23:08:21.\\
+4 th eat request by Philosopher thread 2 at 23:08:21.\\
+4 th CS entry by Philosopher thread 2 at 23:08:21.\\
+4 th CS exit by Philosopher thread 2 at 23:08:21.\\}\\
+\textit{\textbf{Average File}}:\\\\
+\textit{Average Time Taken for Philosopher Threads 2.88679 ms\\
+Worst Waiting Time for Philosopher Threads 34.132 ms\\
+}
+
+\newpage
+\section{Results \& Graphs}
+\begin{center}
+\begin{large}
+\textbf{Average \& Worst Waiting Times}\\
+\end{large}
+\begin{large}
+Average Waiting Time goes from 0.00105 to 0.25\\~\\
+Worst Waiting Time goes from 0.002 to 12.451\\
+\end{large}
+\newpage
+\end{center}
+\section{Explaination of Results}
+The results are not suprising and for the most part are in the range of our expectations, the folllowing points are worth noting:
+\begin{itemize}
+\item The average waiting times are much lesser that the worst waiting times consistently. This implies that in our solution there is a possibility of starvation.($Worst Waiting Time/ Average Waiting Time > 100$ consistently!)
+\item The Average Waiting Time increases very slowly, this could imply that average waiting time is not as dependent on the number of philosophers as worst waiting time. This can be explained by the fact that at any moment we have around n/2 philosophers who are eating irrespective of the value of n.
+\begin{itemize}
+\item The average time for dining philosophers should not be dependent on the number of philosophers, the slight increase that we do see in the times is due to the fact that all need to aquire the same mutex lock.
+\end{itemize}
+\item The erratic behavior of the worst case waiting time is due to the fact that there can always be one thread which keeps missing out on the chance to eat even for small value of n, in the graph presented we have a relatively linear graph but it may not always be so and that is within the bounds of our expectations.
+\item The worst case wait times increase because more number of threads are waiting on the same mutex lock and we have a \textbf{\textit{convoy effect}} on the waiting times of all the threads which are waiting on the mutex lock.
+\item This implementation can be made free of starvation by using an assymetric way to pick up chopsticks and removing the policy of picking up chopsticks only when both the philosophers beside the philosopher are not eating.
+\end{itemize}
+
+\end{document}

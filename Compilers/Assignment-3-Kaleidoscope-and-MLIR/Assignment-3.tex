@@ -1,0 +1,91 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\begin{document}
+\title{
+Assignment 3: Kaleidoscope and MLIR}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\begin{enumerate}
+\item What is an IR? Why is it required?\\
+\textbf{Ans}: IR stands for Intermediate Representation. An intermediate representation is an alternate representation of a program between the source and target languages.\\\\
+Conversion of source to an IR before the target is required for the following reasons:
+\begin{itemize}
+\item Conversion to IRs helps break down the problem of translation into smaller, easier steps.
+For Example, lexical analysis and parsing as seperate steps is much more feasible than doing both together.
+\item Optimisations can be split into machine independent and machine dependent which would not be possible in case there were no IRs.
+\item Using IRs helps make retargetable compilers, i.e. same backend can be used for multiple languages and/or same frontend can be used for multiple different machines.
+\end{itemize}
+\item What is LLVM-IR? Why is its main purpose? What is its design philosophy? What is MLIR? What is the main design philosophy of MLIR?\\
+\textbf{Ans}: LLVM IR is a low-level intermediate representation used by the LLVM compiler framework. The main purpose of LLVM IR is to represent all high level languages in LLVM assembly language. It is the common code representation used throughout all phases of the LLVM compilation strategy.\\
+
+The design philosophy of the LLVM IR \textit{is to be light-weight and low-level while being expressive, typed, and extensible at the same time. It aims to be a a universal IR such that all high level ideas can be mapped to it cleanly}.\\
+
+MLIR stands for one of "Multi-Level Intermediate Representation". MLIR is a representation format and library of compiler utilities that sits between the model representation and low-level compilers/executors that generate hardware-specific code.\\
+MLIR is intended to be a hybrid IR which can support multiple different requirements in a unified infrastructure. 
+The MLIR project aims to define a common intermediate representation (IR) that will unify the infrastructure required to execute high performance machine learning models in TensorFlow and similar ML frameworks.
+\item Read the Lexer and Parser codes of Kaleidoscope and Toy (from MLIR). Post some notes on the same. The notes should show some familiarity between of the internals of Lexer and Parser of both the language.
+\subsection*{Lexer}
+The lexer for Kaleidoscope and Toy are very similar, we expore the similarities in the following points.\\
+\begin{enumerate}
+\item Both the languages have a precise set of possible tokens:
+\begin{enumerate}
+\item Kaleidoscope has eof, def, extern, identifier, number and unknown characters.
+\item Toy has eof, return, var, def, identifier, number, semicolons, square brackets, parantheses and brackets.
+\end{enumerate}
+\item Both the lexers have a function \textbf{\textit{gettok}} which repeats the following steps to get tokens:
+\begin{enumerate}
+\item Skips any whitespace.
+\item Checks if next character is of type \textbf{\textit{char}}, if yes goes on reading all further input of letters, numbers and underscores appending them onto the string, once done it does the following:
+\begin{itemize}
+\item Checks if the composed string belongs to the set of reserved words, if yes returns the token corresponding to the reserved word, for example, \textbf{\textit{tok\_def}}.
+\item If no reserved matches the string, then it is returned as an identifier token using for example, \textbf{\textit{tok\_identifier}}.
+\end{itemize}
+\item If the next character is a number, the lexer keeps reading all following input as long as it is a digit or a decimal point and keeps appending it to a string, when done, this string is converted to a number using \textbf{\textit{strtod}} and then returned as number token, i.e. \textbf{\textit{tok\_number}}.
+\item If the next character is a \# then, the lexer keeps reading till EOF or newline is encountered, if EOF is encountered it returns the EOF token and if newline is encountered, then the next token is returned.
+\item Else, just the ascii value of the token is returned.
+\end{enumerate}
+\item Both the languages have essentially the same lexer, the same functions and the same methedology to split into tokens, the only thing extra in Toy is that it has explicit tokens for braces, parantheses and square brackets.
+\end{enumerate}
+\newpage
+\subsection*{Parser}
+Both the languages also have very similar parsers, we note the important points in the following lines:
+\begin{itemize}
+\item Both Kaleidoscope and Toy have recursive descent parsers.
+\item Both the parsers use \textbf{\textit{getNextToken}} to get the next token from the lexer . Kaleidoscope uses CurTok to store it while Toy uses \textbf{\textit{getCurToken}} to access it.
+\item Both use \textbf{\textit{getTokPrecedence}} to get the precendence of a binary operator.
+The precendence is exactly the same for all arithmetic operators. (* $>$ + = -)
+\item Both the parsers use seperate functions to parse every production rule of the grammar.
+\item The production rules implemented using fucntions are also very similar in both the languages as seen below:\\
+\end{itemize}
+\hspace*{-7em}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Rule & Toy & Kaleidoscope & Note \\ \hline
+Number Litral & numberexpr ::= number & numberexpr ::= number &  \\ \hline
+Identifier & \begin{tabular}[c]{@{}l@{}}identifierexpr\\  ::= identifier\\  ::= identifier '(' expression* ')'\end{tabular} & \begin{tabular}[c]{@{}l@{}}identifierexpr\\  ::= identifier\\  ::= identifier '(' expression* ')'\end{tabular} & \begin{tabular}[c]{@{}l@{}}To consume the '(', \\ Kaleidoscope \\ simply uses \\ getNextToken(),\\ while Toy uses \\ consume(Token(')'))\end{tabular} \\ \hline
+Primary Expression & \begin{tabular}[c]{@{}l@{}}primary\\ ::= identifierexpr\\ ::= numberexpr\\ ::= parenexpr\\  ::= tensorliteral\end{tabular} & \begin{tabular}[c]{@{}l@{}}primary\\ ::= identifierexpr\\ ::= numberexpr\\ ::= parenexpr\end{tabular} & \begin{tabular}[c]{@{}l@{}}The only extra\\ rule is tensor\\ literal in Toy.\end{tabular} \\ \hline
+Expression & expression::= primary binoprhs & expression::= primary binoprhs &  \\ \hline
+\end{tabular}
+\begin{itemize}
+\item The production function and rules for binoprhs are also exactly the same.
+\item The way \textbf{\textit{prototypes}} are defined may seem different but they both boil down to the same thing.
+Kaleidoscope:\\
+\textit{prototype
+::= id '(' id* ')'}
+\\
+Toy:\\
+\textit{prototype ::= def id '(' decl\_list ')'\\
+decl\_list ::= identifier or identifier, decl\_list}
+\item There are some differences in how \textbf{\textit{defs}} are defined, variable declaration, toy having extra constructs like \textbf{shape\_lists}, etc.
+\item Other than the added support for tensor/arrays, the expression parsing is also very similar.
+\end{itemize}
+\end{enumerate}
+\end{document}

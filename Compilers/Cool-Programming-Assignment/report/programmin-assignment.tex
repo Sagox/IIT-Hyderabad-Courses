@@ -1,0 +1,114 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{secnumdepth}{0}
+\begin{document}
+\title{\textbf{Assignment 0}\\Programming Assignment 0: Toy Cool Programs}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\begin{normalsize}
+\tableofcontents
+\end{normalsize}
+\newpage
+\section{Correct Programs}
+\subsection{Program 1 (divisible.cl)}
+Correspondence between MIPS and Program:\\\\
+\begin{tabular}{|l|l|l|}
+\hline
+Source         & MIPS               & Meaning                                                                                                          \\ \hline
+(b/a)          & div \$t1 \$t1 \$t2   & Division Operation in Main.main                                                                                  \\ \hline
+a*(b/a)        & mul	\$t1 \$t1 \$t2   & Multiplication Operation in Main.main                                                                            \\ \hline
+if a*(b/a) = b & beq \$t1 \$t2 label2 & \begin{tabular}[c]{@{}l@{}}Branching to label2 which contains other branches\\ to label3 and label0\end{tabular} \\ \hline
+\end{tabular}
+\subsection{Program 2 (exponentiation.cl)}
+Correspondence between MIPS and Program:\\\\
+\begin{tabular}{|l|l|l|}
+\hline
+Source                            & MIPS                                                                                     & Meaning                                                                                                                          \\ \hline
+while j \textless b               & \begin{tabular}[c]{@{}l@{}}blt \$t1 \$t2 label2\\ b label0\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}The two statements are present in different\\ labels, going back and forth runs the loop\end{tabular} \\ \hline
+an \textless{}- an*a              & mul \$t1 \$t1 \$t2                                                                         &                                                                                                                                  \\ \hline
+out\_string("\textbackslash{}n"); & \begin{tabular}[c]{@{}l@{}}str\_const0:\\ ....\\ .ascii "\textbackslash{}n"\end{tabular} & \begin{tabular}[c]{@{}l@{}}The string constant "\textbackslash{}n" is str\_const0 in the mips\\ file\end{tabular}                \\ \hline
+\end{tabular}
+\subsection{Program 3 (isPrime.cl)}
+Correspondence between MIPS and Program:\\\\
+\begin{tabular}{|l|l|l|}
+\hline
+Source                               & MIPS                                                                                        & Meaning                                           \\ \hline
+j*(n/j) = n                          & beq \$t1 \$t2 label7                                                                          & Branch if the equality test holds                 \\ \hline
+j \textless{}= n/2                   & ble \$t1 \$t2 label2                                                                          & Branch if less than                               \\ \hline
+j*(n/j)                              & \begin{tabular}[c]{@{}l@{}}div \$t1 \$t1 \$t2\\ mul \$t1 $t1 $t2\end{tabular}                   & Division followed by multiplication. (precedence) \\ \hline
+out\_string("NO\textbackslash{}n");  & \begin{tabular}[c]{@{}l@{}}str\_const0:\\ ....\\ .ascii "NO\textbackslash{}n"\end{tabular}  & Storage of the string constants                   \\ \hline
+out\_string("YES\textbackslash{}n"); & \begin{tabular}[c]{@{}l@{}}str\_const0:\\ ....\\ .ascii "YES\textbackslash{}n"\end{tabular} &                                                   \\ \hline
+\end{tabular}
+\subsection{Program 4 (perimeterRect.cl)}
+Correspondence between MIPS and Program:\\\\
+\begin{tabular}{|l|l|l|}
+\hline
+Source                                                                                              & MIPS                                                                                                                                                                & Meaning                                                                           \\ \hline
+getArea                                                                                             & Main.getArea:                                                                                                                                                       &                                                                                   \\ \hline
+2*(a + b)                                                                                           & mul	\$t1 \$t1 \$t2                                                                                                                                                    & The multiplication operation                                                      \\ \hline
+\begin{tabular}[c]{@{}l@{}}out\_int(getArea(8,5));\\ out\_string("\textbackslash{}n");\end{tabular} & \begin{tabular}[c]{@{}l@{}}str\_const0:\\ ...\\ .ascii "\textbackslash{}n"\\ \\ \\ IO\_dispTab:\\ ...\\ .word	\\ IO.out\_string\\ .word	\\ IO.out\_int\end{tabular} & \begin{tabular}[c]{@{}l@{}}Storage and printing\\ of int and newline\end{tabular} \\ \hline
+\end{tabular}
+\subsection{Program 5 (rightAngleTriangle.cl)}
+Correspondence between MIPS and Program:\\\\
+\begin{tabular}{|l|l|l|}
+\hline
+Source & MIPS & Meaning \\ \hline
+a*a, b*b, c*c & \begin{tabular}[c]{@{}l@{}}Main.check\\ mul	\$t1 \$t1 \$t2\\ ...\\ mul \$t1 \$t1 \$t2\\ ...\\ mul \$t1 \$t1 \$t2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Multiplying operation takes place three times\\ in Main.check\end{tabular} \\ \hline
+if a*a + b*b = c*c & beq \$t1 \$t2 label2 & \begin{tabular}[c]{@{}l@{}}Branching when the pythogaros theorem\\ holds\end{tabular} \\ \hline
+\begin{tabular}[c]{@{}l@{}}if  check(3, 4, 5) then\\ out\_string("YES\textbackslash{}n") else\\ out\_string("NO\textbackslash{}n") fi\end{tabular} & \begin{tabular}[c]{@{}l@{}}bne	\$a0 \$zero label11\\ beqz \$t1 label9\end{tabular} & \begin{tabular}[c]{@{}l@{}}Branching to the appropriate\\ label to print the correct answer\end{tabular} \\ \hline
+\end{tabular}
+\section{Incorrect Programs}
+\subsection{Section 10.1}
+\textbf{Error Message}:\\
+"add.cl", line 2: syntax error at or near INT\_CONST = 5\\
+"add.cl", line 5: syntax error at or near ';'\\
+"add.cl", line 7: syntax error at or near '\}'\\
+\\
+It is clearly mentioned that integer are non-empty strings of digits 0-9, but this program tries to  put in a space in between therefore we get the error at 5.\\\\
+Line From text:\\
+\textit{"Integers are non-empty strings of digits 0-9"}
+\subsection{Section 10.2}
+\textbf{Error Message}:\\
+"lengthstring.cl", line 3: syntax error at or near ERROR = Unterminated string constant\\\\
+In the manual it is mentioned that non escaped newline character may not appear in a string hence we get the error which assumes we did not terminate the string constant.\\\\
+Lines from text:\\
+\textit{"A non-escaped newline character may not appear in a string"}
+\subsection{Section 10.3}
+\textbf{Error Message}:\\
+"comms.cl", line 7: syntax error at or near '\}'\\
+Introducing -- together can turn the rets of the line into a comment, which is precisely what happened here.\\\\
+Lines from text:\\
+\textit{"Any characters between two dashes “--” and the next newline
+(or EOF, if there is no next newline) are treated as comments."}
+\subsection{Section 10.4}
+\textbf{Error Message}:\\
+"equalitycheck.cl", line 3: syntax error at or near NEW\\
+"equalitycheck.cl", line 5: syntax error at or near THEN\\
+new is a reserved keyword and cannot be used as an identifier.\\\\
+Lines from text:
+\textit{"The keywords of cool are: class, else, false, fi, if, in, inherits, isvoid, let, loop, pool, then, while,
+case, esac, new, of, not, true."}
+
+\subsection{Section 10.5}
+\textbf{Error Message}:\\
+"nospace.cl", line 7: syntax error at or near OBJECTID = out\_string\\
+White space includes a combination of the blanks, tabs, etc, leaving whitespace empty i.e. no space does not belong to whitespace therefore we ger the error.\\\\
+Lines from text:\\
+\textit{"White space consists of any sequence of the characters: blank (ascii 32), \textbackslash n (newline, ascii 10), \textbackslash f (form
+feed, ascii 12), \textbackslash r (carriage return, ascii 13), \textbackslash t (tab, ascii 9), \textbackslash v (vertical tab, ascii 11)."}
+\end{document}

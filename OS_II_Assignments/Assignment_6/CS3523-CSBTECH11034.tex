@@ -1,0 +1,139 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{secnumdepth}{0}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}	
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{listings}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\lstset{
+	language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    backgroundcolor=\color{anti-flashwhite}
+}
+\begin{document}
+\title{
+\textbf{Operating Systems - II: CS3523}\\~\\
+\begin{large}
+\textbf{Homework on Memory Management, Virtual Memory and Flash Memory Architecture}\\
+\end{large}
+}
+\author{\textbf{Sagar Jain - CS17BTECH11034}\\}
+\maketitle
+\begin{enumerate}
+\item 
+\begin{align*}
+Page\:Size = 2KB &= 2^{11}\: bytes \\
+\implies Page\: Offset &= 2^{11} \\ &= 2048 \\
+Address &= (4095)_{10}\\&=(111111111111)_2\\
+&< 2*2^{11}\\
+\implies Page\:Number &= 1
+\end{align*}
+\item
+\begin{align*}
+Virtual\:Address &= 32\:bit\\
+Physical\:Address &= 24\:bit\\
+Page\: Size &= 2KB\\
+\end{align*}
+\textit{Number of pages in inverted page table is the same as number of physical pages.}\\
+\begin{align*}
+\implies Number\:of\:Entries &= 2^{24}/2^{11}\\
+&= 2^{13}
+\end{align*}
+\item 
+\begin{align*}
+Available\:Chunk &= 512KB\\
+Kernel\:Request &= 57KB\\
+\end{align*}
+We repeatedly break the Available chunk into two parts until we get to the point where the chunk size is less than the request size and then we fulfill the request with the just above chunk.
+On doing this we get $512>>256>>128>>64>>32$(Not enough), so the request is fulfilled by the chunk of 64KB.
+\item \begin{enumerate}
+\item 548
+\item Not Valid $\because$ length of segment $<$ 666.
+\item 6326
+\end{enumerate}
+\item
+\begin{tabular}{|c|c|c|}
+\hline
+Segment & Base & Length \\ \hline
+0 & 1100 & 700 \\ \hline
+1 & 9350 & 550 \\ \hline
+2 & 5600 & 600 \\ \hline
+3 & 2200 & 3400 \\ \hline
+4 & 6200 & 2500 \\ \hline
+\end{tabular}
+\item The page length register can be used to store the value of the size of an individual page.
+\item
+Total is 64 bits. First 6 bits (from right side)are used for fourth page table. The following 9 bits are used fot the 3rd page table. The next 13 bits are used for 2nd page table and the next 29 bits (maybe more) for the first page table.
+\item
+\begin{tabular}{|c|c|c|}
+\hline
+& Process Size & Order \\ \hline
+ & 135 & 320, 580, 480, 220, 890, 600, 20 \\ \cline{2-3} 
+ & 650 & 320, 580, 480, 220, 240, 600, 20 \\ \cline{2-3} 
+Best FitAlgorithm & 398 & 320, 580, 82, 220, 240, 600, 20 \\ \cline{2-3} 
+ & 220 & 320, 580, 82, 240, 600, 20 \\ \cline{2-3} 
+ & 520 & 320, 60, 82, 240, 600, 20 \\ \cline{2-3}
+ & 440 & 320, 60, 82, 240, 160, 20 \\ \hline
+\end{tabular}\\\\\\
+ \begin{tabular}{|c|c|c|}
+ \hline
+  & Process Size & Order \\ \hline
+ & 135 & 320, 580, 480, 220, 755, 600, 155 \\ \cline{2-3} 
+ & 650 & 320, 580, 480, 220, 105, 600, 155 \\ \cline{2-3}
+Worst Fit Algorithm & 398 & 320, 580, 480, 220, 105, 202, 155 \\ \cline{2-3} 
+ & 220 & 320, 360, 480, 220, 105, 202, 155 \\ \cline{2-3} 
+ & 520 & No allocation \\ \cline{2-3} 
+ & 440 & 320, 360, 40, 220, 105, 202, 155 \\ \hline
+\end{tabular}
+\item
+There are four erase operations at the following one indexed write operation numbers 16,18,20,23.\\\\
+\begin{tabular}{|c|
+>{\columncolor[HTML]{34FF34}}c |
+>{\columncolor[HTML]{34FF34}}c |
+>{\columncolor[HTML]{34FF34}}c |
+>{\columncolor[HTML]{34FF34}}c |}
+\hline
+\cellcolor[HTML]{34FF34}0 & 5 & \cellcolor[HTML]{FD6864}1 & 4 & \cellcolor[HTML]{FD6864}8 \\ \hline
+\cellcolor[HTML]{34FF34}6 & \cellcolor[HTML]{FD6864}7 & 2 & 1 & 6 \\ \hline
+ & 8 & 3 & 7 & 0 \\ \hline
+\end{tabular}
+Green: Valid, Red: Invaild.
+\item \begin{align*}
+Total \: Size &= 64GB\\
+&= 2^{36}\\
+Number\:of\:Pages\:per\:block&=64\\
+&= 2^6\\
+Size \: of \: Logical \: Page &=  4KB\\
+&= 2^{12}
+\end{align*}
+$(Number\:of\:Physical\:Pages)/(Number\:of\:Logical\:Pages)=4$\\\\
+$Size \; of\;table=Number\;of\;logical\;pages*(log(number\;of\;physical\;pages))$
+\begin{align*}
+Number\:of\:logical\:pages&=2^{36}/2^{12}\\
+&=2^{24}\\
+Number\:of\:physical\:pages&=4*2^{24}\\
+&=2^{26}\\
+Size\:of\:table&=log(2^{26})*2^{24}\\
+&=\:16*26Mb\\
+&=416Mb\\
+&=52MB
+\end{align*}
+
+\end{enumerate}
+\end{document}

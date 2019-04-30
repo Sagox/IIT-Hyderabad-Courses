@@ -7,9 +7,11 @@
 #include <chrono>     
 #include <semaphore.h>
 #include <random>
+#include <mutex>
 
 using namespace std;
 
+mutex print_lock;
 // Initialising the input variables as global so that they can
 // be viewed across threads
 int nw, nr, kr, kw;
@@ -53,7 +55,9 @@ void *reader(void *param) {
 	exponential_distribution<double> distributionRem(1000.0/urem);
 	for(auto i=0;i<kr;i++) {
 		// logging into log file
+		print_lock.lock();
 		fprintf(pFile, "%d th CS request by Reader thread %d at %s.\n", i, id, get_formatted_time().c_str());
+		print_lock.unlock();
 		requestTime = chrono::high_resolution_clock::now();
 		// waiting on semaphore in
 		sem_wait(&in);
@@ -64,7 +68,9 @@ void *reader(void *param) {
 		auto duration = chrono::duration_cast<chrono::microseconds>(enterTime - requestTime);
 		total_reader_waiting_time += duration.count();
 		worst_case_reader_waiting_time = duration.count() > worst_case_reader_waiting_time ? duration.count() : worst_case_reader_waiting_time;
+		print_lock.lock();
 		fprintf(pFile, "%d th CS entry by Reader thread %d at %s.\n", i, id, get_formatted_time().c_str());
+		print_lock.unlock();
 		// simulating CS
 		usleep(1000000*distributionCS(generatorCS));
 		// exit sequence from CS
@@ -74,7 +80,9 @@ void *reader(void *param) {
 			sem_post(&wrt);
 		sem_post(&out);
 		exitTime = chrono::high_resolution_clock::now();
+		print_lock.lock();
 		fprintf(pFile, "%d th CS exit by Reader thread %d at %s.\n", i, id, get_formatted_time().c_str());
+		print_lock.unlock();
 		// simulating remainder section
 		usleep(1000000*distributionRem(generatorRem));
 

@@ -1,0 +1,2 @@
+Average Time Taken for Philosopher Threads 0.810764 ms
+Worst Waiting Time for Philosopher Threads 13.195 ms

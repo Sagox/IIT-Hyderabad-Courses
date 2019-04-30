@@ -1,0 +1,1500 @@
+0 th eat request by thread 0 at 12:31:28
+0 th eat request by thread 1 at 12:31:28
+0 th eat request by thread 2 at 12:31:28
+0th CS Entry by Philosopher Thread 2 at 12:31:28
+0 th CS exit by Philosopher Thread 2 at 12:31:28
+1 th eat request by thread 2 at 12:31:28
+1th CS Entry by Philosopher Thread 2 at 12:31:28
+1 th CS exit by Philosopher Thread 2 at 12:31:28
+2 th eat request by thread 2 at 12:31:28
+2th CS Entry by Philosopher Thread 2 at 12:31:28
+2 th CS exit by Philosopher Thread 2 at 12:31:28
+0 th eat request by thread 3 at 12:31:28
+0 th eat request by thread 4 at 12:31:28
+3 th eat request by thread 2 at 12:31:28
+0th CS Entry by Philosopher Thread 0 at 12:31:28
+0 th CS exit by Philosopher Thread 0 at 12:31:28
+0th CS Entry by Philosopher Thread 3 at 12:31:28
+0th CS Entry by Philosopher Thread 1 at 12:31:28
+1 th eat request by thread 0 at 12:31:28
+0 th CS exit by Philosopher Thread 3 at 12:31:28
+0 th CS exit by Philosopher Thread 1 at 12:31:28
+1 th eat request by thread 3 at 12:31:28
+1 th eat request by thread 1 at 12:31:28
+0th CS Entry by Philosopher Thread 4 at 12:31:28
+3th CS Entry by Philosopher Thread 2 at 12:31:28
+0 th CS exit by Philosopher Thread 4 at 12:31:28
+3 th CS exit by Philosopher Thread 2 at 12:31:28
+1th CS Entry by Philosopher Thread 0 at 12:31:28
+4 th eat request by thread 2 at 12:31:28
+1th CS Entry by Philosopher Thread 3 at 12:31:28
+1 th CS exit by Philosopher Thread 3 at 12:31:28
+1 th CS exit by Philosopher Thread 0 at 12:31:28
+4th CS Entry by Philosopher Thread 2 at 12:31:28
+2 th eat request by thread 0 at 12:31:28
+4 th CS exit by Philosopher Thread 2 at 12:31:28
+1 th eat request by thread 4 at 12:31:28
+2 th eat request by thread 3 at 12:31:28
+2th CS Entry by Philosopher Thread 3 at 12:31:28
+2 th CS exit by Philosopher Thread 3 at 12:31:28
+3 th eat request by thread 3 at 12:31:28
+3th CS Entry by Philosopher Thread 3 at 12:31:28
+3 th CS exit by Philosopher Thread 3 at 12:31:28
+4 th eat request by thread 3 at 12:31:28
+4th CS Entry by Philosopher Thread 3 at 12:31:28
+4 th CS exit by Philosopher Thread 3 at 12:31:28
+5 th eat request by thread 3 at 12:31:28
+5th CS Entry by Philosopher Thread 3 at 12:31:28
+5 th CS exit by Philosopher Thread 3 at 12:31:28
+6 th eat request by thread 3 at 12:31:28
+6th CS Entry by Philosopher Thread 3 at 12:31:28
+6 th CS exit by Philosopher Thread 3 at 12:31:28
+7 th eat request by thread 3 at 12:31:28
+7th CS Entry by Philosopher Thread 3 at 12:31:28
+7 th CS exit by Philosopher Thread 3 at 12:31:28
+8 th eat request by thread 3 at 12:31:28
+8th CS Entry by Philosopher Thread 3 at 12:31:28
+8 th CS exit by Philosopher Thread 3 at 12:31:28
+9 th eat request by thread 3 at 12:31:28
+9th CS Entry by Philosopher Thread 3 at 12:31:28
+9 th CS exit by Philosopher Thread 3 at 12:31:28
+10 th eat request by thread 3 at 12:31:28
+10th CS Entry by Philosopher Thread 3 at 12:31:28
+10 th CS exit by Philosopher Thread 3 at 12:31:28
+11 th eat request by thread 3 at 12:31:28
+11th CS Entry by Philosopher Thread 3 at 12:31:28
+11 th CS exit by Philosopher Thread 3 at 12:31:28
+12 th eat request by thread 3 at 12:31:28
+12th CS Entry by Philosopher Thread 3 at 12:31:28
+12 th CS exit by Philosopher Thread 3 at 12:31:28
+13 th eat request by thread 3 at 12:31:28
+13th CS Entry by Philosopher Thread 3 at 12:31:28
+13 th CS exit by Philosopher Thread 3 at 12:31:28
+14 th eat request by thread 3 at 12:31:28
+14th CS Entry by Philosopher Thread 3 at 12:31:28
+14 th CS exit by Philosopher Thread 3 at 12:31:28
+15 th eat request by thread 3 at 12:31:28
+15th CS Entry by Philosopher Thread 3 at 12:31:28
+15 th CS exit by Philosopher Thread 3 at 12:31:28
+16 th eat request by thread 3 at 12:31:28
+16th CS Entry by Philosopher Thread 3 at 12:31:28
+16 th CS exit by Philosopher Thread 3 at 12:31:28
+17 th eat request by thread 3 at 12:31:28
+17th CS Entry by Philosopher Thread 3 at 12:31:28
+17 th CS exit by Philosopher Thread 3 at 12:31:28
+18 th eat request by thread 3 at 12:31:28
+18th CS Entry by Philosopher Thread 3 at 12:31:28
+18 th CS exit by Philosopher Thread 3 at 12:31:28
+19 th eat request by thread 3 at 12:31:28
+19th CS Entry by Philosopher Thread 3 at 12:31:28
+5 th eat request by thread 2 at 12:31:28
+19 th CS exit by Philosopher Thread 3 at 12:31:28
+2th CS Entry by Philosopher Thread 0 at 12:31:28
+20 th eat request by thread 3 at 12:31:28
+2 th CS exit by Philosopher Thread 0 at 12:31:28
+5th CS Entry by Philosopher Thread 2 at 12:31:28
+3 th eat request by thread 0 at 12:31:28
+5 th CS exit by Philosopher Thread 2 at 12:31:28
+1th CS Entry by Philosopher Thread 4 at 12:31:28
+1th CS Entry by Philosopher Thread 1 at 12:31:28
+1 th CS exit by Philosopher Thread 1 at 12:31:28
+2 th eat request by thread 1 at 12:31:28
+2th CS Entry by Philosopher Thread 1 at 12:31:28
+2 th CS exit by Philosopher Thread 1 at 12:31:28
+3 th eat request by thread 1 at 12:31:28
+3th CS Entry by Philosopher Thread 1 at 12:31:28
+3 th CS exit by Philosopher Thread 1 at 12:31:28
+4 th eat request by thread 1 at 12:31:28
+4th CS Entry by Philosopher Thread 1 at 12:31:28
+4 th CS exit by Philosopher Thread 1 at 12:31:28
+5 th eat request by thread 1 at 12:31:28
+5th CS Entry by Philosopher Thread 1 at 12:31:28
+5 th CS exit by Philosopher Thread 1 at 12:31:28
+6 th eat request by thread 1 at 12:31:28
+6th CS Entry by Philosopher Thread 1 at 12:31:28
+6 th CS exit by Philosopher Thread 1 at 12:31:28
+7 th eat request by thread 1 at 12:31:28
+7th CS Entry by Philosopher Thread 1 at 12:31:28
+7 th CS exit by Philosopher Thread 1 at 12:31:28
+8 th eat request by thread 1 at 12:31:28
+8th CS Entry by Philosopher Thread 1 at 12:31:28
+8 th CS exit by Philosopher Thread 1 at 12:31:28
+9 th eat request by thread 1 at 12:31:28
+9th CS Entry by Philosopher Thread 1 at 12:31:28
+9 th CS exit by Philosopher Thread 1 at 12:31:28
+10 th eat request by thread 1 at 12:31:28
+10th CS Entry by Philosopher Thread 1 at 12:31:28
+10 th CS exit by Philosopher Thread 1 at 12:31:28
+11 th eat request by thread 1 at 12:31:28
+11th CS Entry by Philosopher Thread 1 at 12:31:28
+11 th CS exit by Philosopher Thread 1 at 12:31:28
+12 th eat request by thread 1 at 12:31:28
+12th CS Entry by Philosopher Thread 1 at 12:31:28
+12 th CS exit by Philosopher Thread 1 at 12:31:28
+13 th eat request by thread 1 at 12:31:28
+13th CS Entry by Philosopher Thread 1 at 12:31:28
+13 th CS exit by Philosopher Thread 1 at 12:31:28
+14 th eat request by thread 1 at 12:31:28
+14th CS Entry by Philosopher Thread 1 at 12:31:28
+14 th CS exit by Philosopher Thread 1 at 12:31:28
+15 th eat request by thread 1 at 12:31:28
+15th CS Entry by Philosopher Thread 1 at 12:31:28
+15 th CS exit by Philosopher Thread 1 at 12:31:28
+16 th eat request by thread 1 at 12:31:28
+16th CS Entry by Philosopher Thread 1 at 12:31:28
+16 th CS exit by Philosopher Thread 1 at 12:31:28
+17 th eat request by thread 1 at 12:31:28
+17th CS Entry by Philosopher Thread 1 at 12:31:28
+17 th CS exit by Philosopher Thread 1 at 12:31:28
+18 th eat request by thread 1 at 12:31:28
+18th CS Entry by Philosopher Thread 1 at 12:31:28
+18 th CS exit by Philosopher Thread 1 at 12:31:28
+19 th eat request by thread 1 at 12:31:28
+19th CS Entry by Philosopher Thread 1 at 12:31:28
+19 th CS exit by Philosopher Thread 1 at 12:31:28
+20 th eat request by thread 1 at 12:31:28
+20th CS Entry by Philosopher Thread 1 at 12:31:28
+20 th CS exit by Philosopher Thread 1 at 12:31:28
+21 th eat request by thread 1 at 12:31:28
+21th CS Entry by Philosopher Thread 1 at 12:31:28
+21 th CS exit by Philosopher Thread 1 at 12:31:28
+22 th eat request by thread 1 at 12:31:28
+22th CS Entry by Philosopher Thread 1 at 12:31:28
+22 th CS exit by Philosopher Thread 1 at 12:31:28
+23 th eat request by thread 1 at 12:31:28
+23th CS Entry by Philosopher Thread 1 at 12:31:28
+23 th CS exit by Philosopher Thread 1 at 12:31:28
+24 th eat request by thread 1 at 12:31:28
+24th CS Entry by Philosopher Thread 1 at 12:31:28
+24 th CS exit by Philosopher Thread 1 at 12:31:28
+25 th eat request by thread 1 at 12:31:28
+25th CS Entry by Philosopher Thread 1 at 12:31:28
+25 th CS exit by Philosopher Thread 1 at 12:31:28
+26 th eat request by thread 1 at 12:31:28
+26th CS Entry by Philosopher Thread 1 at 12:31:28
+26 th CS exit by Philosopher Thread 1 at 12:31:28
+27 th eat request by thread 1 at 12:31:28
+6 th eat request by thread 2 at 12:31:28
+1 th CS exit by Philosopher Thread 4 at 12:31:28
+27th CS Entry by Philosopher Thread 1 at 12:31:28
+27 th CS exit by Philosopher Thread 1 at 12:31:28
+2 th eat request by thread 4 at 12:31:28
+3th CS Entry by Philosopher Thread 0 at 12:31:28
+3 th CS exit by Philosopher Thread 0 at 12:31:28
+4 th eat request by thread 0 at 12:31:28
+4th CS Entry by Philosopher Thread 0 at 12:31:28
+4 th CS exit by Philosopher Thread 0 at 12:31:28
+5 th eat request by thread 0 at 12:31:28
+5th CS Entry by Philosopher Thread 0 at 12:31:28
+5 th CS exit by Philosopher Thread 0 at 12:31:28
+6 th eat request by thread 0 at 12:31:28
+6th CS Entry by Philosopher Thread 0 at 12:31:28
+6 th CS exit by Philosopher Thread 0 at 12:31:28
+7 th eat request by thread 0 at 12:31:28
+7th CS Entry by Philosopher Thread 0 at 12:31:28
+7 th CS exit by Philosopher Thread 0 at 12:31:28
+8 th eat request by thread 0 at 12:31:28
+8th CS Entry by Philosopher Thread 0 at 12:31:28
+8 th CS exit by Philosopher Thread 0 at 12:31:28
+9 th eat request by thread 0 at 12:31:28
+9th CS Entry by Philosopher Thread 0 at 12:31:28
+9 th CS exit by Philosopher Thread 0 at 12:31:28
+10 th eat request by thread 0 at 12:31:28
+10th CS Entry by Philosopher Thread 0 at 12:31:28
+10 th CS exit by Philosopher Thread 0 at 12:31:28
+11 th eat request by thread 0 at 12:31:28
+11th CS Entry by Philosopher Thread 0 at 12:31:28
+11 th CS exit by Philosopher Thread 0 at 12:31:28
+12 th eat request by thread 0 at 12:31:28
+12th CS Entry by Philosopher Thread 0 at 12:31:28
+12 th CS exit by Philosopher Thread 0 at 12:31:28
+13 th eat request by thread 0 at 12:31:28
+13th CS Entry by Philosopher Thread 0 at 12:31:28
+13 th CS exit by Philosopher Thread 0 at 12:31:28
+14 th eat request by thread 0 at 12:31:28
+14th CS Entry by Philosopher Thread 0 at 12:31:28
+14 th CS exit by Philosopher Thread 0 at 12:31:28
+15 th eat request by thread 0 at 12:31:28
+15th CS Entry by Philosopher Thread 0 at 12:31:28
+15 th CS exit by Philosopher Thread 0 at 12:31:28
+16 th eat request by thread 0 at 12:31:28
+16th CS Entry by Philosopher Thread 0 at 12:31:28
+16 th CS exit by Philosopher Thread 0 at 12:31:28
+17 th eat request by thread 0 at 12:31:28
+17th CS Entry by Philosopher Thread 0 at 12:31:28
+17 th CS exit by Philosopher Thread 0 at 12:31:28
+18 th eat request by thread 0 at 12:31:28
+18th CS Entry by Philosopher Thread 0 at 12:31:28
+18 th CS exit by Philosopher Thread 0 at 12:31:28
+19 th eat request by thread 0 at 12:31:28
+19th CS Entry by Philosopher Thread 0 at 12:31:28
+19 th CS exit by Philosopher Thread 0 at 12:31:28
+20 th eat request by thread 0 at 12:31:28
+20th CS Entry by Philosopher Thread 0 at 12:31:28
+20 th CS exit by Philosopher Thread 0 at 12:31:28
+21 th eat request by thread 0 at 12:31:28
+21th CS Entry by Philosopher Thread 0 at 12:31:28
+21 th CS exit by Philosopher Thread 0 at 12:31:28
+22 th eat request by thread 0 at 12:31:28
+22th CS Entry by Philosopher Thread 0 at 12:31:28
+22 th CS exit by Philosopher Thread 0 at 12:31:28
+23 th eat request by thread 0 at 12:31:28
+23th CS Entry by Philosopher Thread 0 at 12:31:28
+23 th CS exit by Philosopher Thread 0 at 12:31:28
+24 th eat request by thread 0 at 12:31:28
+24th CS Entry by Philosopher Thread 0 at 12:31:28
+24 th CS exit by Philosopher Thread 0 at 12:31:28
+25 th eat request by thread 0 at 12:31:28
+25th CS Entry by Philosopher Thread 0 at 12:31:28
+25 th CS exit by Philosopher Thread 0 at 12:31:28
+26 th eat request by thread 0 at 12:31:28
+26th CS Entry by Philosopher Thread 0 at 12:31:28
+26 th CS exit by Philosopher Thread 0 at 12:31:28
+27 th eat request by thread 0 at 12:31:28
+27th CS Entry by Philosopher Thread 0 at 12:31:28
+27 th CS exit by Philosopher Thread 0 at 12:31:28
+28 th eat request by thread 0 at 12:31:28
+28th CS Entry by Philosopher Thread 0 at 12:31:28
+28 th CS exit by Philosopher Thread 0 at 12:31:28
+29 th eat request by thread 0 at 12:31:28
+29th CS Entry by Philosopher Thread 0 at 12:31:28
+29 th CS exit by Philosopher Thread 0 at 12:31:28
+30 th eat request by thread 0 at 12:31:28
+30th CS Entry by Philosopher Thread 0 at 12:31:28
+28 th eat request by thread 1 at 12:31:28
+20th CS Entry by Philosopher Thread 3 at 12:31:28
+30 th CS exit by Philosopher Thread 0 at 12:31:28
+20 th CS exit by Philosopher Thread 3 at 12:31:28
+28th CS Entry by Philosopher Thread 1 at 12:31:28
+21 th eat request by thread 3 at 12:31:28
+2th CS Entry by Philosopher Thread 4 at 12:31:28
+2 th CS exit by Philosopher Thread 4 at 12:31:28
+31 th eat request by thread 0 at 12:31:28
+21th CS Entry by Philosopher Thread 3 at 12:31:28
+21 th CS exit by Philosopher Thread 3 at 12:31:28
+22 th eat request by thread 3 at 12:31:28
+22th CS Entry by Philosopher Thread 3 at 12:31:28
+22 th CS exit by Philosopher Thread 3 at 12:31:28
+23 th eat request by thread 3 at 12:31:28
+23th CS Entry by Philosopher Thread 3 at 12:31:28
+28 th CS exit by Philosopher Thread 1 at 12:31:28
+23 th CS exit by Philosopher Thread 3 at 12:31:28
+31th CS Entry by Philosopher Thread 0 at 12:31:28
+24 th eat request by thread 3 at 12:31:28
+6th CS Entry by Philosopher Thread 2 at 12:31:28
+3 th eat request by thread 4 at 12:31:28
+31 th CS exit by Philosopher Thread 0 at 12:31:28
+6 th CS exit by Philosopher Thread 2 at 12:31:28
+29 th eat request by thread 1 at 12:31:28
+29th CS Entry by Philosopher Thread 1 at 12:31:28
+29 th CS exit by Philosopher Thread 1 at 12:31:28
+30 th eat request by thread 1 at 12:31:28
+30th CS Entry by Philosopher Thread 1 at 12:31:28
+30 th CS exit by Philosopher Thread 1 at 12:31:28
+31 th eat request by thread 1 at 12:31:28
+31th CS Entry by Philosopher Thread 1 at 12:31:28
+31 th CS exit by Philosopher Thread 1 at 12:31:28
+32 th eat request by thread 1 at 12:31:28
+32th CS Entry by Philosopher Thread 1 at 12:31:28
+32 th CS exit by Philosopher Thread 1 at 12:31:28
+33 th eat request by thread 1 at 12:31:28
+33th CS Entry by Philosopher Thread 1 at 12:31:28
+33 th CS exit by Philosopher Thread 1 at 12:31:28
+34 th eat request by thread 1 at 12:31:28
+34th CS Entry by Philosopher Thread 1 at 12:31:28
+34 th CS exit by Philosopher Thread 1 at 12:31:28
+35 th eat request by thread 1 at 12:31:28
+35th CS Entry by Philosopher Thread 1 at 12:31:28
+35 th CS exit by Philosopher Thread 1 at 12:31:28
+36 th eat request by thread 1 at 12:31:28
+36th CS Entry by Philosopher Thread 1 at 12:31:28
+36 th CS exit by Philosopher Thread 1 at 12:31:28
+37 th eat request by thread 1 at 12:31:28
+37th CS Entry by Philosopher Thread 1 at 12:31:28
+37 th CS exit by Philosopher Thread 1 at 12:31:28
+38 th eat request by thread 1 at 12:31:28
+38th CS Entry by Philosopher Thread 1 at 12:31:28
+38 th CS exit by Philosopher Thread 1 at 12:31:28
+39 th eat request by thread 1 at 12:31:28
+39th CS Entry by Philosopher Thread 1 at 12:31:28
+39 th CS exit by Philosopher Thread 1 at 12:31:28
+40 th eat request by thread 1 at 12:31:28
+40th CS Entry by Philosopher Thread 1 at 12:31:28
+40 th CS exit by Philosopher Thread 1 at 12:31:28
+41 th eat request by thread 1 at 12:31:28
+41th CS Entry by Philosopher Thread 1 at 12:31:28
+41 th CS exit by Philosopher Thread 1 at 12:31:28
+42 th eat request by thread 1 at 12:31:28
+42th CS Entry by Philosopher Thread 1 at 12:31:28
+42 th CS exit by Philosopher Thread 1 at 12:31:28
+43 th eat request by thread 1 at 12:31:28
+43th CS Entry by Philosopher Thread 1 at 12:31:28
+43 th CS exit by Philosopher Thread 1 at 12:31:28
+44 th eat request by thread 1 at 12:31:28
+44th CS Entry by Philosopher Thread 1 at 12:31:28
+44 th CS exit by Philosopher Thread 1 at 12:31:28
+45 th eat request by thread 1 at 12:31:28
+45th CS Entry by Philosopher Thread 1 at 12:31:28
+45 th CS exit by Philosopher Thread 1 at 12:31:28
+46 th eat request by thread 1 at 12:31:28
+46th CS Entry by Philosopher Thread 1 at 12:31:28
+46 th CS exit by Philosopher Thread 1 at 12:31:28
+47 th eat request by thread 1 at 12:31:28
+47th CS Entry by Philosopher Thread 1 at 12:31:28
+47 th CS exit by Philosopher Thread 1 at 12:31:28
+48 th eat request by thread 1 at 12:31:28
+48th CS Entry by Philosopher Thread 1 at 12:31:28
+48 th CS exit by Philosopher Thread 1 at 12:31:28
+49 th eat request by thread 1 at 12:31:28
+49th CS Entry by Philosopher Thread 1 at 12:31:28
+7 th eat request by thread 2 at 12:31:28
+49 th CS exit by Philosopher Thread 1 at 12:31:28
+32 th eat request by thread 0 at 12:31:28
+50 th eat request by thread 1 at 12:31:28
+3th CS Entry by Philosopher Thread 4 at 12:31:28
+7th CS Entry by Philosopher Thread 2 at 12:31:28
+3 th CS exit by Philosopher Thread 4 at 12:31:28
+7 th CS exit by Philosopher Thread 2 at 12:31:28
+32th CS Entry by Philosopher Thread 0 at 12:31:28
+8 th eat request by thread 2 at 12:31:28
+4 th eat request by thread 4 at 12:31:28
+32 th CS exit by Philosopher Thread 0 at 12:31:28
+24th CS Entry by Philosopher Thread 3 at 12:31:28
+50th CS Entry by Philosopher Thread 1 at 12:31:28
+50 th CS exit by Philosopher Thread 1 at 12:31:28
+51 th eat request by thread 1 at 12:31:28
+51th CS Entry by Philosopher Thread 1 at 12:31:28
+51 th CS exit by Philosopher Thread 1 at 12:31:28
+52 th eat request by thread 1 at 12:31:28
+52th CS Entry by Philosopher Thread 1 at 12:31:28
+52 th CS exit by Philosopher Thread 1 at 12:31:28
+53 th eat request by thread 1 at 12:31:28
+53th CS Entry by Philosopher Thread 1 at 12:31:28
+53 th CS exit by Philosopher Thread 1 at 12:31:28
+54 th eat request by thread 1 at 12:31:28
+54th CS Entry by Philosopher Thread 1 at 12:31:28
+54 th CS exit by Philosopher Thread 1 at 12:31:28
+55 th eat request by thread 1 at 12:31:28
+55th CS Entry by Philosopher Thread 1 at 12:31:28
+55 th CS exit by Philosopher Thread 1 at 12:31:28
+56 th eat request by thread 1 at 12:31:28
+56th CS Entry by Philosopher Thread 1 at 12:31:28
+56 th CS exit by Philosopher Thread 1 at 12:31:28
+57 th eat request by thread 1 at 12:31:28
+57th CS Entry by Philosopher Thread 1 at 12:31:28
+57 th CS exit by Philosopher Thread 1 at 12:31:28
+58 th eat request by thread 1 at 12:31:28
+58th CS Entry by Philosopher Thread 1 at 12:31:28
+58 th CS exit by Philosopher Thread 1 at 12:31:28
+59 th eat request by thread 1 at 12:31:28
+59th CS Entry by Philosopher Thread 1 at 12:31:28
+59 th CS exit by Philosopher Thread 1 at 12:31:28
+60 th eat request by thread 1 at 12:31:28
+60th CS Entry by Philosopher Thread 1 at 12:31:28
+60 th CS exit by Philosopher Thread 1 at 12:31:28
+61 th eat request by thread 1 at 12:31:28
+61th CS Entry by Philosopher Thread 1 at 12:31:28
+61 th CS exit by Philosopher Thread 1 at 12:31:28
+62 th eat request by thread 1 at 12:31:28
+62th CS Entry by Philosopher Thread 1 at 12:31:28
+62 th CS exit by Philosopher Thread 1 at 12:31:28
+63 th eat request by thread 1 at 12:31:28
+63th CS Entry by Philosopher Thread 1 at 12:31:28
+63 th CS exit by Philosopher Thread 1 at 12:31:28
+64 th eat request by thread 1 at 12:31:28
+64th CS Entry by Philosopher Thread 1 at 12:31:28
+64 th CS exit by Philosopher Thread 1 at 12:31:28
+65 th eat request by thread 1 at 12:31:28
+65th CS Entry by Philosopher Thread 1 at 12:31:28
+65 th CS exit by Philosopher Thread 1 at 12:31:28
+66 th eat request by thread 1 at 12:31:28
+66th CS Entry by Philosopher Thread 1 at 12:31:28
+66 th CS exit by Philosopher Thread 1 at 12:31:28
+67 th eat request by thread 1 at 12:31:28
+67th CS Entry by Philosopher Thread 1 at 12:31:28
+67 th CS exit by Philosopher Thread 1 at 12:31:28
+68 th eat request by thread 1 at 12:31:28
+68th CS Entry by Philosopher Thread 1 at 12:31:28
+68 th CS exit by Philosopher Thread 1 at 12:31:28
+69 th eat request by thread 1 at 12:31:28
+69th CS Entry by Philosopher Thread 1 at 12:31:28
+69 th CS exit by Philosopher Thread 1 at 12:31:28
+70 th eat request by thread 1 at 12:31:28
+70th CS Entry by Philosopher Thread 1 at 12:31:28
+70 th CS exit by Philosopher Thread 1 at 12:31:28
+71 th eat request by thread 1 at 12:31:28
+71th CS Entry by Philosopher Thread 1 at 12:31:28
+71 th CS exit by Philosopher Thread 1 at 12:31:28
+72 th eat request by thread 1 at 12:31:28
+72th CS Entry by Philosopher Thread 1 at 12:31:28
+72 th CS exit by Philosopher Thread 1 at 12:31:28
+73 th eat request by thread 1 at 12:31:28
+73th CS Entry by Philosopher Thread 1 at 12:31:28
+73 th CS exit by Philosopher Thread 1 at 12:31:28
+74 th eat request by thread 1 at 12:31:28
+74th CS Entry by Philosopher Thread 1 at 12:31:28
+74 th CS exit by Philosopher Thread 1 at 12:31:28
+33 th eat request by thread 0 at 12:31:28
+24 th CS exit by Philosopher Thread 3 at 12:31:28
+33th CS Entry by Philosopher Thread 0 at 12:31:28
+25 th eat request by thread 3 at 12:31:28
+75 th eat request by thread 1 at 12:31:28
+33 th CS exit by Philosopher Thread 0 at 12:31:28
+8th CS Entry by Philosopher Thread 2 at 12:31:28
+4th CS Entry by Philosopher Thread 4 at 12:31:28
+4 th CS exit by Philosopher Thread 4 at 12:31:28
+5 th eat request by thread 4 at 12:31:28
+5th CS Entry by Philosopher Thread 4 at 12:31:28
+5 th CS exit by Philosopher Thread 4 at 12:31:28
+6 th eat request by thread 4 at 12:31:28
+6th CS Entry by Philosopher Thread 4 at 12:31:28
+6 th CS exit by Philosopher Thread 4 at 12:31:28
+7 th eat request by thread 4 at 12:31:28
+7th CS Entry by Philosopher Thread 4 at 12:31:28
+7 th CS exit by Philosopher Thread 4 at 12:31:28
+8 th eat request by thread 4 at 12:31:28
+8th CS Entry by Philosopher Thread 4 at 12:31:28
+8 th CS exit by Philosopher Thread 4 at 12:31:28
+9 th eat request by thread 4 at 12:31:28
+9th CS Entry by Philosopher Thread 4 at 12:31:28
+9 th CS exit by Philosopher Thread 4 at 12:31:28
+10 th eat request by thread 4 at 12:31:28
+10th CS Entry by Philosopher Thread 4 at 12:31:28
+10 th CS exit by Philosopher Thread 4 at 12:31:28
+11 th eat request by thread 4 at 12:31:28
+11th CS Entry by Philosopher Thread 4 at 12:31:28
+11 th CS exit by Philosopher Thread 4 at 12:31:28
+12 th eat request by thread 4 at 12:31:28
+12th CS Entry by Philosopher Thread 4 at 12:31:28
+12 th CS exit by Philosopher Thread 4 at 12:31:28
+13 th eat request by thread 4 at 12:31:28
+13th CS Entry by Philosopher Thread 4 at 12:31:28
+13 th CS exit by Philosopher Thread 4 at 12:31:28
+14 th eat request by thread 4 at 12:31:28
+14th CS Entry by Philosopher Thread 4 at 12:31:28
+14 th CS exit by Philosopher Thread 4 at 12:31:28
+15 th eat request by thread 4 at 12:31:28
+15th CS Entry by Philosopher Thread 4 at 12:31:28
+15 th CS exit by Philosopher Thread 4 at 12:31:28
+16 th eat request by thread 4 at 12:31:28
+16th CS Entry by Philosopher Thread 4 at 12:31:28
+16 th CS exit by Philosopher Thread 4 at 12:31:28
+17 th eat request by thread 4 at 12:31:28
+17th CS Entry by Philosopher Thread 4 at 12:31:28
+17 th CS exit by Philosopher Thread 4 at 12:31:28
+18 th eat request by thread 4 at 12:31:28
+18th CS Entry by Philosopher Thread 4 at 12:31:28
+18 th CS exit by Philosopher Thread 4 at 12:31:28
+19 th eat request by thread 4 at 12:31:28
+19th CS Entry by Philosopher Thread 4 at 12:31:28
+19 th CS exit by Philosopher Thread 4 at 12:31:28
+20 th eat request by thread 4 at 12:31:28
+20th CS Entry by Philosopher Thread 4 at 12:31:28
+20 th CS exit by Philosopher Thread 4 at 12:31:28
+21 th eat request by thread 4 at 12:31:28
+21th CS Entry by Philosopher Thread 4 at 12:31:28
+21 th CS exit by Philosopher Thread 4 at 12:31:28
+22 th eat request by thread 4 at 12:31:28
+22th CS Entry by Philosopher Thread 4 at 12:31:28
+22 th CS exit by Philosopher Thread 4 at 12:31:28
+23 th eat request by thread 4 at 12:31:28
+23th CS Entry by Philosopher Thread 4 at 12:31:28
+23 th CS exit by Philosopher Thread 4 at 12:31:28
+24 th eat request by thread 4 at 12:31:28
+24th CS Entry by Philosopher Thread 4 at 12:31:28
+24 th CS exit by Philosopher Thread 4 at 12:31:28
+25 th eat request by thread 4 at 12:31:28
+25th CS Entry by Philosopher Thread 4 at 12:31:28
+25 th CS exit by Philosopher Thread 4 at 12:31:28
+26 th eat request by thread 4 at 12:31:28
+26th CS Entry by Philosopher Thread 4 at 12:31:28
+26 th CS exit by Philosopher Thread 4 at 12:31:28
+27 th eat request by thread 4 at 12:31:28
+27th CS Entry by Philosopher Thread 4 at 12:31:28
+27 th CS exit by Philosopher Thread 4 at 12:31:28
+28 th eat request by thread 4 at 12:31:28
+28th CS Entry by Philosopher Thread 4 at 12:31:28
+28 th CS exit by Philosopher Thread 4 at 12:31:28
+29 th eat request by thread 4 at 12:31:28
+29th CS Entry by Philosopher Thread 4 at 12:31:28
+29 th CS exit by Philosopher Thread 4 at 12:31:28
+30 th eat request by thread 4 at 12:31:28
+30th CS Entry by Philosopher Thread 4 at 12:31:28
+30 th CS exit by Philosopher Thread 4 at 12:31:28
+34 th eat request by thread 0 at 12:31:28
+8 th CS exit by Philosopher Thread 2 at 12:31:28
+34th CS Entry by Philosopher Thread 0 at 12:31:28
+9 th eat request by thread 2 at 12:31:28
+34 th CS exit by Philosopher Thread 0 at 12:31:28
+25th CS Entry by Philosopher Thread 3 at 12:31:28
+35 th eat request by thread 0 at 12:31:28
+75th CS Entry by Philosopher Thread 1 at 12:31:28
+75 th CS exit by Philosopher Thread 1 at 12:31:28
+31 th eat request by thread 4 at 12:31:28
+25 th CS exit by Philosopher Thread 3 at 12:31:28
+76 th eat request by thread 1 at 12:31:28
+9th CS Entry by Philosopher Thread 2 at 12:31:28
+9 th CS exit by Philosopher Thread 2 at 12:31:28
+10 th eat request by thread 2 at 12:31:28
+10th CS Entry by Philosopher Thread 2 at 12:31:28
+10 th CS exit by Philosopher Thread 2 at 12:31:28
+11 th eat request by thread 2 at 12:31:28
+11th CS Entry by Philosopher Thread 2 at 12:31:28
+11 th CS exit by Philosopher Thread 2 at 12:31:28
+12 th eat request by thread 2 at 12:31:28
+12th CS Entry by Philosopher Thread 2 at 12:31:28
+12 th CS exit by Philosopher Thread 2 at 12:31:28
+13 th eat request by thread 2 at 12:31:28
+13th CS Entry by Philosopher Thread 2 at 12:31:28
+13 th CS exit by Philosopher Thread 2 at 12:31:28
+14 th eat request by thread 2 at 12:31:28
+14th CS Entry by Philosopher Thread 2 at 12:31:28
+14 th CS exit by Philosopher Thread 2 at 12:31:28
+15 th eat request by thread 2 at 12:31:28
+15th CS Entry by Philosopher Thread 2 at 12:31:28
+15 th CS exit by Philosopher Thread 2 at 12:31:28
+16 th eat request by thread 2 at 12:31:28
+16th CS Entry by Philosopher Thread 2 at 12:31:28
+16 th CS exit by Philosopher Thread 2 at 12:31:28
+17 th eat request by thread 2 at 12:31:28
+17th CS Entry by Philosopher Thread 2 at 12:31:28
+17 th CS exit by Philosopher Thread 2 at 12:31:28
+18 th eat request by thread 2 at 12:31:28
+18th CS Entry by Philosopher Thread 2 at 12:31:28
+18 th CS exit by Philosopher Thread 2 at 12:31:28
+19 th eat request by thread 2 at 12:31:28
+19th CS Entry by Philosopher Thread 2 at 12:31:28
+19 th CS exit by Philosopher Thread 2 at 12:31:28
+20 th eat request by thread 2 at 12:31:28
+20th CS Entry by Philosopher Thread 2 at 12:31:28
+20 th CS exit by Philosopher Thread 2 at 12:31:28
+21 th eat request by thread 2 at 12:31:28
+21th CS Entry by Philosopher Thread 2 at 12:31:28
+21 th CS exit by Philosopher Thread 2 at 12:31:28
+22 th eat request by thread 2 at 12:31:28
+22th CS Entry by Philosopher Thread 2 at 12:31:28
+22 th CS exit by Philosopher Thread 2 at 12:31:28
+23 th eat request by thread 2 at 12:31:28
+23th CS Entry by Philosopher Thread 2 at 12:31:28
+23 th CS exit by Philosopher Thread 2 at 12:31:28
+24 th eat request by thread 2 at 12:31:28
+24th CS Entry by Philosopher Thread 2 at 12:31:28
+24 th CS exit by Philosopher Thread 2 at 12:31:28
+25 th eat request by thread 2 at 12:31:28
+25th CS Entry by Philosopher Thread 2 at 12:31:28
+25 th CS exit by Philosopher Thread 2 at 12:31:28
+26 th eat request by thread 2 at 12:31:28
+26th CS Entry by Philosopher Thread 2 at 12:31:28
+26 th CS exit by Philosopher Thread 2 at 12:31:28
+27 th eat request by thread 2 at 12:31:28
+27th CS Entry by Philosopher Thread 2 at 12:31:28
+27 th CS exit by Philosopher Thread 2 at 12:31:28
+28 th eat request by thread 2 at 12:31:28
+28th CS Entry by Philosopher Thread 2 at 12:31:28
+28 th CS exit by Philosopher Thread 2 at 12:31:28
+29 th eat request by thread 2 at 12:31:28
+29th CS Entry by Philosopher Thread 2 at 12:31:28
+29 th CS exit by Philosopher Thread 2 at 12:31:28
+30 th eat request by thread 2 at 12:31:28
+30th CS Entry by Philosopher Thread 2 at 12:31:28
+30 th CS exit by Philosopher Thread 2 at 12:31:28
+31 th eat request by thread 2 at 12:31:28
+31th CS Entry by Philosopher Thread 2 at 12:31:28
+31 th CS exit by Philosopher Thread 2 at 12:31:28
+32 th eat request by thread 2 at 12:31:28
+32th CS Entry by Philosopher Thread 2 at 12:31:28
+32 th CS exit by Philosopher Thread 2 at 12:31:28
+33 th eat request by thread 2 at 12:31:28
+33th CS Entry by Philosopher Thread 2 at 12:31:28
+33 th CS exit by Philosopher Thread 2 at 12:31:28
+34 th eat request by thread 2 at 12:31:28
+26 th eat request by thread 3 at 12:31:28
+34th CS Entry by Philosopher Thread 2 at 12:31:28
+34 th CS exit by Philosopher Thread 2 at 12:31:28
+35th CS Entry by Philosopher Thread 0 at 12:31:28
+26th CS Entry by Philosopher Thread 3 at 12:31:28
+26 th CS exit by Philosopher Thread 3 at 12:31:28
+27 th eat request by thread 3 at 12:31:28
+27th CS Entry by Philosopher Thread 3 at 12:31:28
+27 th CS exit by Philosopher Thread 3 at 12:31:28
+28 th eat request by thread 3 at 12:31:28
+28th CS Entry by Philosopher Thread 3 at 12:31:28
+28 th CS exit by Philosopher Thread 3 at 12:31:28
+35 th CS exit by Philosopher Thread 0 at 12:31:28
+35 th eat request by thread 2 at 12:31:28
+36 th eat request by thread 0 at 12:31:28
+31th CS Entry by Philosopher Thread 4 at 12:31:28
+31 th CS exit by Philosopher Thread 4 at 12:31:28
+32 th eat request by thread 4 at 12:31:28
+32th CS Entry by Philosopher Thread 4 at 12:31:28
+32 th CS exit by Philosopher Thread 4 at 12:31:28
+33 th eat request by thread 4 at 12:31:28
+33th CS Entry by Philosopher Thread 4 at 12:31:28
+33 th CS exit by Philosopher Thread 4 at 12:31:28
+34 th eat request by thread 4 at 12:31:28
+34th CS Entry by Philosopher Thread 4 at 12:31:28
+34 th CS exit by Philosopher Thread 4 at 12:31:28
+35 th eat request by thread 4 at 12:31:28
+35th CS Entry by Philosopher Thread 4 at 12:31:28
+35 th CS exit by Philosopher Thread 4 at 12:31:28
+36 th eat request by thread 4 at 12:31:28
+36th CS Entry by Philosopher Thread 4 at 12:31:28
+36 th CS exit by Philosopher Thread 4 at 12:31:28
+37 th eat request by thread 4 at 12:31:28
+37th CS Entry by Philosopher Thread 4 at 12:31:28
+37 th CS exit by Philosopher Thread 4 at 12:31:28
+38 th eat request by thread 4 at 12:31:28
+38th CS Entry by Philosopher Thread 4 at 12:31:28
+38 th CS exit by Philosopher Thread 4 at 12:31:28
+39 th eat request by thread 4 at 12:31:28
+39th CS Entry by Philosopher Thread 4 at 12:31:28
+39 th CS exit by Philosopher Thread 4 at 12:31:28
+40 th eat request by thread 4 at 12:31:28
+40th CS Entry by Philosopher Thread 4 at 12:31:28
+40 th CS exit by Philosopher Thread 4 at 12:31:28
+41 th eat request by thread 4 at 12:31:28
+41th CS Entry by Philosopher Thread 4 at 12:31:28
+41 th CS exit by Philosopher Thread 4 at 12:31:28
+42 th eat request by thread 4 at 12:31:28
+42th CS Entry by Philosopher Thread 4 at 12:31:28
+42 th CS exit by Philosopher Thread 4 at 12:31:28
+43 th eat request by thread 4 at 12:31:28
+43th CS Entry by Philosopher Thread 4 at 12:31:28
+43 th CS exit by Philosopher Thread 4 at 12:31:28
+44 th eat request by thread 4 at 12:31:28
+44th CS Entry by Philosopher Thread 4 at 12:31:28
+44 th CS exit by Philosopher Thread 4 at 12:31:28
+45 th eat request by thread 4 at 12:31:28
+45th CS Entry by Philosopher Thread 4 at 12:31:28
+45 th CS exit by Philosopher Thread 4 at 12:31:28
+46 th eat request by thread 4 at 12:31:28
+46th CS Entry by Philosopher Thread 4 at 12:31:28
+46 th CS exit by Philosopher Thread 4 at 12:31:28
+47 th eat request by thread 4 at 12:31:28
+47th CS Entry by Philosopher Thread 4 at 12:31:28
+47 th CS exit by Philosopher Thread 4 at 12:31:28
+48 th eat request by thread 4 at 12:31:28
+48th CS Entry by Philosopher Thread 4 at 12:31:28
+48 th CS exit by Philosopher Thread 4 at 12:31:28
+49 th eat request by thread 4 at 12:31:28
+49th CS Entry by Philosopher Thread 4 at 12:31:28
+49 th CS exit by Philosopher Thread 4 at 12:31:28
+50 th eat request by thread 4 at 12:31:28
+50th CS Entry by Philosopher Thread 4 at 12:31:28
+50 th CS exit by Philosopher Thread 4 at 12:31:28
+51 th eat request by thread 4 at 12:31:28
+51th CS Entry by Philosopher Thread 4 at 12:31:28
+51 th CS exit by Philosopher Thread 4 at 12:31:28
+52 th eat request by thread 4 at 12:31:28
+52th CS Entry by Philosopher Thread 4 at 12:31:28
+52 th CS exit by Philosopher Thread 4 at 12:31:28
+53 th eat request by thread 4 at 12:31:28
+53th CS Entry by Philosopher Thread 4 at 12:31:28
+53 th CS exit by Philosopher Thread 4 at 12:31:28
+54 th eat request by thread 4 at 12:31:28
+54th CS Entry by Philosopher Thread 4 at 12:31:28
+54 th CS exit by Philosopher Thread 4 at 12:31:28
+29 th eat request by thread 3 at 12:31:28
+76th CS Entry by Philosopher Thread 1 at 12:31:28
+29th CS Entry by Philosopher Thread 3 at 12:31:28
+29 th CS exit by Philosopher Thread 3 at 12:31:28
+30 th eat request by thread 3 at 12:31:28
+30th CS Entry by Philosopher Thread 3 at 12:31:28
+30 th CS exit by Philosopher Thread 3 at 12:31:28
+31 th eat request by thread 3 at 12:31:28
+31th CS Entry by Philosopher Thread 3 at 12:31:28
+31 th CS exit by Philosopher Thread 3 at 12:31:28
+32 th eat request by thread 3 at 12:31:28
+32th CS Entry by Philosopher Thread 3 at 12:31:28
+32 th CS exit by Philosopher Thread 3 at 12:31:28
+33 th eat request by thread 3 at 12:31:28
+33th CS Entry by Philosopher Thread 3 at 12:31:28
+33 th CS exit by Philosopher Thread 3 at 12:31:28
+34 th eat request by thread 3 at 12:31:28
+34th CS Entry by Philosopher Thread 3 at 12:31:28
+34 th CS exit by Philosopher Thread 3 at 12:31:28
+35 th eat request by thread 3 at 12:31:28
+35th CS Entry by Philosopher Thread 3 at 12:31:28
+35 th CS exit by Philosopher Thread 3 at 12:31:28
+36 th eat request by thread 3 at 12:31:28
+36th CS Entry by Philosopher Thread 3 at 12:31:28
+36 th CS exit by Philosopher Thread 3 at 12:31:28
+37 th eat request by thread 3 at 12:31:28
+37th CS Entry by Philosopher Thread 3 at 12:31:28
+37 th CS exit by Philosopher Thread 3 at 12:31:28
+38 th eat request by thread 3 at 12:31:28
+38th CS Entry by Philosopher Thread 3 at 12:31:28
+38 th CS exit by Philosopher Thread 3 at 12:31:28
+39 th eat request by thread 3 at 12:31:28
+39th CS Entry by Philosopher Thread 3 at 12:31:28
+39 th CS exit by Philosopher Thread 3 at 12:31:28
+40 th eat request by thread 3 at 12:31:28
+40th CS Entry by Philosopher Thread 3 at 12:31:28
+40 th CS exit by Philosopher Thread 3 at 12:31:28
+41 th eat request by thread 3 at 12:31:28
+41th CS Entry by Philosopher Thread 3 at 12:31:28
+41 th CS exit by Philosopher Thread 3 at 12:31:28
+42 th eat request by thread 3 at 12:31:28
+42th CS Entry by Philosopher Thread 3 at 12:31:28
+42 th CS exit by Philosopher Thread 3 at 12:31:28
+43 th eat request by thread 3 at 12:31:28
+43th CS Entry by Philosopher Thread 3 at 12:31:28
+43 th CS exit by Philosopher Thread 3 at 12:31:28
+44 th eat request by thread 3 at 12:31:28
+44th CS Entry by Philosopher Thread 3 at 12:31:28
+44 th CS exit by Philosopher Thread 3 at 12:31:28
+45 th eat request by thread 3 at 12:31:28
+45th CS Entry by Philosopher Thread 3 at 12:31:28
+45 th CS exit by Philosopher Thread 3 at 12:31:28
+46 th eat request by thread 3 at 12:31:28
+46th CS Entry by Philosopher Thread 3 at 12:31:28
+46 th CS exit by Philosopher Thread 3 at 12:31:28
+47 th eat request by thread 3 at 12:31:28
+47th CS Entry by Philosopher Thread 3 at 12:31:28
+47 th CS exit by Philosopher Thread 3 at 12:31:28
+48 th eat request by thread 3 at 12:31:28
+48th CS Entry by Philosopher Thread 3 at 12:31:28
+48 th CS exit by Philosopher Thread 3 at 12:31:28
+49 th eat request by thread 3 at 12:31:28
+49th CS Entry by Philosopher Thread 3 at 12:31:28
+49 th CS exit by Philosopher Thread 3 at 12:31:28
+50 th eat request by thread 3 at 12:31:28
+50th CS Entry by Philosopher Thread 3 at 12:31:28
+50 th CS exit by Philosopher Thread 3 at 12:31:28
+51 th eat request by thread 3 at 12:31:28
+51th CS Entry by Philosopher Thread 3 at 12:31:28
+51 th CS exit by Philosopher Thread 3 at 12:31:28
+52 th eat request by thread 3 at 12:31:28
+52th CS Entry by Philosopher Thread 3 at 12:31:28
+52 th CS exit by Philosopher Thread 3 at 12:31:28
+53 th eat request by thread 3 at 12:31:28
+53th CS Entry by Philosopher Thread 3 at 12:31:28
+53 th CS exit by Philosopher Thread 3 at 12:31:28
+54 th eat request by thread 3 at 12:31:28
+54th CS Entry by Philosopher Thread 3 at 12:31:28
+54 th CS exit by Philosopher Thread 3 at 12:31:28
+55 th eat request by thread 3 at 12:31:28
+55th CS Entry by Philosopher Thread 3 at 12:31:28
+55 th CS exit by Philosopher Thread 3 at 12:31:28
+56 th eat request by thread 3 at 12:31:28
+56th CS Entry by Philosopher Thread 3 at 12:31:28
+56 th CS exit by Philosopher Thread 3 at 12:31:28
+57 th eat request by thread 3 at 12:31:28
+57th CS Entry by Philosopher Thread 3 at 12:31:28
+76 th CS exit by Philosopher Thread 1 at 12:31:28
+55 th eat request by thread 4 at 12:31:28
+77 th eat request by thread 1 at 12:31:28
+57 th CS exit by Philosopher Thread 3 at 12:31:28
+36th CS Entry by Philosopher Thread 0 at 12:31:28
+58 th eat request by thread 3 at 12:31:28
+35th CS Entry by Philosopher Thread 2 at 12:31:28
+36 th CS exit by Philosopher Thread 0 at 12:31:28
+35 th CS exit by Philosopher Thread 2 at 12:31:28
+55th CS Entry by Philosopher Thread 4 at 12:31:28
+36 th eat request by thread 2 at 12:31:28
+77th CS Entry by Philosopher Thread 1 at 12:31:28
+77 th CS exit by Philosopher Thread 1 at 12:31:28
+55 th CS exit by Philosopher Thread 4 at 12:31:28
+37 th eat request by thread 0 at 12:31:28
+37th CS Entry by Philosopher Thread 0 at 12:31:28
+37 th CS exit by Philosopher Thread 0 at 12:31:28
+38 th eat request by thread 0 at 12:31:28
+38th CS Entry by Philosopher Thread 0 at 12:31:28
+38 th CS exit by Philosopher Thread 0 at 12:31:28
+39 th eat request by thread 0 at 12:31:28
+39th CS Entry by Philosopher Thread 0 at 12:31:28
+39 th CS exit by Philosopher Thread 0 at 12:31:28
+40 th eat request by thread 0 at 12:31:28
+40th CS Entry by Philosopher Thread 0 at 12:31:28
+40 th CS exit by Philosopher Thread 0 at 12:31:28
+41 th eat request by thread 0 at 12:31:28
+41th CS Entry by Philosopher Thread 0 at 12:31:28
+41 th CS exit by Philosopher Thread 0 at 12:31:28
+42 th eat request by thread 0 at 12:31:28
+42th CS Entry by Philosopher Thread 0 at 12:31:28
+42 th CS exit by Philosopher Thread 0 at 12:31:28
+43 th eat request by thread 0 at 12:31:28
+43th CS Entry by Philosopher Thread 0 at 12:31:28
+43 th CS exit by Philosopher Thread 0 at 12:31:28
+44 th eat request by thread 0 at 12:31:28
+44th CS Entry by Philosopher Thread 0 at 12:31:28
+44 th CS exit by Philosopher Thread 0 at 12:31:28
+45 th eat request by thread 0 at 12:31:28
+45th CS Entry by Philosopher Thread 0 at 12:31:28
+45 th CS exit by Philosopher Thread 0 at 12:31:28
+46 th eat request by thread 0 at 12:31:28
+46th CS Entry by Philosopher Thread 0 at 12:31:28
+46 th CS exit by Philosopher Thread 0 at 12:31:28
+47 th eat request by thread 0 at 12:31:28
+47th CS Entry by Philosopher Thread 0 at 12:31:28
+47 th CS exit by Philosopher Thread 0 at 12:31:28
+48 th eat request by thread 0 at 12:31:28
+48th CS Entry by Philosopher Thread 0 at 12:31:28
+48 th CS exit by Philosopher Thread 0 at 12:31:28
+49 th eat request by thread 0 at 12:31:28
+49th CS Entry by Philosopher Thread 0 at 12:31:28
+49 th CS exit by Philosopher Thread 0 at 12:31:28
+50 th eat request by thread 0 at 12:31:28
+50th CS Entry by Philosopher Thread 0 at 12:31:28
+50 th CS exit by Philosopher Thread 0 at 12:31:28
+51 th eat request by thread 0 at 12:31:28
+51th CS Entry by Philosopher Thread 0 at 12:31:28
+51 th CS exit by Philosopher Thread 0 at 12:31:28
+52 th eat request by thread 0 at 12:31:28
+52th CS Entry by Philosopher Thread 0 at 12:31:28
+52 th CS exit by Philosopher Thread 0 at 12:31:28
+53 th eat request by thread 0 at 12:31:28
+53th CS Entry by Philosopher Thread 0 at 12:31:28
+53 th CS exit by Philosopher Thread 0 at 12:31:28
+54 th eat request by thread 0 at 12:31:28
+54th CS Entry by Philosopher Thread 0 at 12:31:28
+54 th CS exit by Philosopher Thread 0 at 12:31:28
+55 th eat request by thread 0 at 12:31:28
+55th CS Entry by Philosopher Thread 0 at 12:31:28
+55 th CS exit by Philosopher Thread 0 at 12:31:28
+56 th eat request by thread 0 at 12:31:28
+56th CS Entry by Philosopher Thread 0 at 12:31:28
+56 th CS exit by Philosopher Thread 0 at 12:31:28
+57 th eat request by thread 0 at 12:31:28
+57th CS Entry by Philosopher Thread 0 at 12:31:28
+57 th CS exit by Philosopher Thread 0 at 12:31:28
+58 th eat request by thread 0 at 12:31:28
+58th CS Entry by Philosopher Thread 0 at 12:31:28
+58 th CS exit by Philosopher Thread 0 at 12:31:28
+59 th eat request by thread 0 at 12:31:28
+59th CS Entry by Philosopher Thread 0 at 12:31:28
+59 th CS exit by Philosopher Thread 0 at 12:31:28
+60 th eat request by thread 0 at 12:31:28
+60th CS Entry by Philosopher Thread 0 at 12:31:28
+60 th CS exit by Philosopher Thread 0 at 12:31:28
+56 th eat request by thread 4 at 12:31:28
+61 th eat request by thread 0 at 12:31:28
+36th CS Entry by Philosopher Thread 2 at 12:31:28
+56th CS Entry by Philosopher Thread 4 at 12:31:28
+78 th eat request by thread 1 at 12:31:28
+56 th CS exit by Philosopher Thread 4 at 12:31:28
+36 th CS exit by Philosopher Thread 2 at 12:31:28
+61th CS Entry by Philosopher Thread 0 at 12:31:28
+37 th eat request by thread 2 at 12:31:28
+61 th CS exit by Philosopher Thread 0 at 12:31:28
+57 th eat request by thread 4 at 12:31:28
+62 th eat request by thread 0 at 12:31:28
+78th CS Entry by Philosopher Thread 1 at 12:31:28
+58th CS Entry by Philosopher Thread 3 at 12:31:28
+58 th CS exit by Philosopher Thread 3 at 12:31:28
+78 th CS exit by Philosopher Thread 1 at 12:31:28
+57th CS Entry by Philosopher Thread 4 at 12:31:28
+79 th eat request by thread 1 at 12:31:28
+59 th eat request by thread 3 at 12:31:28
+37th CS Entry by Philosopher Thread 2 at 12:31:28
+37 th CS exit by Philosopher Thread 2 at 12:31:28
+57 th CS exit by Philosopher Thread 4 at 12:31:28
+38 th eat request by thread 2 at 12:31:28
+59th CS Entry by Philosopher Thread 3 at 12:31:28
+59 th CS exit by Philosopher Thread 3 at 12:31:28
+60 th eat request by thread 3 at 12:31:28
+60th CS Entry by Philosopher Thread 3 at 12:31:28
+60 th CS exit by Philosopher Thread 3 at 12:31:28
+61 th eat request by thread 3 at 12:31:28
+61th CS Entry by Philosopher Thread 3 at 12:31:28
+61 th CS exit by Philosopher Thread 3 at 12:31:28
+62 th eat request by thread 3 at 12:31:28
+62th CS Entry by Philosopher Thread 3 at 12:31:28
+62 th CS exit by Philosopher Thread 3 at 12:31:28
+63 th eat request by thread 3 at 12:31:28
+63th CS Entry by Philosopher Thread 3 at 12:31:28
+63 th CS exit by Philosopher Thread 3 at 12:31:28
+64 th eat request by thread 3 at 12:31:28
+64th CS Entry by Philosopher Thread 3 at 12:31:28
+64 th CS exit by Philosopher Thread 3 at 12:31:28
+65 th eat request by thread 3 at 12:31:28
+65th CS Entry by Philosopher Thread 3 at 12:31:28
+65 th CS exit by Philosopher Thread 3 at 12:31:28
+66 th eat request by thread 3 at 12:31:28
+66th CS Entry by Philosopher Thread 3 at 12:31:28
+66 th CS exit by Philosopher Thread 3 at 12:31:28
+67 th eat request by thread 3 at 12:31:28
+67th CS Entry by Philosopher Thread 3 at 12:31:28
+67 th CS exit by Philosopher Thread 3 at 12:31:28
+68 th eat request by thread 3 at 12:31:28
+68th CS Entry by Philosopher Thread 3 at 12:31:28
+68 th CS exit by Philosopher Thread 3 at 12:31:28
+69 th eat request by thread 3 at 12:31:28
+69th CS Entry by Philosopher Thread 3 at 12:31:28
+69 th CS exit by Philosopher Thread 3 at 12:31:28
+70 th eat request by thread 3 at 12:31:28
+70th CS Entry by Philosopher Thread 3 at 12:31:28
+70 th CS exit by Philosopher Thread 3 at 12:31:28
+71 th eat request by thread 3 at 12:31:28
+71th CS Entry by Philosopher Thread 3 at 12:31:28
+71 th CS exit by Philosopher Thread 3 at 12:31:28
+72 th eat request by thread 3 at 12:31:28
+72th CS Entry by Philosopher Thread 3 at 12:31:28
+72 th CS exit by Philosopher Thread 3 at 12:31:28
+73 th eat request by thread 3 at 12:31:28
+73th CS Entry by Philosopher Thread 3 at 12:31:28
+73 th CS exit by Philosopher Thread 3 at 12:31:28
+74 th eat request by thread 3 at 12:31:28
+74th CS Entry by Philosopher Thread 3 at 12:31:28
+74 th CS exit by Philosopher Thread 3 at 12:31:28
+75 th eat request by thread 3 at 12:31:28
+75th CS Entry by Philosopher Thread 3 at 12:31:28
+75 th CS exit by Philosopher Thread 3 at 12:31:28
+76 th eat request by thread 3 at 12:31:28
+76th CS Entry by Philosopher Thread 3 at 12:31:28
+76 th CS exit by Philosopher Thread 3 at 12:31:28
+77 th eat request by thread 3 at 12:31:28
+77th CS Entry by Philosopher Thread 3 at 12:31:28
+77 th CS exit by Philosopher Thread 3 at 12:31:28
+78 th eat request by thread 3 at 12:31:28
+78th CS Entry by Philosopher Thread 3 at 12:31:28
+78 th CS exit by Philosopher Thread 3 at 12:31:28
+79 th eat request by thread 3 at 12:31:28
+79th CS Entry by Philosopher Thread 3 at 12:31:28
+79 th CS exit by Philosopher Thread 3 at 12:31:28
+80 th eat request by thread 3 at 12:31:28
+80th CS Entry by Philosopher Thread 3 at 12:31:28
+79th CS Entry by Philosopher Thread 1 at 12:31:28
+58 th eat request by thread 4 at 12:31:28
+79 th CS exit by Philosopher Thread 1 at 12:31:28
+80 th CS exit by Philosopher Thread 3 at 12:31:28
+80 th eat request by thread 1 at 12:31:28
+62th CS Entry by Philosopher Thread 0 at 12:31:28
+62 th CS exit by Philosopher Thread 0 at 12:31:28
+81 th eat request by thread 3 at 12:31:28
+63 th eat request by thread 0 at 12:31:28
+38th CS Entry by Philosopher Thread 2 at 12:31:28
+38 th CS exit by Philosopher Thread 2 at 12:31:28
+58th CS Entry by Philosopher Thread 4 at 12:31:28
+80th CS Entry by Philosopher Thread 1 at 12:31:28
+80 th CS exit by Philosopher Thread 1 at 12:31:28
+81 th eat request by thread 1 at 12:31:28
+81th CS Entry by Philosopher Thread 1 at 12:31:28
+81 th CS exit by Philosopher Thread 1 at 12:31:28
+82 th eat request by thread 1 at 12:31:28
+82th CS Entry by Philosopher Thread 1 at 12:31:28
+82 th CS exit by Philosopher Thread 1 at 12:31:28
+83 th eat request by thread 1 at 12:31:28
+83th CS Entry by Philosopher Thread 1 at 12:31:28
+83 th CS exit by Philosopher Thread 1 at 12:31:28
+84 th eat request by thread 1 at 12:31:28
+84th CS Entry by Philosopher Thread 1 at 12:31:28
+84 th CS exit by Philosopher Thread 1 at 12:31:28
+85 th eat request by thread 1 at 12:31:28
+85th CS Entry by Philosopher Thread 1 at 12:31:28
+85 th CS exit by Philosopher Thread 1 at 12:31:28
+86 th eat request by thread 1 at 12:31:28
+86th CS Entry by Philosopher Thread 1 at 12:31:28
+86 th CS exit by Philosopher Thread 1 at 12:31:28
+87 th eat request by thread 1 at 12:31:28
+87th CS Entry by Philosopher Thread 1 at 12:31:28
+87 th CS exit by Philosopher Thread 1 at 12:31:28
+88 th eat request by thread 1 at 12:31:28
+88th CS Entry by Philosopher Thread 1 at 12:31:28
+88 th CS exit by Philosopher Thread 1 at 12:31:28
+89 th eat request by thread 1 at 12:31:28
+89th CS Entry by Philosopher Thread 1 at 12:31:28
+89 th CS exit by Philosopher Thread 1 at 12:31:28
+90 th eat request by thread 1 at 12:31:28
+90th CS Entry by Philosopher Thread 1 at 12:31:28
+90 th CS exit by Philosopher Thread 1 at 12:31:28
+91 th eat request by thread 1 at 12:31:28
+91th CS Entry by Philosopher Thread 1 at 12:31:28
+91 th CS exit by Philosopher Thread 1 at 12:31:28
+92 th eat request by thread 1 at 12:31:28
+92th CS Entry by Philosopher Thread 1 at 12:31:28
+92 th CS exit by Philosopher Thread 1 at 12:31:28
+93 th eat request by thread 1 at 12:31:28
+93th CS Entry by Philosopher Thread 1 at 12:31:28
+93 th CS exit by Philosopher Thread 1 at 12:31:28
+94 th eat request by thread 1 at 12:31:28
+94th CS Entry by Philosopher Thread 1 at 12:31:28
+94 th CS exit by Philosopher Thread 1 at 12:31:28
+95 th eat request by thread 1 at 12:31:28
+95th CS Entry by Philosopher Thread 1 at 12:31:28
+95 th CS exit by Philosopher Thread 1 at 12:31:28
+96 th eat request by thread 1 at 12:31:28
+96th CS Entry by Philosopher Thread 1 at 12:31:28
+96 th CS exit by Philosopher Thread 1 at 12:31:28
+97 th eat request by thread 1 at 12:31:28
+97th CS Entry by Philosopher Thread 1 at 12:31:28
+97 th CS exit by Philosopher Thread 1 at 12:31:28
+98 th eat request by thread 1 at 12:31:28
+98th CS Entry by Philosopher Thread 1 at 12:31:28
+98 th CS exit by Philosopher Thread 1 at 12:31:28
+99 th eat request by thread 1 at 12:31:28
+99th CS Entry by Philosopher Thread 1 at 12:31:28
+99 th CS exit by Philosopher Thread 1 at 12:31:28
+58 th CS exit by Philosopher Thread 4 at 12:31:28
+39 th eat request by thread 2 at 12:31:28
+63th CS Entry by Philosopher Thread 0 at 12:31:28
+59 th eat request by thread 4 at 12:31:28
+81th CS Entry by Philosopher Thread 3 at 12:31:28
+63 th CS exit by Philosopher Thread 0 at 12:31:28
+81 th CS exit by Philosopher Thread 3 at 12:31:28
+64 th eat request by thread 0 at 12:31:28
+82 th eat request by thread 3 at 12:31:28
+39th CS Entry by Philosopher Thread 2 at 12:31:28
+39 th CS exit by Philosopher Thread 2 at 12:31:28
+40 th eat request by thread 2 at 12:31:28
+59th CS Entry by Philosopher Thread 4 at 12:31:28
+59 th CS exit by Philosopher Thread 4 at 12:31:28
+40th CS Entry by Philosopher Thread 2 at 12:31:28
+60 th eat request by thread 4 at 12:31:28
+40 th CS exit by Philosopher Thread 2 at 12:31:28
+64th CS Entry by Philosopher Thread 0 at 12:31:28
+64 th CS exit by Philosopher Thread 0 at 12:31:28
+65 th eat request by thread 0 at 12:31:28
+65th CS Entry by Philosopher Thread 0 at 12:31:28
+65 th CS exit by Philosopher Thread 0 at 12:31:28
+66 th eat request by thread 0 at 12:31:28
+66th CS Entry by Philosopher Thread 0 at 12:31:28
+66 th CS exit by Philosopher Thread 0 at 12:31:28
+67 th eat request by thread 0 at 12:31:28
+67th CS Entry by Philosopher Thread 0 at 12:31:28
+67 th CS exit by Philosopher Thread 0 at 12:31:28
+68 th eat request by thread 0 at 12:31:28
+68th CS Entry by Philosopher Thread 0 at 12:31:28
+68 th CS exit by Philosopher Thread 0 at 12:31:28
+69 th eat request by thread 0 at 12:31:28
+69th CS Entry by Philosopher Thread 0 at 12:31:28
+69 th CS exit by Philosopher Thread 0 at 12:31:28
+70 th eat request by thread 0 at 12:31:28
+70th CS Entry by Philosopher Thread 0 at 12:31:28
+70 th CS exit by Philosopher Thread 0 at 12:31:28
+71 th eat request by thread 0 at 12:31:28
+71th CS Entry by Philosopher Thread 0 at 12:31:28
+71 th CS exit by Philosopher Thread 0 at 12:31:28
+72 th eat request by thread 0 at 12:31:28
+72th CS Entry by Philosopher Thread 0 at 12:31:28
+72 th CS exit by Philosopher Thread 0 at 12:31:28
+73 th eat request by thread 0 at 12:31:28
+73th CS Entry by Philosopher Thread 0 at 12:31:28
+73 th CS exit by Philosopher Thread 0 at 12:31:28
+74 th eat request by thread 0 at 12:31:28
+74th CS Entry by Philosopher Thread 0 at 12:31:28
+74 th CS exit by Philosopher Thread 0 at 12:31:28
+75 th eat request by thread 0 at 12:31:28
+75th CS Entry by Philosopher Thread 0 at 12:31:28
+75 th CS exit by Philosopher Thread 0 at 12:31:28
+76 th eat request by thread 0 at 12:31:28
+76th CS Entry by Philosopher Thread 0 at 12:31:28
+76 th CS exit by Philosopher Thread 0 at 12:31:28
+77 th eat request by thread 0 at 12:31:28
+77th CS Entry by Philosopher Thread 0 at 12:31:28
+77 th CS exit by Philosopher Thread 0 at 12:31:28
+78 th eat request by thread 0 at 12:31:28
+78th CS Entry by Philosopher Thread 0 at 12:31:28
+78 th CS exit by Philosopher Thread 0 at 12:31:28
+79 th eat request by thread 0 at 12:31:28
+79th CS Entry by Philosopher Thread 0 at 12:31:28
+79 th CS exit by Philosopher Thread 0 at 12:31:28
+80 th eat request by thread 0 at 12:31:28
+80th CS Entry by Philosopher Thread 0 at 12:31:28
+80 th CS exit by Philosopher Thread 0 at 12:31:28
+81 th eat request by thread 0 at 12:31:28
+81th CS Entry by Philosopher Thread 0 at 12:31:28
+81 th CS exit by Philosopher Thread 0 at 12:31:28
+82 th eat request by thread 0 at 12:31:28
+82th CS Entry by Philosopher Thread 0 at 12:31:28
+82 th CS exit by Philosopher Thread 0 at 12:31:28
+83 th eat request by thread 0 at 12:31:28
+83th CS Entry by Philosopher Thread 0 at 12:31:28
+83 th CS exit by Philosopher Thread 0 at 12:31:28
+84 th eat request by thread 0 at 12:31:28
+84th CS Entry by Philosopher Thread 0 at 12:31:28
+84 th CS exit by Philosopher Thread 0 at 12:31:28
+85 th eat request by thread 0 at 12:31:28
+85th CS Entry by Philosopher Thread 0 at 12:31:28
+85 th CS exit by Philosopher Thread 0 at 12:31:28
+86 th eat request by thread 0 at 12:31:28
+86th CS Entry by Philosopher Thread 0 at 12:31:28
+86 th CS exit by Philosopher Thread 0 at 12:31:28
+87 th eat request by thread 0 at 12:31:28
+87th CS Entry by Philosopher Thread 0 at 12:31:28
+87 th CS exit by Philosopher Thread 0 at 12:31:28
+88 th eat request by thread 0 at 12:31:28
+88th CS Entry by Philosopher Thread 0 at 12:31:28
+88 th CS exit by Philosopher Thread 0 at 12:31:28
+89 th eat request by thread 0 at 12:31:28
+89th CS Entry by Philosopher Thread 0 at 12:31:28
+89 th CS exit by Philosopher Thread 0 at 12:31:28
+90 th eat request by thread 0 at 12:31:28
+90th CS Entry by Philosopher Thread 0 at 12:31:28
+90 th CS exit by Philosopher Thread 0 at 12:31:28
+91 th eat request by thread 0 at 12:31:28
+91th CS Entry by Philosopher Thread 0 at 12:31:28
+91 th CS exit by Philosopher Thread 0 at 12:31:28
+92 th eat request by thread 0 at 12:31:28
+92th CS Entry by Philosopher Thread 0 at 12:31:28
+82th CS Entry by Philosopher Thread 3 at 12:31:28
+92 th CS exit by Philosopher Thread 0 at 12:31:28
+93 th eat request by thread 0 at 12:31:28
+93th CS Entry by Philosopher Thread 0 at 12:31:28
+93 th CS exit by Philosopher Thread 0 at 12:31:28
+94 th eat request by thread 0 at 12:31:28
+94th CS Entry by Philosopher Thread 0 at 12:31:28
+94 th CS exit by Philosopher Thread 0 at 12:31:28
+95 th eat request by thread 0 at 12:31:28
+95th CS Entry by Philosopher Thread 0 at 12:31:28
+95 th CS exit by Philosopher Thread 0 at 12:31:28
+96 th eat request by thread 0 at 12:31:28
+96th CS Entry by Philosopher Thread 0 at 12:31:28
+96 th CS exit by Philosopher Thread 0 at 12:31:28
+97 th eat request by thread 0 at 12:31:28
+97th CS Entry by Philosopher Thread 0 at 12:31:28
+97 th CS exit by Philosopher Thread 0 at 12:31:28
+98 th eat request by thread 0 at 12:31:28
+98th CS Entry by Philosopher Thread 0 at 12:31:28
+98 th CS exit by Philosopher Thread 0 at 12:31:28
+99 th eat request by thread 0 at 12:31:28
+99th CS Entry by Philosopher Thread 0 at 12:31:28
+99 th CS exit by Philosopher Thread 0 at 12:31:28
+82 th CS exit by Philosopher Thread 3 at 12:31:28
+83 th eat request by thread 3 at 12:31:28
+83th CS Entry by Philosopher Thread 3 at 12:31:28
+41 th eat request by thread 2 at 12:31:28
+83 th CS exit by Philosopher Thread 3 at 12:31:28
+84 th eat request by thread 3 at 12:31:28
+60th CS Entry by Philosopher Thread 4 at 12:31:28
+60 th CS exit by Philosopher Thread 4 at 12:31:28
+61 th eat request by thread 4 at 12:31:28
+61th CS Entry by Philosopher Thread 4 at 12:31:28
+61 th CS exit by Philosopher Thread 4 at 12:31:28
+62 th eat request by thread 4 at 12:31:28
+62th CS Entry by Philosopher Thread 4 at 12:31:28
+62 th CS exit by Philosopher Thread 4 at 12:31:28
+63 th eat request by thread 4 at 12:31:28
+63th CS Entry by Philosopher Thread 4 at 12:31:28
+63 th CS exit by Philosopher Thread 4 at 12:31:28
+64 th eat request by thread 4 at 12:31:28
+64th CS Entry by Philosopher Thread 4 at 12:31:28
+64 th CS exit by Philosopher Thread 4 at 12:31:28
+65 th eat request by thread 4 at 12:31:28
+65th CS Entry by Philosopher Thread 4 at 12:31:28
+65 th CS exit by Philosopher Thread 4 at 12:31:28
+66 th eat request by thread 4 at 12:31:28
+66th CS Entry by Philosopher Thread 4 at 12:31:28
+66 th CS exit by Philosopher Thread 4 at 12:31:28
+67 th eat request by thread 4 at 12:31:28
+67th CS Entry by Philosopher Thread 4 at 12:31:28
+67 th CS exit by Philosopher Thread 4 at 12:31:28
+68 th eat request by thread 4 at 12:31:28
+68th CS Entry by Philosopher Thread 4 at 12:31:28
+68 th CS exit by Philosopher Thread 4 at 12:31:28
+69 th eat request by thread 4 at 12:31:28
+69th CS Entry by Philosopher Thread 4 at 12:31:28
+69 th CS exit by Philosopher Thread 4 at 12:31:28
+70 th eat request by thread 4 at 12:31:28
+70th CS Entry by Philosopher Thread 4 at 12:31:28
+70 th CS exit by Philosopher Thread 4 at 12:31:28
+71 th eat request by thread 4 at 12:31:28
+71th CS Entry by Philosopher Thread 4 at 12:31:28
+71 th CS exit by Philosopher Thread 4 at 12:31:28
+72 th eat request by thread 4 at 12:31:28
+72th CS Entry by Philosopher Thread 4 at 12:31:28
+72 th CS exit by Philosopher Thread 4 at 12:31:28
+73 th eat request by thread 4 at 12:31:28
+73th CS Entry by Philosopher Thread 4 at 12:31:28
+73 th CS exit by Philosopher Thread 4 at 12:31:28
+74 th eat request by thread 4 at 12:31:28
+74th CS Entry by Philosopher Thread 4 at 12:31:28
+74 th CS exit by Philosopher Thread 4 at 12:31:28
+75 th eat request by thread 4 at 12:31:28
+75th CS Entry by Philosopher Thread 4 at 12:31:28
+75 th CS exit by Philosopher Thread 4 at 12:31:28
+76 th eat request by thread 4 at 12:31:28
+76th CS Entry by Philosopher Thread 4 at 12:31:28
+76 th CS exit by Philosopher Thread 4 at 12:31:28
+77 th eat request by thread 4 at 12:31:28
+77th CS Entry by Philosopher Thread 4 at 12:31:28
+77 th CS exit by Philosopher Thread 4 at 12:31:28
+78 th eat request by thread 4 at 12:31:28
+78th CS Entry by Philosopher Thread 4 at 12:31:28
+78 th CS exit by Philosopher Thread 4 at 12:31:28
+79 th eat request by thread 4 at 12:31:28
+79th CS Entry by Philosopher Thread 4 at 12:31:28
+79 th CS exit by Philosopher Thread 4 at 12:31:28
+80 th eat request by thread 4 at 12:31:28
+80th CS Entry by Philosopher Thread 4 at 12:31:28
+80 th CS exit by Philosopher Thread 4 at 12:31:28
+81 th eat request by thread 4 at 12:31:28
+81th CS Entry by Philosopher Thread 4 at 12:31:28
+81 th CS exit by Philosopher Thread 4 at 12:31:28
+82 th eat request by thread 4 at 12:31:28
+82th CS Entry by Philosopher Thread 4 at 12:31:28
+82 th CS exit by Philosopher Thread 4 at 12:31:28
+83 th eat request by thread 4 at 12:31:28
+83th CS Entry by Philosopher Thread 4 at 12:31:28
+83 th CS exit by Philosopher Thread 4 at 12:31:28
+84 th eat request by thread 4 at 12:31:28
+84th CS Entry by Philosopher Thread 4 at 12:31:28
+84 th CS exit by Philosopher Thread 4 at 12:31:28
+85 th eat request by thread 4 at 12:31:28
+85th CS Entry by Philosopher Thread 4 at 12:31:28
+85 th CS exit by Philosopher Thread 4 at 12:31:28
+86 th eat request by thread 4 at 12:31:28
+86th CS Entry by Philosopher Thread 4 at 12:31:28
+86 th CS exit by Philosopher Thread 4 at 12:31:28
+87 th eat request by thread 4 at 12:31:28
+87th CS Entry by Philosopher Thread 4 at 12:31:28
+87 th CS exit by Philosopher Thread 4 at 12:31:28
+88 th eat request by thread 4 at 12:31:28
+88th CS Entry by Philosopher Thread 4 at 12:31:28
+88 th CS exit by Philosopher Thread 4 at 12:31:28
+89 th eat request by thread 4 at 12:31:28
+89th CS Entry by Philosopher Thread 4 at 12:31:28
+89 th CS exit by Philosopher Thread 4 at 12:31:28
+90 th eat request by thread 4 at 12:31:28
+90th CS Entry by Philosopher Thread 4 at 12:31:28
+90 th CS exit by Philosopher Thread 4 at 12:31:28
+91 th eat request by thread 4 at 12:31:28
+91th CS Entry by Philosopher Thread 4 at 12:31:28
+91 th CS exit by Philosopher Thread 4 at 12:31:28
+92 th eat request by thread 4 at 12:31:28
+92th CS Entry by Philosopher Thread 4 at 12:31:28
+92 th CS exit by Philosopher Thread 4 at 12:31:28
+93 th eat request by thread 4 at 12:31:28
+93th CS Entry by Philosopher Thread 4 at 12:31:28
+93 th CS exit by Philosopher Thread 4 at 12:31:28
+94 th eat request by thread 4 at 12:31:28
+94th CS Entry by Philosopher Thread 4 at 12:31:28
+94 th CS exit by Philosopher Thread 4 at 12:31:28
+95 th eat request by thread 4 at 12:31:28
+95th CS Entry by Philosopher Thread 4 at 12:31:28
+95 th CS exit by Philosopher Thread 4 at 12:31:28
+96 th eat request by thread 4 at 12:31:28
+96th CS Entry by Philosopher Thread 4 at 12:31:28
+96 th CS exit by Philosopher Thread 4 at 12:31:28
+97 th eat request by thread 4 at 12:31:28
+97th CS Entry by Philosopher Thread 4 at 12:31:28
+97 th CS exit by Philosopher Thread 4 at 12:31:28
+98 th eat request by thread 4 at 12:31:28
+98th CS Entry by Philosopher Thread 4 at 12:31:28
+98 th CS exit by Philosopher Thread 4 at 12:31:28
+99 th eat request by thread 4 at 12:31:28
+99th CS Entry by Philosopher Thread 4 at 12:31:28
+99 th CS exit by Philosopher Thread 4 at 12:31:28
+41th CS Entry by Philosopher Thread 2 at 12:31:28
+41 th CS exit by Philosopher Thread 2 at 12:31:28
+42 th eat request by thread 2 at 12:31:28
+84th CS Entry by Philosopher Thread 3 at 12:31:28
+84 th CS exit by Philosopher Thread 3 at 12:31:28
+85 th eat request by thread 3 at 12:31:28
+42th CS Entry by Philosopher Thread 2 at 12:31:28
+42 th CS exit by Philosopher Thread 2 at 12:31:28
+43 th eat request by thread 2 at 12:31:28
+85th CS Entry by Philosopher Thread 3 at 12:31:28
+85 th CS exit by Philosopher Thread 3 at 12:31:28
+86 th eat request by thread 3 at 12:31:28
+43th CS Entry by Philosopher Thread 2 at 12:31:28
+43 th CS exit by Philosopher Thread 2 at 12:31:28
+44 th eat request by thread 2 at 12:31:28
+86th CS Entry by Philosopher Thread 3 at 12:31:28
+86 th CS exit by Philosopher Thread 3 at 12:31:28
+87 th eat request by thread 3 at 12:31:28
+44th CS Entry by Philosopher Thread 2 at 12:31:28
+44 th CS exit by Philosopher Thread 2 at 12:31:28
+45 th eat request by thread 2 at 12:31:28
+87th CS Entry by Philosopher Thread 3 at 12:31:28
+87 th CS exit by Philosopher Thread 3 at 12:31:28
+88 th eat request by thread 3 at 12:31:28
+45th CS Entry by Philosopher Thread 2 at 12:31:28
+45 th CS exit by Philosopher Thread 2 at 12:31:28
+46 th eat request by thread 2 at 12:31:28
+88th CS Entry by Philosopher Thread 3 at 12:31:28
+88 th CS exit by Philosopher Thread 3 at 12:31:28
+89 th eat request by thread 3 at 12:31:28
+46th CS Entry by Philosopher Thread 2 at 12:31:28
+46 th CS exit by Philosopher Thread 2 at 12:31:28
+47 th eat request by thread 2 at 12:31:28
+89th CS Entry by Philosopher Thread 3 at 12:31:28
+89 th CS exit by Philosopher Thread 3 at 12:31:28
+90 th eat request by thread 3 at 12:31:28
+47th CS Entry by Philosopher Thread 2 at 12:31:28
+47 th CS exit by Philosopher Thread 2 at 12:31:28
+48 th eat request by thread 2 at 12:31:28
+90th CS Entry by Philosopher Thread 3 at 12:31:28
+90 th CS exit by Philosopher Thread 3 at 12:31:28
+91 th eat request by thread 3 at 12:31:28
+48th CS Entry by Philosopher Thread 2 at 12:31:28
+48 th CS exit by Philosopher Thread 2 at 12:31:28
+49 th eat request by thread 2 at 12:31:28
+91th CS Entry by Philosopher Thread 3 at 12:31:28
+91 th CS exit by Philosopher Thread 3 at 12:31:28
+92 th eat request by thread 3 at 12:31:28
+49th CS Entry by Philosopher Thread 2 at 12:31:28
+49 th CS exit by Philosopher Thread 2 at 12:31:28
+50 th eat request by thread 2 at 12:31:28
+92th CS Entry by Philosopher Thread 3 at 12:31:28
+92 th CS exit by Philosopher Thread 3 at 12:31:28
+93 th eat request by thread 3 at 12:31:28
+50th CS Entry by Philosopher Thread 2 at 12:31:28
+50 th CS exit by Philosopher Thread 2 at 12:31:28
+51 th eat request by thread 2 at 12:31:28
+93th CS Entry by Philosopher Thread 3 at 12:31:28
+93 th CS exit by Philosopher Thread 3 at 12:31:28
+94 th eat request by thread 3 at 12:31:28
+51th CS Entry by Philosopher Thread 2 at 12:31:28
+51 th CS exit by Philosopher Thread 2 at 12:31:28
+52 th eat request by thread 2 at 12:31:28
+94th CS Entry by Philosopher Thread 3 at 12:31:28
+94 th CS exit by Philosopher Thread 3 at 12:31:28
+95 th eat request by thread 3 at 12:31:28
+52th CS Entry by Philosopher Thread 2 at 12:31:28
+52 th CS exit by Philosopher Thread 2 at 12:31:28
+53 th eat request by thread 2 at 12:31:28
+95th CS Entry by Philosopher Thread 3 at 12:31:28
+95 th CS exit by Philosopher Thread 3 at 12:31:28
+96 th eat request by thread 3 at 12:31:28
+53th CS Entry by Philosopher Thread 2 at 12:31:28
+53 th CS exit by Philosopher Thread 2 at 12:31:28
+54 th eat request by thread 2 at 12:31:28
+96th CS Entry by Philosopher Thread 3 at 12:31:28
+96 th CS exit by Philosopher Thread 3 at 12:31:28
+97 th eat request by thread 3 at 12:31:28
+54th CS Entry by Philosopher Thread 2 at 12:31:28
+54 th CS exit by Philosopher Thread 2 at 12:31:28
+55 th eat request by thread 2 at 12:31:28
+97th CS Entry by Philosopher Thread 3 at 12:31:28
+97 th CS exit by Philosopher Thread 3 at 12:31:28
+98 th eat request by thread 3 at 12:31:28
+55th CS Entry by Philosopher Thread 2 at 12:31:28
+55 th CS exit by Philosopher Thread 2 at 12:31:28
+56 th eat request by thread 2 at 12:31:28
+98th CS Entry by Philosopher Thread 3 at 12:31:28
+98 th CS exit by Philosopher Thread 3 at 12:31:28
+99 th eat request by thread 3 at 12:31:28
+56th CS Entry by Philosopher Thread 2 at 12:31:28
+56 th CS exit by Philosopher Thread 2 at 12:31:28
+57 th eat request by thread 2 at 12:31:28
+99th CS Entry by Philosopher Thread 3 at 12:31:28
+99 th CS exit by Philosopher Thread 3 at 12:31:28
+57th CS Entry by Philosopher Thread 2 at 12:31:28
+57 th CS exit by Philosopher Thread 2 at 12:31:28
+58 th eat request by thread 2 at 12:31:28
+58th CS Entry by Philosopher Thread 2 at 12:31:28
+58 th CS exit by Philosopher Thread 2 at 12:31:28
+59 th eat request by thread 2 at 12:31:28
+59th CS Entry by Philosopher Thread 2 at 12:31:28
+59 th CS exit by Philosopher Thread 2 at 12:31:28
+60 th eat request by thread 2 at 12:31:28
+60th CS Entry by Philosopher Thread 2 at 12:31:28
+60 th CS exit by Philosopher Thread 2 at 12:31:28
+61 th eat request by thread 2 at 12:31:28
+61th CS Entry by Philosopher Thread 2 at 12:31:28
+61 th CS exit by Philosopher Thread 2 at 12:31:28
+62 th eat request by thread 2 at 12:31:28
+62th CS Entry by Philosopher Thread 2 at 12:31:28
+62 th CS exit by Philosopher Thread 2 at 12:31:28
+63 th eat request by thread 2 at 12:31:28
+63th CS Entry by Philosopher Thread 2 at 12:31:28
+63 th CS exit by Philosopher Thread 2 at 12:31:28
+64 th eat request by thread 2 at 12:31:28
+64th CS Entry by Philosopher Thread 2 at 12:31:28
+64 th CS exit by Philosopher Thread 2 at 12:31:28
+65 th eat request by thread 2 at 12:31:28
+65th CS Entry by Philosopher Thread 2 at 12:31:28
+65 th CS exit by Philosopher Thread 2 at 12:31:28
+66 th eat request by thread 2 at 12:31:28
+66th CS Entry by Philosopher Thread 2 at 12:31:28
+66 th CS exit by Philosopher Thread 2 at 12:31:28
+67 th eat request by thread 2 at 12:31:28
+67th CS Entry by Philosopher Thread 2 at 12:31:28
+67 th CS exit by Philosopher Thread 2 at 12:31:28
+68 th eat request by thread 2 at 12:31:28
+68th CS Entry by Philosopher Thread 2 at 12:31:28
+68 th CS exit by Philosopher Thread 2 at 12:31:28
+69 th eat request by thread 2 at 12:31:28
+69th CS Entry by Philosopher Thread 2 at 12:31:28
+69 th CS exit by Philosopher Thread 2 at 12:31:28
+70 th eat request by thread 2 at 12:31:28
+70th CS Entry by Philosopher Thread 2 at 12:31:28
+70 th CS exit by Philosopher Thread 2 at 12:31:28
+71 th eat request by thread 2 at 12:31:28
+71th CS Entry by Philosopher Thread 2 at 12:31:28
+71 th CS exit by Philosopher Thread 2 at 12:31:28
+72 th eat request by thread 2 at 12:31:28
+72th CS Entry by Philosopher Thread 2 at 12:31:28
+72 th CS exit by Philosopher Thread 2 at 12:31:28
+73 th eat request by thread 2 at 12:31:28
+73th CS Entry by Philosopher Thread 2 at 12:31:28
+73 th CS exit by Philosopher Thread 2 at 12:31:28
+74 th eat request by thread 2 at 12:31:28
+74th CS Entry by Philosopher Thread 2 at 12:31:28
+74 th CS exit by Philosopher Thread 2 at 12:31:28
+75 th eat request by thread 2 at 12:31:28
+75th CS Entry by Philosopher Thread 2 at 12:31:28
+75 th CS exit by Philosopher Thread 2 at 12:31:28
+76 th eat request by thread 2 at 12:31:28
+76th CS Entry by Philosopher Thread 2 at 12:31:28
+76 th CS exit by Philosopher Thread 2 at 12:31:28
+77 th eat request by thread 2 at 12:31:28
+77th CS Entry by Philosopher Thread 2 at 12:31:28
+77 th CS exit by Philosopher Thread 2 at 12:31:28
+78 th eat request by thread 2 at 12:31:28
+78th CS Entry by Philosopher Thread 2 at 12:31:28
+78 th CS exit by Philosopher Thread 2 at 12:31:28
+79 th eat request by thread 2 at 12:31:28
+79th CS Entry by Philosopher Thread 2 at 12:31:28
+79 th CS exit by Philosopher Thread 2 at 12:31:28
+80 th eat request by thread 2 at 12:31:28
+80th CS Entry by Philosopher Thread 2 at 12:31:28
+80 th CS exit by Philosopher Thread 2 at 12:31:28
+81 th eat request by thread 2 at 12:31:28
+81th CS Entry by Philosopher Thread 2 at 12:31:28
+81 th CS exit by Philosopher Thread 2 at 12:31:28
+82 th eat request by thread 2 at 12:31:28
+82th CS Entry by Philosopher Thread 2 at 12:31:28
+82 th CS exit by Philosopher Thread 2 at 12:31:28
+83 th eat request by thread 2 at 12:31:28
+83th CS Entry by Philosopher Thread 2 at 12:31:28
+83 th CS exit by Philosopher Thread 2 at 12:31:28
+84 th eat request by thread 2 at 12:31:28
+84th CS Entry by Philosopher Thread 2 at 12:31:28
+84 th CS exit by Philosopher Thread 2 at 12:31:28
+85 th eat request by thread 2 at 12:31:28
+85th CS Entry by Philosopher Thread 2 at 12:31:28
+85 th CS exit by Philosopher Thread 2 at 12:31:28
+86 th eat request by thread 2 at 12:31:28
+86th CS Entry by Philosopher Thread 2 at 12:31:28
+86 th CS exit by Philosopher Thread 2 at 12:31:28
+87 th eat request by thread 2 at 12:31:28
+87th CS Entry by Philosopher Thread 2 at 12:31:28
+87 th CS exit by Philosopher Thread 2 at 12:31:28
+88 th eat request by thread 2 at 12:31:28
+88th CS Entry by Philosopher Thread 2 at 12:31:28
+88 th CS exit by Philosopher Thread 2 at 12:31:28
+89 th eat request by thread 2 at 12:31:28
+89th CS Entry by Philosopher Thread 2 at 12:31:28
+89 th CS exit by Philosopher Thread 2 at 12:31:28
+90 th eat request by thread 2 at 12:31:28
+90th CS Entry by Philosopher Thread 2 at 12:31:28
+90 th CS exit by Philosopher Thread 2 at 12:31:28
+91 th eat request by thread 2 at 12:31:28
+91th CS Entry by Philosopher Thread 2 at 12:31:28
+91 th CS exit by Philosopher Thread 2 at 12:31:28
+92 th eat request by thread 2 at 12:31:28
+92th CS Entry by Philosopher Thread 2 at 12:31:28
+92 th CS exit by Philosopher Thread 2 at 12:31:28
+93 th eat request by thread 2 at 12:31:28
+93th CS Entry by Philosopher Thread 2 at 12:31:28
+93 th CS exit by Philosopher Thread 2 at 12:31:28
+94 th eat request by thread 2 at 12:31:28
+94th CS Entry by Philosopher Thread 2 at 12:31:28
+94 th CS exit by Philosopher Thread 2 at 12:31:28
+95 th eat request by thread 2 at 12:31:28
+95th CS Entry by Philosopher Thread 2 at 12:31:28
+95 th CS exit by Philosopher Thread 2 at 12:31:28
+96 th eat request by thread 2 at 12:31:28
+96th CS Entry by Philosopher Thread 2 at 12:31:28
+96 th CS exit by Philosopher Thread 2 at 12:31:28
+97 th eat request by thread 2 at 12:31:28
+97th CS Entry by Philosopher Thread 2 at 12:31:28
+97 th CS exit by Philosopher Thread 2 at 12:31:28
+98 th eat request by thread 2 at 12:31:28
+98th CS Entry by Philosopher Thread 2 at 12:31:28
+98 th CS exit by Philosopher Thread 2 at 12:31:28
+99 th eat request by thread 2 at 12:31:28
+99th CS Entry by Philosopher Thread 2 at 12:31:28
+99 th CS exit by Philosopher Thread 2 at 12:31:28
