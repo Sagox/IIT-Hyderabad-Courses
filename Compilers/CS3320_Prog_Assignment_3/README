@@ -1,0 +1,58 @@
+Roll No.:
+Name:
+
+--------------------------------------------------------------------------------
+
+P1: Chess
+---------
+Assumptions / Comments (if any):
+	
+# Is the program complete? Are there any assumptions made? Any other comments?
+Yes, the program is complete.
+Only assumption made is that the input follows the format mentioned.
+
+Approach :
+# How do you solve this problem?
+The lexer using regular expressions classifies every move into one of the three
+i.e. normal, capture, promotion.
+
+In the parser I manipulate a character matrix according to the input received.
+The row coloumn of the input is translated into the row coloumn of my matrix and
+the necessary changes are made.
+
+P2: Calculator
+--------------
+Assumptions / Comments (if any):
+	
+# Is the program complete? Are there any assumptions made? Any other comments?
+The code is output to a file output.c.
+Yes, the program is complete.
+The assumptions are:
+1) The only io function assumed by me is readInt, any other identifier used in assignment
+is treated as a variable and not a function. (won't be followed by a ())
+2) The binary operators are limited to the ones given in google classroom.
+
+Approach :
+# How do you solve this problem?
+
+I have used the lexer to give me tokens while storing the value of the token in
+yylval.str.
+I have tried to make the tokens simple like for 'select', 'if', 'else' keywords,
+operators, colon, etc.
+The lexer has an important state called 'WHILEL', these are the tokens which would
+be used in the while loop. The tokens from the lexer in various combinations are
+used by the parser to make meaning out of it.
+
+In the parser the start varibl spits into init, variables and displays.
+init is just init.
+variables has all the assignments and declarations.
+displays is the combination of select, the diplay configuration(optinal if-else) and delay.
+While parsing these the appropriate code is written into a file.
+Functions are used to convert tab seperated numbers into strings
+and a tab counter is used to indent the code appropriately.
+The buffer for storage of assignment statements is put as 512, which can be increased.
+Numberline construct is anything from space seperated numbers to  pure numbers.
+
+I have used actions in between the rules to be able to put in code at the right place.
+I have handeled all types of assignments i.e. id = id, id = literal.
+I have handeled all types of comparisions i.e. id op id, id op literal, literal op literal.

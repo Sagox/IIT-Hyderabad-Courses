@@ -1,0 +1,45 @@
+INIT
+#### testing declarations
+a : int
+b: int
+#### testing assignments
+b = 4
+abdc: String
+a = readInt
+Select: 1
+# a b c d e f g dp
+0	1	0	0	0	0	1	1	
+Delay: 40
+Select: 2
+#Display 1
+1	1	1	1	0	0	0	0
+Delay: 40
+Select: 3
+#Display 4
+1	0	0	0	1	1	1	1
+Delay: 40
+SELECT: 4
+#### testing binary operations and case insensitivity
+IF 5 <= inp3:
+0	1	1	1	0	1	1	1
+elsE:
+0 0 0 0 0 0 0 0
+delay: 854
+SELECT: 5
+if 785 <= inp3:
+0	1	1	1	0	1	1	1
+elsE:
+0 0 0 0 0 0 0 0
+delay: 96
+SELECT: 6
+if b > 485:
+0	1	0	0	0	0	0	1
+elsE:
+0	0	0	0	0	0	0	0
+delay: 74
+SELECT: 7
+if 7 > 8:
+0	1	1	1	1	1	0	1
+elsE:
+0	0	1	1	1	1	0	0
+delay: 52
