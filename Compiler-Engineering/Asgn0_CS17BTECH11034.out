@@ -1,5 +1,16 @@
-\BOOKMARK [1][-]{section*.2}{Clang AST Traversal}{}% 1
-\BOOKMARK [1][-]{section*.3}{LLVM Error Messages}{}% 2
-\BOOKMARK [1][-]{section*.4}{LLVM IR}{}% 3
-\BOOKMARK [1][-]{section*.5}{Assembly Language}{}% 4
-\BOOKMARK [1][-]{section*.6}{Compiler Toolchain}{}% 5
+\BOOKMARK [1][-]{section*.2}{Clang AST}{}% 1
+\BOOKMARK [2][-]{section*.3}{Observations about the AST structure}{section*.2}% 2
+\BOOKMARK [1][-]{section*.4}{Clang AST Traversal}{}% 3
+\BOOKMARK [2][-]{section*.5}{FrontendAction}{section*.4}% 4
+\BOOKMARK [2][-]{section*.6}{ASTConsumer}{section*.4}% 5
+\BOOKMARK [2][-]{section*.7}{RecursiveASTVisitor}{section*.4}% 6
+\BOOKMARK [1][-]{section*.8}{LLVM Error Messages}{}% 7
+\BOOKMARK [2][-]{section*.9}{Programmatic Errors}{section*.8}% 8
+\BOOKMARK [3][-]{section*.10}{Recoverable Errors}{section*.9}% 9
+\BOOKMARK [1][-]{section*.11}{LLVM IR}{}% 10
+\BOOKMARK [1][-]{section*.12}{Assembly Language}{}% 11
+\BOOKMARK [2][-]{section*.13}{Name mangling}{section*.12}% 12
+\BOOKMARK [1][-]{section*.14}{Compiler Toolchain}{}% 13
+\BOOKMARK [1][-]{section*.15}{Kaleidoscope}{}% 14
+\BOOKMARK [1][-]{section*.16}{Appendix}{}% 15
+\BOOKMARK [2][-]{section*.17}{References}{section*.16}% 16
