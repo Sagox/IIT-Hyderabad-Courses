@@ -1,0 +1,35 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue
+}
+\usepackage{graphicx}
+\newcommand{\code}{\texttt}
+\begin{document}
+\title{Write-and-Do-Mini-Assignment\#3: MLIR and LLVM}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\section*{MLIR in LLVM}
+As mentioned in \href{https://groups.google.com/forum/#!topic/llvm-dev/_9dr6ZvWWAQ/discussion}{here}, recently there was a massive announcement to include \textbf{MLIR} in \textbf{LLVM} as a subproject. Having MLIR in LLVM makes sense to me for the following reasons:
+\begin{enumerate}
+\item MLIR uses LLVM IR as one of its primary code generation targets already.
+\item One of the main draw-backs of LLVM today is considered to be the loss of information in its IR, including MLIR in the LLVM project solves this problem by providing an infrastructure to build these pre-LLVM implementations.
+\item MLIR has advance analysis(example, loops) capabilities, these moved into the pre-existing llvm analysis will make it usable both by the MLIR-level transformations along with providing llvm access to these results to use in its own transforamtions later on.
+\item LLVM will also benefit greatly from this inclusion, it would now have be at the forefront whether it be heterogenous computing or accelerators, MLIR can facilitate it in many ways.
+\end{enumerate}
+I would also like to express my concern about the project structure and developemnt. I hope care would be taken to not bloat the pre-llvm transformations which would adversely impact not only the running time of the compiler but also the development time since the project is already a vast one. Documentation would also be have to taken care of since a lot of MLIR classes are just re-exported from LLVM. Finally, although already mentioned by Chris in the discussion that the sub-project would follow  LLVM Developer Policy, a lot of contributors moving in from MLIR hopefully doesn't alter the LLVM project intrinsically.
+\section*{Impact on Fortran}
+MLIR is already being adopted into flang (compiler for fortran). As mentioned by one of the members Flang is becoming a subproject of LLVM and MLIR should be part of LLVM. Obviously there would be some redundancy and eventually flang as a part of LLVM would be something simpler than what it is now. As MLIR is not limited to just ML applications but actually a state of the art infrastructure to improve optimisations and better capture high level ideas into IR by progressively lowering the representation, it is clearly a value addition to flang and with both of them now becoming a part of LLVM the development will definitely be more streamlined now.
+\end{document}%  
