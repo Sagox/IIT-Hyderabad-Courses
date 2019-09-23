@@ -21,30 +21,60 @@ using namespace llvm;
 namespace {
 	struct variableFootprint : public FunctionPass  {
 		static char ID;
+		int number_of_scopes = 0;
 		variableFootprint() : FunctionPass(ID) {}
-		
+// Returns more scopes than present		
+	// 	bool runOnFunction(Function &F) {
+	// 		int number_of_scopes = 0;
+	// 		std::vector<DILocalScope*> scopes;
+	// 		for (inst_iterator I = inst_begin(F), E = inst_end(F); I != E; ++I) {
+	// 			//if(I == NULL)
+	// 			//	break;
+	// 			DILocation *debugInfo = I->getDebugLoc();
+	// 			if(debugInfo == NULL)
+	// 				continue;
+	// 			auto scope = debugInfo->getScope();
+	// 			errs() << "scope: " << scope << "\n";
+	// 			if(std::find(scopes.vector::begin(), scopes.vector::end(), scope) == scopes.vector::end()) {
+	// 				number_of_scopes++;
+	// 				scopes.vector::push_back(scope);
+	// 				errs() << "\n\nNew scope\n\n";
+	// 			}
+	// 			int lineNo = debugInfo->getLine();
+	// 			errs() << "I: " << *I << ", line number: " << lineNo << "\n";
+	// 			// errs() << lineNo << "\n";
+	// 			errs() << "Number of Operands: " << scope->getOperand(1) << "\n";
+	// 			errs() << "Number of scopes: " << number_of_scopes << "\n"; 
+	// 		}
+	// 		return false;
+	// 	}
 		bool runOnFunction(Function &F) {
-			int number_of_scopes = 0;
-			std::vector<MDTuple> scopes;
+			// int number_of_scopes = 0;
+			std::vector<unsigned> scopes;
 			for (inst_iterator I = inst_begin(F), E = inst_end(F); I != E; ++I) {
 				//if(I == NULL)
 				//	break;
-				//errs() << "I: " << *I << ", ";
 				DILocation *debugInfo = I->getDebugLoc();
 				if(debugInfo == NULL)
 					continue;
-				auto scope = *(debugInfo->getScope()->get());
-				if(std::find(scopes.vector::begin(), scopes.vector::end(), scope) != scopes.vector::end()) {
+				int scope = debugInfo->getRawScope()->getMetadataID();
+				// errs() << "---\n";
+				// errs() << scope << "\n";
+				// scope->dump();
+				// errs() << "---\n";
+				if(std::find(scopes.vector::begin(), scopes.vector::end(), scope) == scopes.vector::end()) {
 					number_of_scopes++;
+					scopes.vector::push_back(scope);
 					errs() << "new scope\n";
 				}
-				else
-					scopes.vector::push_back(scope);
 				// int lineNo = debugInfo->getLine();
+				errs() << "I: " << *I << ", scope: " << scope << "\n";
 				// errs() << lineNo << "\n";
-				errs() << "Number of Operands: " << scope->getOperand(1) << "\n";
-				errs() << "Number of scopes: " << number_of_scopes << "\n"; 
+				// errs() << "Number of Operands: " << scope->getOperand(1) << "\n";
 			}
+			// for(auto i=scopes.vector::begin(), e=scopes.vector::end(); i!=e;i++)
+			// 	errs() << *i << "\n";
+			errs() << "Number of scopes: " << number_of_scopes << "\n"; 
 			return false;
 		}
 	};
