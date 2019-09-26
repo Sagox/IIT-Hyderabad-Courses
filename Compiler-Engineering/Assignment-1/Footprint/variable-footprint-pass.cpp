@@ -29,7 +29,7 @@ namespace {
 			for (inst_iterator I = inst_begin(F), E = inst_end(F); I != E; ++I) {
 				//if(I == NULL)
 				//	break;
-				//errs() << "I: " << *I << ", ";
+				errs() << "I: " << *I << "\n";
 				DILocation *debugInfo = I->getDebugLoc();
 				if(debugInfo == NULL)
 					continue;
