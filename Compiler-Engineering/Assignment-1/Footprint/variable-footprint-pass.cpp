@@ -69,6 +69,7 @@ namespace {
 			// Needed for getting number of times reads and
 			// writes are executed in a loop
 			AU.addRequired<LoopInfoWrapperPass>();
+			AU.addRequired<ScalarEvolutionWrapperPass>();
 			AU.setPreservesAll();
 		}
 
@@ -97,6 +98,55 @@ namespace {
 			}
 			// tr->dump();
 			return tr;
+		}
+
+		void updateRWVals(Loop *L, std::vector<scopeInfo> &scopeInfos, int loopTrip, AAResults *AA) {
+
+			BasicBlock::iterator t;
+			auto bb = L->getHeader();
+			int bound, step;
+			for(t = bb->begin(); t!= bb->end();t++) {
+				if(isa<BranchInst>(t))
+					bound = dyn_cast<ConstantInt>(dyn_cast<User>(t->getOperand(0))->getOperand(1))->getSExtValue();
+			}
+			bb = L->getLoopLatch();
+			for(t = bb->begin(); t!= bb->end();t++) {
+				if(t->getOpcodeName() == std::string("add"))
+					step = (dyn_cast<ConstantInt>(t->getOperand(1)))->getSExtValue();
+			}
+			int loopTripPrev = loopTrip;
+			loopTrip = loopTrip*bound/step;
+			for(Loop::block_iterator bi = L->block_begin(); bi != L->block_end(); ++bi) {
+					// errs() << *bi << "\n";
+				BasicBlock::iterator I;
+				for(I = (*bi)->begin(); I!= (*bi)->end();++I) {
+					for(auto O = I->op_begin(), OE = I->op_end(); O!=OE;O++) {
+						for(auto i=0;i<scopeInfos.size();i++) {
+							if(int(AA->alias(scopeInfos[i].varValue, *O)) >= 1) {
+								if(!I->getDebugLoc())
+									continue;
+								if(isa<LoadInst>(*I)) {
+									// errs() << "ReadLoop: " << *I << " opnum: " << O - I->op_begin() << "\n";
+									scopeInfos[i].reads += (loopTrip - 1 - (loopTripPrev -1));
+								}
+								if(isa<StoreInst>(*I)){
+									if(O - I->op_begin() == 1) {
+										scopeInfos[i].writes+= (loopTrip - 1 - (loopTripPrev -1));									
+									}
+									else{
+										// errs() << "ReadLoop: " << *I << " opnum: " << O - I->op_begin() << "\n";
+										scopeInfos[i].reads+= (loopTrip-1-(loopTripPrev -1));
+									}
+								}
+							}						
+						}
+					}
+				}
+			}
+			errs() << "loopTrip: " << loopTrip << "\n";
+			for(auto SL: L->getSubLoops())
+				updateRWVals(SL, scopeInfos, loopTrip, AA);
+			return;
 		}
 
 		bool runOnFunction(Function &F) {
@@ -140,7 +190,7 @@ namespace {
 					// check if the varibale name is the source code (get from debuginfo) is the same as variable
 					// mentioned in options.
 					if(varName == a->getName()) {
-						errs() << *I << "\n";
+						// errs() << *I << "\n";
 						Metadata *Meta = cast<MetadataAsValue>(I->getOperand(0))->getMetadata();
 						if (isa<ValueAsMetadata>(Meta)) {
 							// get the value of the variable in a given scope from the metadata node
@@ -204,13 +254,15 @@ namespace {
 				int i;
 				for(i=0;i<scopeInfos.size();i++) {
 					if(int(AA->alias(scopeInfos[i].varValue, &(*I))) >= 1) {
-						errs() << *I << "\n";
+						// errs() << *I << "\n";
 						//check for null values
 						if(!I->getDebugLoc())
 							continue;
 						int tempLine = I->getDebugLoc()->getLine();
-						// check if the current line number is already present in our list of line numbers for the variable trace
+						// check if the current line number is already present in our list of line numbers for the variable trace.
 						if(find(scopeInfos[i].lines.begin(), scopeInfos[i].lines.end(), tempLine) == scopeInfos[i].lines.end()) {
+							// if not found add it to the trace of the variable also check if it is outiside the current range of
+							// line numbers that we have for the scope.
 							scopeInfos[i].lines.vector::push_back(tempLine);
 							if(tempLine > scopeInfos[i].FinishLine)
 								scopeInfos[i].FinishLine = tempLine;
@@ -219,24 +271,42 @@ namespace {
 						}
 						break;
 					}
-					if(i==scopeInfos.size())
+					if(i!=scopeInfos.size())
 						continue;
 				}
+				// Iterate through the operands of every instruction to check if the variable is used in any instruction
 				for(auto O = I->op_begin(), OE = I->op_end(); O!=OE;O++) {
+					// iterate over all the scope to check if we can find a match between the value in the scope struct
+					// and the operand value
 					for(auto i=0;i<scopeInfos.size();i++) {
+						// run alias analysis on operand and scope value, the result is an enum value so type casting it gives
+						// values between 0 and 3, 0 implies no alias so we avoid that and accept others.
 						if(int(AA->alias(scopeInfos[i].varValue, *O)) >= 1) {
+							// check for null
 							if(!I->getDebugLoc())
 								continue;
+							// check if the instruction is load instruction
 							if(isa<LoadInst>(*I)) {
-								errs() << "Read: " << *I << "opnum: " << O - I->op_begin() << "\n";
+								// errs() << "Read: " << *I << " opnum: " << O - I->op_begin() << "\n";
+								scopeInfos[i].reads++;
 							}
+							// check is the instructin is a store
 							if(isa<StoreInst>(*I)){
-								if(O - I->op_begin() == 1)
-									errs() << "Write: " << *I << "opnum: " << O - I->op_begin() << "\n";
-								else
-									errs() << "Read: " << *I << "opnum: " << O - I->op_begin() << "\n";
+								// store is an instruction which takes in two operands so we need to check which operand
+								// matched with our value since one value is read and other one is written to, based on the index
+								// of the operand we can decide this
+								if(O - I->op_begin() == 1) {
+									// if indes is 1 it is a write else read
+									// errs() << "Write: " << *I << " opnum: " << O - I->op_begin() << "\n";
+									scopeInfos[i].writes++;									
+								}
+								else{
+									// errs() << "Read: " << *I << " opnum: " << O - I->op_begin() << "\n";
+									scopeInfos[i].reads++;
+								}
 							}
 							int tempLine = I->getDebugLoc()->getLine();
+							// check if this line number has already been added to the list of line for this variable in this scope
 							if(find(scopeInfos[i].lines.begin(), scopeInfos[i].lines.end(), tempLine) == scopeInfos[i].lines.end()) {
 								scopeInfos[i].lines.vector::push_back(tempLine);
 								if(tempLine > scopeInfos[i].FinishLine)
@@ -249,12 +319,21 @@ namespace {
 					}
 				}
 			}
+			// print out all the required information from the structs obtained.
 			LoopInfo &LI = getAnalysis<LoopInfoWrapperPass>().getLoopInfo();
+
+			auto *SE = &getAnalysis<ScalarEvolutionWrapperPass>().getSE();
+			// for instructions in loops we must update the number of reads and writes
+			for(Loop *L: LI) {
+				updateRWVals(L, scopeInfos, 1, AA);
+			}
+
 			for(auto i=0;i<scopeInfos.size();i++) {
 				errs() << "In scope (" << scopeInfos[i].startLine << ", " << scopeInfos[i].FinishLine << ") are in the following lines ";
 				for(auto j=0;j<scopeInfos[i].lines.size();j++)
 					errs() << scopeInfos[i].lines[j] << " ";
 				errs() << "\n";
+				errs() << "reads: " << scopeInfos[i].reads << " writes: " << scopeInfos[i].writes << "\n";
 			}
 			return false;
 		}
