@@ -1,9 +1,11 @@
 cmake_minimum_required(VERSION 3.10)
 find_package(LLVM REQUIRED CONFIG)
 message(STATUS ${LLVM_VERSION})
+option(USE_CXX_EXCEPTIONS "Enable C++ exception support" ON)
 list(APPEND CMAKE_MODULE_PATH "${LLVM_CMAKE_DIR}")
 include(AddLLVM)
-
+SET(GCC_COVERAGE_COMPILE_FLAGS "-fexceptions")
+add_definitions(${GCC_COVERAGE_COMPILE_FLAGS})
 add_definitions(${LLVM_DEFINITIONS})
 include_directories(${LLVM_INCLUDE_DIRS})
 
