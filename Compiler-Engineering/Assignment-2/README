@@ -1,0 +1,61 @@
+--------------------------------------------------------------------
+Instruction to run
+1) Build using llvm 9
+2) Run using:
+opt -load <builtPass.so> -loopRev <test.ll> -S > <test.transformed.ll>
+
+--------------------------------------------------------------------
+The following have been achieved in the pass submitted:
+1) For loops with addition as update operator, which terminates can
+be reversed. The update step can be both positive and negative.
+2) For loops with subtraction as update operator, which terminates can
+be reversed. The update step can be both positive and negative.
+For multiplication and division while testing has not run into errors,
+there could be some corner test cases which could be missing.
+3) For loops with multipication as update operator, which terminates can
+be reversed. The update step can be both positive and negative
+4) For loops with division as update operator, which terminates can
+be reversed. The update step can be both positive and negative.
+
+Note: Code may work for loops other than for loops, but has not been
+tested.
+--------------------------------------------------------------------
+I have assumed that there are no infinite loops. For Loop Reversal,
+I calculate the new final value that the iv can take so in case of
+infinite loops I would get this value as infinite, so my pass would
+have undefined behaviour at this input.
+--------------------------------------------------------------------
+Note: Loop conditions can be of the following forms:
+1) <induction variable> <operator> <constant>
+2) <constant> <operator> <induction variable>
+
+Case 1 has been handled by the pass submitted.
+
+I think it requires some clever way to just convert Case 2 into Case 1
+but I have not spent time doing it.
+---------------------------------------------------------------------
+Technique Used to Handle strict vs normal comparisions in same way.
+
+Whenever I have strictly less than some n, I can convert it to
+less than equal to n-1 and handle it in the same way.
+
+Similarly, whenever I have strictly greater that n, I can convert
+it to greater than equal to n+1 and handle it in the same as way. 
+
+----------------------------------------------------------------------
+The following are the steps involved in reversing any loop:
+1) Get the characteristics of the loop i.e. step, bound, update operat
+-ion, comparision operation, etc.
+2) The above is extracted by visting the loop latch and loop header
+instructions.
+3) We then use a function which takes all the above information to 
+compute the new initial value of the induction variables.
+4) We now begin the code transformation steps. We create a new IV, which
+gets updated and is used in the compare operation for the loop.
+5) Finally we create another value which is to be used in the loop instead
+of the old IV, this is just an expression in terms of the new IV. example
+in case of addition it is final value - newiv + initial value.
+
+Induction variable subtraction has been handled in the exact same way
+as addition with just the step value negated.
+----------------------------------------------------------------------
