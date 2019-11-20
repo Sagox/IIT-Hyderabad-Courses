@@ -22,22 +22,26 @@ int main(int argc, char ** argv) {
 
 	// create socket for incoming connections
 	int servSock;
-	if ((servSock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0) {
+	if ((servSock = socket(AF_INET6, SOCK_STREAM, IPPROTO_TCP)) < 0)
+	{
 		perror("socket() failed");
-		exit(-1);
+		exit(1);
 	}
 
+	struct sockaddr_in6 serveraddr, clientaddr;
+	int addrlen=sizeof(clientaddr);
+	char str[INET6_ADDRSTRLEN];
+	memset(&serveraddr, 0, sizeof(serveraddr));
+	serveraddr.sin6_family = AF_INET6;
+	serveraddr.sin6_port   = htons(servPort);
+	serveraddr.sin6_addr   = in6addr_any;
 	// Set local parameters
-	struct sockaddr_in servAddr;
-	memset(&servAddr, 0, sizeof(servAddr));
-	servAddr.sin_family = AF_INET;
-	servAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-	servAddr.sin_port = htons(servPort);
 
 	// Bind to the local address
-	if (bind(servSock, (struct sockaddr *) &servAddr, sizeof(servAddr)) < 0) {
+
+	if (bind(servSock, (struct sockaddr *)&serveraddr, sizeof(serveraddr)) < 0) {
 		perror("bind() failed");
-		exit(-1);
+		exit(1);
 	}
 
 	// Listen to the client
@@ -45,33 +49,28 @@ int main(int argc, char ** argv) {
 		perror("listen() failed");
 		exit(-1);
 	}
-
+	int sdconn = -1;
 	// Server Loop
 	for (;;) {
-		struct sockaddr_in clntAddr;
-		socklen_t clntAddrLen = sizeof(clntAddr);
 
-		// Wait for a client to connect
-		int clntSock = 
-				accept(servSock, (struct sockaddr *) &clntAddr, &clntAddrLen);
-		if (clntSock < 0) {
+		if ((sdconn = accept(servSock, NULL, NULL)) < 0)
+		{
 			perror("accept() failed");
-			exit(-1);
+			exit(1);
 		}
-
-		char clntIpAddr[INET_ADDRSTRLEN];
-		if (inet_ntop(AF_INET, &clntAddr.sin_addr.s_addr, 
-				clntIpAddr, sizeof(clntIpAddr)) != NULL) {
-			printf("----\nHandling client %s %d\n", 
-					clntIpAddr, ntohs(clntAddr.sin_port));
-		} else {
-			puts("----\nUnable to get client IP Address");
+		else
+		{
+			getpeername(sdconn, (struct sockaddr *)&clientaddr, &addrlen);
+			if(inet_ntop(AF_INET6, &clientaddr.sin6_addr, str, sizeof(str))) {
+				printf("Client address is %s\n", str);
+				printf("Client port is %d\n", ntohs(clientaddr.sin6_port));
+			}
 		}
 
 		// Receive data
 		char buffer[BUFSIZE];
 		memset(buffer, 0, BUFSIZE);
-		ssize_t recvLen = recv(clntSock, buffer, BUFSIZE - 1, 0);
+		ssize_t recvLen = recv(sdconn, buffer, BUFSIZE - 1, 0);
 		if (recvLen < 0) {
 			perror("recv() failed");
 			exit(-1);
@@ -82,7 +81,7 @@ int main(int argc, char ** argv) {
 		while (recvLen > 0) {
 			// printf("Begining of Client Loop\n");
 			// Send the received data back to client
-			ssize_t sentLen = send(clntSock, buffer, recvLen, 0);
+			ssize_t sentLen = send(sdconn, buffer, recvLen, 0);
 			if (sentLen < 0) {
 				perror("send() failed");
 				exit(-1);
@@ -93,7 +92,7 @@ int main(int argc, char ** argv) {
 
 			// See if there is more data to receive
 			memset(buffer, 0, BUFSIZE);
-			recvLen = recv(clntSock, buffer, BUFSIZE, 0);
+			recvLen = recv(sdconn, buffer, BUFSIZE, 0);
 			printf("%ld\n", recvLen);
 			if (recvLen < 0) {
 				perror("recv() failed");
@@ -105,7 +104,7 @@ int main(int argc, char ** argv) {
 			// printf("End of Client Loop\n");
 		}
 
-		close(clntSock);
+		close(sdconn);
 		// printf("End of Server Loop\n");
 	}
 
