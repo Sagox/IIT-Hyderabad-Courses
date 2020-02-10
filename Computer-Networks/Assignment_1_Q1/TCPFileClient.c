@@ -12,13 +12,22 @@
 int main(int argc, char **argv) {
 
 	if (argc != 4) {
-		perror("<Server Address> <Server Port> <Echo Word>");
+		perror("<Server Address> <Server Port> <File Name>");
 		exit(-1);
 	}
-	
-	char *servIP = argv[1];
-	char *echoString = argv[3];
-	
+	FILE *fp = fopen(argv[3], "r");
+	fseek(fp, 0L, SEEK_END);
+	int length = ftell(fp);
+	rewind(fp);
+	char send_buf[length];
+	int ci = 0;
+	char temp;
+	while((temp = fgetc(fp)) != EOF) {
+		send_buf[ci] = temp;
+		ci++;
+	}
+
+	char *servIP = argv[1];	
 	// Set port number as given by user or as default 12345
 	// in_port_t servPort = (argc == 3) ? atoi(argv[2]) : 12345;
 	
@@ -41,7 +50,6 @@ int main(int argc, char **argv) {
 		perror("inet_pton() failed");
 		exit(-1);
 	}
-	printf("%d\n", servAddr.sin_addr.s_addr);
 	servAddr.sin_port = htons(servPort);
 	
 	// Connect to server
@@ -50,37 +58,14 @@ int main(int argc, char **argv) {
 		exit(-1);
 	}
 	
-	size_t echoStringLen = strlen(echoString);
-	
-	// Send string to server
-	ssize_t sentLen = send(sockfd, echoString, echoStringLen, 0);
+	ssize_t sentLen = send(sockfd, send_buf, sizeof(send_buf), 0);
+	memset(send_buf, 0, sizeof(send_buf));
 	if (sentLen < 0) {
 		perror("send() failed");
 		exit(-1);
-	} else if (sentLen != echoStringLen) {
+	} else if (sentLen != sizeof(send_buf)) {
 		perror("send(): sent unexpected number of bytes");
 		exit(-1);
-	}
-
-	// Receive string from server
-	unsigned int totalRecvLen = 0;
-
-	fputs("Received: ", stdout);
-	while (totalRecvLen < echoStringLen) {
-		char buffer[BUFSIZE];
-		memset(buffer, 0, BUFSIZE);
-		ssize_t recvLen = recv(sockfd, buffer, BUFSIZE - 1, 0);
-		if (recvLen < 0) {
-			perror("recv() failed");
-			exit(-1);
-		} else if (recvLen == 0) {
-			perror("recv() connection closed prematurely");
-			exit(-1);
-		}
-	
-		totalRecvLen += recvLen;
-		buffer[recvLen] = '\n';
-		fputs(buffer, stdout);	
 	}
 	
 	close(sockfd);

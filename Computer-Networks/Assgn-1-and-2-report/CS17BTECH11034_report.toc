@@ -1,0 +1,15 @@
+\contentsline {section}{Assignment I}{2}{section*.2}
+\contentsline {subsection}{Question I}{2}{section*.3}
+\contentsline {subsection}{Feature I: Interactive Server \& Persistent Client}{2}{section*.4}
+\contentsline {subsubsection}{Points to note about the code}{2}{section*.5}
+\contentsline {subsubsection}{Illustration}{3}{section*.6}
+\contentsline {subsection}{Feature II: File Transfer to Server}{3}{section*.7}
+\contentsline {subsubsection}{Points to note about the code}{3}{section*.8}
+\contentsline {subsubsection}{Illustration}{4}{section*.9}
+\contentsline {subsection}{Question II}{4}{section*.10}
+\contentsline {subsubsection}{Main Problems \& Solutions}{4}{section*.11}
+\contentsline {subsubsection}{Illustration}{5}{section*.12}
+\contentsline {section}{Assignment II}{5}{section*.13}
+\contentsline {subsection}{Main Problems \& Solutions}{5}{section*.14}
+\contentsline {subsubsection}{Illustration}{6}{section*.15}
+\contentsline {section}{References}{6}{section*.16}

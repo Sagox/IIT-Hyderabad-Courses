@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <math.h>
 
-#define BUFSIZE 10
+#define BUFSIZE 1024
 
 static const int MAXPENDING = 5; // Maximum outstanding connection requests
 
@@ -46,7 +48,7 @@ int main(int argc, char ** argv) {
 	}
 
 	// Server Loop
-	for (;;) {
+	for (int i=1;;i++) {
 		struct sockaddr_in clntAddr;
 		socklen_t clntAddrLen = sizeof(clntAddr);
 
@@ -57,6 +59,12 @@ int main(int argc, char ** argv) {
 			perror("accept() failed");
 			exit(-1);
 		}
+
+		char index[(int)log10(i) + 5];
+		sprintf(index, "%d", i);
+		strcat(index, ".txt");
+		char baseFileName[] = "recFile";
+		FILE *fp = fopen(strcat(baseFileName, index), "a");
 
 		char clntIpAddr[INET_ADDRSTRLEN];
 		if (inet_ntop(AF_INET, &clntAddr.sin_addr.s_addr, 
@@ -75,37 +83,25 @@ int main(int argc, char ** argv) {
 			perror("recv() failed");
 			exit(-1);
 		}
-		buffer[recvLen] = '\n';
-		fputs(buffer, stdout);
+		// printf("%s\n", buffer);
+		fputs(buffer, fp);
 
 		while (recvLen > 0) {
-			// printf("Begining of Client Loop\n");
-			// Send the received data back to client
-			ssize_t sentLen = send(clntSock, buffer, recvLen, 0);
-			if (sentLen < 0) {
-				perror("send() failed");
-				exit(-1);
-			} else if (sentLen != recvLen) {
-				perror("send() sent unexpected number of bytes");
-				exit(-1);
-			}
-
-			// See if there is more data to receive
+			printf("%s\n", "Receiving File..");
 			memset(buffer, 0, BUFSIZE);
 			recvLen = recv(clntSock, buffer, BUFSIZE, 0);
-			printf("%ld\n", recvLen);
 			if (recvLen < 0) {
 				perror("recv() failed");
 				exit(-1);
 			} else if (recvLen > 0) { // some data was remaining
-				buffer[recvLen] = '\n';
-				fputs(buffer, stdout);
+				fputs(buffer, fp);
 			}
-			// printf("End of Client Loop\n");
 		}
-
 		close(clntSock);
 		// printf("End of Server Loop\n");
+		fclose(fp);
+		printf("%s\n", "Receive Complete!");
+
 	}
 
 	printf("End of Program\n");
