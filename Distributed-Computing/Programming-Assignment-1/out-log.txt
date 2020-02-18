@@ -1,0 +1,98 @@
+Server 2 requests 1th clock synchronisation to Server 0 at 20:43:17.
+Server 1 requests 1th clock synchronisation to Server 0 at 20:43:17.
+Server 1 receives 1th clock synchronisation request from Server 2 at 20:43:17.
+Server 0 receives 1th clock synchronisation request from Server 2 at 20:43:17.
+Server 1 replies 1th clock synchronisation response to Server 2 at 20:43:17.
+Server 0 requests 1th clock synchronisation to Server 1 at 20:43:17.
+Server 0 replies 1th clock synchronisation response to Server 2 at 20:43:17.
+Server 1 receives 1th clock synchronisation response from Server 0 at 20:43:17.
+Computing 1th delta between Server 0 and Server 1:...
+Server 0 receives 1th clock synchronisation response from Server 1 at 20:43:17.
+Computing 1th delta between Server 1 and Server 0:...
+Server 0 receives 2th clock synchronisation request from Server 2 at 20:43:17.
+Server 2 receives 1th clock synchronisation response from Server 0 at 20:43:17.
+Computing 1th delta between Server 0 and Server 2:...
+Server 0 replies 2th clock synchronisation response to Server 2 at 20:43:17.
+Server 2 receives 1th clock synchronisation request from Server 2 at 20:43:17.
+Server 2 replies 1th clock synchronisation response to Server 2 at 20:43:17.
+Server 1 requests 2th clock synchronisation to Server 2 at 20:43:17.
+Server 0 requests 2th clock synchronisation to Server 2 at 20:43:17.
+Server 1 receives 2th clock synchronisation request from Server 2 at 20:43:17.
+Server 2 requests 2th clock synchronisation to Server 1 at 20:43:17.
+Server 2 receives 2th clock synchronisation request from Server 2 at 20:43:17.
+Server 1 replies 2th clock synchronisation response to Server 2 at 20:43:17.
+Server 2 replies 2th clock synchronisation response to Server 2 at 20:43:17.
+Server 2 receives 2th clock synchronisation response from Server 1 at 20:43:17.
+Computing 1th delta between Server 1 and Server 2:...
+Server 0 receives 2th clock synchronisation response from Server 2 at 20:43:17.
+Computing 1th delta between Server 2 and Server 0:...
+Server 1 receives 2th clock synchronisation response from Server 2 at 20:43:17.
+Computing 1th delta between Server 2 and Server 1:...
+Server 2 requests 3th clock synchronisation to Server 0 at 20:43:17.
+Server 0 receives 3th clock synchronisation request from Server 2 at 20:43:17.
+Server 1 receives 3th clock synchronisation request from Server 2 at 20:43:17.
+Server 0 requests 3th clock synchronisation to Server 1 at 20:43:17.
+Server 0 replies 3th clock synchronisation response to Server 2 at 20:43:17.
+Server 1 replies 3th clock synchronisation response to Server 2 at 20:43:17.
+Server 0 receives 3th clock synchronisation response from Server 1 at 20:43:17.
+Computing 2th delta between Server 1 and Server 0:...
+Server 0 receives 4th clock synchronisation request from Server 2 at 20:43:17.
+Server 1 requests 3th clock synchronisation to Server 0 at 20:43:17.
+Server 1 receives 3th clock synchronisation response from Server 0 at 20:43:17.
+Computing 2th delta between Server 0 and Server 1:...
+Server 1 requests 4th clock synchronisation to Server 2 at 20:43:17.
+Server 2 receives 3th clock synchronisation request from Server 2 at 20:43:17.
+Server 0 requests 4th clock synchronisation to Server 2 at 20:43:17.
+Server 0 receives 4th clock synchronisation response from Server 2 at 20:43:17.
+Computing 2th delta between Server 2 and Server 0:...
+Server 2 replies 3th clock synchronisation response to Server 2 at 20:43:17.
+Server 2 receives 4th clock synchronisation request from Server 2 at 20:43:17.
+Server 0 replies 4th clock synchronisation response to Server 2 at 20:43:18.
+Server 2 receives 3th clock synchronisation response from Server 0 at 20:43:18.
+Computing 2th delta between Server 0 and Server 2:...
+Server 2 requests 4th clock synchronisation to Server 1 at 20:43:18.
+Server 1 receives 4th clock synchronisation request from Server 2 at 20:43:18.
+Server 2 replies 4th clock synchronisation response to Server 2 at 20:43:18.
+Server 1 receives 4th clock synchronisation response from Server 2 at 20:43:18.
+Computing 2th delta between Server 2 and Server 1:...
+Server 2 receives 4th clock synchronisation response from Server 1 at 20:43:19.
+Computing 2th delta between Server 1 and Server 2:...
+Server 1 replies 4th clock synchronisation response to Server 2 at 20:43:19.
+Server 0 receives 5th clock synchronisation request from Server 2 at 20:43:20.
+Server 1 receives 5th clock synchronisation request from Server 2 at 20:43:20.
+Server 0 requests 5th clock synchronisation to Server 1 at 20:43:20.
+Server 1 requests 5th clock synchronisation to Server 0 at 20:43:20.
+Server 2 requests 5th clock synchronisation to Server 0 at 20:43:20.
+Server 1 replies 5th clock synchronisation response to Server 2 at 20:43:22.
+Server 0 receives 5th clock synchronisation response from Server 1 at 20:43:22.
+Computing 3th delta between Server 1 and Server 0:...
+Server 0 replies 5th clock synchronisation response to Server 2 at 20:43:22.
+Server 1 receives 5th clock synchronisation response from Server 0 at 20:43:22.
+Computing 3th delta between Server 0 and Server 1:...
+Server 0 receives 6th clock synchronisation request from Server 2 at 20:43:22.
+Server 2 receives 5th clock synchronisation response from Server 0 at 20:43:22.
+Computing 3th delta between Server 0 and Server 2:...
+Server 0 replies 6th clock synchronisation response to Server 2 at 20:43:22.
+Server 0 requests 6th clock synchronisation to Server 2 at 20:43:24.
+Server 2 receives 5th clock synchronisation request from Server 2 at 20:43:24.
+Server 1 requests 6th clock synchronisation to Server 2 at 20:43:24.
+Server 2 requests 6th clock synchronisation to Server 1 at 20:43:24.
+Server 1 receives 6th clock synchronisation request from Server 2 at 20:43:24.
+Server 1 replies 6th clock synchronisation response to Server 2 at 20:43:24.
+Server 2 receives 6th clock synchronisation response from Server 1 at 20:43:24.
+Computing 3th delta between Server 1 and Server 2:...
+Server 2 replies 5th clock synchronisation response to Server 2 at 20:43:26.
+Server 0 receives 6th clock synchronisation response from Server 2 at 20:43:26.
+Computing 3th delta between Server 2 and Server 0:...
+Server 2 receives 6th clock synchronisation request from Server 2 at 20:43:26.
+Server 2 replies 6th clock synchronisation response to Server 2 at 20:43:26.
+Server 1 receives 6th clock synchronisation response from Server 2 at 20:43:26.
+Computing 3th delta between Server 2 and Server 1:...
+
+
+          Round  1    |  Round  2    |  Round  3    |  
+P   0 |   1581953467  |  1581953484  |  1581953491  |  
+P   1 |   1581953467  |  1581953484  |  1581953491  |  
+P   2 |   1581953467  |  1581953484  |  1581953491  |  
+Mean  |   1581953467  |  1581953484  |  1581953491  |  
+Var   |            0  |           0  |           0  |  
