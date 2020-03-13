@@ -1,0 +1,14 @@
+\contentsline {section}{Program Design}{2}{section*.2}
+\contentsline {subsection}{Spanning Tree Algorithm}{2}{section*.3}
+\contentsline {subsubsection}{Cell Struct}{2}{section*.4}
+\contentsline {subsubsection}{Cell Process}{2}{section*.5}
+\contentsline {subsubsection}{Receiver Process}{3}{section*.6}
+\contentsline {subsubsection}{Miscellaneous}{3}{section*.7}
+\contentsline {subsection}{Message Optimal Algorithm}{3}{section*.8}
+\contentsline {section}{Program Output}{4}{section*.9}
+\contentsline {subsection}{Spanning Tree Algorithm}{4}{section*.10}
+\contentsline {subsection}{Message Optimal Algorithm}{4}{section*.11}
+\contentsline {section}{Results \& Graphs}{5}{section*.12}
+\contentsline {subsection}{Spanning Tree Algorithm}{5}{section*.13}
+\contentsline {subsection}{Message Optimal Algorithm}{5}{section*.14}
+\contentsline {section}{Explaination of Results}{5}{section*.15}

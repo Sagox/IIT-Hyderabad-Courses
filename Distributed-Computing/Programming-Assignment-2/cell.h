@@ -3,23 +3,22 @@
 
 using namespace std;
 
-enum Colour {White = 1, Red = 2, Blue = 3, Black = 4};
+enum Colour { White = 1, Red = 2, Blue = 3, Black = 4 };
 
 // this is for storing the information og the cell
 struct cellInfo {
-	int id;
-	int parent;
-// This is for the implementatin of the tree based termination
-// detection algorithms
-	vector<int> children;
-	vector<bool> tokenReceived;
-	bool haveToken = false;
-	Colour cellColour = White;
-	Colour nodeColour = White;
-// to avoid data race between reading and writing
-// the colour of cells
-	pthread_mutex_t *lock;	
-
+  int id;
+  int parent;
+  // This is for the implementatin of the tree based termination
+  // detection algorithms
+  vector<int> children;
+  vector<bool> tokenReceived;
+  bool haveToken = false;
+  Colour cellColour = White;
+  Colour nodeColour = White;
+  // to avoid data race between reading and writing
+  // the colour of cells
+  pthread_mutex_t *lock;
 };
 
 // message meaning and format between cells

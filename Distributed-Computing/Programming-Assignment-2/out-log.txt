@@ -1,213 +1,331 @@
-Cell 3 Turns Red at 06:12:01
-Cell 1 Turns Red at 06:12:01
-Cell 1 Turns Blue at 06:12:01
-Cell 0 receives a Red msg at 06:12:01
-Cell 0 turns Red at 06:12:01
-Cell 1 sends a Red message to cell 0 at 06:12:01
-Cell 0 sends a Red message to cell 1 at 06:12:01
-Cell 1 receives a Red msg at 06:12:01
-Cell 1 turns Red at 06:12:01
-Cell 1 receives a Red msg at 06:12:01
-Cell 1 turns Red at 06:12:01
-Cell 0 sends a Red message to cell 1 at 06:12:01
-Cell 0 sends a Red message to cell 1 at 06:12:02
-Cell 1 receives a Red msg at 06:12:02
-Cell 1 turns Red at 06:12:02
-Cell 3 receives a Red msg at 06:12:03
-Cell 3 turns Red at 06:12:03
-Cell 1 sends a Red message to cell 3 at 06:12:03
-Cell 0 sends a Red message to cell 1 at 06:12:03
-Cell 1 receives a Red msg at 06:12:03
-Cell 1 turns Red at 06:12:03
-Cell 1 sends a Red message to cell 0 at 06:12:03
-Cell 0 receives a Red msg at 06:12:03
-Cell 0 turns Red at 06:12:03
-Cell 3 sends a Red message to cell 1 at 06:12:03
-Cell 1 receives a Red msg at 06:12:03
-Cell 1 turns Red at 06:12:03
-Cell 3 sends a Red message to cell 1 at 06:12:03
-Cell 1 receives a Red msg at 06:12:03
-Cell 1 turns Red at 06:12:03
-Cell 1 sends a Red message to cell 0 at 06:12:04
-Cell 0 receives a Red msg at 06:12:04
-Cell 0 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 3 at 06:12:04
-Cell 3 receives a Red msg at 06:12:04
-Cell 3 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 0 at 06:12:04
-Cell 0 receives a Red msg at 06:12:04
-Cell 0 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 3 at 06:12:04
-Cell 3 receives a Red msg at 06:12:04
-Cell 3 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 0 at 06:12:04
-Cell 0 receives a Red msg at 06:12:04
-Cell 0 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 3 at 06:12:04
-Cell 3 receives a Red msg at 06:12:04
-Cell 3 turns Red at 06:12:04
-Cell 1 sends a Red message to cell 3 at 06:12:04
-Cell 3 receives a Red msg at 06:12:04
-Cell 3 turns Red at 06:12:04
-Cell 0 sends a Red message to cell 2 at 06:12:05
-Cell 2 receives a Red msg at 06:12:05
-Cell 2 turns Red at 06:12:05
-Cell 2 sends a Red message to cell 0 at 06:12:05
-Cell 0 receives a Red msg at 06:12:05
-Cell 0 turns Red at 06:12:05
-Cell 3 sends a Red message to cell 1 at 06:12:05
-Cell 1 receives a Red msg at 06:12:05
-Cell 1 turns Red at 06:12:05
-Cell 3 sends a Red message to cell 1 at 06:12:05
-Cell 1 receives a Red msg at 06:12:05
-Cell 1 turns Red at 06:12:05
-Cell 3 sends a Red message to cell 1 at 06:12:05
-Cell 1 receives a Red msg at 06:12:05
-Cell 1 turns Red at 06:12:05
-Cell 2 sends a Red message to cell 0 at 06:12:06
-Cell 0 receives a Red msg at 06:12:06
-Cell 0 turns Red at 06:12:06
-Cell 2 sends a Red message to cell 0 at 06:12:06
-Cell 0 receives a Red msg at 06:12:06
-Cell 0 turns Red at 06:12:06
-Cell 3 sends a Red message to cell 1 at 06:12:06
-Cell 1 receives a Red msg at 06:12:06
-Cell 1 turns Red at 06:12:06
-Cell 1 sends a Red message to cell 3 at 06:12:06
-Cell 3 receives a Red msg at 06:12:06
-Cell 3 turns Red at 06:12:06
-Cell 1 sends a Red message to cell 0 at 06:12:06
-Cell 0 receives a Red msg at 06:12:06
-Cell 0 turns Red at 06:12:06
-Cell 1 sends a Red message to cell 3 at 06:12:06
-Cell 3 receives a Red msg at 06:12:06
-Cell 3 turns Red at 06:12:06
-Cell 1 sends a Red message to cell 0 at 06:12:06
-Cell 0 receives a Red msg at 06:12:06
-Cell 0 turns Red at 06:12:06
-Cell 2 sends a Red message to cell 0 at 06:12:08
-Cell 0 receives a Red msg at 06:12:08
-Cell 0 turns Red at 06:12:08
-Cell 3 sends a Red message to cell 1 at 06:12:08
-Cell 1 receives a Red msg at 06:12:08
-Cell 1 turns Red at 06:12:08
-Cell 1 sends a Red message to cell 0 at 06:12:08
-Cell 0 receives a Red msg at 06:12:08
-Cell 0 turns Red at 06:12:08
-Cell 1 sends a Red message to cell 0 at 06:12:08
-Cell 0 receives a Red msg at 06:12:08
-Cell 0 turns Red at 06:12:08
-Cell 0 sends a Red message to cell 1 at 06:12:09
-Cell 1 receives a Red msg at 06:12:09
-Cell 1 turns Red at 06:12:09
-Cell 0 sends a Red message to cell 2 at 06:12:10
-Cell 2 receives a Red msg at 06:12:10
-Cell 2 turns Red at 06:12:10
-Cell 0 sends a Red message to cell 2 at 06:12:10
-Cell 2 receives a Red msg at 06:12:10
-Cell 2 turns Red at 06:12:10
-Cell 0 sends a Red message to cell 2 at 06:12:10
-Cell 2 receives a Red msg at 06:12:10
-Cell 2 turns Red at 06:12:10
-Cell 2 sends a Red message to cell 0 at 06:12:10
-Cell 0 receives a Red msg at 06:12:10
-Cell 0 turns Red at 06:12:10
-Cell 0 sends a Red message to cell 2 at 06:12:11
-Cell 2 receives a Red msg at 06:12:11
-Cell 2 turns Red at 06:12:11
-Cell 3 sends a Red message to cell 1 at 06:12:11
-Cell 1 receives a Red msg at 06:12:11
-Cell 1 turns Red at 06:12:11
-Cell 1 sends a Red message to cell 0 at 06:12:11
-Cell 0 receives a Red msg at 06:12:11
-Cell 0 turns Red at 06:12:11
-Cell 2 sends a Red message to cell 0 at 06:12:13
-Cell 0 receives a Red msg at 06:12:13
-Cell 0 turns Red at 06:12:13
-Cell 2 sends a Red message to cell 0 at 06:12:13
-Cell 0 receives a Red msg at 06:12:13
-Cell 0 turns Red at 06:12:13
-Cell 3 sends a Red message to cell 1 at 06:12:14
-Cell 1 receives a Red msg at 06:12:14
-Cell 1 turns Red at 06:12:14
-Cell 2 sends a Red message to cell 0 at 06:12:15
-Cell 0 receives a Red msg at 06:12:15
-Cell 0 turns Red at 06:12:15
-Cell 1 sends a Red message to cell 0 at 06:12:15
-Cell 0 receives a Red msg at 06:12:15
-Cell 0 turns Red at 06:12:15
-Cell 2 sends a Red message to cell 0 at 06:12:16
-Cell 0 receives a Red msg at 06:12:16
-Cell 0 turns Red at 06:12:16
-Cell 2 sends a Red message to cell 0 at 06:12:16
-Cell 0 receives a Red msg at 06:12:16
-Cell 0 turns Red at 06:12:16
-Cell 2 sends a Red message to cell 0 at 06:12:16
-Cell 0 receives a Red msg at 06:12:16
-Cell 0 turns Red at 06:12:16
-Cell 1 sends a Red message to cell 3 at 06:12:16
-Cell 3 receives a Red msg at 06:12:16
-Cell 3 turns Red at 06:12:16
-Cell 3 sends a Red message to cell 1 at 06:12:17
-Cell 1 receives a Red msg at 06:12:17
-Cell 1 turns Red at 06:12:17
-Cell 0 sends a Red message to cell 1 at 06:12:18
-Cell 1 receives a Red msg at 06:12:18
-Cell 1 turns Red at 06:12:18
-Cell 3 sends a Red message to cell 1 at 06:12:18
-Cell 1 receives a Red msg at 06:12:18
-Cell 1 turns Red at 06:12:18
-Cell 3 sends a Red message to cell 1 at 06:12:18
-Cell 1 receives a Red msg at 06:12:18
-Cell 1 turns Red at 06:12:18
-Cell 0 sends a Red message to cell 2 at 06:12:19
-Cell 2 receives a Red msg at 06:12:19
-Cell 2 turns Red at 06:12:19
-Cell 2 sends a Red message to cell 0 at 06:12:19
-Cell 0 receives a Red msg at 06:12:19
-Cell 0 turns Red at 06:12:19
-Cell 2 sends a Red message to cell 0 at 06:12:19
-Cell 0 receives a Red msg at 06:12:19
-Cell 0 turns Red at 06:12:19
-Cell 2 sends a Red message to cell 0 at 06:12:20
-Cell 0 receives a Red msg at 06:12:20
-Cell 0 turns Red at 06:12:20
-Cell 1 sends a Red message to cell 0 at 06:12:20
-Cell 0 receives a Red msg at 06:12:20
-Cell 0 turns Red at 06:12:20
-Cell 0 sends a Red message to cell 2 at 06:12:21
-Cell 2 receives a Red msg at 06:12:21
-Cell 2 turns Red at 06:12:21
-Cell 2 sends a Red message to cell 0 at 06:12:21
-Cell 0 receives a Red msg at 06:12:21
-Cell 0 turns Red at 06:12:21
-Cell 3 sends a Red message to cell 1 at 06:12:21
-Cell 1 receives a Red msg at 06:12:21
-Cell 1 turns Red at 06:12:21
-Cell 3 sends a Red message to cell 1 at 06:12:21
-Cell 1 receives a Red msg at 06:12:21
-Cell 1 turns Red at 06:12:21
-Cell 0 sends a Red message to cell 2 at 06:12:22
-Cell 2 receives a Red msg at 06:12:22
-Cell 2 turns Red at 06:12:22
-Cell 2 sends a Red message to cell 0 at 06:12:22
-Cell 0 receives a Red msg at 06:12:22
-Cell 0 turns Red at 06:12:22
-Cell 1 sends a Red message to cell 0 at 06:12:22
-Cell 0 receives a Red msg at 06:12:22
-Cell 0 turns Red at 06:12:22
-Cell 1 sends a Red message to cell 0 at 06:12:22
-Cell 0 receives a Red msg at 06:12:22
-Cell 0 turns Red at 06:12:22
-Cell 2 sends a Red message to cell 0 at 06:12:23
-Cell 0 receives a Red msg at 06:12:23
-Cell 0 turns Red at 06:12:23
-Cell 2 sends a Red message to cell 0 at 06:12:23
-Cell 0 receives a Red msg at 06:12:23
-Cell 0 turns Red at 06:12:23
-Cell 2 sends a Red message to cell 0 at 06:12:23
-Cell 0 receives a Red msg at 06:12:23
-Cell 0 turns Red at 06:12:23
-Cell 2 sends a Red message to cell 0 at 06:12:23
-Cell 0 receives a Red msg at 06:12:23
-Cell 0 turns 
+Cell 4 Turns Red at 01:42:57
+Cell 0 sends a Red message to cell 2 at 01:42:57
+Cell 2 receives a Red msg at 01:42:57
+Cell 2 turns Red at 01:42:57
+Cell 2 sends a Red message to cell 0 at 01:42:57
+Cell 0 receives a Red msg at 01:42:57
+Cell 2 sends a Red message to cell 0 at 01:42:57
+Cell 0 receives a Red msg at 01:42:57
+Cell 0 sends a Red message to cell 2 at 01:42:58
+Cell 2 receives a Red msg at 01:42:58
+Cell 0 sends a Red message to cell 2 at 01:42:58
+Cell 2 receives a Red msg at 01:42:58
+Cell 0 Turns Blue at 01:42:57
+Cell 2 Turns Blue at 01:42:57
+Cell 1 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 1 at 01:43:00
+Cell 1 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 1 at 01:43:00
+Cell 1 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 1 at 01:43:00
+Cell 1 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 1 at 01:43:00
+Cell 1 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 0 sends a Blue message to cell 1 at 01:43:00
+Cell 1 receives a Blue msg at 01:43:00
+Cell 0 sends a Blue message to cell 2 at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 turns Blue at 01:43:00
+Cell 2 sends a Black token to cell 0
+Cell 0 receives a Black token from 2 at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:00
+Cell 0 receives a Blue msg at 01:43:00
+Cell 2 sends a Blue message to cell 0 at 01:43:01
+Cell 0 receives a Blue msg at 01:43:01
+Cell 2 sends a Blue message to cell 0 at 01:43:01
+Cell 0 receives a Blue msg at 01:43:01
+Cell 0 sends a Blue message to cell 2 at 01:43:01
+Cell 2 receives a Blue msg at 01:43:01
+Cell 0 sends a Blue message to cell 2 at 01:43:02
+Cell 2 receives a Blue msg at 01:43:02
+Cell 0 sends a Blue message to cell 1 at 01:43:02
+Cell 1 receives a Blue msg at 01:43:02
+Cell 1 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 3 turns Blue at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 3 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 3 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 5 receives a Blue msg at 01:43:03
+Cell 5 turns Blue at 01:43:03
+Cell 3 sends a Blue message to cell 5 at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 5 sends a White token to cell 3
+Cell 3 receives a White token from 5 at 01:43:03
+Cell 1 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 3 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 5 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 5 receives a Blue msg at 01:43:03
+Cell 3 sends a Blue message to cell 5 at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 5 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 5 sends a Blue message to cell 3 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 1 sends a Blue message to cell 0 at 01:43:03
+Cell 0 receives a Blue msg at 01:43:03
+Cell 5 sends a Blue message to cell 3 at 01:43:03
+Cell 3 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 2 at 01:43:03
+Cell 2 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 2 at 01:43:03
+Cell 2 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 0 sends a Blue message to cell 1 at 01:43:03
+Cell 1 receives a Blue msg at 01:43:03
+Cell 3 sends a Blue message to cell 4 at 01:43:04
+Cell 4 receives a Blue msg at 01:43:04
+Cell 4 turns Blue at 01:43:04
+Cell 4 sends a White token to cell 3
+Cell 3 receives a White token from 4 at 01:43:04
+Cell 4 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 4 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 4 sends a Blue message to cell 3 at 01:43:04
+Cell 1 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 5 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 1 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 5 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 1 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 5 sends a Blue message to cell 3 at 01:43:04
+Cell 3 receives a Blue msg at 01:43:04
+Cell 1 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 1 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 1 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 2 sends a Blue message to cell 0 at 01:43:04
+Cell 0 receives a Blue msg at 01:43:04
+Cell 0 sends a Blue message to cell 1 at 01:43:04
+Cell 1 receives a Blue msg at 01:43:04
+Cell 0 sends a Blue message to cell 1 at 01:43:04
+Cell 1 receives a Blue msg at 01:43:04
+Cell 0 sends a Blue message to cell 1 at 01:43:04
+Cell 1 receives a Blue msg at 01:43:04
+Cell 0 sends a Blue message to cell 2 at 01:43:04
+Cell 2 receives a Blue msg at 01:43:04
+Cell 3 sends a White token to cell 1
+Cell 1 receives a White token from 3 at 01:43:05
+Cell 3 sends a Blue message to cell 4 at 01:43:05
+Cell 4 receives a Blue msg at 01:43:05
+Cell 3 sends a Blue message to cell 1 at 01:43:05
+Cell 1 receives a Blue msg at 01:43:05
+Cell 4 sends a Blue message to cell 3 at 01:43:05
+Cell 3 sends a Blue message to cell 5 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 5 receives a Blue msg at 01:43:05
+Cell 4 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 4 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 5 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 5 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 5 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 1 sends a White token to cell 0
+Cell 0 receives a White token from 1 at 01:43:05
+Cell 1 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 5 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 5 sends a Blue message to cell 3 at 01:43:05
+Cell 3 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 2 sends a Blue message to cell 0 at 01:43:05
+Cell 0 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 2 at 01:43:05
+Cell 2 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 2 at 01:43:05
+Cell 2 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 1 at 01:43:05
+Cell 1 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 2 at 01:43:05
+Cell 2 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 2 at 01:43:05
+Cell 2 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 1 at 01:43:05
+Cell 1 receives a Blue msg at 01:43:05
+Cell 0 sends a Blue message to cell 2 at 01:43:05
+Cell 2 receives a Blue msg at 01:43:05
+Cell 3 sends a Blue message to cell 5 at 01:43:06
+Cell 5 receives a Blue msg at 01:43:06
+Cell 1 sends a Blue message to cell 3 at 01:43:06
+Cell 3 receives a Blue msg at 01:43:06
+Cell 5 sends a White token to cell 3
+Cell 3 receives a White token from 5 at 01:43:06
+Cell 5 sends a Blue message to cell 3 at 01:43:06
+Cell 3 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 1 at 01:43:06
+Cell 1 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 2 at 01:43:06
+Cell 2 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 1 at 01:43:06
+Cell 1 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 1 at 01:43:06
+Cell 1 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 2 at 01:43:06
+Cell 2 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 2 at 01:43:06
+Cell 2 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 1 at 01:43:06
+Cell 1 receives a Blue msg at 01:43:06
+Cell 0 sends a Blue message to cell 2 at 01:43:06
+Cell 2 receives a Blue msg at 01:43:06
+Cell 3 sends a Blue message to cell 4 at 01:43:07
+Cell 4 receives a Blue msg at 01:43:07
+Cell 3 sends a Blue message to cell 5 at 01:43:07
+Cell 5 receives a Blue msg at 01:43:07
+Cell 1 sends a Blue message to cell 0 at 01:43:07
+Cell 0 receives a Blue msg at 01:43:07
+Cell 1 sends a Blue message to cell 0 at 01:43:07
+Cell 0 receives a Blue msg at 01:43:07
+Cell 5 sends a Blue message to cell 3 at 01:43:07
+Cell 3 receives a Blue msg at 01:43:07
+Cell 1 sends a Blue message to cell 0 at 01:43:07
+Cell 0 receives a Blue msg at 01:43:07
+Cell 5 sends a Blue message to cell 3 at 01:43:07
+Cell 3 receives a Blue msg at 01:43:07
+Cell 5 sends a Blue message to cell 3 at 01:43:07
+Cell 3 receives a Blue msg at 01:43:07
+Cell 4 sends a White token to cell 3
+Cell 3 receives a White token from 4 at 01:43:08
+Cell 4 sends a Blue message to cell 3 at 01:43:08
+Cell 3 receives a Blue msg at 01:43:08
+Cell 3 sends a White token to cell 1
+Cell 4 sends a Blue message to cell 3 at 01:43:08
+Cell 3 receives a Blue msg at 01:43:08
+Cell 3 sends a Blue message to cell 5 at 01:43:08
+Cell 1 receives a White token from 3 at 01:43:08
+Cell 5 receives a Blue msg at 01:43:08
+Cell 4 sends a Blue message to cell 3 at 01:43:08
+Cell 3 receives a Blue msg at 01:43:08
+Cell 1 sends a White token to cell 0
+Cell 0 receives a White token from 1 at 01:43:08
+Cell 1 sends a Blue message to cell 3 at 01:43:08
+Cell 3 receives a Blue msg at 01:43:08
+Cell 1 sends a Blue message to cell 0 at 01:43:08
+Cell 0 receives a Blue msg at 01:43:08
+Cell 1 sends a Blue message to cell 3 at 01:43:08
+Cell 3 receives a Blue msg at 01:43:08
+Cell 1 sends a Blue message to cell 0 at 01:43:08
+Cell 0 receives a Blue msg at 01:43:08
+Cell 2 sends a White token to cell 0
+Cell 0 receives a White token from 2 at 01:43:08
+Cell 2 sends a Blue message to cell 0 at 01:43:08
+Cell 0 receives a Blue msg at 01:43:08
+Cell 2 sends a Blue message to cell 0 at 01:43:08
+Cell 0 receives a Blue msg at 01:43:08
+Termination Initiated by cell 0
