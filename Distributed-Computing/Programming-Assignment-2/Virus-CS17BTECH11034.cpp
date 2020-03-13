@@ -22,7 +22,7 @@
 //#define DEBUG_MODE 1
 #define BUFSIZE 1024
 using namespace std;
-
+bool termination = false;
 // parameters for the model
 
 // integer valued parameters
@@ -31,37 +31,22 @@ int N, Ir, Ib;
 // real valued parameters
 float Wr, Wb, Lb, Lr, Ls, p, q;
 
+vector<cellInfo> cellInfoVec;
+vector<int> leafList;
 vector<vector<int>> graph;
 vector<int> parent;
 // network parameters
-int MAXPENDING, beginLock = 0, roundDone = 0;
+int MAXPENDING, beginLock = 0;
 
-// Table to store all the time values after every round
-int **SyncTable;
 
 // mutex locks to synchronise the threads at some points
-mutex mtx, mtx1;
+mutex mtx;
 
 // file to write output to
 FILE *pFile;
 
-// string sent when requesting for synchrnisation
-char msg[10] = "";
-
-// function to receive sync requests and respond appropriately
-void *receiveThread(void *id);
-
-// function to send sync requests, receive response and update
-// the error factor correspondingly
-void *cellProcess(void *params);
 
 void primMST(vector<vector<int>> &graph, vector<int> &parent);
-
-void printVector(vector<int> &parent) {
-  for (auto i = 0; i < parent.size(); i++)
-    cout << parent[i] << " ";
-  cout << endl;
-}
 
 int minKey(int key[], bool mstSet[]);
 
@@ -70,7 +55,7 @@ void readInputFromFile() {
   fstream inputFile;
   inputFile.open("inp-params.txt");
   inputFile >> N >> Wr >> Ir >> Wb >> Ib >> Lr >> Lb >> p >> q;
-  graph.resize(N, vector<int>(N, -1));
+  graph.resize(N, vector<int>(N, INT_MAX));
 // parent.resize(N);
 #ifndef DEBUG_MODE
   cout << "Initial parameters read, reading the graph now" << endl;
@@ -133,59 +118,84 @@ int main() {
   // vector of threads
   vector<pthread_t> threadsList(N);
 
-  // vector of ids which identify each cell
-  vector<cellInfo> cellInfoVec(N);
+  // vector of cellInfos
+  cellInfoVec.resize(N);
+
+  // vector of cells to infect
   vector<int> infectList(N);
-  vector<int> leafList;
+
   // launch the threads
   for (auto i = 0; i < N; i++) {
     Colour x = White;
     cellInfoVec[i].id = i;
     cellInfoVec[i].parent = parent[i];
+
     // give each node its children list
     for (auto j = 0; j < parent.size(); j++) {
       if (parent[j] == i)
         cellInfoVec[i].children.push_back(j);
     }
-    if(cellInfoVec[i].children.size() == 0)
+
+    // if the node is a leaf add it to the leaf list
+    if (cellInfoVec[i].children.size() == 0) {
       leafList.push_back(i);
+      cellInfoVec[i].haveToken = true;
+    }
+    
+    // allocate space for the pthread_mutex_t
     cellInfoVec[i].lock = (pthread_mutex_t *)malloc(sizeof(pthread_mutex_t));
+    // initialise the pthread_mutex_t
+    pthread_mutex_init(cellInfoVec[i].lock, NULL);
+
+    // initialise the infection list
     infectList[i] = i;
+
     // launch each cell process
     pthread_create(&(threadsList[i]), NULL, cellProcess,
                    (void *)(&cellInfoVec[i]));
   }
+
 #ifndef DEBUG_MODE
   cout << "Threads Created" << endl;
 #endif
+
   cout << leafList.size() << endl;
+
   // infecting random Ir number of the cells by setting their
   // colour to red
   srand(time(0));
   random_shuffle(infectList.begin(), infectList.end());
-  for (auto i = 0; i < ceil(N / 10.0); i++) {
-    pthread_mutex_lock(cellInfoVec[i].lock);
+  auto nowC = chrono::high_resolution_clock::to_time_t(
+      chrono::high_resolution_clock::now());
+  char *nows = asctime(localtime(&nowC));
+  char nowt[9];
+  strncpy(nowt, nows + 11, 8);
+  for (auto i = 0; i < Ir; i++) {
+    fprintf(pFile, "Cell %d Turns Red at %s\n", infectList[i], nowt);
+    pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Red;
-    pthread_mutex_unlock(cellInfoVec[i].lock);
+    pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
   }
 
 #ifndef DEBUG_MODE
   cout << "Threads Infected" << endl;
 #endif
-
-  for (auto i = 0; i < ceil(N / 10.0); i++) {
-    pthread_mutex_lock(cellInfoVec[i].lock);
+  random_shuffle(infectList.begin(), infectList.end());
+  for (auto i = 0; i < Ib; i++) {
+    fprintf(pFile, "Cell %d Turns Blue at %s\n", infectList[i], nowt);
+    pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Blue;
-    pthread_mutex_unlock(cellInfoVec[i].lock);
+    pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
   }
 
 #ifndef DEBUG_MODE
   cout << "Blue Cells Introduced" << endl;
 #endif
+  while(!termination);
 
   // joining pthreads
   for (auto i = 0; i < N; i++) {
-    pthread_join(threadsList[i], NULL);
+    pthread_cancel(threadsList[i]);
   }
 }
 
@@ -194,9 +204,14 @@ void *cellProcess(void *params) {
   cellInfo *ci = (cellInfo *)params;
   // id of the server
   int selfID = ci->id;
+
+  char msg[10] = "";
+
+  // each cell process has a seperate receiving thread
   pthread_t receivingThread;
   pthread_create(&receivingThread, NULL, receiveThread, (void *)ci);
   vector<int> neighbours;
+
   for (auto i = 0; i < graph[selfID].size(); i++) {
     if (graph[selfID][i] == 1)
       neighbours.push_back(i);
@@ -205,14 +220,11 @@ void *cellProcess(void *params) {
   // fprintf(stdout, "%d\n", ci->colour);
   while (beginLock != N)
     ;
-
   exponential_distribution<double> distributionR(Lr);
   exponential_distribution<double> distributionB(Lb);
   unsigned seed = chrono::system_clock::now().time_since_epoch().count();
   default_random_engine generator(seed);
   // waiting for all threads to be created
-  while (beginLock < N)
-    ;
 #ifndef DEBUG_MODE
   cout << "Server Process Begin" << endl;
 #endif
@@ -242,9 +254,6 @@ void *cellProcess(void *params) {
       chrono::high_resolution_clock::now());
   char *nows = asctime(localtime(&nowC));
   char nowt[9];
-  memset(msg, 0, sizeof(char) * 10);
-  sprintf(msg, "%d", selfID);
-  sprintf(msg, "%s", "#");
 
   // This loop is for every round of sending messages to the neighbours
   // whether the cell is blue or red, is determined on every iteration and
@@ -257,13 +266,19 @@ void *cellProcess(void *params) {
     pthread_mutex_lock(ci->lock);
     Colour currentColour = ci->cellColour;
     pthread_mutex_unlock(ci->lock);
-    sprintf(msg, "%d", (int)ci->cellColour);
+    memset(msg, 0, sizeof(char) * 10);
+    sprintf(msg, "%d#%d", selfID, (int)ci->cellColour);
+    cout << msg << endl;
 
+    // send messages to p or q % of the neighbours
     for (auto i = 0;
-         i < ceil(neighbours.size() * (ci->cellColour == Red ? p : q) / 100.0);
+         i < ceil(neighbours.size() * (currentColour == Red ? p : q) / 100.0);
          i++) {
-      // send synchronisation request to all the threads
-      if (i == selfID)
+      if(currentColour == White) {
+        cout << "breaking" << endl;
+        break;
+      }
+      if (neighbours[i] == selfID)
         continue;
       servPort = 50000 + neighbours[i];
       servAddr.sin_port = htons(servPort);
@@ -275,17 +290,13 @@ void *cellProcess(void *params) {
           // exit(-1);
         } else
           break;
-        sleep(1);
       }
-      ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
       nowC = chrono::high_resolution_clock::to_time_t(
           chrono::high_resolution_clock::now());
       nows = asctime(localtime(&nowC));
       strncpy(nowt, nows + 11, 8);
-      // fprintf(
-      //     pFile,
-      //     "Server %d requests %dth clock synchronisation to Server %d at
-      //     %s.\n", selfID, requestNumber, i, nowt);
+      ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
+      fprintf(pFile, "Cell %d sends a %s message to cell %d at %s\n", selfID, currentColour == Red ? "Red" : "Blue", neighbours[i], nowt);
       if (sentLen < 0) {
         perror("send() failed");
         exit(-1);
@@ -293,7 +304,7 @@ void *cellProcess(void *params) {
         perror("send(): sent unexpected number of bytes");
         exit(-1);
       }
-      if(currentColour == Red)
+      if (currentColour == Red)
         ci->nodeColour = Black;
       close(sockfd);
       sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -306,67 +317,84 @@ void *cellProcess(void *params) {
       else
         sleep(distributionB(generator));
     }
-    bool allTokensReceived = true;
-    for(auto i=0;i<ci->children.size();i++) {
-      if(!ci->tokenReceived[i]) {
+
+    // This part of the code is for termination detection in every
+    // node, a node checks if it has received tokens from all its children,
+    // if it has, then it send a black or white token to its own parent
+
+    // leaves have no children, so they can only send tokens when they
+    // actually have the token
+    // internal nodes can send tokens when they have received tokens
+    // from all their children
+    bool allTokensReceived = ci->children.size() > 0 ? true : false;
+    pthread_mutex_lock(ci->lock);
+    for (auto i = 0; i < ci->children.size(); i++) {
+      if (!ci->tokenReceived[i]) {
         allTokensReceived = false;
         break;
       }
     }
-    if(allTokensReceived) {
-      if(selfID == 0 && ci->nodeColour == White) {
+    pthread_mutex_unlock(ci->lock);
+    if ((allTokensReceived || ci->haveToken) && ci->cellColour == Blue) {
+      fprintf(pFile, "Cell %d sends a %s token to cell %d\n", selfID, ci->nodeColour == White? "White" : "Black", ci->parent);
+      if (selfID == 0 && ci->nodeColour == White) {
         cout << "Termination Initiated" << endl;
-        return NULL;
-      } else if(selfID == 0) {
-        // for(auto k=0;k<leafList.size();k++) {
-        //   // reset to white tokens
-        // }
+        fclose(pFile);
+        termination = true;
+      } else if (selfID == 0) {
+        for(auto k=0;k<leafList.size();k++) {
+          pthread_mutex_lock(cellInfoVec[leafList[k]].lock);
+          cellInfoVec[leafList[k]].haveToken = true;
+          cellInfoVec[leafList[k]].nodeColour = White; 
+          pthread_mutex_unlock(cellInfoVec[leafList[k]].lock);
+        }
+      } else {
+        ci->haveToken = true;
+        // send token to parent
+        servPort = 50000 + ci->parent;
+        servAddr.sin_port = htons(servPort);
+        // connect to the server
+        while (true) {
+          if (connect(sockfd, (struct sockaddr *)&servAddr, sizeof(servAddr)) <
+              0) {
+            perror("connect() failed");
+            // exit(-1);
+          } else
+            break;
+          sleep(1);
+        }
+        memset(msg, 0, sizeof(char) * 10);
+        sprintf(msg, "%d#%d", selfID, ci->nodeColour == White? 4:5);
+        ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
+        nowC = chrono::high_resolution_clock::to_time_t(
+            chrono::high_resolution_clock::now());
+        nows = asctime(localtime(&nowC));
+        strncpy(nowt, nows + 11, 8);
+        // fprintf(
+        //     pFile,
+        //     "Server %d requests %dth clock synchronisation to Server %d at
+        //     %s.\n", selfID, requestNumber, i, nowt);
+        if (sentLen < 0) {
+          perror("send() failed");
+          exit(-1);
+        } else if (sentLen != strlen(msg)) {
+          perror("send(): sent unexpected number of bytes");
+          exit(-1);
+        }
+        close(sockfd);
+        sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
+        if (sockfd < 0) {
+          perror("socket() failed");
+          exit(-1);
+        }
+        ci->haveToken = false;
+        pthread_mutex_lock(ci->lock);
+        ci->nodeColour = White;
+        for (auto i = 0; i < ci->children.size(); i++) {
+          ci->tokenReceived[i] = false;
+        }
+        pthread_mutex_unlock(ci->lock);
       }
-      ci->haveToken = true;
-      // send token to parent
-      servPort = 50000 + ci->parent;
-      servAddr.sin_port = htons(servPort);
-      // connect to the server
-      while (true) {
-        if (connect(sockfd, (struct sockaddr *)&servAddr, sizeof(servAddr)) <
-            0) {
-          perror("connect() failed");
-          // exit(-1);
-        } else
-          break;
-        sleep(1);
-      }
-      memset(msg, 0, sizeof(char) * 10);
-      sprintf(msg, "%d", selfID);
-      sprintf(msg, "%s", "#");
-      if(ci->nodeColour == White)
-       sprintf(msg, "%d", 4);
-      else
-        sprintf(msg, "%d", 5);
-      ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
-      nowC = chrono::high_resolution_clock::to_time_t(
-          chrono::high_resolution_clock::now());
-      nows = asctime(localtime(&nowC));
-      strncpy(nowt, nows + 11, 8);
-      // fprintf(
-      //     pFile,
-      //     "Server %d requests %dth clock synchronisation to Server %d at
-      //     %s.\n", selfID, requestNumber, i, nowt);
-      if (sentLen < 0) {
-        perror("send() failed");
-        exit(-1);
-      } else if (sentLen != strlen(msg)) {
-        perror("send(): sent unexpected number of bytes");
-        exit(-1);
-      }
-      close(sockfd);
-      sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-      if (sockfd < 0) {
-        perror("socket() failed");
-        exit(-1);
-      }
-      ci->haveToken = false;
-      ci->nodeColour = White;
     }
   }
   pthread_exit(NULL);
@@ -413,6 +441,7 @@ void *receiveThread(void *params) {
 #ifndef DEBUG_MODE
   cout << "Process now listening " << selfID << endl;
 #endif
+  // listen loop
   for (auto i = 0;; i++) {
     if (listen(servSock, MAXPENDING) < 0) {
       perror("listen() failed");
@@ -456,43 +485,46 @@ void *receiveThread(void *params) {
     stringstream senderColourString(temp);
     senderColourString >> senderMessageCode;
 
-    if (senderMessageCode == (int)Red) {
-      pthread_mutex_lock(ci->lock);
-      ci->cellColour = Red;
-      ci->nodeColour = Black;
-      pthread_mutex_unlock(ci->lock);
-    } else if (senderMessageCode == (int)Blue) {
-      pthread_mutex_lock(ci->lock);
-      ci->cellColour = Blue;
-      pthread_mutex_unlock(ci->lock);
-    } else if (senderMessageCode == 4) {
-      for(auto i=0;i<ci->children.size();i++) {
-        if(ci->children[i] == senderID)
-          ci->tokenReceived[i] = true;
-      }
-    } else if (senderMessageCode == 5) {
-      for(auto i=0;i<ci->children.size();i++) {
-        if(ci->children[i] == senderID)
-          ci->tokenReceived[i] = true;
-      }
-      ci->nodeColour = Black;
-    }
-    // check if the sending cell is a child of this cell
-    // is so mark it as blue & check if all the children
-    // have been marked blue, if yes, send a white token
-    // to the parent node
-
     auto nowC = chrono::high_resolution_clock::to_time_t(
         chrono::high_resolution_clock::now());
     char *nows = asctime(localtime(&nowC));
     char nowt[9];
     strncpy(nowt, nows + 11, 8);
-
     if (recvLen < 0) {
       perror("recv() failed");
       exit(-1);
-    } else
-      fprintf(pFile, "%s\n", "Cell changes colour");
+    } else {
+      if (senderMessageCode == (int)Red) {
+        pthread_mutex_lock(ci->lock);
+        ci->cellColour = Red;
+        fprintf(pFile, "Cell %d receives a Red msg at %s\n", selfID, nowt);
+        fprintf(pFile, "Cell %d turns Red at %s\n", selfID, nowt);
+        pthread_mutex_unlock(ci->lock);
+      } else if (senderMessageCode == (int)Blue) {
+        pthread_mutex_lock(ci->lock);
+        ci->cellColour = Blue;
+        fprintf(pFile, "Cell %d receives a Blue msg at %s\n", selfID, nowt);
+        fprintf(pFile, "Cell %d turns Blue at %s\n", selfID, nowt);
+        pthread_mutex_unlock(ci->lock);
+      } else if (senderMessageCode == 4) {
+        pthread_mutex_lock(ci->lock);
+        fprintf(pFile, "Cell %d receives a White token from %d at %s\n", selfID, senderID, nowt);
+        for (auto i = 0; i < ci->children.size(); i++) {
+          if (ci->children[i] == senderID)
+            ci->tokenReceived[i] = true;
+        }
+        pthread_mutex_unlock(ci->lock);
+      } else if (senderMessageCode == 5) {
+        pthread_mutex_lock(ci->lock);
+        fprintf(pFile, "Cell %d receives a Black token from %d at %s\n", ci->id, senderID, nowt);
+        for (auto i = 0; i < ci->children.size(); i++) {
+          if (ci->children[i] == senderID)
+            ci->tokenReceived[i] = true;
+        }
+        ci->nodeColour = Black;
+        pthread_mutex_unlock(ci->lock);
+      }
+    }
     close(clntSock);
   }
   // cout << "gonna stop receiving" << endl;

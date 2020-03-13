@@ -33,5 +33,16 @@ struct cellInfo {
 // 5 - Black Token
 // 6 - from root to leaves to begin token sending again
 
+// function to receive sync requests and respond appropriately
+void *receiveThread(void *id);
 
+// function to send sync requests, receive response and update
+// the error factor correspondingly
+void *cellProcess(void *params);
+
+void printVector(vector<int> &parent) {
+  for (auto i = 0; i < parent.size(); i++)
+    cout << parent[i] << " ";
+  cout << endl;
+}
 #endif
