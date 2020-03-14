@@ -16,14 +16,51 @@
 #include <time.h>
 #include <unistd.h>
 #include <vector>
-
-#include "cell.h"
 //#define DEBUG_MODE 1
 #define BUFSIZE 1024
 using namespace std;
-bool termination = false;
-// parameters for the model
 
+// parameters for the model
+enum Colour { White = 1, Red = 2, Blue = 3, Black = 4 };
+
+// this is for storing the information og the cell
+struct cellInfo {
+  int id;
+  int parent;
+  // This is for the implementatin of the tree based termination
+  // detection algorithms
+  vector<int> children;
+  vector<bool> tokenReceived;
+  bool haveToken = false;
+  Colour cellColour = White;
+  Colour nodeColour = White;
+  // to avoid data race between reading and writing
+  // the colour of cells
+  pthread_mutex_t *lock;
+};
+
+// message meaning and format between cells
+// every message begins with the sender id.
+// this is followed by a delimiting #.
+// that is followed by one of the following numbers,
+// 1 - White Cell
+// 2 - Red Cell
+// 3 - Blue Cell
+// 4 - White Token
+// 5 - Black Token
+
+// function to receive sync requests and respond appropriately
+void *receiveThread(void *id);
+
+// function to send sync requests, receive response and update
+// the error factor correspondingly
+void *cellProcess(void *params);
+
+void printVector(vector<int> &parent) {
+  for (auto i = 0; i < parent.size(); i++)
+    cout << parent[i] << " ";
+  cout << endl;
+}
 // integer valued parameters
 int N, Ir, Ib;
 
@@ -36,6 +73,9 @@ vector<vector<int>> graph;
 vector<int> parent;
 // network parameters
 int MAXPENDING, beginLock = 0;
+
+pthread_cond_t sendBeginCondVariable, terminationCondVariable;
+pthread_mutex_t sendLock, terminationLock;
 
 // mutex locks to synchronise the threads at some points
 mutex mtx;
@@ -51,12 +91,14 @@ void readInputFromFile() {
   int temp;
   fstream inputFile;
   inputFile.open("inp-params.txt");
-  inputFile >> N >> Wr >> Ir >> Wb >> Ib >> Lr >> Lb >> p >> q;
+  inputFile >> N >> Wr >> Ir >> Wb >> Ib >> Lr >> Lb >> Ls >> p >> q;
   graph.resize(N, vector<int>(N, INT_MAX));
-// parent.resize(N);
+  // parent.resize(N);
+
 #ifndef DEBUG_MODE
   cout << "Initial parameters read, reading the graph now" << endl;
 #endif
+
   string line;
   getline(inputFile, line);
   for (auto i = 0; i < N; i++) {
@@ -79,6 +121,7 @@ void verifyInputRead() {
   cout << "Ib: " << Ib << endl;
   cout << "Lr: " << Lr << endl;
   cout << "Lb: " << Lb << endl;
+  cout << "Ls: " << Ls << endl;
   cout << "p:  " << p << endl;
   cout << "q:  " << q << endl;
   for (auto i = 0; i < N; i++) {
@@ -96,9 +139,11 @@ int main() {
   pFile = fopen("out-log.txt", "w");
   unsigned seed = chrono::system_clock::now().time_since_epoch().count();
   default_random_engine generator(seed);
+
 #ifndef DEBUG_MODE
   cout << "Reading Input" << endl;
 #endif
+
   // get input parameters
   readInputFromFile();
 
@@ -107,12 +152,21 @@ int main() {
   verifyInputRead();
   cout << "Launching threads" << endl;
 #endif
+  
   parent.resize(N, -1);
   MAXPENDING = N;
   primMST(graph, parent);
+
 #ifndef DEBUG_MODE
   printVector(parent);
 #endif
+
+  // initialising conditional variables
+  pthread_mutex_init(&sendLock, NULL);
+  pthread_mutex_init(&terminationLock, NULL);
+  pthread_cond_init(&sendBeginCondVariable, NULL);
+  pthread_cond_init(&terminationCondVariable, NULL);
+
   // vector of threads
   vector<pthread_t> threadsList(N);
 
@@ -132,7 +186,7 @@ int main() {
     for (auto j = 0; j < parent.size(); j++) {
       if (parent[j] == i)
         cellInfoVec[i].children.push_back(j);
-        cellInfoVec[i].tokenReceived.push_back(false);
+      cellInfoVec[i].tokenReceived.push_back(false);
     }
 
     // if the node is a leaf add it to the leaf list
@@ -159,7 +213,8 @@ int main() {
   cout << "Number of leaves = " << leafList.size() << endl;
 #endif
 
-  exponential_distribution<double> distributionI(1.0/Wr), distributionA(1.0/Wb);
+  exponential_distribution<double> distributionI(1.0 / Wr),
+      distributionA(1.0 / Wb);
 
   // wait for some time before introducing the virus into
   // the system i.e. red cells
@@ -187,10 +242,11 @@ int main() {
 #endif
 
   // wait for some time before introducing the antidote into the
-  // system i.e. blue cells 
+  // system i.e. blue cells
   sleep(distributionA(generator));
-  
+
   random_shuffle(infectList.begin(), infectList.end());
+  auto t1 = chrono::high_resolution_clock::now();
   for (auto i = 0; i < Ib; i++) {
     fprintf(pFile, "Cell %d Turns Blue at %s\n", infectList[i], nowt);
     pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
@@ -201,10 +257,23 @@ int main() {
 #ifndef DEBUG_MODE
   cout << "Blue Cells Introduced" << endl;
 #endif
-  while (!termination)
-    ;
 
-  // joining pthreads
+  // use pthreads to wait for the termination signal which
+  // would be send by the root of the spanning tree
+  pthread_mutex_lock(&terminationLock);
+  pthread_cond_wait(&terminationCondVariable, &terminationLock);
+  auto t2 = chrono::high_resolution_clock::now();
+  pthread_mutex_unlock(&terminationLock);
+
+  auto durationForTermination = t2 - t1;
+
+#ifndef DEBUG_MODE
+  cout << "Time for termination since introduction of Blue cells: "
+       << durationForTermination.count() << endl;
+#endif
+
+  // finish pthreads
+
   for (auto i = 0; i < N; i++) {
     pthread_cancel(threadsList[i]);
   }
@@ -223,29 +292,37 @@ void *cellProcess(void *params) {
   pthread_create(&receivingThread, NULL, receiveThread, (void *)ci);
   vector<int> neighbours;
 
-
   for (auto i = 0; i < graph[selfID].size(); i++) {
     if (graph[selfID][i] == 1)
       neighbours.push_back(i);
   }
-  // fprintf(stdout, "%d\n", ci->colour);
-  while (beginLock != N)
-    ;
-  exponential_distribution<double> distributionR(Lr), distributionB(Lb), distributionS(Ls);
+
+  // using conditional variable to wait for the all receiving
+  // threads to become active
+  pthread_mutex_lock(&sendLock);
+  pthread_cond_wait(&sendBeginCondVariable, &sendLock);
+  pthread_mutex_unlock(&sendLock);
+
+  exponential_distribution<double> distributionR(Lr), distributionB(Lb),
+      distributionS(Ls);
   unsigned seed = chrono::system_clock::now().time_since_epoch().count();
   default_random_engine generator(seed);
   // waiting for all threads to be created
+
 #ifndef DEBUG_MODE
   cout << "Server Process Begin" << endl;
 #endif
+
   in_port_t servPort;
   // local host
   char servIP[10] = "127.0.0.1";
   int sockfd = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
   if (sockfd < 0) {
+
 #ifndef DEBUG_MODE
     cout << selfID << " failed" << endl;
 #endif
+
     perror("socket() failed");
     exit(-1);
   }
@@ -289,10 +366,12 @@ void *cellProcess(void *params) {
       }
       if (neighbours[i] == selfID)
         continue;
-      #ifndef DEBUG_MODE
+
+#ifndef DEBUG_MODE
       cout << "Message being sent = " << msg << endl;
-      #endif
+#endif
       servPort = 50000 + neighbours[i];
+      
       servAddr.sin_port = htons(servPort);
       // connect to the server
       while (true) {
@@ -352,13 +431,24 @@ void *cellProcess(void *params) {
     }
     pthread_mutex_unlock(ci->lock);
     if ((allTokensReceived || ci->haveToken) && ci->cellColour == Blue) {
-      if(selfID != 0)
-      fprintf(pFile, "Cell %d sends a %s token to cell %d\n", selfID,
-              ci->nodeColour == White ? "White" : "Black", ci->parent);
+
+#ifndef DEBUG_MODE
+      cout << "Sending Tokens" << endl;
+#endif
+
+      if (selfID != 0)
+
+        fprintf(pFile, "Cell %d sends a %s token to cell %d\n", selfID,
+                ci->nodeColour == White ? "White" : "Black", ci->parent);
       if (selfID == 0 && ci->nodeColour == White) {
         fprintf(pFile, "Termination Initiated by cell 0");
         fclose(pFile);
-        termination = true;
+
+        pthread_mutex_lock(&terminationLock);
+        // signal the main thread that the processes have terminated
+        pthread_cond_signal(&terminationCondVariable);
+        pthread_mutex_unlock(&terminationLock);
+
       } else if (selfID == 0) {
         for (auto k = 0; k < leafList.size(); k++) {
           pthread_mutex_lock(cellInfoVec[leafList[k]].lock);
@@ -458,13 +548,18 @@ void *receiveThread(void *params) {
 
   // this lock ensures that no sender thread begins sending sync requests
   // before all the server are ready to listen
-  mtx.lock();
+  pthread_mutex_lock(&sendLock);
   beginLock++;
-  mtx.unlock();
+  if (beginLock == N)
+    // signalling all the sending threads that the
+    // receiving threads are ready and listening
+    pthread_cond_broadcast(&sendBeginCondVariable);
+  pthread_mutex_unlock(&sendLock);
 
 #ifndef DEBUG_MODE
   cout << "Process now listening " << selfID << endl;
 #endif
+
   // listen loop
   for (auto i = 0;; i++) {
     if (listen(servSock, MAXPENDING) < 0) {
@@ -478,6 +573,7 @@ void *receiveThread(void *params) {
 #ifndef DEBUG_MODE
     cout << "Waiting for accept" << endl;
 #endif
+
     int clntSock = accept(servSock, (struct sockaddr *)&clntAddr, &clntAddrLen);
     if (clntSock < 0) {
       perror("accept() failed");
@@ -521,17 +617,17 @@ void *receiveThread(void *params) {
       if (senderMessageCode == (int)Red) {
         pthread_mutex_lock(ci->lock);
         fprintf(pFile, "Cell %d receives a Red msg at %s\n", selfID, nowt);
-        if(ci->cellColour != Red) {
+        if (ci->cellColour != Red) {
           ci->cellColour = Red;
-          fprintf(pFile, "Cell %d turns Red at %s\n", selfID, nowt);          
+          fprintf(pFile, "Cell %d turns Red at %s\n", selfID, nowt);
         }
         pthread_mutex_unlock(ci->lock);
       } else if (senderMessageCode == (int)Blue) {
         pthread_mutex_lock(ci->lock);
         fprintf(pFile, "Cell %d receives a Blue msg at %s\n", selfID, nowt);
-        if(ci->cellColour != Blue) {
+        if (ci->cellColour != Blue) {
           ci->cellColour = Blue;
-          fprintf(pFile, "Cell %d turns Blue at %s\n", selfID, nowt);          
+          fprintf(pFile, "Cell %d turns Blue at %s\n", selfID, nowt);
         }
         pthread_mutex_unlock(ci->lock);
       } else if (senderMessageCode == 4) {
