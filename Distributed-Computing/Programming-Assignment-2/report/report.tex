@@ -59,7 +59,7 @@ The cell struct represents each node in the distributed network. The following c
 This is the function which every cell runs when it is launched, it also launches another process which is used to receive messages from other threads. The following are the main tasks of this function.
 \begin{enumerate}
 \item Launch the receiving threads.
-\item Wait for the listening threads to begin listening before beginning to send messages.
+\item Wait for the listening threads to begin listening before beginning to send messages. This is done using \textbf{pthread\_cond\_wait}.
 \item Start sending encoded messages of the colour of the cell (red or blue) to a corresponding number of the neighbours of the cell.
 \item After each round of sending messages, check if the cell has received tokens from all the children and if so, if the cell itself is currently blue, if both theses condition are satisfied then send a token of the colour of the node (\textbf{node colour and cell colour are different things}) to the parent.
 \item Once a token is sent to the parent, the \textbf{receivedToken} vector has all its entries sent to false as we must wait for all the childrent to send tokens once again before this cell can send a token to its parent,
@@ -68,7 +68,9 @@ This is the function which every cell runs when it is launched, it also launches
 This function is responsible for handling the receiving of messages from other cells, and taking appropriate action on the receipt of said messages.
 The main tasks of this function are highlighted below:
 \begin{enumerate}
-\item 
+\item The receiving process first sets up the listening server, and after each server is set up it increments a variable in the critical section, using  a \textbf{pthread\_conditional\_variable} we can broadcast to all the sending threads that they can begin sending messages once the value of this variable is equal to the number of cells.
+\item On receiving a message the receiving thread decodes the contents of the message, i.e. the sender id and the encoded digit which signifies the colour of the node cell or the colour of the token. A message can either be one which contains a token or one which contains the colour of the sender.
+\item After decoding the contents of the message a given cell, changes or doesn't change its cell colour and/or node colour based on the contents of the received message.
 \end{enumerate}
 \subsubsection{Miscellaneous}
 The following is the message encoding format and meaning:\\
@@ -88,16 +90,22 @@ Every message begins with the sender id, this is followed by a delimiting \#, th
 \subsection{Spanning Tree Algorithm}
 \begin{center}
 \begin{large}
-\textbf{G1}\\
+\textbf{Number of Processes Vs Number of Control Message}\\
 \end{large}
-%\includegraphics[scale=0.7]{./constantK.eps}
+\includegraphics[scale=0.7]{./ncm.eps}
 \end{center}
 \begin{center}
 \begin{large}
-\textbf{G2}\\
+\textbf{Number of Processes Vs Time Taken}\\
 \end{large}
-%\includegraphics[scale=0.7]{./constantN.eps}
+\includegraphics[scale=0.7]{./tt.eps}
 \end{center}
+\subsection{Explaination of Results}
+The following are a few points to note / observations about the above graphs:
+\begin{enumerate}
+\item
+\end{enumerate}
+\newpage
 \subsection{Message Optimal Algorithm}
 \begin{center}
 \begin{large}
@@ -111,8 +119,7 @@ Every message begins with the sender id, this is followed by a delimiting \#, th
 \end{large}
 %\includegraphics[scale=0.7]{./constantN.eps}
 \end{center}
-
-\section{Explaination of Results}
+\subsection{Explaination of Results}
 The following are a few points to note / observations about the above graphs:
 \begin{enumerate}
 \item

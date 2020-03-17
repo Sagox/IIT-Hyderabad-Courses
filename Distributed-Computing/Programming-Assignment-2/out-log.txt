@@ -1,6 +1,370 @@
-Cell 1 Turns Red at 16:29:52
-Cell 3 Turns Red at 16:29:52
-Cell 7 Turns Blue at 16:29:52
-Cell 0 Turns Blue at 16:29:52
-Cell 1 Turns Blue at 16:29:52
-Cell 2 Turns Blue at 16:29:52
+Cell 0 Turns Red at 05:01:28
+Cell 2 Turns Blue at 05:01:28
+Cell 0 Turns Blue at 05:01:28
+Root Cell goes into DT
+Cell 0 sends a Blue message to cell 2 at 05:01:28
+Cell 1 sends a Blue message to cell 3 at 05:01:28
+Cell 0 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:28
+Cell 0 sends a Warning message to cell 1 at 05:01:28
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:28
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:28
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:28
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:28
+Cell 1 into stack clean up at
+Cell 0 receives a Blue msg at 05:01:28
+Cell 0 sends a Warning message to cell 2 at 05:01:28
+Cell 1 sends a Blue message to cell 3 at 05:01:28
+Cell 2 receives a Blue msg at 05:01:29
+Cell 2 turns Blue at 05:01:29
+Cell 3 receives a Blue msg at 05:01:29
+Cell 3 turns Blue at 05:01:29
+Cell 3 into stack clean up at
+Cell 2 into stack clean up at
+Cell 2 receives a Blue msg at 05:01:29
+Cell 2 into stack clean up at
+Cell 3 into stack clean up at
+Cell 2 sends a Blue message to cell 0 at 05:01:29
+Cell 3 sends a Blue message to cell 1 at 05:01:29
+Cell 1 receives a Warning from 0 at 05:01:29
+Cell 1 receives a Blue msg at 05:01:29
+Cell 3 into stack clean up at
+Cell 2 into stack clean up at
+Cell 2 receives a Blue msg at 05:01:30
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 1 receives a Blue msg at 05:01:30
+Cell 2 sends a Blue message to cell 1 at 05:01:30
+Cell 3 into stack clean up at
+Cell 2 into stack clean up at
+Cell 2 receives a Blue msg at 05:01:30
+Cell 2 sends a Blue message to cell 1 at 05:01:30
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 1 receives a Blue msg at 05:01:30
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 1 receives a Blue msg at 05:01:30
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:30
+Cell 1 into stack clean up at
+Cell 0 into stack clean up at
+Cell 1 sends a Warning message to cell 0 at 05:01:30
+Cell 0 sends a Blue message to cell 2 at 05:01:30
+Cell 0 into stack clean up at
+Cell 1 sends a Warning message to cell 2 at 05:01:30
+Cell 0 sends a Blue message to cell 2 at 05:01:30
+Cell 1 sends a Warning message to cell 3 at 05:01:30
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:30
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:30
+Cell 3 receives a Blue msg at 05:01:31
+Cell 3 receives a Blue msg at 05:01:31
+Cell 2 receives a Warning from 0 at 05:01:31
+Cell 2 receives a Blue msg at 05:01:31
+Cell 2 receives a Warning from 1 at 05:01:31
+Cell 1 receives a Blue msg at 05:01:31
+Cell 2 receives a Blue msg at 05:01:31
+Cell 1 receives a Blue msg at 05:01:31
+Cell 1 receives a Blue msg at 05:01:31
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:31
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:31
+Cell 1 receives a Blue msg at 05:01:32
+Cell 1 receives a Blue msg at 05:01:32
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:32
+Cell 0 into stack clean up at
+Cell 0 into stack clean up at
+Cell 0 sends a Blue message to cell 2 at 05:01:32
+Cell 2 receives a Blue msg at 05:01:32
+Cell 0 into stack clean up at
+Cell 1 into stack clean up at
+Cell 0 sends a Blue message to cell 2 at 05:01:32
+Cell 0 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:32
+Cell 0 sends a Blue message to cell 1 at 05:01:32
+Cell 1 into stack clean up at
+Cell 0 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:32
+Cell 0 sends a Blue message to cell 1 at 05:01:32
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:32
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:32
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:32
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:32
+Cell 0 receives a Blue msg at 05:01:33
+Cell 3 receives a Warning from 1 at 05:01:33
+Cell 2 into stack clean up at
+Im here
+Cell 2 sends terminate to cell 1
+Cell 2 receives a Blue msg at 05:01:33
+Cell 0 into stack clean up at
+Cell 0 sends a Blue message to cell 2 at 05:01:33
+Cell 0 into stack clean up at
+Cell 0 into stack clean up at
+Cell 0 receives a Warning from 1 at 05:01:34
+Cell 0 receives a Blue msg at 05:01:34
+Cell 1 receives a Blue msg at 05:01:34
+Cell 1 receives a Blue msg at 05:01:34
+Cell 3 into stack clean up at
+Im here
+Cell 3 sends terminate to cell 1
+Cell 3 sends a Warning message to cell 1 at 05:01:34
+Cell 2 receives a Blue msg at 05:01:34
+Cell 2 receives a Blue msg at 05:01:34
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:34
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:34
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:34
+Cell 3 receives a Blue msg at 05:01:35
+Cell 0 receives a Blue msg at 05:01:35
+Cell 3 receives a Blue msg at 05:01:35
+Cell 1 receives a Blue msg at 05:01:35
+Cell 1 receives a Blue msg at 05:01:35
+Cell 2 receives a Blue msg at 05:01:35
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:35
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:35
+Cell 1 receives a Blue msg at 05:01:36
+Cell 1 receives a Blue msg at 05:01:36
+Cell 1 receives Terminate from 3 at 05:01:36
+Cell 1 receives a Warning from 3 at 05:01:36
+Cell 2 receives a Blue msg at 05:01:36
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:36
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:36
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:36
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:36
+Cell 1 into stack clean up at
+Cell 0 sends a Blue message to cell 1 at 05:01:36
+Cell 1 receives Terminate from 2 at 05:01:36
+Cell 0 into stack clean up at
+Cell 0 sends a Blue message to cell 2 at 05:01:36
+Cell 0 into stack clean up at
+Cell 0 sends a Blue message to cell 1 at 05:01:36
+Cell 0 into stack clean up at
+Cell 0 sends a Blue message to cell 1 at 05:01:36
+Cell 0 receives a Blue msg at 05:01:37
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:37
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:37
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:37
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 2 receives a Blue msg at 05:01:37
+Cell 2 receives a Blue msg at 05:01:37
+Cell 2 receives a Blue msg at 05:01:37
+Cell 1 sends a Blue message to cell 0 at 05:01:37
+Cell 1 receives a Blue msg at 05:01:37
+Cell 1 receives a Blue msg at 05:01:37
+Cell 1 receives a Blue msg at 05:01:37
+Cell 0 into stack clean up at
+Cell 1 receives a Blue msg at 05:01:37
+Cell 1 receives a Blue msg at 05:01:37
+Cell 0 sends a Blue message to cell 2 at 05:01:37
+Cell 1 receives a Blue msg at 05:01:37
+Cell 0 receives a Blue msg at 05:01:38
+Cell 2 receives a Blue msg at 05:01:38
+Cell 2 receives a Blue msg at 05:01:38
+Cell 2 receives a Blue msg at 05:01:38
+Cell 3 sends a Blue message to cell 1 at 05:01:38
+Cell 1 receives a Blue msg at 05:01:38
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:38
+Cell 1 receives a Blue msg at 05:01:38
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:38
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:38
+Cell 3 receives a Blue msg at 05:01:38
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:38
+Cell 2 receives a Blue msg at 05:01:38
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:38
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:38
+Cell 1 into stack clean up at
+Cell 2 receives a Blue msg at 05:01:38
+Cell 1 sends a Blue message to cell 2 at 05:01:38
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:38
+Cell 0 receives a Blue msg at 05:01:39
+Cell 0 receives a Blue msg at 05:01:39
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:39
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:39
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:39
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:39
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:39
+Cell 2 receives a Blue msg at 05:01:39
+Cell 2 sends a Warning message to cell 0 at 05:01:39
+Cell 0 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 1 receives a Blue msg at 05:01:40
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:40
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:40
+Cell 3 receives a Blue msg at 05:01:40
+Cell 3 receives a Blue msg at 05:01:40
+Cell 2 sends a Warning message to cell 1 at 05:01:40
+Cell 1 receives a Blue msg at 05:01:41
+Cell 1 receives a Blue msg at 05:01:41
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:41
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:41
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:41
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:41
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:41
+Cell 0 into stack clean up at
+Cell 0 into stack clean up at
+Cell 1 receives a Warning from 2 at 05:01:42
+Cell 1 receives a Blue msg at 05:01:42
+Cell 3 into stack clean up at
+Cell 1 into stack clean up at
+Im here
+Cell 3 sends a Blue message to cell 1 at 05:01:42
+Cell 1 sends terminate to cell 0
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:42
+Cell 1 sends a Blue message to cell 3 at 05:01:42
+Cell 3 into stack clean up at
+Cell 3 receives a Blue msg at 05:01:42
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 3 at 05:01:42
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:42
+Cell 2 into stack clean up at
+Cell 0 receives a Blue msg at 05:01:43
+Cell 1 receives a Blue msg at 05:01:43
+Cell 1 receives a Blue msg at 05:01:43
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:43
+Cell 2 receives a Blue msg at 05:01:43
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:43
+Cell 2 receives a Blue msg at 05:01:43
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:43
+Cell 3 sends a Blue message to cell 1 at 05:01:43
+Cell 2 sends a Blue message to cell 1 at 05:01:43
+Cell 0 receives a Blue msg at 05:01:44
+Cell 0 receives a Warning from 2 at 05:01:44
+Cell 0 receives Terminate from 1 at 05:01:44
+Cell 0 receives a Blue msg at 05:01:44
+Cell 0 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:44
+Cell 0 receives a Blue msg at 05:01:44
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 2 at 05:01:44
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:44
+Cell 0 receives a Blue msg at 05:01:44
+Cell 1 into stack clean up at
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:44
+Cell 1 into stack clean up at
+Cell 1 sends a Blue message to cell 0 at 05:01:44
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 into stack clean up at
+Cell 3 sends a Blue message to cell 1 at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 0 sends a Blue message to cell 1 at 05:01:44
+Cell 1 receives a Blue msg at 05:01:44
+Cell 0 into stack clean up at
+Im here
+Termination Initiated by cell 0

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.17)  14 MAR 2020 02:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.17)  15 MAR 2020 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -400,35 +400,75 @@ l.45 \newpage
               [1
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 74--81
+Underfull \hbox (badness 10000) in paragraph at lines 76--83
 
  []
 
 [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
- (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+Package epstopdf Info: Source file: <./ncm.eps>
+(epstopdf)                    date: 2020-03-15 00:07:24
+(epstopdf)                    size: 26743 bytes
+(epstopdf)             Output file: <./ncm-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-15 00:07:34
+(epstopdf)                    size: 14325 bytes
+(epstopdf)             Command: <repstopdf --outfile=./ncm-eps-converted-to.pdf
+ ./ncm.eps>
+(epstopdf)             \includegraphics on input line 95.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./ncm-eps-converted-to.pdf): PDF inclusion: foun
+d PDF version <1.7>, but at most version <1.5> allowed
+<./ncm-eps-converted-to.pdf, id=100, 462.72874pt x 346.29375pt>
+File: ./ncm-eps-converted-to.pdf Graphic file (type pdf)
+<use ./ncm-eps-converted-to.pdf>
+Package pdftex.def Info: ./ncm-eps-converted-to.pdf  used on input line 95.
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+Package epstopdf Info: Source file: <./tt.eps>
+(epstopdf)                    date: 2020-03-15 00:07:24
+(epstopdf)                    size: 25297 bytes
+(epstopdf)             Output file: <./tt-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-03-15 00:08:05
+(epstopdf)                    size: 13404 bytes
+(epstopdf)             Command: <repstopdf --outfile=./tt-eps-converted-to.pdf 
+./tt.eps>
+(epstopdf)             \includegraphics on input line 101.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./tt-eps-converted-to.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<./tt-eps-converted-to.pdf, id=101, 462.72874pt x 346.29375pt>
+File: ./tt-eps-converted-to.pdf Graphic file (type pdf)
+<use ./tt-eps-converted-to.pdf>
+Package pdftex.def Info: ./tt-eps-converted-to.pdf  used on input line 101.
+(pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
+[5 <./ncm-eps-converted-to.pdf> <./tt-eps-converted-to.pdf>] [6]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+ [7]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+
+(./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: AB7F6797331518D0DF2CA8837720C853;643.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
+(rerunfilecheck)             Checksum: FD34D67F3D1DAA0BAC0C1AE611B1BEB4;726.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 7722 strings out of 494880
- 110210 string characters out of 6179601
- 225249 words of memory out of 5000000
- 10934 multiletter control sequences out of 15000+600000
+ 7740 strings out of 494880
+ 110590 string characters out of 6179601
+ 226249 words of memory out of 5000000
+ 10944 multiletter control sequences out of 15000+600000
  8969 words of font info for 34 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,7n,58p,341b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,58p,372b,407s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on report.pdf (6 pages, 40635 bytes).
+Output written on report.pdf (8 pages, 65465 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
