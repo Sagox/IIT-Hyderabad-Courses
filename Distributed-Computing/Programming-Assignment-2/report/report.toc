@@ -4,12 +4,17 @@
 \contentsline {subsubsection}{Cell Process}{2}{section*.5}
 \contentsline {subsubsection}{Receiver Process}{3}{section*.6}
 \contentsline {subsubsection}{Miscellaneous}{3}{section*.7}
-\contentsline {subsection}{Message Optimal Algorithm}{3}{section*.8}
-\contentsline {section}{Program Output}{4}{section*.9}
-\contentsline {subsection}{Spanning Tree Algorithm}{4}{section*.10}
-\contentsline {subsection}{Message Optimal Algorithm}{4}{section*.11}
-\contentsline {section}{Results \& Graphs}{5}{section*.12}
-\contentsline {subsection}{Spanning Tree Algorithm}{5}{section*.13}
-\contentsline {subsection}{Explaination of Results}{6}{section*.14}
-\contentsline {subsection}{Message Optimal Algorithm}{7}{section*.15}
-\contentsline {subsection}{Explaination of Results}{7}{section*.16}
+\contentsline {subsection}{Message Optimal Algorithm}{4}{section*.8}
+\contentsline {subsubsection}{Cell Struct}{4}{section*.9}
+\contentsline {subsubsection}{Cell Process}{4}{section*.10}
+\contentsline {subsubsection}{Receiver Process}{5}{section*.11}
+\contentsline {subsubsection}{Miscellaneous}{6}{section*.12}
+\contentsline {subsubsection}{Some Common Patterns}{6}{section*.13}
+\contentsline {section}{Program Output}{7}{section*.14}
+\contentsline {subsection}{Spanning Tree Algorithm}{7}{section*.15}
+\contentsline {subsection}{Message Optimal Algorithm}{7}{section*.16}
+\contentsline {section}{Results \& Graphs}{8}{section*.17}
+\contentsline {subsection}{Spanning Tree Algorithm}{8}{section*.18}
+\contentsline {subsubsection}{Explaination of Results}{9}{section*.19}
+\contentsline {subsection}{Spanning Tree Algorithm}{10}{section*.20}
+\contentsline {subsubsection}{Explaination of Results}{11}{section*.21}

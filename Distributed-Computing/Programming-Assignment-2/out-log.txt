@@ -1,370 +1,1623 @@
-Cell 0 Turns Red at 05:01:28
-Cell 2 Turns Blue at 05:01:28
-Cell 0 Turns Blue at 05:01:28
-Root Cell goes into DT
-Cell 0 sends a Blue message to cell 2 at 05:01:28
-Cell 1 sends a Blue message to cell 3 at 05:01:28
-Cell 0 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:28
-Cell 0 sends a Warning message to cell 1 at 05:01:28
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:28
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:28
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:28
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:28
-Cell 1 into stack clean up at
-Cell 0 receives a Blue msg at 05:01:28
-Cell 0 sends a Warning message to cell 2 at 05:01:28
-Cell 1 sends a Blue message to cell 3 at 05:01:28
-Cell 2 receives a Blue msg at 05:01:29
-Cell 2 turns Blue at 05:01:29
-Cell 3 receives a Blue msg at 05:01:29
-Cell 3 turns Blue at 05:01:29
-Cell 3 into stack clean up at
-Cell 2 into stack clean up at
-Cell 2 receives a Blue msg at 05:01:29
-Cell 2 into stack clean up at
-Cell 3 into stack clean up at
-Cell 2 sends a Blue message to cell 0 at 05:01:29
-Cell 3 sends a Blue message to cell 1 at 05:01:29
-Cell 1 receives a Warning from 0 at 05:01:29
-Cell 1 receives a Blue msg at 05:01:29
-Cell 3 into stack clean up at
-Cell 2 into stack clean up at
-Cell 2 receives a Blue msg at 05:01:30
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 1 receives a Blue msg at 05:01:30
-Cell 2 sends a Blue message to cell 1 at 05:01:30
-Cell 3 into stack clean up at
-Cell 2 into stack clean up at
-Cell 2 receives a Blue msg at 05:01:30
-Cell 2 sends a Blue message to cell 1 at 05:01:30
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 1 receives a Blue msg at 05:01:30
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 1 receives a Blue msg at 05:01:30
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:30
-Cell 1 into stack clean up at
-Cell 0 into stack clean up at
-Cell 1 sends a Warning message to cell 0 at 05:01:30
-Cell 0 sends a Blue message to cell 2 at 05:01:30
-Cell 0 into stack clean up at
-Cell 1 sends a Warning message to cell 2 at 05:01:30
-Cell 0 sends a Blue message to cell 2 at 05:01:30
-Cell 1 sends a Warning message to cell 3 at 05:01:30
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:30
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:30
-Cell 3 receives a Blue msg at 05:01:31
-Cell 3 receives a Blue msg at 05:01:31
-Cell 2 receives a Warning from 0 at 05:01:31
-Cell 2 receives a Blue msg at 05:01:31
-Cell 2 receives a Warning from 1 at 05:01:31
-Cell 1 receives a Blue msg at 05:01:31
-Cell 2 receives a Blue msg at 05:01:31
-Cell 1 receives a Blue msg at 05:01:31
-Cell 1 receives a Blue msg at 05:01:31
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:31
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:31
-Cell 1 receives a Blue msg at 05:01:32
-Cell 1 receives a Blue msg at 05:01:32
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:32
-Cell 0 into stack clean up at
-Cell 0 into stack clean up at
-Cell 0 sends a Blue message to cell 2 at 05:01:32
-Cell 2 receives a Blue msg at 05:01:32
-Cell 0 into stack clean up at
-Cell 1 into stack clean up at
-Cell 0 sends a Blue message to cell 2 at 05:01:32
-Cell 0 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:32
-Cell 0 sends a Blue message to cell 1 at 05:01:32
-Cell 1 into stack clean up at
-Cell 0 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:32
-Cell 0 sends a Blue message to cell 1 at 05:01:32
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:32
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:32
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:32
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:32
-Cell 0 receives a Blue msg at 05:01:33
-Cell 3 receives a Warning from 1 at 05:01:33
-Cell 2 into stack clean up at
-Im here
-Cell 2 sends terminate to cell 1
-Cell 2 receives a Blue msg at 05:01:33
-Cell 0 into stack clean up at
-Cell 0 sends a Blue message to cell 2 at 05:01:33
-Cell 0 into stack clean up at
-Cell 0 into stack clean up at
-Cell 0 receives a Warning from 1 at 05:01:34
-Cell 0 receives a Blue msg at 05:01:34
-Cell 1 receives a Blue msg at 05:01:34
-Cell 1 receives a Blue msg at 05:01:34
-Cell 3 into stack clean up at
-Im here
-Cell 3 sends terminate to cell 1
-Cell 3 sends a Warning message to cell 1 at 05:01:34
-Cell 2 receives a Blue msg at 05:01:34
-Cell 2 receives a Blue msg at 05:01:34
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:34
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:34
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:34
-Cell 3 receives a Blue msg at 05:01:35
-Cell 0 receives a Blue msg at 05:01:35
-Cell 3 receives a Blue msg at 05:01:35
-Cell 1 receives a Blue msg at 05:01:35
-Cell 1 receives a Blue msg at 05:01:35
-Cell 2 receives a Blue msg at 05:01:35
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:35
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:35
-Cell 1 receives a Blue msg at 05:01:36
-Cell 1 receives a Blue msg at 05:01:36
-Cell 1 receives Terminate from 3 at 05:01:36
-Cell 1 receives a Warning from 3 at 05:01:36
-Cell 2 receives a Blue msg at 05:01:36
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:36
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:36
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:36
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:36
-Cell 1 into stack clean up at
-Cell 0 sends a Blue message to cell 1 at 05:01:36
-Cell 1 receives Terminate from 2 at 05:01:36
-Cell 0 into stack clean up at
-Cell 0 sends a Blue message to cell 2 at 05:01:36
-Cell 0 into stack clean up at
-Cell 0 sends a Blue message to cell 1 at 05:01:36
-Cell 0 into stack clean up at
-Cell 0 sends a Blue message to cell 1 at 05:01:36
-Cell 0 receives a Blue msg at 05:01:37
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:37
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:37
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:37
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 2 receives a Blue msg at 05:01:37
-Cell 2 receives a Blue msg at 05:01:37
-Cell 2 receives a Blue msg at 05:01:37
-Cell 1 sends a Blue message to cell 0 at 05:01:37
-Cell 1 receives a Blue msg at 05:01:37
-Cell 1 receives a Blue msg at 05:01:37
-Cell 1 receives a Blue msg at 05:01:37
-Cell 0 into stack clean up at
-Cell 1 receives a Blue msg at 05:01:37
-Cell 1 receives a Blue msg at 05:01:37
-Cell 0 sends a Blue message to cell 2 at 05:01:37
-Cell 1 receives a Blue msg at 05:01:37
-Cell 0 receives a Blue msg at 05:01:38
-Cell 2 receives a Blue msg at 05:01:38
-Cell 2 receives a Blue msg at 05:01:38
-Cell 2 receives a Blue msg at 05:01:38
-Cell 3 sends a Blue message to cell 1 at 05:01:38
-Cell 1 receives a Blue msg at 05:01:38
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:38
-Cell 1 receives a Blue msg at 05:01:38
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:38
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:38
-Cell 3 receives a Blue msg at 05:01:38
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:38
-Cell 2 receives a Blue msg at 05:01:38
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:38
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:38
-Cell 1 into stack clean up at
-Cell 2 receives a Blue msg at 05:01:38
-Cell 1 sends a Blue message to cell 2 at 05:01:38
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:38
-Cell 0 receives a Blue msg at 05:01:39
-Cell 0 receives a Blue msg at 05:01:39
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:39
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:39
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:39
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:39
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:39
-Cell 2 receives a Blue msg at 05:01:39
-Cell 2 sends a Warning message to cell 0 at 05:01:39
-Cell 0 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 1 receives a Blue msg at 05:01:40
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:40
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:40
-Cell 3 receives a Blue msg at 05:01:40
-Cell 3 receives a Blue msg at 05:01:40
-Cell 2 sends a Warning message to cell 1 at 05:01:40
-Cell 1 receives a Blue msg at 05:01:41
-Cell 1 receives a Blue msg at 05:01:41
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:41
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:41
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:41
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:41
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:41
-Cell 0 into stack clean up at
-Cell 0 into stack clean up at
-Cell 1 receives a Warning from 2 at 05:01:42
-Cell 1 receives a Blue msg at 05:01:42
-Cell 3 into stack clean up at
-Cell 1 into stack clean up at
-Im here
-Cell 3 sends a Blue message to cell 1 at 05:01:42
+Cell 4 Turns Red at 1584789285018698771
+Cell 9 Turns Blue at 1584789285018791833
+Cell 13 Turns Blue at 1584789285018792872
+Cell 1 Turns Blue at 1584789285018793437
+Cell 0 initiates termination process
+Cell 2 sends a Blue message to cell 6 at 1584789285019020186
+Cell 2 receives a Warning from 0 at 1584789285019150889
+Cell 1 sends a Blue message to cell 5 at 1584789285019254842
+Cell 0 sends a Warning message to cell 2 at 1584789285019287121
+Cell 5 receives a Blue msg at 1584789285019334589
+Cell 5 turns Blue at 1584789285019335872
+Cell 5 sends a Blue message to cell 12 at 1584789285019393136
+Cell 12 receives a Blue msg at 1584789285019481370
+Cell 12 turns Blue at 1584789285019482257
+Cell 1 sends a Blue message to cell 2 at 1584789285019561247
+Cell 0 sends a Warning message to cell 11 at 1584789285019607973
+Cell 11 receives a Warning from 0 at 1584789285019668721
+Cell 2 sends a Warning message to cell 6 at 1584789285019788758
+Cell 11 sends a Warning message to cell 6 at 1584789285019859326
+Cell 2 sends a Warning message to cell 5 at 1584789285019927851
+Cell 5 receives a Warning from 2 at 1584789285019982458
+Cell 12 sends a Blue message to cell 4 at 1584789285020036856
+Cell 11 sends a Warning message to cell 0 at 1584789285020045155
+Cell 12 sends a Blue message to cell 7 at 1584789285020439371
+Cell 7 receives a Blue msg at 1584789285020513299
+Cell 7 turns Blue at 1584789285020514031
+Cell 12 sends a Blue message to cell 5 at 1584789285020631460
+Cell 5 receives a Blue msg at 1584789285020685311
+Cell 7 sends a Blue message to cell 12 at 1584789285020805159
+Cell 12 receives a Blue msg at 1584789285020856863
+Cell 7 sends a Blue message to cell 12 at 1584789285020959175
+Cell 12 receives a Blue msg at 1584789285021006980
+Cell 7 sends a Blue message to cell 12 at 1584789285021077288
+Cell 12 receives a Blue msg at 1584789285021128798
+Cell 7 sends a Blue message to cell 12 at 1584789285021224116
+Cell 12 receives a Blue msg at 1584789285021275951
+Cell 7 sends a Blue message to cell 12 at 1584789285021467732
+Cell 12 receives a Blue msg at 1584789285021520845
+Cell 7 sends a Blue message to cell 12 at 1584789285021704117
+Cell 6 receives a Blue msg at 1584789286019164529
+Cell 6 turns Blue at 1584789286019166593
+Cell 6 receives a Warning from 2 at 1584789286019320079
+Cell 6 receives a Warning from 11 at 1584789286019420422
+Cell 6 sends a Warning message to cell 3 at 1584789286019453726
+Cell 2 receives a Blue msg at 1584789286019619275
+Cell 5 sends a Warning message to cell 12 at 1584789286019665750
+Cell 4 receives a Blue msg at 1584789286020123299
+Cell 4 turns Blue at 1584789286020124158
+Cell 0 receives a Warning from 11 at 1584789286020159774
+Cell 4 sends a Blue message to cell 9 at 1584789286020294984
+Cell 9 receives a Blue msg at 1584789286020372536
+Cell 9 turns Blue at 1584789286020373147
+Cell 9 sends a Blue message to cell 4 at 1584789286020496513
+Cell 9 sends a Blue message to cell 8 at 1584789286020637016
+Cell 8 receives a Blue msg at 1584789286020700983
+Cell 8 turns Blue at 1584789286020702031
+Cell 4 sends a Blue message to cell 3 at 1584789286020726656
+Cell 12 sends a Blue message to cell 7 at 1584789286020755090
+Cell 9 sends a Blue message to cell 8 at 1584789286020787262
+Cell 8 sends a Blue message to cell 9 at 1584789286020808375
+Cell 9 receives a Blue msg at 1584789286020862580
+Cell 12 sends a Blue message to cell 3 at 1584789286020880157
+Cell 9 sends a Blue message to cell 4 at 1584789286020895441
+Cell 8 sends a Blue message to cell 9 at 1584789286020931072
+Cell 8 sends a Blue message to cell 9 at 1584789286021030074
+Cell 6 sends a Warning message to cell 2 at 1584789287019715466
+Cell 5 sends a Warning message to cell 14 at 1584789287019823949
+Cell 0 sends a Warning message to cell 14 at 1584789287019835726
+Cell 5 sends a Warning message to cell 2 at 1584789287019950775
+Cell 0 sends a Warning message to cell 1 at 1584789287019960417
+Cell 14 receives a Warning from 5 at 1584789287020038244
+Cell 2 sends a Warning message to cell 1 at 1584789287020135842
+Cell 14 receives a Warning from 0 at 1584789287020168255
+Cell 5 sends a Warning message to cell 13 at 1584789287020243031
+Cell 14 sends a Warning message to cell 5 at 1584789287020461521
+Cell 7 receives a Blue msg at 1584789287020816566
+Cell 9 sends a Blue message to cell 8 at 1584789287021031554
+Cell 8 sends a Blue message to cell 9 at 1584789287021166539
+Cell 12 receives a Blue msg at 1584789287021762733
+Cell 7 sends a Blue message to cell 12 at 1584789287021847318
+Cell 7 sends a Blue message to cell 12 at 1584789287021960414
+Cell 7 sends a Blue message to cell 12 at 1584789287022077451
+Cell 1 sends a Blue message to cell 0 at 1584789288019815653
+Cell 0 receives a Blue msg at 1584789288019863489
+Cell 6 sends a Warning message to cell 11 at 1584789288019887358
+Cell 1 sends a Blue message to cell 2 at 1584789288019951979
+Cell 1 sends a Blue message to cell 0 at 1584789288020072043
+Cell 0 sends a Blue message to cell 14 at 1584789288020100650
+Cell 0 receives a Blue msg at 1584789288020129896
+Cell 1 sends a Blue message to cell 0 at 1584789288020214411
+Cell 0 receives a Blue msg at 1584789288020297812
+Cell 1 sends a Blue message to cell 0 at 1584789288020380749
+Cell 5 sends a Warning message to cell 1 at 1584789288020441658
+Cell 1 sends a Blue message to cell 0 at 1584789288020514421
+Cell 5 receives a Warning from 14 at 1584789288020519033
+Cell 5 sends a Blue message to cell 2 at 1584789288020588857
+Cell 0 receives a Blue msg at 1584789288020623289
+Cell 5 sends a Blue message to cell 2 at 1584789288020714461
+Cell 0 receives a Blue msg at 1584789288020743448
+Cell 5 sends a Blue message to cell 14 at 1584789288020831701
+Cell 8 receives a Blue msg at 1584789288020838513
+Cell 8 receives a Blue msg at 1584789288020947064
+Cell 5 sends a Blue message to cell 2 at 1584789288020950304
+Cell 9 receives a Blue msg at 1584789288020992945
+Cell 5 sends a Blue message to cell 1 at 1584789288021076516
+Cell 9 receives a Blue msg at 1584789288021106103
+Cell 9 receives a Blue msg at 1584789288021200281
+Cell 8 sends a Blue message to cell 9 at 1584789288021288482
+Cell 8 sends a Blue message to cell 9 at 1584789288021411847
+Cell 9 receives a Blue msg at 1584789288021445414
+Cell 9 receives a Blue msg at 1584789288021535166
+Cell 12 receives a Warning from 5 at 1584789288021828457
+Cell 12 receives a Blue msg at 1584789288021924231
+Cell 12 receives a Blue msg at 1584789288022015565
+Cell 12 receives a Blue msg at 1584789288022104679
+Cell 7 sends a Blue message to cell 12 at 1584789288022199056
+Cell 12 receives a Blue msg at 1584789288022287385
+Cell 3 receives a Warning from 6 at 1584789289019575067
+Cell 3 sends a Warning message to cell 4 at 1584789289019685159
+Cell 3 receives a Blue msg at 1584789289019735041
+Cell 3 turns Blue at 1584789289019736152
+Cell 3 sends a Warning message to cell 12 at 1584789289019814260
+Cell 12 receives a Warning from 3 at 1584789289019867364
+Cell 11 receives a Warning from 6 at 1584789289019934654
+Cell 6 sends a Blue message to cell 11 at 1584789289019972307
+Cell 11 receives a Blue msg at 1584789289020026702
+Cell 11 turns Blue at 1584789289020027840
+Cell 6 sends a Blue message to cell 11 at 1584789289020091888
+Cell 11 receives a Blue msg at 1584789289020137617
+Cell 11 sends a Warning message to cell 10 at 1584789289020189311
+Cell 10 receives a Warning from 11 at 1584789289020266099
+Cell 0 sends a Blue message to cell 14 at 1584789289020284884
+Cell 13 receives a Warning from 5 at 1584789289020327542
+Cell 10 sends a Warning message to cell 11 at 1584789289020350375
+Cell 13 sends a Warning message to cell 5 at 1584789289020388187
+Cell 0 sends a Blue message to cell 14 at 1584789289020397598
+Cell 11 receives a Warning from 10 at 1584789289020430577
+Cell 5 receives a Warning from 13 at 1584789289020437512
+Cell 0 sends a Blue message to cell 14 at 1584789289020502609
+Cell 14 sends a Warning message to cell 0 at 1584789289020571209
+Cell 0 receives a Warning from 14 at 1584789289020635426
+Cell 1 sends a Blue message to cell 5 at 1584789289020637380
+Cell 5 receives a Blue msg at 1584789289020689127
+Cell 4 sends a Blue message to cell 9 at 1584789289020844273
+Cell 4 sends a Blue message to cell 3 at 1584789289020941435
+Cell 4 sends a Blue message to cell 3 at 1584789289021079240
+Cell 4 sends a Blue message to cell 3 at 1584789289021197981
+Cell 5 sends a Blue message to cell 13 at 1584789289021200983
+Cell 4 sends a Blue message to cell 9 at 1584789289021317074
+Cell 5 sends a Blue message to cell 12 at 1584789289021325985
+Cell 12 receives a Blue msg at 1584789289021364254
+Cell 4 sends a Blue message to cell 9 at 1584789289021431494
+Cell 5 sends a Blue message to cell 2 at 1584789289021437618
+Cell 5 sends a Blue message to cell 14 at 1584789289021537844
+Cell 4 receives a Blue msg at 1584789290020668541
+Cell 6 sends a Blue message to cell 2 at 1584789290020688734
+Cell 2 sends a Warning message to cell 0 at 1584789290020982413
+Cell 0 sends a Blue message to cell 1 at 1584789290021025220
+Cell 0 receives a Warning from 2 at 1584789290021221754
+Cell 6 sends a Blue message to cell 3 at 1584789290021237016
+Cell 12 sends a Warning message to cell 5 at 1584789290021435382
+Cell 13 receives a Blue msg at 1584789290021444793
+Cell 13 turns Blue at 1584789290021448994
+Cell 4 receives a Blue msg at 1584789290021486746
+Cell 11 sends a Blue message to cell 6 at 1584789290021602697
+Cell 5 receives a Warning from 12 at 1584789290021643661
+Cell 8 sends a Blue message to cell 9 at 1584789290021776648
+Cell 9 receives a Blue msg at 1584789290021779179
+Cell 5 sends a Blue message to cell 14 at 1584789290021907151
+Cell 12 sends a Warning message to cell 4 at 1584789290022058860
+Cell 4 receives a Warning from 3 at 1584789290022077460
+Cell 9 receives a Blue msg at 1584789290022115458
+Cell 11 sends a Blue message to cell 0 at 1584789290022399311
+Cell 8 sends a Blue message to cell 9 at 1584789290022441207
+Cell 0 receives a Blue msg at 1584789290022529043
+Cell 5 sends a Blue message to cell 14 at 1584789290022544881
+Cell 4 receives a Warning from 12 at 1584789290022705093
+Cell 12 sends a Warning message to cell 7 at 1584789290022742612
+Cell 11 sends a Blue message to cell 10 at 1584789290022844446
+Cell 9 receives a Blue msg at 1584789290022934913
+Cell 5 sends a Blue message to cell 14 at 1584789290023051282
+Cell 12 sends a Warning message to cell 3 at 1584789290023162857
+Cell 11 sends a Blue message to cell 6 at 1584789290023209306
+Cell 8 sends a Blue message to cell 9 at 1584789290023324147
+Cell 12 sends a Blue message to cell 3 at 1584789290023475031
+Cell 8 sends a Blue message to cell 9 at 1584789290023653094
+Cell 10 receives a Blue msg at 1584789290023209716
+Cell 10 turns Blue at 1584789290023769467
+Cell 10 sends terminate to cell 11
+Cell 8 sends a Blue message to cell 9 at 1584789290024137295
+Cell 5 sends a Blue message to cell 1 at 1584789290024185646
+Cell 10 sends a Blue message to cell 11 at 1584789290024342072
+Cell 5 sends a Blue message to cell 12 at 1584789290024536169
+Cell 10 sends a Blue message to cell 11 at 1584789290024603173
+Cell 10 sends a Blue message to cell 11 at 1584789290024885434
+Cell 10 sends a Blue message to cell 11 at 1584789290025369218
+Cell 10 sends a Blue message to cell 11 at 1584789290025603818
+Cell 10 sends a Blue message to cell 11 at 1584789290025822147
+Cell 10 sends a Blue message to cell 11 at 1584789290026042468
+Cell 10 sends a Blue message to cell 11 at 1584789290026327140
+Cell 10 sends a Blue message to cell 11 at 1584789290026573028
+Cell 10 sends a Blue message to cell 11 at 1584789290026801317
+Cell 10 sends a Blue message to cell 11 at 1584789290027036096
+Cell 10 sends a Blue message to cell 11 at 1584789290027266051
+Cell 2 receives a Warning from 6 at 1584789291020140309
+Cell 3 receives a Blue msg at 1584789291020237922
+Cell 1 receives a Warning from 0 at 1584789291020502428
+Cell 14 receives a Blue msg at 1584789291020586685
+Cell 14 turns Blue at 1584789291020596040
+Cell 2 receives a Warning from 5 at 1584789291020617676
+Cell 3 receives a Blue msg at 1584789291020681450
+Cell 6 receives a Blue msg at 1584789291021003563
+Cell 14 receives a Blue msg at 1584789291021087501
+Cell 1 sends a Warning message to cell 0 at 1584789291021265785
+Cell 2 receives a Blue msg at 1584789291021496491
+Cell 6 receives a Blue msg at 1584789291021583100
+Cell 4 sends a Warning message to cell 9 at 1584789291021860243
+Cell 0 sends a Blue message to cell 2 at 1584789291022117022
+Cell 2 sends a Blue message to cell 5 at 1584789291022254801
+Cell 5 receives a Blue msg at 1584789291022289428
+Cell 0 receives a Warning from 1 at 1584789291022426804
+Cell 7 sends a Blue message to cell 12 at 1584789291022668387
+Cell 0 sends a Blue message to cell 1 at 1584789291022787023
+Cell 7 receives a Warning from 12 at 1584789291023021882
+Cell 7 sends a Blue message to cell 12 at 1584789291023275065
+Cell 0 sends a Blue message to cell 2 at 1584789291023293417
+Cell 9 receives a Blue msg at 1584789291023279677
+Cell 7 sends terminate to cell 12
+Cell 9 receives a Blue msg at 1584789291023680625
+Cell 0 sends a Blue message to cell 1 at 1584789291023695768
+Cell 12 sends a Blue message to cell 5 at 1584789291023941082
+Cell 9 receives a Blue msg at 1584789291023984779
+Cell 0 sends a Blue message to cell 11 at 1584789291024209891
+Cell 11 receives Terminate from 10 at 1584789291024236060
+Cell 5 receives a Blue msg at 1584789291024365728
+Cell 7 sends a Warning message to cell 12 at 1584789291024492694
+Cell 11 receives a Blue msg at 1584789291024538043
+Cell 0 sends a Blue message to cell 1 at 1584789291024619340
+Cell 11 receives a Blue msg at 1584789291024822055
+Cell 0 sends a Blue message to cell 11 at 1584789291024945473
+Cell 11 receives a Blue msg at 1584789291025041414
+Cell 0 sends a Blue message to cell 11 at 1584789291025251618
+Cell 0 sends a Blue message to cell 2 at 1584789291025553983
+Cell 3 sends a Warning message to cell 6 at 1584789292020183550
+Cell 13 sends terminate to cell 5
+Cell 1 receives a Warning from 2 at 1584789292020857271
+Cell 13 sends a Blue message to cell 5 at 1584789292020857655
+Cell 3 receives a Blue msg at 1584789292020974574
+Cell 1 receives a Warning from 5 at 1584789292021076569
+Cell 1 sends a Warning message to cell 2 at 1584789292021746284
+Cell 2 sends a Blue message to cell 6 at 1584789292022638983
+Cell 2 sends a Blue message to cell 5 at 1584789292022889407
+Cell 2 sends a Blue message to cell 6 at 1584789292023101719
+Cell 11 sends terminate to cell 0
+Cell 0 receives Terminate from 11 at 1584789292023741724
+Cell 11 sends a Blue message to cell 10 at 1584789292023815322
+Cell 10 receives a Blue msg at 1584789292023920691
+Cell 11 sends a Blue message to cell 6 at 1584789292024051626
+Cell 12 sends a Blue message to cell 5 at 1584789292024369090
+Cell 12 sends a Blue message to cell 7 at 1584789292024626711
+Cell 12 receives a Blue msg at 1584789292024649395
+Cell 12 sends a Blue message to cell 3 at 1584789292024907111
+Cell 10 sends a Blue message to cell 11 at 1584789292027708321
+Cell 10 sends a Blue message to cell 11 at 1584789292028020590
+Cell 10 sends a Blue message to cell 11 at 1584789292028290977
+Cell 6 receives a Warning from 3 at 1584789293020403963
+Cell 3 sends a Blue message to cell 6 at 1584789293020690179
+Cell 6 receives a Blue msg at 1584789293020758383
+Cell 14 receives a Blue msg at 1584789293021510250
+Cell 9 sends a Blue message to cell 4 at 1584789293021517306
+Cell 4 receives a Blue msg at 1584789293021586045
+Cell 2 receives a Blue msg at 1584789293021844035
+Cell 9 sends a Blue message to cell 4 at 1584789293021992823
+Cell 4 receives a Blue msg at 1584789293022076381
+Cell 1 sends a Warning message to cell 5 at 1584789293022342397
+Cell 2 sends a Blue message to cell 6 at 1584789293023602126
+Cell 2 sends a Blue message to cell 1 at 1584789293024194031
+Cell 11 sends a Blue message to cell 10 at 1584789293024787303
+Cell 9 receives a Blue msg at 1584789293024914376
+Cell 12 receives a Blue msg at 1584789293025059895
+Cell 8 sends a Blue message to cell 9 at 1584789293025432152
+Cell 12 sends a Blue message to cell 7 at 1584789293025537280
+Cell 7 receives a Blue msg at 1584789293025574466
+Cell 7 sends a Blue message to cell 12 at 1584789293025620148
+Cell 11 receives a Blue msg at 1584789293026002268
+Cell 5 sends a Blue message to cell 2 at 1584789293026114786
+Cell 12 sends a Blue message to cell 3 at 1584789293026413023
+Cell 10 receives a Blue msg at 1584789293026564398
+Cell 12 sends a Blue message to cell 3 at 1584789293026978391
+Cell 11 receives a Blue msg at 1584789293026602450
+Cell 7 receives a Blue msg at 1584789293026668238
+Cell 11 sends a Blue message to cell 0 at 1584789293027257942
+Cell 8 sends a Blue message to cell 9 at 1584789293027453065
+Cell 11 receives a Blue msg at 1584789293027507287
+Cell 7 sends a Blue message to cell 12 at 1584789293027701245
+Cell 11 sends a Blue message to cell 10 at 1584789293027770718
+Cell 8 sends a Blue message to cell 9 at 1584789293028095812
+Cell 7 sends a Blue message to cell 12 at 1584789293028188235
+Cell 11 sends a Blue message to cell 6 at 1584789293028254596
+Cell 8 sends a Blue message to cell 9 at 1584789293028774808
+Cell 11 receives a Blue msg at 1584789293029089655
+Cell 8 sends a Blue message to cell 9 at 1584789293029319525
+Cell 11 receives a Blue msg at 1584789293029414444
+Cell 10 sends a Blue message to cell 11 at 1584789293029546079
+Cell 11 sends a Blue message to cell 0 at 1584789293029720316
+Cell 11 receives a Blue msg at 1584789293029730625
+Cell 8 sends a Blue message to cell 9 at 1584789293029909845
+Cell 11 sends a Blue message to cell 6 at 1584789293030276615
+Cell 10 sends a Blue message to cell 11 at 1584789293030525610
+Cell 11 sends a Blue message to cell 0 at 1584789293030770775
+Cell 8 sends a Blue message to cell 9 at 1584789293031103764
+Cell 10 sends a Blue message to cell 11 at 1584789293031414208
+Cell 8 sends a Blue message to cell 9 at 1584789293031597559
+Cell 10 sends a Blue message to cell 11 at 1584789293031854694
+Cell 8 sends a Blue message to cell 9 at 1584789293032023822
+Cell 6 receives a Blue msg at 1584789294021023863
+Cell 3 sends a Blue message to cell 6 at 1584789294021114531
+Cell 13 sends a Blue message to cell 5 at 1584789294021128190
+Cell 3 sends a Blue message to cell 6 at 1584789294021283688
+Cell 13 sends a Blue message to cell 5 at 1584789294021304198
+Cell 3 sends a Blue message to cell 12 at 1584789294021437292
+Cell 3 sends a Blue message to cell 12 at 1584789294021592212
+Cell 1 sends a Blue message to cell 0 at 1584789294022732519
+Cell 2 sends a Blue message to cell 6 at 1584789294024679385
+Cell 2 sends a Blue message to cell 1 at 1584789294024870189
+Cell 2 sends a Blue message to cell 0 at 1584789294025024959
+Cell 2 sends a Blue message to cell 1 at 1584789294025174348
+Cell 2 sends a Blue message to cell 6 at 1584789294025325011
+Cell 12 receives a Blue msg at 1584789294025411764
+Cell 12 receives Terminate from 7 at 1584789294025575538
+Cell 12 receives a Warning from 7 at 1584789294025707588
+Cell 0 sends a Blue message to cell 14 at 1584789294025797732
+Cell 12 receives a Blue msg at 1584789294025844412
+Cell 12 receives a Blue msg at 1584789294025974870
+Cell 0 sends a Blue message to cell 11 at 1584789294025977953
+Cell 12 receives a Blue msg at 1584789294026097776
+Cell 0 receives a Blue msg at 1584789294026508252
+Cell 5 sends a Blue message to cell 13 at 1584789294026613983
+Cell 13 receives a Blue msg at 1584789294026710284
+Cell 5 sends a Blue message to cell 14 at 1584789294026797588
+Cell 5 sends a Blue message to cell 2 at 1584789294026957108
+Cell 5 sends a Blue message to cell 13 at 1584789294027119957
+Cell 12 sends a Blue message to cell 5 at 1584789294027258711
+Cell 5 sends a Blue message to cell 12 at 1584789294027276744
+Cell 12 sends a Blue message to cell 4 at 1584789294027444578
+Cell 5 sends a Blue message to cell 14 at 1584789294027463276
+Cell 5 sends a Blue message to cell 12 at 1584789294027630870
+Cell 5 sends a Blue message to cell 13 at 1584789294027797785
+Cell 10 receives a Blue msg at 1584789294027824934
+Cell 5 sends a Blue message to cell 13 at 1584789294027957795
+Cell 11 receives a Blue msg at 1584789294029973614
+Cell 10 sends a Blue message to cell 11 at 1584789294032245818
+Cell 10 sends a Blue message to cell 11 at 1584789294032510733
+Cell 10 sends a Blue message to cell 11 at 1584789294032745395
+Cell 3 receives a Blue msg at 1584789295021354698
+Cell 6 receives a Blue msg at 1584789295021416245
+Cell 1 receives a Blue msg at 1584789295021698067
+Cell 6 sends a Blue message to cell 2 at 1584789295021892261
+Cell 1 receives a Blue msg at 1584789295022064419
+Cell 13 sends a Blue message to cell 5 at 1584789295022091515
+Cell 14 receives a Blue msg at 1584789295022294537
+Cell 6 receives a Blue msg at 1584789295021974293
+Cell 9 sends a Blue message to cell 8 at 1584789295022613048
+Cell 1 receives a Blue msg at 1584789295022623692
+Cell 8 receives a Blue msg at 1584789295022698611
+Cell 2 receives a Blue msg at 1584789295022787283
+Cell 3 receives a Blue msg at 1584789295022868762
+Cell 14 receives a Blue msg at 1584789295023051452
+Cell 6 receives a Blue msg at 1584789295023137930
+Cell 1 sends a Blue message to cell 2 at 1584789295023262665
+Cell 9 sends a Blue message to cell 4 at 1584789295023367723
+Cell 1 receives a Blue msg at 1584789295023417752
+Cell 2 receives a Blue msg at 1584789295023478334
+Cell 1 receives a Blue msg at 1584789295023720262
+Cell 1 sends a Blue message to cell 0 at 1584789295023750225
+Cell 9 sends a Blue message to cell 4 at 1584789295023864733
+Cell 6 sends a Blue message to cell 11 at 1584789295023934817
+Cell 1 receives a Blue msg at 1584789295024028707
+Cell 2 receives a Blue msg at 1584789295024068091
+Cell 6 receives a Blue msg at 1584789295023936589
+Cell 1 sends a Blue message to cell 0 at 1584789295024193923
+Cell 2 receives a Blue msg at 1584789295024378551
+Cell 6 receives a Blue msg at 1584789295024449174
+Cell 1 sends a Blue message to cell 2 at 1584789295024643294
+Cell 6 receives a Blue msg at 1584789295024692000
+Cell 1 sends a Blue message to cell 0 at 1584789295025059037
+Cell 1 sends a Blue message to cell 0 at 1584789295025386150
+Cell 1 sends a Blue message to cell 5 at 1584789295025747490
+Cell 12 receives a Blue msg at 1584789295026541576
+Cell 1 sends a Blue message to cell 2 at 1584789295026572578
+Cell 0 receives a Blue msg at 1584789295026848935
+Cell 12 receives a Blue msg at 1584789295027068007
+Cell 1 sends a Blue message to cell 5 at 1584789295027226184
+Cell 0 receives a Blue msg at 1584789295027316753
+Cell 4 receives a Blue msg at 1584789295027688136
+Cell 0 receives a Blue msg at 1584789295027745306
+Cell 12 sends a Blue message to cell 3 at 1584789295027954730
+Cell 4 receives a Blue msg at 1584789295028282260
+Cell 12 sends a Blue message to cell 5 at 1584789295028423357
+Cell 4 receives a Blue msg at 1584789295028579375
+Cell 7 sends a Blue message to cell 12 at 1584789295028698236
+Cell 12 sends a Blue message to cell 5 at 1584789295028803340
+Cell 11 receives a Blue msg at 1584789295030397353
+Cell 10 sends a Blue message to cell 11 at 1584789295033337674
+Cell 3 sends a Blue message to cell 6 at 1584789296022094036
+Cell 4 sends a Warning message to cell 3 at 1584789296022427529
+Cell 3 sends a Blue message to cell 4 at 1584789296022591109
+Cell 4 receives a Blue msg at 1584789296022714464
+Cell 4 sends a Warning message to cell 12 at 1584789296022885151
+Cell 13 sends a Blue message to cell 5 at 1584789296023005461
+Cell 3 receives a Warning from 12 at 1584789296023143043
+Cell 13 sends a Blue message to cell 5 at 1584789296023314844
+Cell 14 receives a Blue msg at 1584789296023338062
+Cell 14 receives a Blue msg at 1584789296023536544
+Cell 14 receives a Blue msg at 1584789296023703568
+Cell 14 receives a Blue msg at 1584789296023867748
+Cell 9 sends a Blue message to cell 4 at 1584789296024264062
+Cell 4 receives a Blue msg at 1584789296024341582
+Cell 2 receives a Blue msg at 1584789296024733422
+Cell 6 receives a Blue msg at 1584789296024902308
+Cell 6 receives a Blue msg at 1584789296025074024
+Cell 6 receives a Blue msg at 1584789296025247222
+Cell 9 receives a Blue msg at 1584789296025348825
+Cell 6 receives a Blue msg at 1584789296025440842
+Cell 9 receives a Warning from 4 at 1584789296025591191
+Cell 2 sends a Blue message to cell 0 at 1584789296025597841
+Cell 9 receives a Blue msg at 1584789296025780228
+Cell 9 receives a Blue msg at 1584789296025950197
+Cell 13 receives a Blue msg at 1584789296027358596
+Cell 0 receives a Blue msg at 1584789296028274869
+Cell 5 sends a Blue message to cell 13 at 1584789296028552539
+Cell 5 sends a Blue message to cell 2 at 1584789296028970532
+Cell 11 receives a Blue msg at 1584789296030852218
+Cell 11 receives a Blue msg at 1584789296031168394
+Cell 10 sends a Blue message to cell 11 at 1584789296054778313
+Cell 10 sends a Blue message to cell 11 at 1584789296055260746
+Cell 5 receives Terminate from 13 at 1584789297020907226
+Cell 5 receives a Blue msg at 1584789297021111535
+Cell 5 receives a Blue msg at 1584789297021255975
+Cell 3 sends a Blue message to cell 6 at 1584789297023046300
+Cell 6 receives a Blue msg at 1584789297023120905
+Cell 4 sends a Blue message to cell 12 at 1584789297023268182
+Cell 3 sends a Blue message to cell 12 at 1584789297023357894
+Cell 4 sends a Blue message to cell 3 at 1584789297023528039
+Cell 3 sends a Blue message to cell 6 at 1584789297023605014
+Cell 4 sends a Blue message to cell 3 at 1584789297023756827
+Cell 3 sends a Blue message to cell 6 at 1584789297023827152
+Cell 3 sends a Blue message to cell 6 at 1584789297024044905
+Cell 14 receives a Blue msg at 1584789297024070448
+Cell 1 receives a Blue msg at 1584789297024253135
+Cell 14 receives a Blue msg at 1584789297024325789
+Cell 1 receives a Blue msg at 1584789297024411692
+Cell 14 receives a Blue msg at 1584789297024614836
+Cell 1 receives a Blue msg at 1584789297024636262
+Cell 9 sends a Warning message to cell 4 at 1584789297024705397
+Cell 4 receives a Warning from 9 at 1584789297024736714
+Cell 2 receives a Blue msg at 1584789297024973521
+Cell 12 receives a Blue msg at 1584789297027480824
+Cell 1 sends a Blue message to cell 5 at 1584789297027790648
+Cell 13 receives a Blue msg at 1584789297027790856
+Cell 12 receives a Blue msg at 1584789297027850482
+Cell 12 receives a Blue msg at 1584789297028113810
+Cell 1 sends a Blue message to cell 0 at 1584789297028189356
+Cell 12 receives a Warning from 4 at 1584789297028338683
+Cell 12 receives a Blue msg at 1584789297028542564
+Cell 7 sends a Blue message to cell 12 at 1584789297029179704
+Cell 5 sends a Blue message to cell 14 at 1584789297029496737
+Cell 14 receives a Blue msg at 1584789297029676758
+Cell 7 sends a Blue message to cell 12 at 1584789297029701977
+Cell 11 sends a Blue message to cell 10 at 1584789297031213614
+Cell 8 sends a Blue message to cell 9 at 1584789297032522126
+Cell 8 sends a Blue message to cell 9 at 1584789297032898244
+Cell 8 sends a Blue message to cell 9 at 1584789297033223013
+Cell 8 sends a Blue message to cell 9 at 1584789297033532828
+Cell 6 receives a Blue msg at 1584789298023939212
+Cell 13 sends a Blue message to cell 5 at 1584789298024121932
+Cell 4 sends a Blue message to cell 3 at 1584789298024318106
+Cell 3 sends a Blue message to cell 6 at 1584789298024671856
+Cell 13 sends a Blue message to cell 5 at 1584789298024706183
+Cell 13 sends a Blue message to cell 5 at 1584789298025260802
+Cell 2 receives a Blue msg at 1584789298025323542
+Cell 2 receives a Warning from 1 at 1584789298025730029
+Cell 0 sends a Blue message to cell 1 at 1584789298026730131
+Cell 0 sends a Blue message to cell 2 at 1584789298027222518
+Cell 13 receives a Blue msg at 1584789298028185772
+Cell 13 receives a Blue msg at 1584789298028480541
+Cell 5 sends a Blue message to cell 1 at 1584789298030097018
+Cell 7 sends a Blue message to cell 12 at 1584789298030279965
+Cell 7 sends a Blue message to cell 12 at 1584789298030829833
+Cell 7 sends a Blue message to cell 12 at 1584789298031338189
+Cell 10 receives a Blue msg at 1584789298031390621
+Cell 11 receives a Blue msg at 1584789298031473230
+Cell 7 sends a Blue message to cell 12 at 1584789298031844503
+Cell 11 receives a Blue msg at 1584789298031883120
+Cell 7 sends a Blue message to cell 12 at 1584789298032182900
+Cell 7 sends a Blue message to cell 12 at 1584789298032494509
+Cell 7 sends a Blue message to cell 12 at 1584789298032799743
+Cell 7 sends a Blue message to cell 12 at 1584789298033101839
+Cell 8 sends a Blue message to cell 9 at 1584789298033923357
+Cell 8 sends a Blue message to cell 9 at 1584789298034431637
+Cell 6 sends a Blue message to cell 11 at 1584789298038613462
+Cell 6 sends a Blue message to cell 11 at 1584789298039002766
+Cell 6 sends a Blue message to cell 2 at 1584789298039319127
+Cell 14 sends terminate to cell 0
+Cell 14 sends a Blue message to cell 5 at 1584789299021136381
+Cell 6 receives a Blue msg at 1584789299024515349
+Cell 4 sends a Blue message to cell 3 at 1584789299024918327
+Cell 6 receives a Blue msg at 1584789299024958312
+Cell 9 sends a Warning message to cell 8 at 1584789299025258473
+Cell 6 receives a Blue msg at 1584789299025272540
+Cell 8 receives a Warning from 9 at 1584789299025432615
+Cell 9 sends a Blue message to cell 4 at 1584789299025827432
+Cell 2 receives a Blue msg at 1584789299026057280
+Cell 9 receives a Blue msg at 1584789299026410751
+Cell 2 receives a Blue msg at 1584789299026547905
+Cell 9 sends a Blue message to cell 8 at 1584789299026586142
+Cell 8 receives a Blue msg at 1584789299026664759
+Cell 1 receives a Blue msg at 1584789299026786662
+Cell 1 receives a Blue msg at 1584789299027003285
+Cell 0 sends a Blue message to cell 14 at 1584789299027829016
+Cell 14 receives a Blue msg at 1584789299027904683
+Cell 1 sends a Blue message to cell 2 at 1584789299028583433
+Cell 0 receives a Blue msg at 1584789299028657563
+Cell 12 receives a Blue msg at 1584789299028812747
+Cell 1 sends a Blue message to cell 0 at 1584789299028984926
+Cell 11 sends a Blue message to cell 6 at 1584789299031609758
+Cell 11 sends a Blue message to cell 6 at 1584789299031980781
+Cell 11 receives a Blue msg at 1584789299032233919
+Cell 11 sends a Blue message to cell 6 at 1584789299032371806
+Cell 11 receives a Blue msg at 1584789299032550442
+Cell 11 sends a Blue message to cell 0 at 1584789299032801549
+Cell 11 receives a Blue msg at 1584789299032857411
+Cell 7 sends a Blue message to cell 12 at 1584789299033592730
+Cell 7 sends a Blue message to cell 12 at 1584789299033960432
+Cell 8 sends terminate to cell 9
+Cell 8 sends a Warning message to cell 9 at 1584789299035175384
+Cell 6 sends a Blue message to cell 2 at 1584789299039937854
+Cell 6 sends a Blue message to cell 3 at 1584789299040354160
+Cell 6 sends a Blue message to cell 11 at 1584789299040691988
+Cell 6 sends a Blue message to cell 3 at 1584789299041002858
+Cell 10 sends a Blue message to cell 11 at 1584789299094747831
+Cell 3 sends a Blue message to cell 12 at 1584789300025178375
+Cell 4 sends a Blue message to cell 9 at 1584789300025312014
+Cell 3 sends a Blue message to cell 6 at 1584789300025398821
+Cell 4 sends a Blue message to cell 12 at 1584789300025520454
+Cell 3 sends a Blue message to cell 12 at 1584789300025576198
+Cell 4 sends a Blue message to cell 12 at 1584789300025723512
+Cell 2 sends a Blue message to cell 1 at 1584789300025916094
+Cell 1 receives a Blue msg at 1584789300026043904
+Cell 9 receives a Blue msg at 1584789300026834586
+Cell 2 receives a Blue msg at 1584789300026859859
+Cell 2 receives a Blue msg at 1584789300027057366
+Cell 0 sends a Blue message to cell 11 at 1584789300028325010
+Cell 12 sends terminate to cell 5
+Cell 0 receives a Blue msg at 1584789300029011529
+Cell 0 receives a Blue msg at 1584789300029235712
+Cell 0 receives a Blue msg at 1584789300029396930
+Cell 11 sends a Blue message to cell 0 at 1584789300033350281
+Cell 11 sends a Blue message to cell 0 at 1584789300033720596
+Cell 11 sends a Blue message to cell 0 at 1584789300034044398
+Cell 11 sends a Blue message to cell 6 at 1584789300034440022
+Cell 7 sends a Blue message to cell 12 at 1584789300034568066
+Cell 8 sends a Blue message to cell 9 at 1584789300035740598
+Cell 8 sends a Blue message to cell 9 at 1584789300036097046
+Cell 4 receives a Blue msg at 1584789301026115401
+Cell 4 sends a Blue message to cell 3 at 1584789301026578165
+Cell 2 sends a Blue message to cell 1 at 1584789301026646459
+Cell 1 receives a Blue msg at 1584789301026763400
+Cell 2 sends a Blue message to cell 0 at 1584789301027091427
+Cell 4 sends a Blue message to cell 9 at 1584789301027143583
+Cell 2 receives a Blue msg at 1584789301027269136
+Cell 2 receives a Blue msg at 1584789301027505549
+Cell 12 receives a Blue msg at 1584789301029303435
+Cell 12 receives a Blue msg at 1584789301029670617
+Cell 12 receives a Blue msg at 1584789301029923928
+Cell 6 receives a Blue msg at 1584789301031892415
+Cell 6 receives a Blue msg at 1584789301032205826
+Cell 6 receives a Blue msg at 1584789301032655283
+Cell 6 receives a Blue msg at 1584789301032948755
+Cell 11 sends a Blue message to cell 0 at 1584789301034893508
+Cell 7 sends a Blue message to cell 12 at 1584789301046759319
+Cell 3 receives a Blue msg at 1584789302023581507
+Cell 3 receives a Blue msg at 1584789302023955489
+Cell 3 receives a Blue msg at 1584789302024213111
+Cell 3 receives a Blue msg at 1584789302024441698
+Cell 3 receives a Blue msg at 1584789302024682275
+Cell 3 sends a Blue message to cell 4 at 1584789302026108794
+Cell 4 receives a Blue msg at 1584789302026333584
+Cell 3 sends a Blue message to cell 12 at 1584789302026611668
+Cell 3 sends a Blue message to cell 12 at 1584789302026950042
+Cell 9 receives a Blue msg at 1584789302027159305
+Cell 9 sends a Blue message to cell 4 at 1584789302027184781
+Cell 3 sends a Blue message to cell 6 at 1584789302027302319
+Cell 9 receives a Blue msg at 1584789302027525953
+Cell 2 sends a Blue message to cell 6 at 1584789302027541149
+Cell 9 sends a Blue message to cell 8 at 1584789302027691044
+Cell 3 sends a Blue message to cell 6 at 1584789302027730972
+Cell 2 receives a Blue msg at 1584789302027800721
+Cell 3 sends a Blue message to cell 4 at 1584789302028074414
+Cell 2 receives a Blue msg at 1584789302028104272
+Cell 9 sends a Blue message to cell 8 at 1584789302028151017
+Cell 3 sends a Blue message to cell 6 at 1584789302028377173
+Cell 0 receives a Blue msg at 1584789302029629868
+Cell 12 receives a Blue msg at 1584789302030293132
+Cell 12 receives a Blue msg at 1584789302030604943
+Cell 5 sends a Blue message to cell 13 at 1584789302030788173
+Cell 5 sends a Blue message to cell 14 at 1584789302031171089
+Cell 14 receives a Blue msg at 1584789302031251500
+Cell 6 receives a Blue msg at 1584789302033260537
+Cell 6 receives a Blue msg at 1584789302033519341
+Cell 6 receives a Blue msg at 1584789302033739466
+Cell 8 sends a Blue message to cell 9 at 1584789302036742689
+Cell 8 sends a Blue message to cell 9 at 1584789302037155736
+Cell 4 sends a Blue message to cell 12 at 1584789302038766322
+Cell 6 sends a Blue message to cell 3 at 1584789302041648634
+Cell 6 sends a Blue message to cell 3 at 1584789302042075253
+Cell 6 sends a Blue message to cell 3 at 1584789302042619761
+Cell 6 sends a Blue message to cell 2 at 1584789302042939545
+Cell 5 receives a Blue msg at 1584789303021661428
+Cell 3 receives a Warning from 4 at 1584789303025140926
+Cell 2 sends a Blue message to cell 1 at 1584789303028272682
+Cell 1 receives a Blue msg at 1584789303028368408
+Cell 2 receives a Blue msg at 1584789303028555651
+Cell 9 sends a Blue message to cell 8 at 1584789303028842041
+Cell 2 receives a Blue msg at 1584789303028945816
+Cell 2 receives a Blue msg at 1584789303029209382
+Cell 12 receives a Blue msg at 1584789303031077857
+Cell 12 receives a Blue msg at 1584789303031388108
+Cell 6 receives a Blue msg at 1584789303034175068
+Cell 6 receives a Blue msg at 1584789303034683541
+Cell 11 sends a Blue message to cell 6 at 1584789303035525361
+Cell 6 receives a Blue msg at 1584789303035650228
+Cell 11 sends a Blue message to cell 6 at 1584789303035898551
+Cell 11 sends a Blue message to cell 10 at 1584789303036233760
+Cell 12 sends a Blue message to cell 7 at 1584789303063225241
+Cell 12 sends a Blue message to cell 4 at 1584789303063580975
+Cell 12 sends a Blue message to cell 3 at 1584789303063895386
+Cell 5 receives a Warning from 1 at 1584789304022337795
+Cell 5 receives a Blue msg at 1584789304022730948
+Cell 5 receives a Blue msg at 1584789304023030297
+Cell 3 receives a Blue msg at 1584789304025618676
+Cell 3 receives a Blue msg at 1584789304025927694
+Cell 4 receives a Blue msg at 1584789304027327489
+Cell 4 receives a Blue msg at 1584789304027641870
+Cell 9 receives a Blue msg at 1584789304027852075
+Cell 9 receives a Blue msg at 1584789304028107549
+Cell 3 sends a Blue message to cell 4 at 1584789304029019407
+Cell 2 sends a Blue message to cell 0 at 1584789304029056235
+Cell 9 sends a Blue message to cell 4 at 1584789304029288982
+Cell 3 sends a Blue message to cell 4 at 1584789304029523215
+Cell 2 sends a Blue message to cell 1 at 1584789304029620125
+Cell 9 sends a Blue message to cell 8 at 1584789304029665271
+Cell 3 sends a Blue message to cell 12 at 1584789304030035237
+Cell 1 receives a Blue msg at 1584789304029690998
+Cell 9 sends a Blue message to cell 8 at 1584789304030426154
+Cell 3 sends a Blue message to cell 4 at 1584789304030782716
+Cell 13 receives a Blue msg at 1584789304030872439
+Cell 9 sends a Blue message to cell 4 at 1584789304030968620
+Cell 9 sends a Blue message to cell 8 at 1584789304031303030
+Cell 5 sends a Blue message to cell 1 at 1584789304031640963
+Cell 9 sends a Blue message to cell 8 at 1584789304031647056
+Cell 12 receives a Blue msg at 1584789304031706291
+Cell 9 sends a Blue message to cell 4 at 1584789304031971159
+Cell 12 receives a Blue msg at 1584789304031997017
+Cell 12 receives a Blue msg at 1584789304032231532
+Cell 9 sends a Blue message to cell 4 at 1584789304032316460
+Cell 12 receives a Blue msg at 1584789304032448171
+Cell 9 sends a Blue message to cell 8 at 1584789304032625341
+Cell 12 receives a Blue msg at 1584789304032659568
+Cell 12 receives a Blue msg at 1584789304032872578
+Cell 11 receives a Blue msg at 1584789304033141515
+Cell 11 receives a Blue msg at 1584789304033393012
+Cell 11 receives a Blue msg at 1584789304033607669
+Cell 6 receives a Blue msg at 1584789304036053404
+Cell 11 sends a Blue message to cell 0 at 1584789304036747138
+Cell 11 sends a Blue message to cell 6 at 1584789304037121597
+Cell 6 receives a Blue msg at 1584789304037188333
+Cell 7 sends a Blue message to cell 12 at 1584789304047421006
+Cell 7 sends a Blue message to cell 12 at 1584789304047867134
+Cell 7 sends a Blue message to cell 12 at 1584789304048218353
+Cell 7 sends a Blue message to cell 12 at 1584789304048529473
+Cell 8 sends a Blue message to cell 9 at 1584789304058741287
+Cell 8 sends a Blue message to cell 9 at 1584789304059182174
+Cell 12 sends a Blue message to cell 5 at 1584789304086725470
+Cell 12 sends a Blue message to cell 3 at 1584789304087162345
+Cell 12 sends a Blue message to cell 4 at 1584789304087496307
+Cell 5 receives a Blue msg at 1584789305023339798
+Cell 5 receives a Blue msg at 1584789305023545819
+Cell 5 receives a Blue msg at 1584789305023673981
+Cell 5 receives a Blue msg at 1584789305023792938
+Cell 5 receives a Blue msg at 1584789305023909201
+Cell 8 receives a Blue msg at 1584789305027934580
+Cell 4 receives a Blue msg at 1584789305027972444
+Cell 4 receives a Blue msg at 1584789305028191810
+Cell 8 receives a Blue msg at 1584789305028285579
+Cell 9 receives a Blue msg at 1584789305028338808
+Cell 8 receives a Blue msg at 1584789305028524775
+Cell 9 receives a Blue msg at 1584789305028549673
+Cell 9 receives a Blue msg at 1584789305028710004
+Cell 9 receives a Blue msg at 1584789305028861674
+Cell 9 receives a Blue msg at 1584789305028991423
+Cell 0 receives a Blue msg at 1584789305029929770
+Cell 0 receives Terminate from 14 at 1584789305030099711
+Cell 3 sends a Blue message to cell 12 at 1584789305031093540
+Cell 9 sends a Blue message to cell 4 at 1584789305033163180
+Cell 12 receives a Blue msg at 1584789305033164788
+Cell 12 receives a Blue msg at 1584789305033424922
+Cell 9 sends a Blue message to cell 8 at 1584789305033503763
+Cell 12 receives a Blue msg at 1584789305033609153
+Cell 11 receives a Blue msg at 1584789305033861247
+Cell 11 receives a Blue msg at 1584789305034066598
+Cell 11 receives a Blue msg at 1584789305034257795
+Cell 11 receives a Blue msg at 1584789305034420722
+Cell 11 receives a Blue msg at 1584789305034572713
+Cell 10 receives a Blue msg at 1584789305036444417
+Cell 11 sends a Blue message to cell 0 at 1584789305037555196
+Cell 11 sends a Blue message to cell 0 at 1584789305037901059
+Cell 11 sends a Blue message to cell 6 at 1584789305038280222
+Cell 11 sends a Blue message to cell 6 at 1584789305038606700
+Cell 6 sends a Blue message to cell 2 at 1584789305043452918
+Cell 7 sends a Blue message to cell 12 at 1584789305049175947
+Cell 7 sends a Blue message to cell 12 at 1584789305049598413
+Cell 7 sends a Blue message to cell 12 at 1584789305049926851
+Cell 7 sends a Blue message to cell 12 at 1584789305050388494
+Cell 7 sends a Blue message to cell 12 at 1584789305050971948
+Cell 7 sends a Blue message to cell 12 at 1584789305051329688
+Cell 8 sends a Blue message to cell 9 at 1584789305059532249
+Cell 7 receives a Blue msg at 1584789305063457701
+Cell 4 sends a Blue message to cell 9 at 1584789305078826495
+Cell 4 sends a Blue message to cell 3 at 1584789305079285497
+Cell 4 sends a Blue message to cell 3 at 1584789305079624197
+Cell 4 sends a Blue message to cell 9 at 1584789305079938221
+Cell 4 sends a Blue message to cell 3 at 1584789305080242848
+Cell 4 sends a Blue message to cell 3 at 1584789305080545739
+Cell 10 sends a Blue message to cell 11 at 1584789305142814564
+Cell 3 receives a Blue msg at 1584789306026485977
+Cell 3 receives a Blue msg at 1584789306026881623
+Cell 3 receives a Blue msg at 1584789306027128870
+Cell 4 receives a Blue msg at 1584789306028612956
+Cell 4 receives a Blue msg at 1584789306028983557
+Cell 4 receives a Blue msg at 1584789306029231984
+Cell 9 receives a Blue msg at 1584789306029311827
+Cell 2 receives a Blue msg at 1584789306029447835
+Cell 9 receives a Blue msg at 1584789306029650953
+Cell 9 receives Terminate from 8 at 1584789306029879061
+Cell 2 sends a Blue message to cell 1 at 1584789306030397277
+Cell 0 receives a Blue msg at 1584789306030421075
+Cell 2 sends a Blue message to cell 5 at 1584789306030746483
+Cell 0 receives a Blue msg at 1584789306030831363
+Cell 2 sends a Blue message to cell 6 at 1584789306031101409
+Cell 0 receives a Blue msg at 1584789306031125299
+Cell 0 receives a Blue msg at 1584789306031353270
+Cell 0 receives a Blue msg at 1584789306031566601
+Cell 1 receives a Blue msg at 1584789306031774582
+Cell 1 receives a Blue msg at 1584789306032078950
+Cell 6 receives a Blue msg at 1584789306038471476
+Cell 6 receives a Blue msg at 1584789306038781518
+Cell 11 sends a Blue message to cell 6 at 1584789306039108218
+Cell 11 sends a Blue message to cell 10 at 1584789306039476719
+Cell 10 receives a Blue msg at 1584789306039650310
+Cell 11 sends a Blue message to cell 0 at 1584789306039794271
+Cell 11 sends a Blue message to cell 0 at 1584789306040109965
+Cell 6 sends a Blue message to cell 2 at 1584789306044133078
+Cell 14 sends a Blue message to cell 5 at 1584789306198773086
+Cell 14 sends a Blue message to cell 0 at 1584789306199293770
+Cell 14 sends a Blue message to cell 5 at 1584789306199629081
+Cell 14 sends a Blue message to cell 5 at 1584789306199933376
+Cell 14 sends a Blue message to cell 0 at 1584789306200296530
+Cell 13 sends a Blue message to cell 5 at 1584789306202869395
+Cell 1 sends a Blue message to cell 5 at 1584789306202935697
+Cell 5 receives a Blue msg at 1584789307024287466
+Cell 8 receives a Blue msg at 1584789307028924028
+Cell 4 receives a Blue msg at 1584789307029663081
+Cell 2 receives a Blue msg at 1584789307029818159
+Cell 2 receives a Blue msg at 1584789307030303388
+Cell 2 sends a Blue message to cell 5 at 1584789307031579901
+Cell 0 receives a Blue msg at 1584789307031959859
+Cell 5 sends a Blue message to cell 14 at 1584789307032220274
+Cell 5 sends a Blue message to cell 14 at 1584789307032581094
+Cell 5 sends a Blue message to cell 2 at 1584789307032893575
+Cell 2 receives a Blue msg at 1584789307033188224
+Cell 5 sends a Blue message to cell 13 at 1584789307033306056
+Cell 13 receives a Blue msg at 1584789307033388442
+Cell 5 sends a Blue message to cell 13 at 1584789307033634079
+Cell 13 receives a Blue msg at 1584789307033768308
+Cell 12 receives a Blue msg at 1584789307033910618
+Cell 9 sends a Blue message to cell 8 at 1584789307033942959
+Cell 5 sends a Blue message to cell 14 at 1584789307034031537
+Cell 12 receives a Blue msg at 1584789307034337988
+Cell 5 sends a Blue message to cell 12 at 1584789307034487831
+Cell 9 sends a Blue message to cell 8 at 1584789307034589239
+Cell 5 sends a Blue message to cell 1 at 1584789307034806927
+Cell 9 sends a Blue message to cell 8 at 1584789307034944807
+Cell 9 sends a Blue message to cell 8 at 1584789307035257487
+Cell 6 sends a Blue message to cell 2 at 1584789307044837713
+Cell 2 receives a Blue msg at 1584789307044980858
+Cell 6 sends a Blue message to cell 3 at 1584789307045264292
+Cell 4 sends a Blue message to cell 12 at 1584789307081198816
+Cell 12 sends a Blue message to cell 7 at 1584789307088267306
+Cell 7 receives a Blue msg at 1584789307088365245
+Cell 12 sends a Blue message to cell 5 at 1584789307088766641
+Cell 12 sends a Blue message to cell 4 at 1584789307089100979
+Cell 10 sends a Blue message to cell 11 at 1584789307143487924
+Cell 10 sends a Blue message to cell 11 at 1584789307143942969
+Cell 10 sends a Blue message to cell 11 at 1584789307144328826
+Cell 10 sends a Blue message to cell 11 at 1584789307144695412
+Cell 10 sends a Blue message to cell 11 at 1584789307145071539
+Cell 10 sends a Blue message to cell 11 at 1584789307145431888
+Cell 10 sends a Blue message to cell 11 at 1584789307145793442
+Cell 1 sends a Blue message to cell 0 at 1584789307203526330
+Cell 5 receives a Blue msg at 1584789308024895240
+Cell 3 receives a Blue msg at 1584789308027538155
+Cell 8 receives a Blue msg at 1584789308029480108
+Cell 8 receives a Blue msg at 1584789308029848715
+Cell 2 sends a Blue message to cell 5 at 1584789308032168708
+Cell 0 receives a Blue msg at 1584789308032381560
+Cell 0 receives a Blue msg at 1584789308032684539
+Cell 0 receives a Blue msg at 1584789308032915725
+Cell 12 receives a Blue msg at 1584789308034655232
+Cell 11 receives a Blue msg at 1584789308034853011
+Cell 1 receives a Blue msg at 1584789308034945482
+Cell 12 receives a Blue msg at 1584789308035009623
+Cell 11 receives a Blue msg at 1584789308035165710
+Cell 12 receives a Blue msg at 1584789308035274868
+Cell 11 receives a Blue msg at 1584789308035396179
+Cell 12 receives a Blue msg at 1584789308035498497
+Cell 11 receives a Blue msg at 1584789308035614227
+Cell 11 receives a Blue msg at 1584789308035828513
+Cell 11 receives a Blue msg at 1584789308036040056
+Cell 11 receives a Blue msg at 1584789308036249146
+Cell 11 receives a Blue msg at 1584789308036458632
+Cell 11 receives a Blue msg at 1584789308036669576
+Cell 6 receives a Blue msg at 1584789308039159666
+Cell 6 receives a Blue msg at 1584789308039466973
+Cell 11 sends a Blue message to cell 6 at 1584789308040537893
+Cell 6 receives a Blue msg at 1584789308040692617
+Cell 11 sends a Blue message to cell 10 at 1584789308040922394
+Cell 10 receives a Blue msg at 1584789308041007459
+Cell 7 sends a Blue message to cell 12 at 1584789308086968437
+Cell 4 sends a Blue message to cell 12 at 1584789308087111613
+Cell 7 sends a Blue message to cell 12 at 1584789308087541754
+Cell 4 sends a Blue message to cell 9 at 1584789308087630217
+Cell 7 sends a Blue message to cell 12 at 1584789308087937456
+Cell 10 sends a Blue message to cell 11 at 1584789308150737906
+Cell 1 sends a Blue message to cell 0 at 1584789308204111125
+Cell 3 receives a Blue msg at 1584789309028097648
+Cell 3 receives a Blue msg at 1584789309028470443
+Cell 3 receives a Blue msg at 1584789309028711705
+Cell 9 receives a Warning from 8 at 1584789309030296488
+Cell 14 receives a Blue msg at 1584789309032491027
+Cell 14 receives a Blue msg at 1584789309032877480
+Cell 0 receives a Blue msg at 1584789309033213220
+Cell 0 receives a Blue msg at 1584789309033551818
+Cell 0 receives a Blue msg at 1584789309033777767
+Cell 5 sends a Blue message to cell 1 at 1584789309035363597
+Cell 9 sends terminate to cell 4
+Cell 1 receives a Blue msg at 1584789309035521699
+Cell 5 sends a Blue message to cell 1 at 1584789309035844299
+Cell 12 receives a Blue msg at 1584789309035846934
+Cell 9 sends a Blue message to cell 8 at 1584789309036107768
+Cell 12 receives a Blue msg at 1584789309036195158
+Cell 11 receives a Blue msg at 1584789309037031680
+Cell 11 receives a Blue msg at 1584789309037330016
+Cell 11 receives a Blue msg at 1584789309037554107
+Cell 11 receives a Blue msg at 1584789309037768392
+Cell 11 sends a Blue message to cell 0 at 1584789309041602907
+Cell 11 sends a Blue message to cell 6 at 1584789309042026153
+Cell 11 sends a Blue message to cell 6 at 1584789309042522707
+Cell 6 sends a Blue message to cell 11 at 1584789309046064691
+Cell 6 sends a Blue message to cell 2 at 1584789309046691817
+Cell 2 receives a Blue msg at 1584789309046857322
+Cell 8 sends a Blue message to cell 9 at 1584789309060163048
+Cell 4 sends a Blue message to cell 9 at 1584789309088373771
+Cell 4 sends a Blue message to cell 12 at 1584789309088879549
+Cell 4 sends a Blue message to cell 9 at 1584789309089279464
+Cell 7 sends a Blue message to cell 12 at 1584789309110816897
+Cell 10 sends a Blue message to cell 11 at 1584789309151489797
+Cell 10 sends a Blue message to cell 11 at 1584789309152117029
+Cell 10 sends a Blue message to cell 11 at 1584789309152665960
+Cell 10 sends a Blue message to cell 11 at 1584789309153227271
+Cell 10 sends a Blue message to cell 11 at 1584789309153983395
+Cell 10 sends a Blue message to cell 11 at 1584789309154648842
+Cell 10 sends a Blue message to cell 11 at 1584789309155226430
+Cell 3 receives a Blue msg at 1584789310029155001
+Cell 4 receives a Blue msg at 1584789310030375541
+Cell 8 receives a Blue msg at 1584789310030441715
+Cell 9 receives a Blue msg at 1584789310030810123
+Cell 4 receives a Blue msg at 1584789310030888383
+Cell 8 receives a Blue msg at 1584789310030949030
+Cell 9 receives a Blue msg at 1584789310031262125
+Cell 4 receives a Blue msg at 1584789310031313951
+Cell 3 sends a Blue message to cell 6 at 1584789310031599694
+Cell 9 receives a Blue msg at 1584789310031609600
+Cell 4 receives a Blue msg at 1584789310031634849
+Cell 4 receives a Blue msg at 1584789310031894269
+Cell 4 receives Terminate from 9 at 1584789310032120840
+Cell 14 receives a Blue msg at 1584789310033271207
+Cell 0 receives a Blue msg at 1584789310034016317
+Cell 1 receives a Blue msg at 1584789310035885906
+Cell 5 sends a Blue message to cell 13 at 1584789310036301486
+Cell 13 receives a Blue msg at 1584789310036360154
+Cell 9 sends a Blue message to cell 4 at 1584789310036664681
+Cell 4 receives a Blue msg at 1584789310036731886
+Cell 5 sends a Blue message to cell 14 at 1584789310036774734
+Cell 14 receives a Blue msg at 1584789310036872073
+Cell 9 sends a Blue message to cell 8 at 1584789310037124131
+Cell 9 sends a Blue message to cell 8 at 1584789310037453183
+Cell 9 sends a Blue message to cell 4 at 1584789310037767426
+Cell 4 receives a Blue msg at 1584789310037949629
+Cell 9 sends a Blue message to cell 8 at 1584789310038085458
+Cell 11 receives a Blue msg at 1584789310038101858
+Cell 11 receives a Blue msg at 1584789310038509323
+Cell 11 receives a Blue msg at 1584789310038731745
+Cell 11 receives a Blue msg at 1584789310038943371
+Cell 11 receives a Blue msg at 1584789310039152368
+Cell 11 receives a Blue msg at 1584789310039361829
+Cell 6 receives a Blue msg at 1584789310042372969
+Cell 6 receives a Blue msg at 1584789310042686179
+Cell 6 receives a Blue msg at 1584789310042913488
+Cell 11 sends a Blue message to cell 0 at 1584789310042930447
+Cell 6 sends a Blue message to cell 2 at 1584789310047109420
+Cell 2 receives a Blue msg at 1584789310047269463
+Cell 6 sends a Blue message to cell 11 at 1584789310047434274
+Cell 4 sends terminate to cell 3
+Cell 1 sends a Blue message to cell 0 at 1584789310204958923
+Cell 5 receives a Blue msg at 1584789311025476522
+Cell 5 receives a Blue msg at 1584789311025857133
+Cell 3 sends a Blue message to cell 6 at 1584789311032298652
+Cell 3 sends a Blue message to cell 6 at 1584789311032717408
+Cell 3 sends a Blue message to cell 4 at 1584789311033065389
+Cell 0 receives a Blue msg at 1584789311034462384
+Cell 0 receives a Blue msg at 1584789311034775087
+Cell 0 receives a Blue msg at 1584789311035000434
+Cell 0 receives a Blue msg at 1584789311035217373
+Cell 12 receives a Blue msg at 1584789311036583746
+Cell 11 sends a Blue message to cell 0 at 1584789311043555503
+Cell 6 sends a Blue message to cell 3 at 1584789311048096065
+Cell 6 sends a Blue message to cell 3 at 1584789311048505970
+Cell 6 sends a Blue message to cell 2 at 1584789311048921935
+Cell 6 sends a Blue message to cell 2 at 1584789311049367304
+Cell 8 sends a Blue message to cell 9 at 1584789311060877663
+Cell 8 sends a Blue message to cell 9 at 1584789311061435105
+Cell 8 sends a Blue message to cell 9 at 1584789311061973910
+Cell 5 sends a Blue message to cell 12 at 1584789311066605590
+Cell 5 sends a Blue message to cell 2 at 1584789311067049434
+Cell 1 sends a Blue message to cell 2 at 1584789311205710080
+Cell 1 sends a Blue message to cell 2 at 1584789311206114444
+Cell 13 sends a Blue message to cell 5 at 1584789311222647779
+Cell 13 sends a Blue message to cell 5 at 1584789311223044972
+Cell 5 receives a Blue msg at 1584789312026398015
+Cell 5 receives a Blue msg at 1584789312026765273
+Cell 3 receives a Blue msg at 1584789312029721919
+Cell 9 receives a Blue msg at 1584789312032094488
+Cell 9 receives a Blue msg at 1584789312032494977
+Cell 6 receives a Blue msg at 1584789312032566101
+Cell 9 receives a Blue msg at 1584789312032769380
+Cell 9 receives a Blue msg at 1584789312033013628
+Cell 0 receives a Blue msg at 1584789312035639713
+Cell 12 receives a Blue msg at 1584789312037098720
+Cell 9 sends a Blue message to cell 8 at 1584789312038732981
+Cell 9 sends a Blue message to cell 4 at 1584789312039143684
+Cell 9 sends a Blue message to cell 8 at 1584789312039476834
+Cell 9 sends a Blue message to cell 4 at 1584789312039786443
+Cell 11 sends a Blue message to cell 0 at 1584789312044249316
+Cell 6 sends a Blue message to cell 3 at 1584789312050080826
+Cell 2 sends a Blue message to cell 5 at 1584789312054625105
+Cell 8 sends a Blue message to cell 9 at 1584789312062727206
+Cell 8 sends a Blue message to cell 9 at 1584789312063132481
+Cell 8 sends a Blue message to cell 9 at 1584789312063471656
+Cell 8 sends a Blue message to cell 9 at 1584789312063776568
+Cell 8 sends a Blue message to cell 9 at 1584789312064081229
+Cell 8 sends a Blue message to cell 9 at 1584789312064379638
+Cell 10 sends a Blue message to cell 11 at 1584789312156003418
+Cell 1 sends a Blue message to cell 5 at 1584789312206807408
+Cell 1 sends a Blue message to cell 0 at 1584789312207251455
+Cell 1 sends a Blue message to cell 2 at 1584789312207591508
+Cell 1 sends a Blue message to cell 0 at 1584789312207899944
+Cell 1 sends a Blue message to cell 2 at 1584789312208210130
+Cell 1 sends a Blue message to cell 0 at 1584789312208515656
+Cell 5 receives a Blue msg at 1584789313027223572
+Cell 5 receives a Blue msg at 1584789313027598368
+Cell 5 receives Terminate from 12 at 1584789313027856606
+Cell 5 receives a Blue msg at 1584789313028088508
+Cell 3 receives a Blue msg at 1584789313030385050
+Cell 3 receives a Blue msg at 1584789313030788030
+Cell 3 receives a Blue msg at 1584789313031072153
+Cell 3 receives a Blue msg at 1584789313031328687
+Cell 8 receives a Blue msg at 1584789313031469322
+Cell 3 receives a Blue msg at 1584789313031583662
+Cell 3 receives a Blue msg at 1584789313031799686
+Cell 3 receives Terminate from 4 at 1584789313032017496
+Cell 3 receives a Blue msg at 1584789313032231914
+Cell 3 sends terminate to cell 6
+Cell 9 receives a Blue msg at 1584789313033280501
+Cell 4 receives a Blue msg at 1584789313033333963
+Cell 4 receives a Blue msg at 1584789313033619195
+Cell 4 receives a Blue msg at 1584789313033843584
+Cell 3 sends a Blue message to cell 4 at 1584789313033852962
+Cell 4 receives a Blue msg at 1584789313034057930
+Cell 3 sends a Blue message to cell 4 at 1584789313034326016
+Cell 4 receives a Blue msg at 1584789313034382802
+Cell 3 sends a Blue message to cell 6 at 1584789313034657461
+Cell 0 receives a Blue msg at 1584789313036012610
+Cell 0 receives a Blue msg at 1584789313036229690
+Cell 0 receives a Blue msg at 1584789313036440967
+Cell 12 receives a Blue msg at 1584789313037624365
+Cell 2 receives a Blue msg at 1584789313049190359
+Cell 2 receives a Blue msg at 1584789313049572183
+Cell 2 receives a Blue msg at 1584789313049816266
+Cell 5 sends terminate to cell 1
+Cell 1 receives Terminate from 5 at 1584789313068062447
+Cell 5 sends a Blue message to cell 2 at 1584789313068450952
+Cell 8 sends a Blue message to cell 9 at 1584789313078839215
+Cell 4 sends a Blue message to cell 12 at 1584789313110749070
+Cell 7 sends a Blue message to cell 12 at 1584789313142808827
+Cell 10 sends a Blue message to cell 11 at 1584789313156827919
+Cell 10 sends a Blue message to cell 11 at 1584789313157438779
+Cell 10 sends a Blue message to cell 11 at 1584789313157972645
+Cell 8 receives a Blue msg at 1584789314031879427
+Cell 8 receives a Blue msg at 1584789314032585685
+Cell 3 receives a Blue msg at 1584789314032709804
+Cell 6 receives a Blue msg at 1584789314032905824
+Cell 3 receives a Blue msg at 1584789314033051780
+Cell 6 receives Terminate from 3 at 1584789314033136577
+Cell 6 receives a Blue msg at 1584789314033351914
+Cell 9 receives a Blue msg at 1584789314033682462
+Cell 0 receives a Blue msg at 1584789314036872989
+Cell 0 receives a Blue msg at 1584789314037243637
+Cell 12 receives a Blue msg at 1584789314038082380
+Cell 11 receives a Blue msg at 1584789314039677376
+Cell 9 sends a Blue message to cell 4 at 1584789314040376954
+Cell 4 receives a Blue msg at 1584789314040520100
+Cell 9 sends a Blue message to cell 8 at 1584789314040765990
+Cell 9 sends a Blue message to cell 4 at 1584789314041088117
+Cell 9 sends a Blue message to cell 8 at 1584789314041393240
+Cell 2 receives a Blue msg at 1584789314050264937
+Cell 6 sends terminate to cell 2
+Cell 2 receives a Blue msg at 1584789314050676889
+Cell 6 sends a Blue message to cell 3 at 1584789314051289793
+Cell 5 sends a Blue message to cell 13 at 1584789314069161878
+Cell 4 sends a Blue message to cell 9 at 1584789314134713544
+Cell 10 sends a Blue message to cell 11 at 1584789314158693656
+Cell 10 sends a Blue message to cell 11 at 1584789314159199410
+Cell 10 sends a Blue message to cell 11 at 1584789314159670086
 Cell 1 sends terminate to cell 0
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:42
-Cell 1 sends a Blue message to cell 3 at 05:01:42
-Cell 3 into stack clean up at
-Cell 3 receives a Blue msg at 05:01:42
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 3 at 05:01:42
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:42
-Cell 2 into stack clean up at
-Cell 0 receives a Blue msg at 05:01:43
-Cell 1 receives a Blue msg at 05:01:43
-Cell 1 receives a Blue msg at 05:01:43
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:43
-Cell 2 receives a Blue msg at 05:01:43
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:43
-Cell 2 receives a Blue msg at 05:01:43
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:43
-Cell 3 sends a Blue message to cell 1 at 05:01:43
-Cell 2 sends a Blue message to cell 1 at 05:01:43
-Cell 0 receives a Blue msg at 05:01:44
-Cell 0 receives a Warning from 2 at 05:01:44
-Cell 0 receives Terminate from 1 at 05:01:44
-Cell 0 receives a Blue msg at 05:01:44
-Cell 0 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:44
-Cell 0 receives a Blue msg at 05:01:44
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 2 at 05:01:44
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:44
-Cell 0 receives a Blue msg at 05:01:44
-Cell 1 into stack clean up at
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:44
-Cell 1 into stack clean up at
-Cell 1 sends a Blue message to cell 0 at 05:01:44
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 into stack clean up at
-Cell 3 sends a Blue message to cell 1 at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 0 sends a Blue message to cell 1 at 05:01:44
-Cell 1 receives a Blue msg at 05:01:44
-Cell 0 into stack clean up at
-Im here
+Cell 1 sends a Blue message to cell 0 at 1584789314209475823
+Cell 13 sends a Blue message to cell 5 at 1584789314262770908
+Cell 13 sends a Blue message to cell 5 at 1584789314263216014
+Cell 13 sends a Blue message to cell 5 at 1584789314263569154
+Cell 13 sends a Blue message to cell 5 at 1584789314263874971
+Cell 5 receives a Blue msg at 1584789315028453071
+Cell 8 receives a Blue msg at 1584789315033120981
+Cell 8 receives a Blue msg at 1584789315033488063
+Cell 9 receives a Blue msg at 1584789315034264869
+Cell 9 receives a Blue msg at 1584789315034628374
+Cell 9 receives a Blue msg at 1584789315034875531
+Cell 0 receives a Blue msg at 1584789315037700460
+Cell 0 receives a Blue msg at 1584789315038067596
+Cell 0 receives Terminate from 1 at 1584789315038556031
+Cell 12 receives a Blue msg at 1584789315038663809
+Cell 0 receives a Blue msg at 1584789315038834521
+Cell 4 receives a Blue msg at 1584789315041415363
+Cell 9 sends a Blue message to cell 8 at 1584789315041961546
+Cell 9 sends a Blue message to cell 8 at 1584789315042468469
+Cell 9 sends a Blue message to cell 8 at 1584789315042804293
+Cell 11 sends a Blue message to cell 6 at 1584789315044944758
+Cell 3 receives a Blue msg at 1584789315051461629
+Cell 6 sends a Blue message to cell 3 at 1584789315051891260
+Cell 3 receives a Blue msg at 1584789315052038525
+Cell 6 sends a Blue message to cell 2 at 1584789315052315554
+Cell 6 sends a Blue message to cell 11 at 1584789315052648707
+Cell 3 sends a Blue message to cell 12 at 1584789315062712184
+Cell 3 sends a Blue message to cell 4 at 1584789315063200528
+Cell 3 sends a Blue message to cell 6 at 1584789315063557658
+Cell 3 sends a Blue message to cell 12 at 1584789315063869770
+Cell 3 sends a Blue message to cell 6 at 1584789315064174023
+Cell 13 receives a Blue msg at 1584789315069452619
+Cell 5 sends a Blue message to cell 14 at 1584789315069840935
+Cell 14 receives a Blue msg at 1584789315069926125
+Cell 4 sends a Blue message to cell 3 at 1584789315135526666
+Cell 4 sends a Blue message to cell 9 at 1584789315136009374
+Cell 10 sends a Blue message to cell 11 at 1584789315160205521
+Cell 10 sends a Blue message to cell 11 at 1584789315160610004
+Cell 1 sends a Blue message to cell 2 at 1584789315210092041
+Cell 13 sends a Blue message to cell 5 at 1584789315286270817
+Cell 5 receives a Blue msg at 1584789316028878670
+Cell 5 receives a Blue msg at 1584789316029192725
+Cell 9 receives a Blue msg at 1584789316035234042
+Cell 11 receives a Blue msg at 1584789316040239709
+Cell 11 receives a Blue msg at 1584789316040605560
+Cell 11 receives a Blue msg at 1584789316040846694
+Cell 11 receives a Blue msg at 1584789316041082892
+Cell 11 receives a Blue msg at 1584789316041302011
+Cell 9 sends a Blue message to cell 4 at 1584789316043344774
+Cell 9 sends a Blue message to cell 8 at 1584789316043729353
+Cell 11 sends a Blue message to cell 6 at 1584789316045641979
+Cell 11 sends a Blue message to cell 6 at 1584789316046042159
+Cell 11 sends a Blue message to cell 6 at 1584789316046509240
+Cell 11 sends a Blue message to cell 6 at 1584789316046827272
+Cell 11 sends a Blue message to cell 10 at 1584789316047165947
+Cell 10 receives a Blue msg at 1584789316047294905
+Cell 11 sends a Blue message to cell 10 at 1584789316047572346
+Cell 2 sends a Blue message to cell 6 at 1584789316055279794
+Cell 2 sends a Blue message to cell 5 at 1584789316055687765
+Cell 5 sends a Blue message to cell 1 at 1584789316070666290
+Cell 1 receives a Blue msg at 1584789316070816533
+Cell 8 sends a Blue message to cell 9 at 1584789316079515788
+Cell 3 receives a Blue msg at 1584789316135779868
+Cell 4 sends a Blue message to cell 3 at 1584789316136729538
+Cell 3 receives a Blue msg at 1584789316136883881
+Cell 10 sends a Blue message to cell 11 at 1584789316182629138
+Cell 10 sends a Blue message to cell 11 at 1584789316183050179
+Cell 10 sends a Blue message to cell 11 at 1584789316183383946
+Cell 10 sends a Blue message to cell 11 at 1584789316183691787
+Cell 10 sends a Blue message to cell 11 at 1584789316183997317
+Cell 1 sends a Blue message to cell 0 at 1584789316210820287
+Cell 13 sends a Blue message to cell 5 at 1584789316310820803
+Cell 9 receives a Blue msg at 1584789317035818445
+Cell 12 receives a Blue msg at 1584789317039204237
+Cell 12 receives a Blue msg at 1584789317039569452
+Cell 9 sends a Blue message to cell 4 at 1584789317044398251
+Cell 9 sends a Blue message to cell 4 at 1584789317044808525
+Cell 6 receives a Blue msg at 1584789317045043747
+Cell 10 receives a Blue msg at 1584789317047763163
+Cell 11 sends a Blue message to cell 0 at 1584789317048067140
+Cell 11 sends a Blue message to cell 0 at 1584789317048426435
+Cell 6 sends a Blue message to cell 3 at 1584789317053370671
+Cell 3 receives a Blue msg at 1584789317053466825
+Cell 2 sends a Blue message to cell 0 at 1584789317056326285
+Cell 4 receives a Blue msg at 1584789317063411074
+Cell 4 receives a Blue msg at 1584789317063792207
+Cell 4 receives a Blue msg at 1584789317064031737
+Cell 5 sends a Blue message to cell 1 at 1584789317071354475
+Cell 1 receives a Blue msg at 1584789317071513927
+Cell 8 sends a Blue message to cell 9 at 1584789317080204479
+Cell 4 sends a Blue message to cell 12 at 1584789317142844737
+Cell 4 sends a Blue message to cell 9 at 1584789317143373865
+Cell 4 sends a Blue message to cell 3 at 1584789317143788404
+Cell 7 sends a Blue message to cell 12 at 1584789317174864579
+Cell 0 receives a Blue msg at 1584789317211111839
+Cell 1 sends a Blue message to cell 2 at 1584789317211540890
+Cell 1 sends a Blue message to cell 0 at 1584789317212214957
+Cell 0 receives a Blue msg at 1584789317212405591
+Cell 0 receives a Blue msg at 1584789317212885376
+Cell 5 receives a Blue msg at 1584789318029517580
+Cell 8 receives a Blue msg at 1584789318033901450
+Cell 9 receives a Blue msg at 1584789318036365066
+Cell 9 receives a Blue msg at 1584789318036743429
+Cell 12 receives a Blue msg at 1584789318040070060
+Cell 6 receives a Blue msg at 1584789318045508605
+Cell 6 receives a Blue msg at 1584789318045880270
+Cell 6 receives a Blue msg at 1584789318046157461
+Cell 6 receives a Blue msg at 1584789318046420094
+Cell 11 sends a Blue message to cell 10 at 1584789318049073435
+Cell 11 sends a Blue message to cell 10 at 1584789318049481364
+Cell 2 receives a Blue msg at 1584789318051075110
+Cell 6 sends a Blue message to cell 2 at 1584789318054066126
+Cell 4 receives a Blue msg at 1584789318064519729
+Cell 3 sends a Blue message to cell 6 at 1584789318064790211
+Cell 3 sends a Blue message to cell 12 at 1584789318065211630
+Cell 2 sends a Blue message to cell 5 at 1584789318070715753
+Cell 2 sends a Blue message to cell 6 at 1584789318071158399
+Cell 8 sends a Blue message to cell 9 at 1584789318080894273
+Cell 4 sends a Blue message to cell 3 at 1584789318144626054
+Cell 4 sends a Blue message to cell 3 at 1584789318145288662
+Cell 1 sends a Blue message to cell 2 at 1584789318212903241
+Cell 0 receives a Blue msg at 1584789318213343327
+Cell 5 receives a Blue msg at 1584789319030038861
+Cell 5 receives a Blue msg at 1584789319030618616
+Cell 9 receives a Blue msg at 1584789319037201073
+Cell 11 receives a Blue msg at 1584789319041933749
+Cell 11 receives a Blue msg at 1584789319042563406
+Cell 9 sends a Blue message to cell 4 at 1584789319045654022
+Cell 9 sends a Blue message to cell 8 at 1584789319046341718
+Cell 6 receives a Blue msg at 1584789319046743672
+Cell 6 receives a Blue msg at 1584789319047062899
+Cell 6 receives a Blue msg at 1584789319047329794
+Cell 6 receives a Blue msg at 1584789319047590950
+Cell 6 receives a Blue msg at 1584789319047932218
+Cell 11 sends a Blue message to cell 10 at 1584789319050395567
+Cell 6 sends a Blue message to cell 11 at 1584789319066302300
+Cell 6 sends a Blue message to cell 3 at 1584789319066460355
+Cell 2 sends a Blue message to cell 1 at 1584789319071405143
+Cell 2 sends a Blue message to cell 5 at 1584789319071568032
+Cell 5 sends a Blue message to cell 13 at 1584789319071606117
+Cell 13 receives a Blue msg at 1584789319071635039
+Cell 2 sends a Blue message to cell 5 at 1584789319071712310
+Cell 2 sends a Blue message to cell 0 at 1584789319071834623
+Cell 8 sends a Blue message to cell 9 at 1584789319081445006
+Cell 3 receives a Blue msg at 1584789319144196101
+Cell 3 receives a Blue msg at 1584789319144640574
+Cell 3 receives a Blue msg at 1584789319144931565
+Cell 3 receives a Blue msg at 1584789319145195995
+Cell 1 sends a Blue message to cell 2 at 1584789319213677552
+Cell 10 sends a Blue message to cell 11 at 1584789319222896880
+Cell 5 receives a Blue msg at 1584789320031101239
+Cell 5 receives a Blue msg at 1584789320031495971
+Cell 5 receives a Blue msg at 1584789320031737489
+Cell 5 receives a Blue msg at 1584789320031955746
+Cell 5 receives a Blue msg at 1584789320032167598
+Cell 8 receives a Blue msg at 1584789320034450994
+Cell 8 receives a Blue msg at 1584789320034817127
+Cell 8 receives a Blue msg at 1584789320035071723
+Cell 8 receives a Blue msg at 1584789320035298442
+Cell 9 receives a Blue msg at 1584789320037787441
+Cell 12 receives a Blue msg at 1584789320040655631
+Cell 4 receives a Blue msg at 1584789320045873848
+Cell 9 sends a Blue message to cell 8 at 1584789320046862834
+Cell 10 receives a Blue msg at 1584789320049282065
+Cell 2 receives a Blue msg at 1584789320051494117
+Cell 6 sends a Blue message to cell 3 at 1584789320067144755
+Cell 3 receives a Blue msg at 1584789320067258746
+Cell 6 sends a Blue message to cell 2 at 1584789320067704509
+Cell 1 receives a Blue msg at 1584789320071662805
+Cell 2 sends a Blue message to cell 5 at 1584789320086812607
+Cell 2 sends a Blue message to cell 0 at 1584789320087335796
+Cell 1 sends a Blue message to cell 5 at 1584789320214471762
+Cell 7 sends a Blue message to cell 12 at 1584789320214665110
+Cell 1 sends a Blue message to cell 2 at 1584789320214912112
+Cell 5 receives a Blue msg at 1584789321032530443
+Cell 8 receives a Blue msg at 1584789321035705439
+Cell 9 receives a Blue msg at 1584789321038398014
+Cell 9 receives a Blue msg at 1584789321038791366
+Cell 12 receives a Blue msg at 1584789321041244190
+Cell 12 receives a Blue msg at 1584789321041613862
+Cell 12 receives a Blue msg at 1584789321041864139
+Cell 11 receives a Blue msg at 1584789321043009338
+Cell 11 receives a Blue msg at 1584789321043337239
+Cell 11 receives a Blue msg at 1584789321043571488
+Cell 11 receives a Blue msg at 1584789321043802136
+Cell 10 receives a Blue msg at 1584789321049822135
+Cell 10 receives a Blue msg at 1584789321050272370
+Cell 2 receives a Blue msg at 1584789321052074053
+Cell 2 receives Terminate from 6 at 1584789321052450334
+Cell 2 receives a Blue msg at 1584789321052703000
+Cell 5 sends a Blue message to cell 12 at 1584789321072220854
+Cell 5 sends a Blue message to cell 1 at 1584789321072642014
+Cell 1 receives a Blue msg at 1584789321072840965
+Cell 2 sends terminate to cell 0
+Cell 2 sends a Blue message to cell 5 at 1584789321088451622
+Cell 2 sends a Blue message to cell 6 at 1584789321088879835
+Cell 6 receives a Blue msg at 1584789321089167615
+Cell 2 sends a Blue message to cell 6 at 1584789321089574237
+Cell 2 sends a Blue message to cell 0 at 1584789321090033027
+Cell 2 sends a Blue message to cell 1 at 1584789321090478804
+Cell 1 receives a Blue msg at 1584789321090599772
+Cell 4 sends a Blue message to cell 12 at 1584789321174752734
+Cell 4 sends a Blue message to cell 3 at 1584789321175218164
+Cell 3 receives a Blue msg at 1584789321175402851
+Cell 0 receives a Blue msg at 1584789321213861983
+Cell 0 receives a Blue msg at 1584789321214432284
+Cell 7 sends a Blue message to cell 12 at 1584789321238821248
+Cell 5 receives a Blue msg at 1584789322033023673
+Cell 8 receives a Blue msg at 1584789322036273841
+Cell 9 receives a Blue msg at 1584789322039265950
+Cell 12 receives a Blue msg at 1584789322042359416
+Cell 12 receives a Blue msg at 1584789322042737564
+Cell 12 receives a Blue msg at 1584789322042992586
+Cell 12 receives a Blue msg at 1584789322043218535
+Cell 12 receives a Blue msg at 1584789322043437833
+Cell 12 receives a Blue msg at 1584789322043651218
+Cell 12 receives a Blue msg at 1584789322043863542
+Cell 12 receives a Blue msg at 1584789322044075794
+Cell 11 receives a Blue msg at 1584789322044149591
+Cell 9 sends a Blue message to cell 8 at 1584789322047348009
+Cell 9 sends a Blue message to cell 4 at 1584789322047701825
+Cell 4 receives a Blue msg at 1584789322047892944
+Cell 11 sends a Blue message to cell 0 at 1584789322050974377
+Cell 11 sends a Blue message to cell 0 at 1584789322051333285
+Cell 11 sends a Blue message to cell 6 at 1584789322051647283
+Cell 11 sends a Blue message to cell 10 at 1584789322051997528
+Cell 11 sends a Blue message to cell 6 at 1584789322052313719
+Cell 2 receives a Blue msg at 1584789322053143561
+Cell 2 receives a Blue msg at 1584789322053513351
+Cell 3 sends a Blue message to cell 4 at 1584789322065877204
+Cell 3 sends a Blue message to cell 12 at 1584789322066348376
+Cell 6 sends a Blue message to cell 2 at 1584789322068369879
+Cell 6 sends a Blue message to cell 11 at 1584789322068781671
+Cell 6 sends a Blue message to cell 3 at 1584789322069159620
+Cell 3 receives a Blue msg at 1584789322069290118
+Cell 5 sends a Blue message to cell 1 at 1584789322073307689
+Cell 1 receives a Blue msg at 1584789322073445750
+Cell 5 sends a Blue message to cell 1 at 1584789322073735132
+Cell 1 receives a Blue msg at 1584789322073794194
+Cell 6 receives a Blue msg at 1584789322089856942
+Cell 6 receives a Blue msg at 1584789322090475396
+Cell 6 receives a Blue msg at 1584789322090802297
+Cell 7 sends a Blue message to cell 12 at 1584789322262683111
+Cell 10 sends a Blue message to cell 11 at 1584789322266484162
+Cell 10 sends a Blue message to cell 11 at 1584789322266880587
+Cell 10 sends a Blue message to cell 11 at 1584789322267192766
+Cell 14 sends a Blue message to cell 5 at 1584789322582745539
+Cell 12 sends a Blue message to cell 5 at 1584789322582823622
+Cell 12 sends a Blue message to cell 3 at 1584789322583325339
+Cell 14 sends a Blue message to cell 5 at 1584789322583423530
+Cell 5 receives a Blue msg at 1584789323033607813
+Cell 5 receives a Blue msg at 1584789323033982089
+Cell 5 receives a Blue msg at 1584789323034331722
+Cell 5 receives a Blue msg at 1584789323034584330
+Cell 5 receives a Blue msg at 1584789323034797837
+Cell 8 receives a Blue msg at 1584789323036857475
+Cell 8 receives a Blue msg at 1584789323037261331
+Cell 9 receives a Blue msg at 1584789323039849064
+Cell 11 receives a Blue msg at 1584789323044660432
+Cell 10 receives a Blue msg at 1584789323052264007
+Cell 11 sends a Blue message to cell 0 at 1584789323052805284
+Cell 11 sends a Blue message to cell 10 at 1584789323053238790
+Cell 10 receives a Blue msg at 1584789323053341108
+Cell 11 sends a Blue message to cell 6 at 1584789323053654366
+Cell 2 receives a Blue msg at 1584789323053870749
+Cell 6 receives a Blue msg at 1584789323053920328
+Cell 4 receives a Blue msg at 1584789323066107924
+Cell 3 sends a Blue message to cell 6 at 1584789323066945260
+Cell 6 receives a Blue msg at 1584789323067122254
+Cell 3 sends a Blue message to cell 4 at 1584789323067448636
+Cell 4 receives a Blue msg at 1584789323067554193
+Cell 3 sends a Blue message to cell 12 at 1584789323068353762
+Cell 3 sends a Blue message to cell 12 at 1584789323068739214
+Cell 6 sends a Blue message to cell 11 at 1584789323069710028
+Cell 6 sends a Blue message to cell 11 at 1584789323070068573
+Cell 6 sends a Blue message to cell 2 at 1584789323070437578
+Cell 5 sends a Blue message to cell 14 at 1584789323074522792
+Cell 14 receives a Blue msg at 1584789323074617020
+Cell 5 sends a Blue message to cell 12 at 1584789323074965069
+Cell 5 sends a Blue message to cell 2 at 1584789323075302413
+Cell 2 sends a Blue message to cell 0 at 1584789323091140233
+Cell 4 sends a Blue message to cell 3 at 1584789323175986175
+Cell 4 sends a Blue message to cell 9 at 1584789323176952316
+Cell 4 sends a Blue message to cell 9 at 1584789323177394411
+Cell 4 sends a Blue message to cell 12 at 1584789323177739075
+Cell 3 receives a Blue msg at 1584789323583569045
+Cell 12 sends a Blue message to cell 3 at 1584789323583933155
+Cell 14 sends a Blue message to cell 0 at 1584789323584026498
+Cell 14 sends a Blue message to cell 5 at 1584789323584424356
+Cell 14 sends a Blue message to cell 0 at 1584789323584750287
+Cell 14 sends a Blue message to cell 5 at 1584789323585055326
+Cell 14 sends a Blue message to cell 5 at 1584789323585358276
+Cell 14 sends a Blue message to cell 5 at 1584789323585660126
+Cell 14 sends a Blue message to cell 0 at 1584789323585959061
+Cell 14 sends a Blue message to cell 5 at 1584789323586417074
+Cell 14 sends a Blue message to cell 0 at 1584789323586725260
+Cell 14 sends a Blue message to cell 0 at 1584789323587035667
+Cell 14 sends a Blue message to cell 5 at 1584789323587336948
+Cell 14 sends a Blue message to cell 0 at 1584789323587635072
+Cell 8 receives a Blue msg at 1584789324037733254
+Cell 12 receives a Blue msg at 1584789324044509990
+Cell 12 receives a Blue msg at 1584789324044879983
+Cell 12 receives a Blue msg at 1584789324045150029
+Cell 11 receives a Blue msg at 1584789324045225387
+Cell 12 receives a Blue msg at 1584789324045408388
+Cell 12 receives a Blue msg at 1584789324045632360
+Cell 12 receives a Blue msg at 1584789324045852085
+Cell 9 sends a Blue message to cell 8 at 1584789324048146136
+Cell 2 receives a Blue msg at 1584789324054311223
+Cell 3 sends a Blue message to cell 4 at 1584789324069399467
+Cell 3 sends a Blue message to cell 12 at 1584789324069795889
+Cell 6 sends a Blue message to cell 2 at 1584789324071006535
+Cell 6 sends a Blue message to cell 2 at 1584789324071400236
+Cell 5 sends a Blue message to cell 2 at 1584789324075942588
+Cell 8 sends a Blue message to cell 9 at 1584789324082119870
+Cell 8 sends a Blue message to cell 9 at 1584789324082679047
+Cell 8 sends a Blue message to cell 9 at 1584789324083021734
+Cell 8 sends a Blue message to cell 9 at 1584789324083329320
+Cell 8 sends a Blue message to cell 9 at 1584789324083632987
+Cell 0 receives a Blue msg at 1584789324214767277
+Cell 10 sends a Blue message to cell 11 at 1584789324267461914
+Cell 12 sends a Blue message to cell 3 at 1584789324584567452
+Cell 12 sends a Blue message to cell 3 at 1584789324584946134
+Cell 5 receives a Blue msg at 1584789325035254091
+Cell 5 receives a Blue msg at 1584789325035656859
+Cell 5 receives a Blue msg at 1584789325035901562
+Cell 5 receives a Blue msg at 1584789325036129017
+Cell 5 receives a Blue msg at 1584789325036360634
+Cell 5 receives a Blue msg at 1584789325036572706
+Cell 5 receives a Blue msg at 1584789325036784939
+Cell 5 receives a Blue msg at 1584789325036994663
+Cell 8 receives a Blue msg at 1584789325038352036
+Cell 8 receives a Blue msg at 1584789325038667155
+Cell 8 receives a Blue msg at 1584789325038891169
+Cell 8 receives a Blue msg at 1584789325039105069
+Cell 8 receives a Blue msg at 1584789325039315387
+Cell 9 receives a Blue msg at 1584789325040265645
+Cell 9 receives a Blue msg at 1584789325040522012
+Cell 9 receives a Blue msg at 1584789325040736382
+Cell 9 receives a Blue msg at 1584789325040946667
+Cell 9 receives a Blue msg at 1584789325041160276
+Cell 9 receives a Blue msg at 1584789325041372324
+Cell 9 receives a Blue msg at 1584789325041806211
+Cell 11 receives a Blue msg at 1584789325045566010
+Cell 12 receives a Blue msg at 1584789325046315086
+Cell 9 sends a Blue message to cell 4 at 1584789325048840766
+Cell 9 sends a Blue message to cell 8 at 1584789325049259738
+Cell 9 sends a Blue message to cell 8 at 1584789325049593919
+Cell 9 sends a Blue message to cell 4 at 1584789325049903777
+Cell 9 sends a Blue message to cell 4 at 1584789325050263115
+Cell 9 sends a Blue message to cell 8 at 1584789325050594028
+Cell 9 sends a Blue message to cell 8 at 1584789325050902363
+Cell 9 sends a Blue message to cell 8 at 1584789325051200375
+Cell 9 sends a Blue message to cell 4 at 1584789325051505992
+Cell 9 sends a Blue message to cell 4 at 1584789325051806465
+Cell 9 sends a Blue message to cell 4 at 1584789325052110182
+Cell 2 receives a Blue msg at 1584789325054632355
+Cell 2 receives a Blue msg at 1584789325054908629
+Cell 2 receives a Blue msg at 1584789325055129351
+Cell 2 receives a Blue msg at 1584789325055341347
+Cell 4 receives a Blue msg at 1584789325069667515
+Cell 4 receives a Blue msg at 1584789325070034379
+Cell 4 receives a Blue msg at 1584789325070468585
+Cell 6 sends a Blue message to cell 3 at 1584789325072061274
+Cell 5 sends a Blue message to cell 2 at 1584789325076507194
+Cell 5 sends a Blue message to cell 1 at 1584789325076938752
+Cell 8 sends a Blue message to cell 9 at 1584789325084270613
+Cell 2 sends a Blue message to cell 5 at 1584789325091837170
+Cell 4 sends a Blue message to cell 12 at 1584789325178582960
+Cell 4 sends a Blue message to cell 9 at 1584789325178993636
+Cell 4 sends a Blue message to cell 3 at 1584789325179314354
+Cell 1 sends a Blue message to cell 5 at 1584789325238759915
+Cell 1 sends a Blue message to cell 2 at 1584789325239200911
+Cell 1 sends a Blue message to cell 5 at 1584789325239535335
+Cell 1 sends a Blue message to cell 2 at 1584789325239838605
+Cell 1 sends a Blue message to cell 5 at 1584789325240144163
+Cell 7 sends a Blue message to cell 12 at 1584789325263458708
+Cell 7 sends a Blue message to cell 12 at 1584789325263944543
+Cell 7 sends a Blue message to cell 12 at 1584789325264335790
+Cell 7 sends a Blue message to cell 12 at 1584789325264698928
+Cell 7 sends a Blue message to cell 12 at 1584789325265057679
+Cell 7 sends a Blue message to cell 12 at 1584789325265416611
+Cell 7 sends a Blue message to cell 12 at 1584789325265796518
+Cell 10 sends a Blue message to cell 11 at 1584789325270457027
+Cell 3 receives a Blue msg at 1584789325584182145
+Cell 12 sends a Blue message to cell 7 at 1584789325585704859
+Cell 12 sends a Blue message to cell 7 at 1584789325586394760
+Cell 5 receives a Blue msg at 1584789326037464695
+Cell 8 receives a Blue msg at 1584789326039783752
+Cell 8 receives a Blue msg at 1584789326040223987
+Cell 8 receives a Blue msg at 1584789326040512328
+Cell 9 receives a Blue msg at 1584789326042354493
+Cell 9 receives a Blue msg at 1584789326042824203
+Cell 9 receives a Blue msg at 1584789326043114122
+Cell 9 receives a Blue msg at 1584789326043394398
+Cell 9 receives a Blue msg at 1584789326043606920
+Cell 9 receives a Blue msg at 1584789326043818337
+Cell 9 receives a Blue msg at 1584789326044028030
+Cell 11 receives a Blue msg at 1584789326045833476
+Cell 11 receives a Blue msg at 1584789326046049319
+Cell 12 receives a Blue msg at 1584789326046791177
+Cell 11 sends a Blue message to cell 10 at 1584789326054218071
+Cell 10 receives a Blue msg at 1584789326054268269
+Cell 11 sends a Blue message to cell 0 at 1584789326054635846
+Cell 3 sends a Blue message to cell 6 at 1584789326070585266
+Cell 6 receives a Blue msg at 1584789326070747811
+Cell 4 receives a Blue msg at 1584789326070797475
+Cell 3 sends a Blue message to cell 12 at 1584789326071014029
+Cell 4 receives a Blue msg at 1584789326071137778
+Cell 3 sends a Blue message to cell 4 at 1584789326071361008
+Cell 6 sends a Blue message to cell 3 at 1584789326072632228
+Cell 6 sends a Blue message to cell 3 at 1584789326072993162
+Cell 5 sends a Blue message to cell 2 at 1584789326077578813
+Cell 5 sends a Blue message to cell 13 at 1584789326078001672
+Cell 13 receives a Blue msg at 1584789326078377345
+Cell 5 sends a Blue message to cell 1 at 1584789326078808621
+Cell 5 sends a Blue message to cell 2 at 1584789326079141641
+Cell 4 sends a Blue message to cell 9 at 1584789326179877530
+Cell 1 sends a Blue message to cell 5 at 1584789326240827169
+Cell 1 sends a Blue message to cell 0 at 1584789326241357644
+Cell 1 sends a Blue message to cell 2 at 1584789326241834006
+Cell 1 sends a Blue message to cell 5 at 1584789326242425041
+Cell 10 sends a Blue message to cell 11 at 1584789326294836374
+Cell 3 receives a Blue msg at 1584789326584798463
+Cell 7 receives a Blue msg at 1584789326585830580
+Cell 12 sends a Blue message to cell 4 at 1584789326587089476
+Cell 14 sends a Blue message to cell 5 at 1584789326614830336
+Cell 14 sends a Blue message to cell 0 at 1584789326615344706
+Cell 5 receives a Blue msg at 1584789327038038828
+Cell 5 receives a Blue msg at 1584789327038567315
+Cell 5 receives a Blue msg at 1584789327038828848
+Cell 5 receives a Blue msg at 1584789327039066762
+Cell 8 receives a Blue msg at 1584789327040953850
+Cell 8 receives a Blue msg at 1584789327041326074
+Cell 8 receives a Blue msg at 1584789327041570137
+Cell 12 receives a Blue msg at 1584789327047298497
+Cell 12 receives a Blue msg at 1584789327047671234
+Cell 9 sends a Blue message to cell 4 at 1584789327052740182
+Cell 9 sends a Blue message to cell 8 at 1584789327053187783
+Cell 8 receives a Blue msg at 1584789327053379357
+Cell 2 receives a Blue msg at 1584789327055700266
+Cell 4 receives a Blue msg at 1584789327071565643
+Cell 6 sends a Blue message to cell 3 at 1584789327073649580
+Cell 6 sends a Blue message to cell 2 at 1584789327074057947
+Cell 6 sends a Blue message to cell 2 at 1584789327074521774
+Cell 5 sends a Blue message to cell 1 at 1584789327079744745
+Cell 5 sends a Blue message to cell 14 at 1584789327080165895
+Cell 14 receives a Blue msg at 1584789327080353932
+Cell 8 sends a Blue message to cell 9 at 1584789327084950872
+Cell 8 sends a Blue message to cell 9 at 1584789327085352746
+Cell 8 sends a Blue message to cell 9 at 1584789327085857901
+Cell 8 sends a Blue message to cell 9 at 1584789327086348151
+Cell 8 sends a Blue message to cell 9 at 1584789327086678052
+Cell 3 sends a Blue message to cell 12 at 1584789327094717363
+Cell 3 sends a Blue message to cell 12 at 1584789327095141049
+Cell 3 sends a Blue message to cell 4 at 1584789327095484829
+Cell 1 sends a Blue message to cell 2 at 1584789327243395856
+Cell 1 sends a Blue message to cell 0 at 1584789327244667724
+Cell 1 sends a Blue message to cell 0 at 1584789327245341167
+Cell 3 receives a Blue msg at 1584789327585361677
+Cell 3 receives a Blue msg at 1584789327585803087
+Cell 14 sends a Blue message to cell 5 at 1584789327616129206
+Cell 14 sends a Blue message to cell 5 at 1584789327616691487
+Cell 14 sends a Blue message to cell 5 at 1584789327617037140
+Cell 11 receives a Blue msg at 1584789328046600202
+Cell 11 receives a Blue msg at 1584789328046998303
+Cell 12 receives a Blue msg at 1584789328048133193
+Cell 9 sends a Blue message to cell 8 at 1584789328053856671
+Cell 8 receives a Blue msg at 1584789328054026912
+Cell 9 sends a Blue message to cell 8 at 1584789328054580127
+Cell 8 receives a Blue msg at 1584789328054632038
+Cell 11 sends a Blue message to cell 6 at 1584789328055201584
+Cell 6 receives a Blue msg at 1584789328055276649
+Cell 5 sends a Blue message to cell 12 at 1584789328080903598
+Cell 8 sends a Blue message to cell 9 at 1584789328087312988
+Cell 8 sends a Blue message to cell 9 at 1584789328087730964
+Cell 2 sends a Blue message to cell 1 at 1584789328092495873
+Cell 3 sends a Blue message to cell 4 at 1584789328096125164
+Cell 3 sends a Blue message to cell 4 at 1584789328096533364
+Cell 3 sends a Blue message to cell 6 at 1584789328096890814
+Cell 6 receives a Blue msg at 1584789328097090582
+Cell 10 sends a Blue message to cell 11 at 1584789328295583247
+Cell 10 sends a Blue message to cell 11 at 1584789328296163824
+Cell 10 sends a Blue message to cell 11 at 1584789328296572127
+Cell 3 receives a Blue msg at 1584789328586366421
+Cell 7 receives a Blue msg at 1584789328586454025
+Cell 3 receives a Blue msg at 1584789328586965204
+Cell 3 receives a Blue msg at 1584789328587478642
+Cell 3 receives a Blue msg at 1584789328587775210
+Cell 12 sends a Blue message to cell 7 at 1584789328587835089
+Cell 7 receives a Blue msg at 1584789328587932265
+Cell 3 receives a Blue msg at 1584789328588033383
+Cell 12 sends a Blue message to cell 4 at 1584789328588365419
+Cell 12 sends a Blue message to cell 5 at 1584789328588764830
+Cell 12 sends a Blue message to cell 7 at 1584789328589171124
+Cell 12 sends a Blue message to cell 5 at 1584789328589563836
+Cell 14 sends a Blue message to cell 5 at 1584789328617676337
+Cell 9 receives a Blue msg at 1584789329044469909
+Cell 9 receives a Blue msg at 1584789329044852646
+Cell 9 receives a Blue msg at 1584789329045115471
+Cell 12 receives a Blue msg at 1584789329048707173
+Cell 12 receives a Blue msg at 1584789329049102050
+Cell 9 sends a Blue message to cell 4 at 1584789329055299813
+Cell 11 sends a Blue message to cell 10 at 1584789329055755241
+Cell 10 receives a Blue msg at 1584789329055961310
+Cell 2 receives a Blue msg at 1584789329056082984
+Cell 11 sends a Blue message to cell 10 at 1584789329056283987
+Cell 10 receives a Blue msg at 1584789329056335326
+Cell 2 receives a Blue msg at 1584789329056481695
+Cell 2 receives a Blue msg at 1584789329056757046
+Cell 2 receives a Blue msg at 1584789329056969380
+Cell 4 receives a Blue msg at 1584789329072121792
+Cell 4 receives a Blue msg at 1584789329072490868
+Cell 8 sends a Blue message to cell 9 at 1584789329088466676
+Cell 4 sends a Blue message to cell 12 at 1584789329206913072
+Cell 4 sends a Blue message to cell 3 at 1584789329207396037
+Cell 12 sends a Blue message to cell 4 at 1584789329590450442
+Cell 12 sends a Blue message to cell 3 at 1584789329590953068
+Cell 9 receives a Blue msg at 1584789330045405668
+Cell 9 receives a Blue msg at 1584789330045560706
+Cell 9 receives a Blue msg at 1584789330045668108
+Cell 9 receives a Blue msg at 1584789330045789487
+Cell 11 receives a Blue msg at 1584789330047218415
+Cell 11 receives a Blue msg at 1584789330047354314
+Cell 11 receives a Blue msg at 1584789330047450393
+Cell 11 receives a Blue msg at 1584789330047545357
+Cell 9 sends a Blue message to cell 8 at 1584789330055902170
+Cell 9 sends a Blue message to cell 4 at 1584789330056263288
+Cell 11 sends a Blue message to cell 10 at 1584789330056736358
+Cell 10 receives a Blue msg at 1584789330056908236
+Cell 11 sends a Blue message to cell 6 at 1584789330057086782
+Cell 2 receives a Blue msg at 1584789330057241530
+Cell 2 receives a Blue msg at 1584789330057532800
+Cell 2 receives a Blue msg at 1584789330057755036
+Cell 2 receives a Blue msg at 1584789330057964626
+Cell 2 receives a Blue msg at 1584789330058216707
+Cell 2 receives a Blue msg at 1584789330058453000
+Cell 1 receives a Blue msg at 1584789330077251475
+Cell 3 sends a Blue message to cell 6 at 1584789330097495266
+Cell 3 sends a Blue message to cell 4 at 1584789330097945069
+Cell 3 sends a Blue message to cell 12 at 1584789330098524655
+Cell 3 sends a Blue message to cell 4 at 1584789330098980354
+Cell 3 receives a Blue msg at 1584789330207604841
+Cell 3 receives a Blue msg at 1584789330207925832
+Cell 0 receives Terminate from 2 at 1584789330215243606
+Cell 0 receives a Blue msg at 1584789330215651887
+Cell 1 sends a Blue message to cell 0 at 1584789330262715510
+Cell 7 receives a Blue msg at 1584789330589414530
+Cell 5 receives a Blue msg at 1584789331039510867
+Cell 9 receives a Blue msg at 1584789331046337361
+Cell 9 receives a Blue msg at 1584789331046721961
+Cell 9 receives a Blue msg at 1584789331046979589
+Cell 11 receives a Blue msg at 1584789331047777430
+Cell 11 receives a Blue msg at 1584789331048033825
+Cell 11 receives a Blue msg at 1584789331048260826
+Cell 12 receives a Blue msg at 1584789331049579995
+Cell 12 receives a Blue msg at 1584789331049952993
+Cell 8 receives a Blue msg at 1584789331056192636
+Cell 9 sends a Blue message to cell 8 at 1584789331056834293
+Cell 11 sends a Blue message to cell 0 at 1584789331062751435
+Cell 11 sends a Blue message to cell 6 at 1584789331063212885
+Cell 8 sends a Blue message to cell 9 at 1584789331089180247
+Cell 8 sends a Blue message to cell 9 at 1584789331089628362
+Cell 8 sends a Blue message to cell 9 at 1584789331089967666
+Cell 8 sends a Blue message to cell 9 at 1584789331090404391
+Cell 3 sends a Blue message to cell 12 at 1584789331126856701
+Cell 3 sends a Blue message to cell 12 at 1584789331127392257
+Cell 0 receives a Blue msg at 1584789331216077984
+Cell 0 receives a Blue msg at 1584789331216524350
+Cell 0 receives a Blue msg at 1584789331216850252
+Cell 1 sends a Blue message to cell 0 at 1584789331263405517
+Cell 10 sends a Blue message to cell 11 at 1584789331318728774
+Cell 10 sends a Blue message to cell 11 at 1584789331319154938
+Cell 10 sends a Blue message to cell 11 at 1584789331319492099
+Cell 10 sends a Blue message to cell 11 at 1584789331319795435
+Cell 10 sends a Blue message to cell 11 at 1584789331320099819
+Cell 0 sends a Blue message to cell 11 at 1584789331542502302
 Termination Initiated by cell 0

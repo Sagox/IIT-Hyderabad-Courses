@@ -16,7 +16,7 @@
 #include <time.h>
 #include <unistd.h>
 #include <vector>
-//#define DEBUG_MODE 1
+#define DEBUG_MODE 1
 #define BUFSIZE 1024
 using namespace std;
 
@@ -95,7 +95,6 @@ FILE *pFile;
 
 // int minKey(int key[], bool mstSet[]);
 
-
 // function to read input from the file
 void readInputFromFile() {
   int temp;
@@ -122,23 +121,22 @@ void readInputFromFile() {
       graph[i][temp - 1] = 1;
     }
   }
-  #ifndef DEBUG_MODE
-    cout << "Graph Read, reading MST now" << endl;
-  #endif
+#ifndef DEBUG_MODE
+  cout << "Graph Read, reading MST now" << endl;
+#endif
 
-  while(getline(inputFile, line)) {
-    cout << "hh" << endl;
+  while (getline(inputFile, line)) {
     istringstream iss1(line);
     int pn = -1;
-    while(iss1 >> temp) {
-      cout << pn << ", " << temp << endl;
-      if(pn == -1)
-        pn = temp-1;
+    while (iss1 >> temp) {
+      // cout << pn << ", " << temp << endl;
+      if (pn == -1)
+        pn = temp - 1;
       else
-        parent[temp-1] = pn;
-      if(rootID == -2) {
-        rootID=pn;
-        cout << "rootID " << rootID << endl;
+        parent[temp - 1] = pn;
+      if (rootID == -2) {
+        rootID = pn;
+        // cout << "rootID " << rootID << endl;
       }
     }
   }
@@ -185,7 +183,7 @@ int main() {
   verifyInputRead();
   cout << "Launching threads" << endl;
 #endif
-  
+
   MAXPENDING = N;
   // primMST(graph, parent);
 
@@ -263,7 +261,11 @@ int main() {
   char nowt[9];
   strncpy(nowt, nows + 11, 8);
   for (auto i = 0; i < Ir; i++) {
-    fprintf(pFile, "Cell %d Turns Red at %s\n", infectList[i], nowt);
+    fprintf(
+        pFile, "Cell %d Turns Red at %llu\n", infectList[i],
+        (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                 chrono::system_clock::now().time_since_epoch())
+                                 .count()));
     pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Red;
     pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
@@ -280,7 +282,11 @@ int main() {
   random_shuffle(infectList.begin(), infectList.end());
   auto t1 = chrono::high_resolution_clock::now();
   for (auto i = 0; i < Ib; i++) {
-    fprintf(pFile, "Cell %d Turns Blue at %s\n", infectList[i], nowt);
+    fprintf(
+        pFile, "Cell %d Turns Blue at %llu\n", infectList[i],
+        (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                 chrono::system_clock::now().time_since_epoch())
+                                 .count()));
     pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Blue;
     pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
@@ -289,7 +295,6 @@ int main() {
 #ifndef DEBUG_MODE
   cout << "Blue Cells Introduced" << endl;
 #endif
-
   // use pthreads to wait for the termination signal which
   // would be send by the root of the spanning tree
   pthread_mutex_lock(&terminationLock);
@@ -407,7 +412,7 @@ void *cellProcess(void *params) {
       cout << "Message being sent = " << msg << endl;
 #endif
       servPort = 50000 + neighbours[i];
-      
+
       servAddr.sin_port = htons(servPort);
       // connect to the server
       while (true) {
@@ -423,8 +428,12 @@ void *cellProcess(void *params) {
       nows = asctime(localtime(&nowC));
       strncpy(nowt, nows + 11, 8);
       ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
-      fprintf(pFile, "Cell %d sends a %s message to cell %d at %s\n", selfID,
-              currentColour == Red ? "Red" : "Blue", neighbours[i], nowt);
+      fprintf(pFile, "Cell %d sends a %s message to Cell %d at %llu\n", selfID,
+              currentColour == Red ? "Red" : "Blue", neighbours[i],
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
       if (sentLen < 0) {
         perror("send() failed");
         exit(-1);
@@ -476,13 +485,14 @@ void *cellProcess(void *params) {
         fprintf(pFile, "Cell %d sends a %s token to cell %d\n", selfID,
                 ci->nodeColour == White ? "White" : "Black", ci->parent);
       if (selfID == rootID && ci->nodeColour == White) {
-        fprintf(pFile, "Termination Initiated by cell 0");
+        fprintf(pFile, "Termination Detected by Cell 0");
         fclose(pFile);
 
         pthread_mutex_lock(&terminationLock);
         // signal the main thread that the processes have terminated
         pthread_cond_signal(&terminationCondVariable);
         pthread_mutex_unlock(&terminationLock);
+        pthread_exit(NULL);
 
       } else if (selfID == rootID) {
         for (auto k = 0; k < leafList.size(); k++) {
@@ -519,10 +529,6 @@ void *cellProcess(void *params) {
             chrono::high_resolution_clock::now());
         nows = asctime(localtime(&nowC));
         strncpy(nowt, nows + 11, 8);
-        // fprintf(
-        //     pFile,
-        //     "Server %d requests %dth clock synchronisation to Server %d at
-        //     %s.\n", selfID, requestNumber, i, nowt);
         if (sentLen < 0) {
           perror("send() failed");
           exit(-1);
@@ -546,7 +552,6 @@ void *cellProcess(void *params) {
       }
     }
   }
-  pthread_exit(NULL);
 }
 
 void *receiveThread(void *params) {
@@ -558,7 +563,7 @@ void *receiveThread(void *params) {
   // the port number is associated with the server id
   in_port_t servPort = 50000 + selfID; // Local port
 
-  unsigned seed = chrono::system_clock::now().time_since_epoch().count();  
+  unsigned seed = chrono::system_clock::now().time_since_epoch().count();
   default_random_engine generator(seed);
   exponential_distribution<double> distributionS(Ls);
 
@@ -657,24 +662,49 @@ void *receiveThread(void *params) {
     } else {
       if (senderMessageCode == (int)Red) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Red msg at %s\n", selfID, nowt);
+        // on receiving red message  turns red if not already
+        fprintf(pFile, "Cell %d receives a Red msg at %llu\n", selfID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         if (ci->cellColour != Red) {
           ci->cellColour = Red;
-          fprintf(pFile, "Cell %d turns Red at %s\n", selfID, nowt);
+          fprintf(
+              pFile, "Cell %d turns Red at %llu\n", selfID,
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
         }
         pthread_mutex_unlock(ci->lock);
       } else if (senderMessageCode == (int)Blue) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Blue msg at %s\n", selfID, nowt);
+        // on receiving blue message turns blue if not already
+        fprintf(pFile, "Cell %d receives a Blue msg at %llu\n", selfID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         if (ci->cellColour != Blue) {
           ci->cellColour = Blue;
-          fprintf(pFile, "Cell %d turns Blue at %s\n", selfID, nowt);
+          fprintf(
+              pFile, "Cell %d turns Blue at %llu\n", selfID,
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
         }
         pthread_mutex_unlock(ci->lock);
       } else if (senderMessageCode == 4) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a White token from %d at %s\n", selfID,
-                senderID, nowt);
+        // on receiving white token marks the token received from the child
+        fprintf(pFile, "Cell %d receives a White token from %d at %llu\n",
+                selfID, senderID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         for (auto i = 0; i < ci->children.size(); i++) {
           if (ci->children[i] == senderID)
             ci->tokenReceived[i] = true;
@@ -682,8 +712,14 @@ void *receiveThread(void *params) {
         pthread_mutex_unlock(ci->lock);
       } else if (senderMessageCode == 5) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Black token from %d at %s\n", ci->id,
-                senderID, nowt);
+        // on receiving black token marks the token received from the child and
+        // changes self colour to black
+        fprintf(pFile, "Cell %d receives a Black token from %d at %llu\n",
+                ci->id, senderID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         for (auto i = 0; i < ci->children.size(); i++) {
           if (ci->children[i] == senderID)
             ci->tokenReceived[i] = true;
@@ -694,55 +730,6 @@ void *receiveThread(void *params) {
     }
     close(clntSock);
   }
-  // cout << "gonna stop receiving" << endl;
   close(servSock);
+  pthread_exit(NULL);
 }
-// void primMST(vector<vector<int>> &graph, vector<int> &parent) {
-//   // Key values used to pick minimum weight edge in cut
-//   int key[N];
-
-//   // To represent set of vertices not yet included in MST
-//   bool mstSet[N];
-
-//   // Initialize all keys as INFINITE
-//   for (int i = 0; i < N; i++)
-//     key[i] = INT_MAX, mstSet[i] = false;
-
-//   // Always include first 1st vertex in MST.
-//   // Make key 0 so that this vertex is picked as first vertex.
-//   key[0] = 0;
-//   parent[0] = -1; // First node is always root of MST
-
-//   // The MST will have V vertices
-//   for (int count = 0; count < N - 1; count++) {
-//     // Pick the minimum key vertex from the
-//     // set of vertices not yet included in MST
-//     int u = minKey(key, mstSet);
-
-//     // Add the picked vertex to the MST Set
-//     mstSet[u] = true;
-
-//     // Update key value and parent index of
-//     // the adjacent vertices of the picked vertex.
-//     // Consider only those vertices which are not
-//     // yet included in MST
-//     for (int v = 0; v < N; v++)
-
-//       // graph[u][v] is non zero only for adjacent vertices of m
-//       // mstSet[v] is false for vertices not yet included in MST
-//       // Update the key only if graph[u][v] is smaller than key[v]
-//       if (graph[u][v] && mstSet[v] == false && graph[u][v] < key[v])
-//         parent[v] = u, key[v] = graph[u][v];
-//   }
-// }
-
-// int minKey(int key[], bool mstSet[]) {
-//   // Initialize min value
-//   int min = INT_MAX, min_index;
-
-//   for (int v = 0; v < N; v++)
-//     if (mstSet[v] == false && key[v] < min)
-//       min = key[v], min_index = v;
-
-//   return min_index;
-// }

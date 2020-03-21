@@ -16,12 +16,12 @@
 #include <time.h>
 #include <unistd.h>
 #include <vector>
-//#define DEBUG_MODE 1
+#define DEBUG_MODE 1
 #define BUFSIZE 1024
 using namespace std;
 
 // parameters for the model
-enum Colour { White = 1, Red = 2, Blue = 3};
+enum Colour { White = 1, Red = 2, Blue = 3 };
 
 // this is for storing the information og the cell
 struct cellInfo {
@@ -52,7 +52,7 @@ struct cellInfo {
 // 3 - Blue Message
 // 4 - Warning Message
 // 5 - Terminate Message
-// 6 - Delete Entry message
+// 6 - Remove Entry message
 // function to receive sync requests and respond appropriately
 
 void *receiveThread(void *id);
@@ -121,7 +121,6 @@ void readInputFromFile() {
     getline(inputFile, line);
     istringstream iss(line);
     while (iss >> temp) {
-      // cout << i << "---" << temp-1 << endl;
       graph[temp - 1][i] = 1;
       graph[i][temp - 1] = 1;
     }
@@ -131,11 +130,9 @@ void readInputFromFile() {
 #endif
 
   while (getline(inputFile, line)) {
-    cout << "hh" << endl;
     istringstream iss1(line);
     int pn = -1;
     while (iss1 >> temp) {
-      cout << pn << ", " << temp << endl;
       if (pn == -1)
         pn = temp - 1;
       else
@@ -263,7 +260,11 @@ int main() {
   char nowt[9];
   strncpy(nowt, nows + 11, 8);
   for (auto i = 0; i < Ir; i++) {
-    fprintf(pFile, "Cell %d Turns Red at %s\n", infectList[i], nowt);
+    fprintf(
+        pFile, "Cell %d Turns Red at %llu\n", infectList[i],
+        (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                 chrono::system_clock::now().time_since_epoch())
+                                 .count()));
     pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Red;
     pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
@@ -280,7 +281,11 @@ int main() {
   random_shuffle(infectList.begin(), infectList.end());
   auto t1 = chrono::high_resolution_clock::now();
   for (auto i = 0; i < Ib; i++) {
-    fprintf(pFile, "Cell %d Turns Blue at %s\n", infectList[i], nowt);
+    fprintf(
+        pFile, "Cell %d Turns Blue at %llu\n", infectList[i],
+        (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                 chrono::system_clock::now().time_since_epoch())
+                                 .count()));
     pthread_mutex_lock(cellInfoVec[infectList[i]].lock);
     cellInfoVec[i].cellColour = Blue;
     pthread_mutex_unlock(cellInfoVec[infectList[i]].lock);
@@ -292,7 +297,7 @@ int main() {
 
   // put the root cell into DT state
   cellInfoVec[rootID].DT = true;
-  fprintf(pFile, "Root Cell goes into DT\n");
+  fprintf(pFile, "Cell %d initiates termination process\n", rootID);
 
   // use pthreads to wait for the termination signal which
   // would be send by the root of the spanning tree
@@ -386,14 +391,13 @@ void *cellProcess(void *params) {
   // whether the cell is blue or red, is determined on every iteration and
   // the corresponding number of messages are sent to random neighbours
   // also, every round we check if all the children nodes have sent terminate
-  // signals, if so, we send a terminate signal to the parent node, if not already
-  // sent, we also send the warning signal to all the neighbours when the cell
-  // goes into DT state
+  // signals, if so, we send a terminate signal to the parent node, if not
+  // already sent, we also send the warning signal to all the neighbours when
+  // the cell goes into DT state
 
   for (auto j = 0;; j++) {
     // to make sure the messges are sent to randmo neighbours, we
     // shuffle the neighbours vector
-    cout << selfID << " from: " << ci->From.size() << " to: " << ci->To.size() << endl;
     random_shuffle(neighbours.begin(), neighbours.end());
     pthread_mutex_lock(ci->lock);
     Colour currentColour = ci->cellColour;
@@ -414,7 +418,6 @@ void *cellProcess(void *params) {
     for (auto i = 0; i < up; i++) {
       // if the current colour of the cell is white, do not send any messages
       if (messageCode == 1) {
-        // cout << "breaking" << endl;
         break;
       }
       if (neighbours[i] == selfID)
@@ -423,7 +426,7 @@ void *cellProcess(void *params) {
 #ifndef DEBUG_MODE
       cout << "Message being sent = " << msg << endl;
 #endif
-      servPort = 50000 + neighbours[i];
+      servPort = 55000 + neighbours[i];
 
       servAddr.sin_port = htons(servPort);
 
@@ -442,10 +445,14 @@ void *cellProcess(void *params) {
       nows = asctime(localtime(&nowC));
       strncpy(nowt, nows + 11, 8);
       ssize_t sentLen = send(sockfd, msg, strlen(msg), 0);
-      fprintf(pFile, "Cell %d sends a %s message to cell %d at %s\n", selfID,
+      fprintf(pFile, "Cell %d sends a %s message to cell %d at %llu\n", selfID,
               messageCode == 4 ? "Warning"
                                : (messageCode == (int)Red ? "Red" : "Blue"),
-              neighbours[i], nowt);
+              neighbours[i],
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
       if (sentLen < 0) {
         perror("send() failed");
         exit(-1);
@@ -456,7 +463,10 @@ void *cellProcess(void *params) {
       pthread_mutex_lock(ci->lock);
       if (ci->DT && messageCode == 2) {
         ci->To.push_back(neighbours[i]);
-        fprintf(pFile, "Cell %d added cell %d to To Stack\n", selfID, neighbours[i]);
+        // add the cell id to the to stack, as we must get a message back from
+        // this cell
+        fprintf(pFile, "Cell %d added cell %d to To Stack\n", selfID,
+                neighbours[i]);
       }
       pthread_mutex_unlock(ci->lock);
       close(sockfd);
@@ -474,9 +484,8 @@ void *cellProcess(void *params) {
     // This part of the token does stack clean up when the node is idle i.e.
     // blue colour, we seperately traverse the from stack here
     if (ci->cellColour == Blue) {
-      fprintf(pFile, "Cell %d into stack clean up at\n", selfID);
       for (auto t = 0; t < ci->From.size(); t++) {
-        servPort = 50000 + ci->From[t];
+        servPort = 55000 + ci->From[t];
         servAddr.sin_port = htons(servPort);
         // connect to the server
         while (true) {
@@ -528,25 +537,30 @@ void *cellProcess(void *params) {
         break;
       }
     }
-    
+
     bool allIncomingLinksColoured =
         neighbours.size() - 1 == ci->colouredLinks.size() ? true : false;
-        if(!allTerminateReceived)
-          cout << "Cell " << selfID << " has not received all terminates yet" << endl;
-        if(!(ci->cellColour == Blue))
-          cout << "Cell " << selfID << " is red" << endl;
-        if(!(allIncomingLinksColoured))
-          cout << "Cell " << selfID << " has some uncoloured edges" << endl;
-        if(ci->sentTerminate)
-          cout << "Cell " << selfID << " has some already sent terminate" << endl;
-        if(!(ci->To.size() == 0))
-          cout << "Cell " << selfID << " has To list non zero" << endl;
-        if(!(ci->From.size() == 0))
-          cout << "Cell " << selfID << " has From list non zero" << endl;
+
+// to check the reason as to why the current cell has not sent terminate signal
+#ifndef DEBUG_MODE
+    if (!allTerminateReceived)
+      cout << "Cell " << selfID << " has not received all terminates yet"
+           << endl;
+    if (!(ci->cellColour == Blue))
+      cout << "Cell " << selfID << " is red" << endl;
+    if (!(allIncomingLinksColoured))
+      cout << "Cell " << selfID << " has some uncoloured edges" << endl;
+    if (ci->sentTerminate)
+      cout << "Cell " << selfID << " has some already sent terminate" << endl;
+    if (!(ci->To.size() == 0))
+      cout << "Cell " << selfID << " has To list non zero" << endl;
+    if (!(ci->From.size() == 0))
+      cout << "Cell " << selfID << " has From list non zero" << endl;
+#endif
+
     if (allTerminateReceived && !ci->sentTerminate && ci->cellColour == Blue &&
         allIncomingLinksColoured && ci->To.size() == 0 &&
         ci->From.size() == 0) {
-      fprintf(pFile, "%s\n", "Im here");
 #ifndef DEBUG_MODE
       cout << "Sending Terminate to parent" << endl;
 #endif
@@ -558,11 +572,12 @@ void *cellProcess(void *params) {
         // signal the main thread that the processes have terminated
         pthread_cond_signal(&terminationCondVariable);
         pthread_mutex_unlock(&terminationLock);
+        pthread_exit(NULL);
       } else {
         fprintf(pFile, "Cell %d sends terminate to cell %d\n", selfID,
                 ci->parent);
         // send token to parent
-        servPort = 50000 + ci->parent;
+        servPort = 55000 + ci->parent;
         servAddr.sin_port = htons(servPort);
         // connect to the server
         while (true) {
@@ -608,7 +623,7 @@ void *receiveThread(void *params) {
   // id of the server
   int selfID = ci->id;
   // the port number is associated with the server id
-  in_port_t servPort = 50000 + selfID; // Local port
+  in_port_t servPort = 55000 + selfID; // Local port
 
   unsigned seed = chrono::system_clock::now().time_since_epoch().count();
   default_random_engine generator(seed);
@@ -709,55 +724,98 @@ void *receiveThread(void *params) {
     } else {
       if (senderMessageCode == (int)Red) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Red msg at %s\n", selfID, nowt);
+        // on receiving red message turn red, if not already red
+        fprintf(pFile, "Cell %d receives a Red msg at %llu\n", selfID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         if (ci->cellColour != Red) {
           ci->cellColour = Red;
-          fprintf(pFile, "Cell %d turns Red at %s\n", selfID, nowt);
+          fprintf(
+              pFile, "Cell %d turns Red at %llu\n", selfID,
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
         }
+        // if red in colour and the link is coloured we must send a return
+        // message for this so we add this id to the from list
         if (ci->DT && (find(ci->colouredLinks.begin(), ci->colouredLinks.end(),
                             senderID) != ci->colouredLinks.end())) {
           ci->From.push_back(senderID);
-          fprintf(pFile, "Cell %d adding cell %d to From list at %s\n", selfID,
-                  senderID, nowt);
+          fprintf(
+              pFile, "Cell %d adding cell %d to From list at %llu\n", selfID,
+              senderID,
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
         }
         pthread_mutex_unlock(ci->lock);
+        // On receiving a blue message turn blue if not already blue
       } else if (senderMessageCode == (int)Blue) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Blue msg at %s\n", selfID, nowt);
+        fprintf(pFile, "Cell %d receives a Blue msg at %llu\n", selfID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         if (ci->cellColour != Blue) {
           ci->cellColour = Blue;
-          fprintf(pFile, "Cell %d turns Blue at %s\n", selfID, nowt);
+          fprintf(
+              pFile, "Cell %d turns Blue at %llu\n", selfID,
+              (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                       chrono::system_clock::now()
+                                           .time_since_epoch())
+                                       .count()));
         }
         pthread_mutex_unlock(ci->lock);
+        // On receiving a warning message, go into DT state, colour the incoming
+        // link and send warning message to all other neighbours
       } else if (senderMessageCode == 4) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives a Warning from %d at %s\n", selfID,
-                senderID, nowt);
+        fprintf(pFile, "Cell %d receives a Warning from %d at %llu\n", selfID,
+                senderID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         ci->DT = true;
         ci->colouredLinks.push_back(senderID);
         pthread_mutex_unlock(ci->lock);
+        // On receiving terminate, mark terminate received from child
       } else if (senderMessageCode == 5) {
         pthread_mutex_lock(ci->lock);
-        fprintf(pFile, "Cell %d receives Terminate from %d at %s\n", selfID,
-                senderID, nowt);
+        fprintf(pFile, "Cell %d receives Terminate from %d at %llu\n", selfID,
+                senderID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         for (auto k = 0; k < ci->children.size(); k++) {
           if (ci->children[k] == senderID)
             ci->terminateReceived[k] = true;
         }
         pthread_mutex_unlock(ci->lock);
+        // On getting remove entry message, remove one instance of the ID from
+        // the To list
       } else if (senderMessageCode == 6) {
         pthread_mutex_lock(ci->lock);
         fprintf(pFile,
-                "Cell %d receives remove entry message from cell %d at %s\n",
-                selfID, senderID, nowt);
+                "Cell %d receives remove entry message from cell %d at %llu\n",
+                selfID, senderID,
+                (long long unsigned)(chrono::duration_cast<chrono::nanoseconds>(
+                                         chrono::system_clock::now()
+                                             .time_since_epoch())
+                                         .count()));
         auto toDel = find(ci->To.begin(), ci->To.end(), senderID);
-        if(toDel != ci->To.end())
+        if (toDel != ci->To.end())
           ci->To.erase(toDel);
         pthread_mutex_unlock(ci->lock);
       }
     }
     close(clntSock);
   }
-  // cout << "gonna stop receiving" << endl;
   close(servSock);
 }
