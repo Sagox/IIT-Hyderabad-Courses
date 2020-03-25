@@ -1,10 +1,94 @@
-\documentclass[10pt,a4paper]{report}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\author{Sagar Jain}
-\title{Theory Assignment 2}
+\documentclass[12pt]{article}
+\setcounter{secnumdepth}{0}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  emph={  
+    enterCS,
+    releaseCS,
+    haveResource
+    },
+  emphstyle={\color{dkgreen}\bfseries}
+}
 \begin{document}
-•
+\title{CS5320: Distributed Computing\\Theory Assignment 2}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\section{Group Mutual Exclusion Algorithm Using a Message Passing System}
+The following Algorithm is one which converts the \textbf{decentralized solution proposed by Joung} to a message passing system instead of the shared memory model.
+
+\subsubsection{Assumptions}
+We shall assume there are two forums $F$ and $F'$.\\
+We assume that all the channels are FIFO (this is important since we will use other mutual exclusion algorithms as subroutines, and they require this to be true)
+\subsubsection{Approach}
+We will describe the algorithm with respect to a process $i$, which is trying to attend the forum F.\\
+We can use \textbf{any message passing mutual exclusion algorithm }for our task, example \textbf{Lamport's Algorithm}.
+The following functions are exposed by Lamport's Algorithm:
+\begin{itemize}
+\item \texttt{enterCS(vals ...)}
+\item \texttt{releaseCS(vals ...)}
+\end{itemize}
+We shall use these two in our implementation, to access the resources which would have otherwise been in the shared memory.\\\\
+\textbf{The basic idea is to just convert all the instances of shared memory usage to message passing in Joung's algorithm.}\\\\
+
+\subsection{The Algorithm}
+
+\begin{lstlisting}[mathescape=true]
+Define
+flag: array[1..n − 1] of (state, op) [Array which was earlier shared will be accessed through CS now]
+turn $\in$ {F, F$`$} [Will be accessed through CS now]
+state $\in$ {request, in_cs, in_forum, passive}
+op $\in$ {F, F$′$, N}
+enterCS(flag)
+do j != i: flag[j] = (in_cs, F$'$) $\rightarrow$
+	flag[i] := (request, F); 		{request phase}
+	releaseCS(flag)
+	enterCS(flag, turn)
+	do turn $\neq$ F $\wedge$ $\neg$all_passive(F$'$) $\rightarrow$
+		releaseCS(flag, turn)
+	od;
+	if(haveResource(flag)) $\rightarrow$ releaseCS(flag)
+		enterCS(flag)
+	fi;
+	flag[i] := (in_cs, F); 			{in_cs phase}
+	releaseCS(flag)
+od;
+if(haveResource(flag)) $\rightarrow$ releaseCS(flag) fi;
+attend forum F 						{in_forum phase}
+enterCS(turn)
+turn := F$'$;
+releaseCS(turn)
+enterCS(flag)
+flag[i] := (passive, N) 			{passive phase}
+releaseCS(flag)
+\end{lstlisting}
+
+$all\_passive (F') \equiv \forall j \neq i : flag[j] = (state, op) \implies op \neq F'$
+
+\subsection{Points to Note}
+The fairness incase of processes is handled by using the same was as the seconf Joung's algorithm by having a leader i.e. successor variable in every process and giving direct entry to other processes.
+
+Whenever we exit the CS we always exit it after the requisite instructions are executed ,so , no process can use the resources indefinitely. 
+Other consideration like starvation, fairness, etc depend on the mutual exclusion algoirthm chosen and on the fact that processes don't fail after entering the CS.
 \end{document}
