@@ -2,6 +2,26 @@ import numpy as np
 import time
 import sys
 
+# Wrapper function to run the simplex algorithm
+# again and again till optimal solution is found
+def degenerateSimplex(A, B, C, initialFeasiblePoint = None):
+	y = np.zeros(B.shape[0])
+	div = 10
+	while True:
+		x = degenerateSimplexHelper(A, B+y, C, initialFeasiblePoint)
+		if x["isDegenerate"]:
+			y = np.append(np.zeros(C.shape[0]), np.random.uniform(0,1,B.shape[0] - C.shape[0]))/n
+			continue
+		tr = x["tightRows"]
+		potentialPoint = np.linalg.inv(A[tr]).dot(B[tr])
+		# print("potentialPoint", potentialPoint)
+		Bc = A.dot(potentialPoint)
+		if np.all(Bc <= B):
+			return potentialPoint
+		else:
+			y = np.append(np.zeros(C.shape[0]), np.random.uniform(0,1,B.shape[0] - C.shape[0]))/n
+		n = n*10
+
 def getInput():
 	# get the dimension of A
 	m = int(input()) 
@@ -54,7 +74,7 @@ def getInitialFeasiblePoint(A, B, C):
 
 	# alternate methdod, find intersection of n planes and check if it is
 	# a vertex, if so use it as the initial point
-
+	
 	m = A.shape[0]
 	n = A.shape[1]
 	# print("Looking for feasible point")
@@ -82,8 +102,8 @@ def getInitialFeasiblePoint(A, B, C):
 			return possiblePoint
 	sys.exit("The given problem may be infeasible, if not, try again")
 
-
-def simplex(A, B, C, initialFeasiblePoint = None):
+# for degenerate questions we use this call to jump from one vertex to another
+def degenerateSimplexHelper(A, B, C, initialFeasiblePoint = None):
 	# print(A)
 	# print(B)
 	# print(C)
@@ -94,19 +114,21 @@ def simplex(A, B, C, initialFeasiblePoint = None):
 	else:
 		currentPoint = initialFeasiblePoint
 	# print("currentPoint", currentPoint)
-	
+
 	# this is an upper bound I have set on the number of times
 	# simplex can be run, this is a failsafe to detect unbounded
-	# problems
+	# problems	
 	for k in range(1000*A.shape[0]*A.shape[0]):
 		# get the rows in A for which the current point satisfies
 		# with equality
 		tightRows = []
 		for i in range(A.shape[0]):
-			if len(tightRows) == C.shape[0]:
-				break
-			if abs(A[i].dot(currentPoint) - B[i]) < 0.000000001:
+			# if len(tightRows) > C.shape[0]:
+			# 	None
+			if abs(A[i].dot(currentPoint) - B[i]) < 0.0000001:
 				tightRows.append(i)
+			if len(tightRows) > C.shape[0]:
+				return {"isDegenerate":True}
 
 		# print(tightRows)
 		Ap = A[tightRows]
@@ -128,7 +150,7 @@ def simplex(A, B, C, initialFeasiblePoint = None):
 		# opimal point
 		if allPositive:
 			# print("All positive")
-			return currentPoint
+			return {"isDegenerate": False, "tightRows":tightRows}
 		# the direction vector would be ith coloumn of the negative
 		# of the inverse of the tight row matrix, where i is the index
 		# of the alpha element which is < 0
@@ -159,5 +181,5 @@ def simplex(A, B, C, initialFeasiblePoint = None):
 
 
 A, B, C = getInput()
-solution = simplex(A, B, C)
+solution = degenerateSimplex(A, B, C)
 print("The given Linear Program is maximised at: " + str(solution))

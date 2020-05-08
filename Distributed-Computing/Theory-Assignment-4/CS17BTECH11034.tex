@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\setcounter{secnumdepth}{0}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  emph={  
+    for,
+    from,
+    to, do, if, then, broadcast, output, and, break
+    },
+  emphstyle={\color{dkgreen}\bfseries}
+}
+\begin{document}
+\title{CS5320: Distributed Computing\\Theory Assignment 4}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\section{Early Stopping Consensus Algorithm for Crash Failures}
+The following is the modified Algorithm 14.1 to design an early-stopping algorithm
+for consensus under failstop failures, that terminates within $f' + 1$ rounds, where $f'$ , the actual number of stop-failures, is less than $f$.
+
+\subsection{The Algorithm}
+
+\begin{lstlisting}[mathescape=true]
+
+Process $P_i$ (1 $\leq$ i $\leq$ n) executes the consensus algorithm for up to
+$f$ crash failures (early termination)
+for round from 1 to $f$ + 1 do
+  Values = []
+  ProcessIndices = []
+  broadcast(x);
+  $y_j$ $\leftarrow$ value (if any) received from process j in this round;
+  append(j) to ProcessIndices;
+  append($y_j$ to Values)
+  x $\leftarrow$ $min_j$(x, $y_j$);
+  if (round > 1 and previousProcessIndices == ProcessIndices and PreiousValues == Values ) then 
+          break;
+  previousValues = Values;
+  previousProcessIndices = ProcessIndices;
+Output x as consensus value
+\end{lstlisting}
+
+\subsubsection{Approach \& Proof of Correctness}
+The main idea for the algorithm is that if there are $f'$ failures we would at most take $ \leq f' + 1$ rounds to terminate the algorithm. One key observation is the following:\\
+If, there have been no failures between two subsequent rounds, call this round r, then there would be no change in the number of values received and the values themselves for rounds r+1 and rounds r+2. This is the fact that we can exploit to make sure that we terminate within f+1 rounds or $f' + 2$ rounds. The \textbf{termination} is guaranteed by the fact that the number of failures is fixed and less than the number of processes and the \textbf{validity} of the algorithm follows from the algorithm ar 14.1. \textbf{Agreement} would certainly happen since the number of failures is $<$ f.
+
+\end{document}

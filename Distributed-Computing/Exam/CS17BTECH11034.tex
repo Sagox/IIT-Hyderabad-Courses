@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\setcounter{secnumdepth}{0}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+ 
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  emph={  
+    enterCS,
+    releaseCS,
+    haveResource
+    },
+  emphstyle={\color{dkgreen}\bfseries}
+}
+\begin{document}
+\title{CS5320: Distributed Computing\\Quiz}
+\author{Sagar Jain\\CS17BTECH11034}
+\maketitle
+\section{Solutions}
+\begin{enumerate}
+\item Consensus cannot be achieved in an asynchronous distributed system where processes may have crash failure.
+\item The following points make it clear as to how the Phase King Algorithm ensures validity:
+\begin{enumerate}
+\item Firstly, we must note that there can be at most f malicious processes , so, out of f+1 phases atleast one phase would have to be non-malicious.
+\item At the end of phase k all non malicious processes would have the same estimate value of v. Whether they use their own values or phase king’s tie-breaker value they would end up with the same value this can be reasoned out using the face that the value of mult will always be $>$ n/2 + f for non-faulty processes.
+\item Finally, since n $>$ 4f and each non-malicious process receives at least n−f $>$ n/2+f votes for the consensus value at the start of phase k+1 it implies that they will have the same estimate at the end of phase k+1 as well.
+\end{enumerate} 
+\item \begin{enumerate}
+\item When the sender sends [m[0],0] it can either timeout or it can receive acknowledgement for the message. The message [m[1], 1] will not be sent before it gets an acknowledgement ACK(0). Given the second message we can say that ACK(0) must have been received, but if ACK(0) is received, the third message cannot be [m[0],0].
+\item The important point to note is that the channel is FIFO. We also know that m[1] being in the channel implies that the acknowledgement for m[0] was received, in the same way we can argue that m[1] acknowledgement was received. As mentioned earlier, the channels are FIFO, so m[1] would be received only after all the m[0] have already been sent, due to this condition, it is not possible for the given three messages to be together.
+\end{enumerate}
+\item \begin{enumerate}
+\item In this case there should not be any change in the behaviour since it does not depend on  the majority. Every non faulty process would get it's vector elements from byzantine agreement protocol, so it means that this would be the same for all non-faulty processes. So we have agreement. From the byzantine agreement protocol we can also say that if there exists a process k which is non faulty then the values decided upon by the protocol will be the same as those proposed by k, so validity is also maintained.
+
+\item In this case validity would be violated. The vector decided can have the incorrect value as the majority. This can easily be done by a fauly process sending wrong values.
+With respect to agreement the majority function will evaluate to the same value for all nonfaulty processes.Non faulty processes will have equal elements in their vectors so the majority function would give the same value for all the non faulty processes.
+\end{enumerate}
+\end{enumerate}
+\end{document}
