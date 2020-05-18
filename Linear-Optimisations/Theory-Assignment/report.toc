@@ -1,0 +1,10 @@
+\contentsline {section}{Theorems Learnt}{2}{section*.2}
+\contentsline {section}{Simplex Algorithm}{3}{section*.3}
+\contentsline {subsection}{Algorithm For Non-Degenrate case}{3}{section*.4}
+\contentsline {subsubsection}{Computing Initial Basic Feasible Solution}{3}{section*.5}
+\contentsline {subsubsection}{Finding Optimal Vertex}{4}{section*.6}
+\contentsline {subsection}{Algorithm For Degenerate Case}{4}{section*.7}
+\contentsline {subsubsection}{Computing Initial Basic Feasible Solution}{5}{section*.8}
+\contentsline {section}{Primal \& Dual}{5}{section*.9}
+\contentsline {section}{Miscellaneous}{6}{section*.10}
+\contentsline {subsection}{Vertex Cover Problem}{6}{section*.11}

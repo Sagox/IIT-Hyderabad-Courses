@@ -1,0 +1,125 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{secnumdepth}{0}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\epstopdfsetup{outdir=./}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{listings}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\lstset{
+	language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    backgroundcolor=\color{anti-flashwhite}
+}
+\begin{document}
+\title{
+\textbf{CS5040: Linear Optimisation\\~\\Theory Assignment: Course Summary}\\~\\
+}
+\author{\textbf{Sagar Jain - CS17BTECH11034}\\}
+\maketitle
+\begin{large}
+\tableofcontents
+\end{large}
+\newpage
+\section{Theorems Learnt}
+\begin{itemize}
+\item \textbf{Dimension Theorem for Vector Spaces}\\
+A vector space can have multiple basis but cardinality of basis will be the same. Assume that there exists two basis with one having cardinality greater than the other, we replace the elements in the smallet set with elements from the larger set step by step, on each replacement the new set will also be a basis or one of the vectors in the larger set is dependent on the others, which would be a contradiction. In the end we are left with all elements replaced a subset of the larger sets elements which form a basis. So we conclude that basis must always have the same cardinality.
+\item \textbf{Unique-Representation Lemma}\\
+A vector can be expressed in exactly one way as a linear combination of a basis. This was proved using contradiction in the class. If there exists a second way of representing a vector using the same basis then it would imply that the basis is not linearly independent, but, we know that the basis must be linearly independent, hence we get a contradiction. 
+\item \textbf{Every Vector Space has an Orthonormal Basis}\\
+For this proof we gave a constructive proof where we converted a given basis into orthogonal and unit vectors. We did this by repeatedly making all the vectors perpendicular to one other vector. In the end we are left with a set of perpendicular vectors. To make sure they are unit magnitude we can just divide by the magnitude.
+\item \textbf{Number of independent rows of a matrix is equal to the number of independent coloumns}
+\item \textbf{Number of independent rows in $A$ and $A'$ is equal}
+\item \textbf{Inverse exists if all rows or coloumns are independent}
+\item \textbf{Rank-Nullity Theorem}\\
+This theorem says that the rank of matrix a m + the nullity of the matrix m = number of coloums of m. Here, the nullity of the matrix is the number of independent vectors in the nullspace of m.
+\item \textbf{A point is a vertex if and only if the number of coloumns in the tight constraint matrix is equal to the rank of the matrix}
+\item \textbf{The optimum solution of a Linear Programming problem occurs at a vertex}
+\item \textbf{Vector in the nullspace of a matrix are orthogonal to vectors (rows) in the matrix}
+\end{itemize}
+\section{Simplex Algorithm}
+The simplex algorithm is basically a method to traverse from one extreme point of a polyhedron to another extreme point of the polyhedron with a higher value of the cost function. The following two cases will provide the details of the algorithm.
+\subsection{Algorithm For Non-Degenrate case}
+The LP is said to be non-degenerate when the number of tight equations at any vertex are not greater than n.\\
+The first step in any simplex algorithm implementation is to find the initial basic feasible solution i.e. an extreme point of the polyhedron to start the computation from.
+\subsubsection{Computing Initial Basic Feasible Solution}
+For non degenerate case there are two cases involved in the computation of the initial basic feasible solution. Given the constraints $Ax \leq B$ and assuming $ x_i \geq 0 \forall i$ is given in the constraints, the two cases are:
+\begin{itemize}
+\item $\forall \;B_i \in B, B_i \geq 0$\\
+In this case we can directly assume origin as the initial basic feasible solution. The reason for this is that, for all the inequlities of the type $x_i \geq 0$ origin will be a tight point and for all the other inequalities will be satisfied since $B_i \geq 0$.
+\item $\exists \;B_i \in B\; st \;B_i < 0$\\
+In this case we construct another LP, the solution to which will be the initial basic feasible point for the orignal question. The constuction of the new LP is as follows:
+\begin{enumerate}
+\item Add a new variable $z$ to the LP, the LP is now in n+1 dimensions.
+\item Add $+z$ to the lhs of all the constraint equations.
+\item Choose the smallest $B_i$ assume it is $B_1$, add the contraint $z \geq B_1$ to the list of constraints.
+\item For this new LP take $(0,0,0,...B_1)$ as the initial feasible point
+\end{enumerate}
+The solution of this so formed LP is the value of the initial basic feasible solution of the orignal LP.
+\end{itemize}
+\subsubsection{Finding Optimal Vertex}
+For finding the optimal vertex the steps are as follows:
+\begin{enumerate}
+\item We start at the initial basic feasible solution, we should now move to new extreme points with a higher value of the cost functions.
+\item We should now find the direction vector such that moving a certain distance in that direction makes some tight rows untight and some untight rows tight.
+\item At the current vertex there woudl be n rows of A which would be tight. All these rows are linearly independent. This implies that c can be written as a linear combination of these rows i.e. $c = t_1.A_1 + t_2.A_2 + .. + t_n.A_n$.
+\item Now there are two cases for choosing the direction vector:
+\begin{enumerate}
+\item If all $t_i \geq 0$ then the current point is the optimal point, since to increase the cost function we will have to go out of the polyhedron.
+\item If there is some $t_i < 0$, then we can move on to the next step.
+\end{enumerate}
+\item Find the inverse of the matrix formed using the n tight rows. The direction will be the negative ofthe  $i^{th}$ coloumn of this matrix where i is the index of the row for which the value of $t_i$ was $<$ 0 in the previous step.
+\item Moving in this direction ensures that we are moving orthogonal to all the other n-1 planes. And the value of the cost function will definitely increase since $t_i < 0$.
+\end{enumerate}
+\subsection{Algorithm For Degenerate Case}
+An LP is said to be degenerate when the number of tight vertices at even one vertex are greater than n. For example, in a 3 dimensional LP, three planes representing the constraints intersecting at a vertex of the polyhedron formed by the constraints. 
+\subsubsection{Computing Initial Basic Feasible Solution}
+The procedure to compute the initial basic feasible solution for the degenerate case is the same as that for the non degenerate case. The modified LP case will also most likely be a degenerate LP so should be solved using the procedure for degenerate case.\\\\
+The procedure to handle the degenerate case is as follows:
+\begin{enumerate}
+\item Add random positive (infinitesimally small) numbers to the RHS of all the constraint equations.
+\item The above statement may remove the degeneracy with high probability, but it is not a guarantee.
+\item After the above modification, we begin the normal simplex algorithm, but if for any vertex we notice that there are more than n tight equations, it means that the degeneracy was not removed, we should go back to step 1 in this case.
+\item Once step 3 terminates, we have a solution for the modified LP, to get a solution for the orignal LP, we must take the intersection of the n planes in the orignal LP which correspond to the tight equation for the solution of the modifies LP.
+\item If the intersection of the n planes found in step four is not a feasible point for the orignal question, we must go back to step 1.
+\end{enumerate}
+\section{Primal \& Dual}
+The following are few important topics wrt Primals \& Duals.
+\begin{itemize}
+\item \textbf{The dual is feasible}\\
+Thsi is possible if there exists y such that $A'y = c$.
+At an optimal point, the cost vector can be written as a linear combination of the normals to the corresponding hyperplane. These non negative coefficients of the linear combination yield a feasible point in the dual. So, for each point in the primal we can find a feasible point in dual. Hencem dual is feasible as the set of points in dual has the optimal point.
+\item \textbf{The optimal values of the objective functions of the primal and dual solutions
+are equal}
+\item \textbf{Weak duality}\\
+Let $x_1, . . . , x_n$ and $y_1, . . . , y_m$ are feasible solutions for the primal and dual, respectively. If the primal problem is a maximization problem, then $c_1x_1 + . . . + c_nx_n \leq b_1y_1 + . . . + b_my_m$.
+\item \textbf{Strong duality}\\
+Let $x_1, . . . , x_n$ and $y_1, . . . , y_m$ be optimal solutions for the primal and dual, respectively, then $c_1x_1 + . . . + c_nx_n = b_1y_1 + . . . + b_my_m$. If either the primal or the dual has an optimal solution, then so does the other.
+\item \textbf{Complementary slackness}\\
+Let $x_1, . . . , x_n$ and $y_1, . . . , y_m$ be feasible solutions for the primal and dual, respectively, and let $w_1, . . . , w_m$ and $z_1, . . . , z_n$ be the corresponding slacks for the primal and dual, respectively. Then $x_1, . . . , x_n$ and $y_1, . . . , y_m$ are both optimal if and only if $ \forall i, w_iy_i = 0 \land \forall j, z_jx_j = 0$.
+\item \textbf{Dual of Dual Set is = Primal}
+\item \textbf{Seperating Hyperplane Theorem}\\
+For every convex set and a point outside this set, there will exist a hyperplane which seperates the closed conves set from the outside point.
+\end{itemize}
+\section{Miscellaneous}
+\subsection{Vertex Cover Problem}
+A vertex cover of an undirected graph is a subset of its vertices such that for every edge $(u, v)$ of the graph, either $u$ or $v$ is in vertex cover. Given an undirected graph, the vertex cover problem is to find minimum size vertex cover.\\
+This is an NP complete problem, we do not have a known polynomial time solution for this, but we do have some approximations.\\ In the class we converted this problem to an integer linear programming problem. This is different from linear programming, in linear programming real solutions are allowed in ILP only integer valued solutions are allowed. ILP is also an NP complete problem. We used something called rounding technique to use LP techniques to solve this problem. So essentially we are approximating the ILP using LP.
+\end{document}

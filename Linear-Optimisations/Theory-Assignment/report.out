@@ -1,0 +1,10 @@
+\BOOKMARK [1][-]{section*.2}{Theorems Learnt}{}% 1
+\BOOKMARK [1][-]{section*.3}{Simplex Algorithm}{}% 2
+\BOOKMARK [2][-]{section*.4}{Algorithm For Non-Degenrate case}{section*.3}% 3
+\BOOKMARK [3][-]{section*.5}{Computing Initial Basic Feasible Solution}{section*.4}% 4
+\BOOKMARK [3][-]{section*.6}{Finding Optimal Vertex}{section*.4}% 5
+\BOOKMARK [2][-]{section*.7}{Algorithm For Degenerate Case}{section*.3}% 6
+\BOOKMARK [3][-]{section*.8}{Computing Initial Basic Feasible Solution}{section*.7}% 7
+\BOOKMARK [1][-]{section*.9}{Primal \046 Dual}{}% 8
+\BOOKMARK [1][-]{section*.10}{Miscellaneous}{}% 9
+\BOOKMARK [2][-]{section*.11}{Vertex Cover Problem}{section*.10}% 10
