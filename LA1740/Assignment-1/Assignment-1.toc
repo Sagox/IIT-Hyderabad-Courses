@@ -1,0 +1,29 @@
+\contentsline {section}{C: Lexical Conventions}{3}{section*.2}
+\contentsline {subsection}{Identifiers}{3}{section*.3}
+\contentsline {subsection}{Keywords}{3}{section*.4}
+\contentsline {subsection}{Constants}{3}{section*.5}
+\contentsline {subsection}{String Literals}{4}{section*.6}
+\contentsline {subsection}{Operators}{4}{section*.7}
+\contentsline {subsection}{Seperators}{5}{section*.8}
+\contentsline {subsubsection}{Comments}{5}{section*.9}
+\contentsline {section}{Python: Lexical Conventions}{6}{section*.10}
+\contentsline {subsection}{Line Structure and Indentation}{6}{section*.11}
+\contentsline {subsection}{Identifiers and Reserved Words}{6}{section*.12}
+\contentsline {subsection}{Literals}{7}{section*.13}
+\contentsline {subsubsection}{String Literals}{7}{section*.14}
+\contentsline {subsection}{Operators, Delimiters, and Special Symbols}{7}{section*.15}
+\contentsline {subsection}{Documentation Strings}{8}{section*.16}
+\contentsline {subsection}{Decorators}{8}{section*.17}
+\contentsline {subsection}{Source Code Encoding}{8}{section*.18}
+\contentsline {section}{JavaScript: Lexical Conventions}{9}{section*.19}
+\contentsline {subsection}{Whitespace}{9}{section*.20}
+\contentsline {subsection}{Names}{9}{section*.21}
+\contentsline {subsection}{Numbers}{9}{section*.22}
+\contentsline {subsection}{Strings}{9}{section*.23}
+\contentsline {subsection}{Statements \& Expressions}{10}{section*.24}
+\contentsline {subsection}{Functions}{10}{section*.25}
+\contentsline {section}{Short Note on Transition Diagrams}{11}{section*.26}
+\contentsline {subsection}{Transition Diagram for Whitespace}{11}{section*.27}
+\contentsline {subsection}{Transition Diagram for Names}{11}{section*.28}
+\contentsline {subsection}{Transition Diagram for Numbers}{11}{section*.29}
+\contentsline {subsection}{Transition Diagram for Strings}{12}{section*.30}

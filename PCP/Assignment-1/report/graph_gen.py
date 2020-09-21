@@ -1,0 +1,30 @@
+from subprocess import check_output
+import matplotlib.pyplot as plt
+import numpy as np
+DamTimeWithConstantM = np.array([4566, 6948, 33952, 297936, 6638928, 64815477])
+Sam1TimeWithConstantM = np.array([3967, 5545, 20906, 144725, 6280458, 59904591])
+Sam2TimeWithConstantM = np.array([1587, 3928, 19199, 138710, 6219123, 58074104])
+DamTimeWithConstantN = np.array([63044995, 63456772, 63108832, 62899222, 63459151, 63885914, 63800227])
+Sam1TimeWithConstantN = np.array([62236761, 61377492, 61631904, 62209490, 63400227, 62043105, 61197529])
+Sam2TimeWithConstantN = np.array([61412095, 61015020, 59892486, 60114755, 61640206, 61321046, 61774612])
+
+numberRange = np.arange(3,9)
+threadsRange = np.arange(5,36,5)
+
+plt.plot(numberRange, DamTimeWithConstantM, label="DAM")
+plt.plot(numberRange, Sam1TimeWithConstantM, label="SAM1")
+plt.plot(numberRange, Sam2TimeWithConstantM, label="SAM2")
+plt.grid()
+plt.legend()
+plt.xlabel('Range (10^N)')
+plt.ylabel('Time Taken (us)')
+plt.savefig('./constantM.eps', format = 'eps', dpi = 1000)
+plt.clf()
+plt.plot(threadsRange, DamTimeWithConstantN, label="DAM")
+plt.plot(threadsRange, Sam1TimeWithConstantN, label="SAM1")
+plt.plot(threadsRange, Sam2TimeWithConstantN, label="SAM2")
+plt.grid()
+plt.legend()
+plt.xlabel('Number of Processes')
+plt.ylabel('Time Taken (us)')
+plt.savefig('./constantN.eps', format = 'eps', dpi = 1000)

@@ -1,0 +1,60 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{color}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+\setcounter{secnumdepth}{0}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{listings}
+\definecolor{anti-flashwhite}{rgb}{0.95, 0.95, 0.96}
+\lstset{
+	language=C++,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue}\ttfamily,
+    stringstyle=\color{red}\ttfamily,
+	commentstyle=\color{green}\ttfamily,
+    morecomment=[l][\color{magenta}]{\#},
+    backgroundcolor=\color{anti-flashwhite}
+}
+\begin{document}
+\title{
+\textbf{CS5553: Wireless Networks \& Security}\\~\\
+\begin{large}
+\textbf{Assignment - I\\~\\Know Your Radio Signals\\}
+\end{large}
+\begin{large}
+\end{large}
+}
+\author{\textbf{Sagar Jain - CS17BTECH11034}\\}
+\maketitle
+%\begin{large}
+%\tableofcontents
+%\end{large}
+\section{Part A}
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|}
+\hline
+Location & Time & \begin{tabular}[c]{@{}l@{}}Radio\\ (WiFi/Cellular)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Wi-Fi ESSID/\\ Cellular Operator\end{tabular} & Network Type & \begin{tabular}[c]{@{}l@{}}Rx Signal\\ Strength (dBm)\end{tabular} & SNR (dB) & \begin{tabular}[c]{@{}l@{}}Current Tx\\ Power (dBm)\end{tabular} & Remarks \\ \hline
+My Room & 22:30 & Wfi & SAGAR & 802.11ac & -59 &  &  & Intel Wireless 3160 \\ \hline
+Hall & 22:30 & Wifi & SAGAR & 802.11ac & -29 &  &  &  \\ \hline
+Staircase & 22:30 & Wifi & SAGAR & 802.11ac & -62 &  &  &  \\ \hline
+My Room & 22:30 & Wfi & SAGAR & 802.11ac &  & 20 &  &  \\ \hline
+Hall & 22:30 & Wifi & SAGAR & 802.11ac &  & 12 &  &  \\ \hline
+Staricase & 22:30 & Wifi & SAGAR & 802.11ac &  & 12.4 &  &  \\ \hline
+My Room & 22:30 & Wfi & SAGAR & 802.11ac &  &  &  &  \\ \hline
+Hall & 22:30 & Wifi & SAGAR & 802.11ac &  &  &  &  \\ \hline
+Staircase & 22:30 & Wifi & SAGAR & 802.11ac &  &  &  &  \\ \hline
+\end{tabular}
+\section{Part B}
+\section{Part C}
+
+
+\end{document}

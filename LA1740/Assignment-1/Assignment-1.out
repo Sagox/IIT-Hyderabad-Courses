@@ -1,0 +1,29 @@
+\BOOKMARK [1][-]{section*.2}{C: Lexical Conventions}{}% 1
+\BOOKMARK [2][-]{section*.3}{Identifiers}{section*.2}% 2
+\BOOKMARK [2][-]{section*.4}{Keywords}{section*.2}% 3
+\BOOKMARK [2][-]{section*.5}{Constants}{section*.2}% 4
+\BOOKMARK [2][-]{section*.6}{String Literals}{section*.2}% 5
+\BOOKMARK [2][-]{section*.7}{Operators}{section*.2}% 6
+\BOOKMARK [2][-]{section*.8}{Seperators}{section*.2}% 7
+\BOOKMARK [3][-]{section*.9}{Comments}{section*.8}% 8
+\BOOKMARK [1][-]{section*.10}{Python: Lexical Conventions}{}% 9
+\BOOKMARK [2][-]{section*.11}{Line Structure and Indentation}{section*.10}% 10
+\BOOKMARK [2][-]{section*.12}{Identifiers and Reserved Words}{section*.10}% 11
+\BOOKMARK [2][-]{section*.13}{Literals}{section*.10}% 12
+\BOOKMARK [3][-]{section*.14}{String Literals}{section*.13}% 13
+\BOOKMARK [2][-]{section*.15}{Operators, Delimiters, and Special Symbols}{section*.10}% 14
+\BOOKMARK [2][-]{section*.16}{Documentation Strings}{section*.10}% 15
+\BOOKMARK [2][-]{section*.17}{Decorators}{section*.10}% 16
+\BOOKMARK [2][-]{section*.18}{Source Code Encoding}{section*.10}% 17
+\BOOKMARK [1][-]{section*.19}{JavaScript: Lexical Conventions}{}% 18
+\BOOKMARK [2][-]{section*.20}{Whitespace}{section*.19}% 19
+\BOOKMARK [2][-]{section*.21}{Names}{section*.19}% 20
+\BOOKMARK [2][-]{section*.22}{Numbers}{section*.19}% 21
+\BOOKMARK [2][-]{section*.23}{Strings}{section*.19}% 22
+\BOOKMARK [2][-]{section*.24}{Statements \046 Expressions}{section*.19}% 23
+\BOOKMARK [2][-]{section*.25}{Functions}{section*.19}% 24
+\BOOKMARK [1][-]{section*.26}{Short Note on Transition Diagrams}{}% 25
+\BOOKMARK [2][-]{section*.27}{Transition Diagram for Whitespace}{section*.26}% 26
+\BOOKMARK [2][-]{section*.28}{Transition Diagram for Names}{section*.26}% 27
+\BOOKMARK [2][-]{section*.29}{Transition Diagram for Numbers}{section*.26}% 28
+\BOOKMARK [2][-]{section*.30}{Transition Diagram for Strings}{section*.26}% 29

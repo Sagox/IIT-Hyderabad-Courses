@@ -1,0 +1,9 @@
+\contentsline {section}{Program Design}{2}{section*.2}
+\contentsline {subsection}{Dynamic Allocation Method}{2}{section*.3}
+\contentsline {subsection}{Static Allocation Method I}{3}{section*.4}
+\contentsline {subsection}{Static Allocation Method II}{3}{section*.5}
+\contentsline {section}{Results \& Graphs}{4}{section*.6}
+\contentsline {subsection}{Time Taken vs Value of N}{4}{section*.7}
+\contentsline {subsubsection}{Inference}{4}{section*.8}
+\contentsline {subsection}{Time Taken vs Number Of Threads}{5}{section*.9}
+\contentsline {subsubsection}{Inference}{5}{section*.10}

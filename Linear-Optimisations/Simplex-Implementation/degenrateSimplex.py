@@ -6,7 +6,7 @@ import sys
 # again and again till optimal solution is found
 def degenerateSimplex(A, B, C, initialFeasiblePoint = None):
 	y = np.zeros(B.shape[0])
-	div = 10
+	n = 10
 	while True:
 		x = degenerateSimplexHelper(A, B+y, C, initialFeasiblePoint)
 		if x["isDegenerate"]:
