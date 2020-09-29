@@ -1,0 +1,8 @@
+\contentsline {section}{Program Design}{2}{section*.2}
+\contentsline {subsection}{Filter Lock}{2}{section*.3}
+\contentsline {subsection}{Peterson Based Tree Lock}{3}{section*.4}
+\contentsline {section}{Results \& Graphs}{5}{section*.5}
+\contentsline {subsection}{Average Waiting Time To Aquire Lock Vs Number Of Threads}{5}{section*.6}
+\contentsline {subsubsection}{Inference}{5}{section*.7}
+\contentsline {subsection}{Average Waiting Time To Unlock Vs Number Of Threads}{6}{section*.8}
+\contentsline {subsubsection}{Inference}{6}{section*.9}

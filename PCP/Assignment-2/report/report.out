@@ -1,0 +1,6 @@
+\BOOKMARK [1][-]{section*.2}{Program Design}{}% 1
+\BOOKMARK [2][-]{section*.3}{Filter Lock}{section*.2}% 2
+\BOOKMARK [2][-]{section*.4}{Peterson Based Tree Lock}{section*.2}% 3
+\BOOKMARK [1][-]{section*.5}{Results \046 Graphs}{}% 4
+\BOOKMARK [2][-]{section*.6}{Average Waiting Time To Aquire Lock Vs Number Of Threads}{section*.5}% 5
+\BOOKMARK [2][-]{section*.8}{Average Waiting Time To Unlock Vs Number Of Threads}{section*.5}% 6
